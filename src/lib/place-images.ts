@@ -1,120 +1,164 @@
 /**
  * Photos matched to real places. Wikimedia filenames verified (HTTP 200).
- * Unsplash/Pexels IDs chosen for location-specific or accurate category shots.
  */
 
 function wiki(fileName: string, width = 800): string {
   return `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fileName)}?width=${width}`;
 }
 
-function unsplash(id: string, width = 800): string {
-  return `https://images.unsplash.com/photo-${id}?w=${width}&q=80&auto=format&fit=crop`;
-}
-
 function pexels(id: number, width = 800): string {
   return `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${width}`;
 }
 
-/** Wikimedia Commons — filenames verified (HTTP 200) */
-const WIKI = {
+/** Wikimedia Commons — location-specific, verified */
+export const WIKI = {
+  // Country & city heroes
+  haLongBay: wiki("Ha Long Bay, Vietnam.jpg", 1920),
+  nhaTrangSkyline: wiki("Nha_Trang_skyline.jpg", 1920),
+  goldenBridge: wiki("Golden_Bridge,_Ba_Na_Hills,_Vietnam_(49056919258).jpg", 1920),
+  dragonBridgeHero: wiki("Dragon Bridge Da Nang 7.jpg", 1920),
+
+  // Nha Trang
   poNagar: wiki("04052023_Ponagar_Hindu_temples_complex,_Nha_Trang_Vietnam_-_274.jpg"),
   vinpearl: wiki("Nha_Trang_from_Vinpearl_cable_car.JPG"),
-  goldenBridge: wiki("Golden_Bridge,_Ba_Na_Hills,_Vietnam_(49056919258).jpg"),
+  vinpearlCable: wiki("Vinpearl Cable Car to Hon Tre, Nha Trang, Khanh Hoa.jpg"),
+  docLet: wiki("Doc_Let_Beach.jpg"),
+  ninhVan: wiki("Ninh_Van_Bay.jpg"),
+  longSonBuddha: wiki("2008-01-27_Pagoda_Buddha_Nha-Trang.jpg"),
+  longSonPagoda: wiki("Long_Son_Pagoda_3.jpg"),
+  oceanInstitute: wiki("Nhatrang Oceanographic Institute.jpg"),
+  camRanhAirport: wiki("Cam_Ranh_Airport.jpg"),
+  gaNhaTrang: wiki("Ga Nha Trang.jpg"),
+  dalat: wiki("Da_Lat_city.jpg"),
+  thacBac: wiki("Thác Bạc.jpg"),
+
+  // Da Nang & surroundings
   hoiAn: wiki("Hoi_An_Ancient_Town.jpg"),
-  ladyBuddha: wiki("Linh_Ung_Pagoda.jpg"),
+  hoiAnLanterns: wiki("Hoi_An_lanterns.jpg"),
+  linhUng: wiki("Linh_Ung_Pagoda.jpg"),
+  ladyBuddha: wiki("Lady_Buddha_Da_Nang.jpg"),
   haiVan: wiki("Hai_Van_Pass,_Vietnam.jpg"),
-  cyclo: wiki("Xich_lo_in_Vietnam.jpg"),
+  haiVanMotorbike: wiki(
+    "Hai Van Pass, Vietnam, Vietnamese motorbike rider near US military bunker.jpg"
+  ),
+  daNangAirport: wiki("Da_Nang_Airport.jpg"),
+  myKhe: wiki("My Khe Beach Da Nang.jpg"),
+  dragonBridge: wiki("Dragon Bridge Da Nang 7.jpg"),
+  dragonBridgeAlt: wiki("Da Nang Dragon Bridge.jpg"),
+  marbleMountains: wiki("Marble_Mountains.jpg"),
+  marbleMountainPagoda: wiki("Non Nuoc Pagoda Da Nang 3.jpg"),
+  marbleDragon: wiki("Dragon_Marble_Mountain_Da_Nang_Vietnam.jpg"),
+  sonTra: wiki("Son_Tra_Peninsula.jpg"),
+  palmBeachDaNang: wiki("Palm trees beach Da Nang.jpg"),
+  beachDaNangGulf: wiki("Beach of Da Nang, inner-gulf.jpg"),
+  citadelHue: wiki("Citadel_of_Hue.jpg"),
+
+  // Transport & food (Vietnam)
+  cyclo: wiki("Cycle rickshaw in Hanoi.jpg"),
+  miQuang: wiki("Mì Quảng.jpg"),
+  banhMi: wiki("Vietnamese Bánh mì (Banh Mi) Sandwich.jpg"),
+  banhMiThit: wiki("Banh_mi_thit_Nhu_Lan.jpg"),
+  benThanhMarket: wiki("Ben Thanh Market Ho Chi Minh City.jpg"),
 } as const;
 
-const STOCK = {
-  longSon: pexels(2671074),
-  oceanMuseum: pexels(1287561),
-  baHoWaterfall: pexels(3225517),
-  tranPhu: unsplash("1559827260-dc66d52bef19"),
-  docLet: unsplash("1507525428034-b723cf961d3e"),
-  honMun: pexels(1032650),
-  seafood: unsplash("1414235077428-338989a2e8c0"),
-  streetFood: unsplash("1555939594-58d7cb561ad1"),
-  nightMarket: unsplash("1552566626-52f8b828add9"),
-  market: unsplash("1488459716781-31db52582fe9"),
-  mudBath: unsplash("1571896349842-33c89424de2d"),
-  dalat: unsplash("1583847261026-407d42d67c84"),
-  airport: unsplash("1436491865332-7a61a109cc05"),
-  train: pexels(2098427),
-  grab: pexels(4480501),
-  scooter: pexels(1632109),
-  resort: pexels(338504),
-  cityStreet: unsplash("1555396273-367ea4eb4db5"),
-  aquarium: pexels(1287561),
-  tropicalWaterfall: pexels(1764205),
-  dragonBridge: pexels(33596438),
-  marbleMountains: pexels(26780443),
-  myKheDaNang: pexels(3749749),
-} as const;
+export function getCityHeroImage(citySlug: string): string {
+  switch (citySlug) {
+    case "nha-trang":
+      return WIKI.nhaTrangSkyline;
+    case "da-nang":
+      return WIKI.goldenBridge;
+    default:
+      return WIKI.haLongBay;
+  }
+}
+
+export function getCountryHeroImage(): string {
+  return WIKI.haLongBay;
+}
 
 export const PLACE_IMAGES: Record<string, Record<string, string>> = {
   "nha-trang": {
-    "cam ranh international airport cxr": STOCK.airport,
-    "train to nha trang": STOCK.train,
-    "tran phu beach promenade": STOCK.tranPhu,
-    "ninh van bay": STOCK.resort,
-    "city center inland": STOCK.cityStreet,
+    "cam ranh international airport cxr": WIKI.camRanhAirport,
+    "train to nha trang": WIKI.gaNhaTrang,
+    "tran phu beach promenade": WIKI.nhaTrangSkyline,
+    "ninh van bay": WIKI.ninhVan,
+    "city center inland": WIKI.vinpearl,
     "po nagar cham towers": WIKI.poNagar,
-    "long son pagoda": STOCK.longSon,
+    "long son pagoda": WIKI.longSonBuddha,
     "vinwonders nha trang": WIKI.vinpearl,
-    "national oceanographic museum": STOCK.oceanMuseum,
-    "ba ho waterfalls": STOCK.baHoWaterfall,
-    "nha trang beach tran phu": STOCK.tranPhu,
-    "doc let beach": STOCK.docLet,
-    "hon mun island": STOCK.honMun,
-    "lanterns vietnamese restaurant": STOCK.streetFood,
-    "sailing club nha trang": STOCK.tranPhu,
-    "nha trang seafood street": STOCK.seafood,
-    "street food banh can": STOCK.streetFood,
-    "dam market cho dam": STOCK.market,
-    "xom moi market": STOCK.nightMarket,
-    "four islands tour": STOCK.honMun,
-    "mud bath hot springs": STOCK.mudBath,
-    "dalat day trip": STOCK.dalat,
-    "grab taxi bike": STOCK.grab,
-    "electric bike xe dien no license": STOCK.scooter,
-    "petrol scooter 110 125cc": STOCK.scooter,
-    "scooter rental": STOCK.scooter,
+    "national oceanographic museum": WIKI.oceanInstitute,
+    "ba ho waterfalls": WIKI.thacBac,
+    "nha trang beach tran phu": WIKI.nhaTrangSkyline,
+    "doc let beach": WIKI.docLet,
+    "hon mun island": WIKI.vinpearlCable,
+    "lanterns vietnamese restaurant": WIKI.hoiAnLanterns,
+    "sailing club nha trang": WIKI.nhaTrangSkyline,
+    "nha trang seafood street": WIKI.benThanhMarket,
+    "street food banh can": WIKI.miQuang,
+    "dam market cho dam": WIKI.benThanhMarket,
+    "xom moi market": WIKI.hoiAnLanterns,
+    "four islands tour": WIKI.vinpearlCable,
+    "mud bath hot springs": WIKI.ninhVan,
+    "dalat day trip": WIKI.dalat,
+    "grab taxi bike": WIKI.haiVanMotorbike,
+    "electric bike xe dien no license": WIKI.cyclo,
+    "petrol scooter 110 125cc": WIKI.haiVanMotorbike,
+    "scooter rental": WIKI.haiVanMotorbike,
     "car rental": pexels(3802510),
     "cyclo rickshaw": WIKI.cyclo,
+    "best beach time": WIKI.docLet,
+    "book tours locally": WIKI.vinpearlCable,
+    "happy hour": WIKI.nhaTrangSkyline,
+    "water filter": WIKI.oceanInstitute,
+    "overpriced taxis": WIKI.camRanhAirport,
+    "free tours": WIKI.vinpearl,
+    "restaurant bill": WIKI.benThanhMarket,
+    "hotel currency exchange": WIKI.benThanhMarket,
+    "general safety": WIKI.nhaTrangSkyline,
+    "sea weather": WIKI.docLet,
+    "emergency numbers": WIKI.camRanhAirport,
   },
   "da-nang": {
-    "da nang international airport dad": STOCK.airport,
-    "da nang train station": STOCK.train,
-    "my khe beach": STOCK.myKheDaNang,
-    "han river city center": STOCK.dragonBridge,
-    "an thuong beach area": STOCK.myKheDaNang,
-    "son tra peninsula": WIKI.ladyBuddha,
+    "da nang international airport dad": WIKI.daNangAirport,
+    "da nang train station": WIKI.gaNhaTrang,
+    "my khe beach": WIKI.myKhe,
+    "han river city center": WIKI.dragonBridgeAlt,
+    "an thuong beach area": WIKI.palmBeachDaNang,
+    "son tra peninsula": WIKI.sonTra,
     "golden bridge ba na hills": WIKI.goldenBridge,
-    "marble mountains ngu hanh son": STOCK.marbleMountains,
-    "dragon bridge": STOCK.dragonBridge,
+    "marble mountains ngu hanh son": WIKI.marbleMountainPagoda,
+    "dragon bridge": WIKI.dragonBridge,
     "lady buddha lin ung pagoda": WIKI.ladyBuddha,
     "hoi an ancient town": WIKI.hoiAn,
     "hai van pass": WIKI.haiVan,
-    "non nuoc beach": STOCK.myKheDaNang,
+    "non nuoc beach": WIKI.beachDaNangGulf,
     "son tra beach": WIKI.ladyBuddha,
-    "madame lan": STOCK.streetFood,
-    "be man": STOCK.seafood,
-    "mi quang 1a": STOCK.streetFood,
-    "banh mi ba lan": unsplash("1551504734-5ee1c4a1479b"),
-    "helio night market": STOCK.nightMarket,
-    "han market cho han": STOCK.market,
-    "con market cho con": STOCK.market,
+    "madame lan": WIKI.miQuang,
+    "be man": WIKI.benThanhMarket,
+    "mi quang 1a": WIKI.miQuang,
+    "banh mi ba lan": WIKI.banhMiThit,
+    "helio night market": WIKI.hoiAnLanterns,
+    "han market cho han": WIKI.benThanhMarket,
+    "con market cho con": WIKI.benThanhMarket,
     "ba na hills golden bridge": WIKI.goldenBridge,
-    "hoi an evening tour": WIKI.hoiAn,
-    "hue imperial city day trip": unsplash("1544551763-46a013bb70d5"),
-    "marble mountains non nuoc": STOCK.marbleMountains,
-    "grab": STOCK.grab,
-    "electric bike xe dien no license": STOCK.scooter,
-    "petrol scooter 110 125cc": STOCK.scooter,
-    "scooter rental": STOCK.scooter,
+    "hoi an evening tour": WIKI.hoiAnLanterns,
+    "hue imperial city day trip": WIKI.citadelHue,
+    "marble mountains non nuoc": WIKI.marbleMountains,
+    "grab": WIKI.haiVanMotorbike,
+    "electric bike xe dien no license": WIKI.cyclo,
+    "petrol scooter 110 125cc": WIKI.haiVanMotorbike,
+    "scooter rental": WIKI.haiVanMotorbike,
     "bus to hoi an": WIKI.hoiAn,
     "bicycle": pexels(276506),
+    "ba na hills arrive early": WIKI.goldenBridge,
+    "hoi an free after 5 pm": WIKI.hoiAnLanterns,
+    "dragon bridge show": WIKI.dragonBridge,
+    "custom suit in hoi an": WIKI.hoiAn,
+    "overpriced marble mountains guides": WIKI.marbleDragon,
+    "unmetered taxis": WIKI.daNangAirport,
+    "fake ba na hills tickets": WIKI.goldenBridge,
+    "general safety": WIKI.myKhe,
+    "emergency numbers": WIKI.daNangAirport,
   },
 };
 

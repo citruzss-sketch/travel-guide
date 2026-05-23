@@ -4,6 +4,7 @@ import { ArrowRight, Map, Sparkles, FileDown } from "lucide-react";
 import { notFound } from "next/navigation";
 import { getAllCountries, getCitiesForCountry } from "@/lib/content";
 import { getMessages, isValidLocale, t } from "@/lib/i18n";
+import { getCountryHeroImage } from "@/lib/travel-images";
 import type { Locale } from "@/types/content";
 
 export default async function HomePage({
@@ -48,7 +49,7 @@ export default async function HomePage({
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1528127269322-539801943592?w=1920&q=80"
+            src={getCountryHeroImage()}
             alt=""
             fill
             priority

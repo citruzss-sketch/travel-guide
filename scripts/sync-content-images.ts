@@ -5,7 +5,7 @@
 import fs from "fs";
 import path from "path";
 import { CITY_SECTION_KEYS } from "../src/lib/city-sections";
-import { getItemImage } from "../src/lib/travel-images";
+import { getItemImage, getCityHeroImage } from "../src/lib/travel-images";
 import type { CityContent } from "../src/types/content";
 
 const citiesDir = path.join(process.cwd(), "content/countries/vietnam/cities");
@@ -16,6 +16,12 @@ for (const file of fs.readdirSync(citiesDir)) {
   const filePath = path.join(citiesDir, file);
   const city = JSON.parse(fs.readFileSync(filePath, "utf-8")) as CityContent;
   let updated = 0;
+
+  const hero = getCityHeroImage(city.slug);
+  if (city.heroImage !== hero) {
+    city.heroImage = hero;
+    updated++;
+  }
 
   for (const key of CITY_SECTION_KEYS) {
     const section = city[key];
