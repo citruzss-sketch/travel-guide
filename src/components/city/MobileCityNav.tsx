@@ -21,10 +21,13 @@ const MOBILE_TABS: { id: CityTab; icon: typeof LayoutGrid }[] = [
 interface MobileCityNavProps {
   activeTab: CityTab;
   onChange: (tab: CityTab) => void;
+  hidden?: boolean;
 }
 
-export function MobileCityNav({ activeTab, onChange }: MobileCityNavProps) {
+export function MobileCityNav({ activeTab, onChange, hidden }: MobileCityNavProps) {
   const t = useT();
+
+  if (hidden) return null;
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/95 px-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] pt-2 backdrop-blur-xl md:hidden">

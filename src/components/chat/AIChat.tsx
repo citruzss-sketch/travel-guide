@@ -11,6 +11,11 @@ import {
   Heart,
   ListCollapse,
   Bookmark,
+  Maximize2,
+  Minimize2,
+  SlidersHorizontal,
+  ChevronDown,
+  ChevronUp,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import type { Locale } from "@/types/content";
@@ -52,6 +57,7 @@ interface AIChatProps {
   locale: Locale;
   launchConfig?: ChatLaunchConfig;
   launchKey?: number;
+  onExpandChange?: (expanded: boolean) => void;
 }
 
 function welcomeForMode(
@@ -69,6 +75,7 @@ export function AIChat({
   locale,
   launchConfig,
   launchKey = 0,
+  onExpandChange,
 }: AIChatProps) {
   const t = useT();
   const { add } = useFavorites();
@@ -92,6 +99,8 @@ export function AIChat({
   const [highlightHistoryId, setHighlightHistoryId] = useState<string | null>(null);
   const [activeSessionId, setActiveSessionId] = useState<string | null>(null);
   const [savedPanelMobileOpen, setSavedPanelMobileOpen] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+  const [controlsOpen, setControlsOpen] = useState(true);
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const launchApplied = useRef(-1);
@@ -321,6 +330,23 @@ export function AIChat({
   };
 
   const historyCount = historySessions.length;
+  const hasConversation = messages.some((m) => m.role === "user");
+
+  useEffect(() => {
+    onExpandChange?.(expanded);
+    if (!expanded) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [expanded, onExpandChange]);
+
+  useEffect(() => {
+    if (hasConversation) setControlsOpen(false);
+  }, [hasConversation]);
+
+  const toggleExpanded = () => setExpanded((v) => !v);
 
   const saveToFavorites = (content: string, compact = false) => {
     add({
@@ -384,7 +410,13 @@ export function AIChat({
   };
 
   return (
-    <div className="relative flex h-[min(78vh,720px)] overflow-hidden rounded-2xl border border-border bg-surface">
+    <motion.div
+      className={`relative flex overflow-hidden bg-surface ${
+        expanded
+          ? "fixed inset-0 z-[200] h-[100dvh] rounded-none border-0 pt-[env(safe-area-inset-top)]"
+          : "h-[min(calc(100dvh-9.5rem),820px)] rounded-2xl border border-border md:h-[min(78vh,720px)]"
+      }`}
+    >
       <ChatSavedPanel
         citySlug={citySlug}
         activeSessionId={activeSessionId}
@@ -396,45 +428,89 @@ export function AIChat({
       />
 
       <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
-      <div className="space-y-4 border-b border-border px-4 py-4 sm:px-5">
-        <div className="flex items-start justify-between gap-3">
-          <div>
-            <h3 className="font-display text-lg font-black">{t("chat.title")}</h3>
-            <p className="text-sm text-muted">{t("chat.subtitle", { city: cityName })}</p>
+      <div className="shrink-0 border-b border-border px-3 py-3 sm:px-5 sm:py-4">
+        <div className="flex items-start justify-between gap-2">
+          <div className="min-w-0">
+            <h3 className="font-display text-base font-black sm:text-lg">{t("chat.title")}</h3>
+            {controlsOpen ? (
+              <p className="text-sm text-muted">{t("chat.subtitle", { city: cityName })}</p>
+            ) : (
+              <p className="truncate text-xs text-muted">{t("chat.subtitle", { city: cityName })}</p>
+            )}
           </div>
-          <button
-            type="button"
-            onClick={() => setSavedPanelMobileOpen(true)}
-            className="flex shrink-0 items-center gap-1.5 rounded-xl border border-border px-3 py-2 text-xs font-semibold text-muted transition-colors hover:border-accent/40 hover:text-accent md:hidden"
-          >
-            <Bookmark className="h-4 w-4 text-accent" />
-            {historyCount > 0 ? historyCount : t("chat.history.short")}
-          </button>
-        </div>
-        <AIModeSelector value={mode} onChange={handleModeChange} disabled={loading} />
-        <TravelProfileBar value={profile} onChange={setProfile} disabled={loading} />
-        {placeContext && (
-          <p className="rounded-lg border border-accent/30 bg-accent/10 px-3 py-2 text-xs text-foreground">
-            {t("chat.aboutPlace", { place: placeContext.title })}
-          </p>
-        )}
-        {mode === "sos" && <SOSChatBar onScenario={handleSOSScenario} />}
-        <div className="flex flex-wrap gap-2">
-          {quickPrompts.map((prompt) => (
+          <div className="flex shrink-0 items-center gap-1">
             <button
-              key={prompt}
               type="button"
-              onClick={() => sendMessage(prompt)}
-              disabled={loading}
-              className="rounded-full border border-border bg-background px-3 py-1.5 text-xs font-semibold text-muted transition-colors hover:border-accent/40 hover:text-foreground disabled:opacity-50"
+              onClick={() => setControlsOpen((v) => !v)}
+              className="inline-flex items-center gap-1 rounded-xl border border-border px-2.5 py-2 text-xs font-semibold text-muted transition-colors hover:border-accent/40 hover:text-accent"
+              aria-expanded={controlsOpen}
             >
-              {prompt}
+              <SlidersHorizontal className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline">
+                {controlsOpen ? t("chat.hideControls") : t("chat.showControls")}
+              </span>
+              {controlsOpen ? (
+                <ChevronUp className="h-3.5 w-3.5 sm:hidden" />
+              ) : (
+                <ChevronDown className="h-3.5 w-3.5 sm:hidden" />
+              )}
             </button>
-          ))}
+            <button
+              type="button"
+              onClick={toggleExpanded}
+              className="inline-flex items-center justify-center rounded-xl border border-border p-2 text-muted transition-colors hover:border-accent/40 hover:text-accent"
+              aria-label={expanded ? t("chat.collapse") : t("chat.expand")}
+            >
+              {expanded ? (
+                <Minimize2 className="h-4 w-4" />
+              ) : (
+                <Maximize2 className="h-4 w-4" />
+              )}
+            </button>
+            <button
+              type="button"
+              onClick={() => setSavedPanelMobileOpen(true)}
+              className="inline-flex items-center gap-1.5 rounded-xl border border-border px-2.5 py-2 text-xs font-semibold text-muted transition-colors hover:border-accent/40 hover:text-accent md:hidden"
+            >
+              <Bookmark className="h-4 w-4 text-accent" />
+              {historyCount > 0 ? historyCount : t("chat.history.short")}
+            </button>
+          </div>
         </div>
+
+        {controlsOpen && (
+          <div className="mt-3 space-y-3 sm:space-y-4">
+            <AIModeSelector value={mode} onChange={handleModeChange} disabled={loading} compact={!expanded} />
+            <TravelProfileBar value={profile} onChange={setProfile} disabled={loading} />
+            {placeContext && (
+              <p className="rounded-lg border border-accent/30 bg-accent/10 px-3 py-2 text-xs text-foreground">
+                {t("chat.aboutPlace", { place: placeContext.title })}
+              </p>
+            )}
+            {mode === "sos" && <SOSChatBar onScenario={handleSOSScenario} />}
+            <div className="flex flex-wrap gap-2">
+              {quickPrompts.map((prompt) => (
+                <button
+                  key={prompt}
+                  type="button"
+                  onClick={() => sendMessage(prompt)}
+                  disabled={loading}
+                  className="rounded-full border border-border bg-background px-3 py-1.5 text-xs font-semibold text-muted transition-colors hover:border-accent/40 hover:text-foreground disabled:opacity-50"
+                >
+                  {prompt}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
-      <div className="flex-1 space-y-4 overflow-y-auto p-4 sm:p-5">
+      <div
+        className={`flex-1 space-y-4 overflow-y-auto overscroll-contain p-3 sm:p-5 ${
+          expanded ? "mx-auto w-full max-w-3xl px-4 sm:px-6" : ""
+        }`}
+      >
+
         {messages.map((msg, i) => (
           <motion.div
             key={i}
@@ -459,7 +535,9 @@ export function AIChat({
                 )}
               </div>
               <div
-                className={`group relative max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
+                className={`group relative rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
+                  expanded && msg.role === "assistant" ? "max-w-full" : "max-w-[92%]"
+                } ${
                   msg.role === "user"
                     ? "bg-accent text-white"
                     : "bg-surface-hover text-foreground"
@@ -573,7 +651,7 @@ export function AIChat({
       )}
 
       <form
-        className="flex gap-2 border-t border-border p-4"
+        className="flex shrink-0 gap-2 border-t border-border p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:p-4"
         onSubmit={(e) => {
           e.preventDefault();
           sendMessage();
@@ -602,6 +680,6 @@ export function AIChat({
         </button>
       </form>
       </div>
-    </div>
+    </motion.div>
   );
 }

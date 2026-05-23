@@ -58,7 +58,7 @@ src/messages/ru.json, en.json        # i18n
 - [ ] Add photos/images to new items
 
 ### Product
-- [ ] Improve mobile UX (tab bar, chat, map)
+- [x] Improve mobile UX (chat expand, collapsible controls, safe-area)
 - [ ] Better offline/PWA caching
 - [ ] Currency converter widget
 - [ ] Share button for places

@@ -27,10 +27,43 @@ interface AIModeSelectorProps {
   value: AIMode;
   onChange: (mode: AIMode) => void;
   disabled?: boolean;
+  compact?: boolean;
 }
 
-export function AIModeSelector({ value, onChange, disabled }: AIModeSelectorProps) {
+export function AIModeSelector({ value, onChange, disabled, compact }: AIModeSelectorProps) {
   const t = useT();
+
+  if (compact) {
+    return (
+      <div className="space-y-2">
+        <p className="text-xs font-bold uppercase tracking-wider text-muted">
+          {t("chat.modes.label")}
+        </p>
+        <div className="mode-scroll flex gap-2 overflow-x-auto pb-1">
+          {MODES.map((mode) => {
+            const Icon = MODE_ICONS[mode];
+            const active = value === mode;
+            return (
+              <button
+                key={mode}
+                type="button"
+                disabled={disabled}
+                onClick={() => onChange(mode)}
+                className={`inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-2 text-xs font-bold transition-all disabled:opacity-50 ${
+                  active
+                    ? "border-accent bg-accent/15 text-accent"
+                    : "border-border bg-background text-muted hover:border-accent/30"
+                }`}
+              >
+                <Icon className="h-3.5 w-3.5" />
+                {t(`chat.modes.${mode}.title`)}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-2">

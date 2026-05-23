@@ -4,16 +4,13 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   History,
-  Check,
   ChevronLeft,
   ChevronRight,
-  Copy,
   Trash2,
   X,
 } from "lucide-react";
 import { useChatHistory } from "@/hooks/useChatHistory";
 import { useLocale, useT } from "@/components/providers/LocaleProvider";
-import { ChatMarkdown } from "@/components/chat/ChatMarkdown";
 import type { ChatHistorySession } from "@/lib/chat-history";
 
 interface ChatSavedPanelProps {
@@ -48,7 +45,6 @@ export function ChatSavedPanel({
   const { locale } = useLocale();
   const { sessions, remove } = useChatHistory(citySlug);
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [copied, setCopied] = useState(false);
   const [collapsed, setCollapsed] = useState(false);
   const [flashId, setFlashId] = useState<string | null>(null);
 
@@ -79,100 +75,54 @@ export function ChatSavedPanel({
     return () => clearTimeout(timer);
   }, [highlightId, onMobileOpenChange]);
 
-  const copySelected = async () => {
-    if (!selected) return;
-    const text = selected.messages
-      .map((m) => `${m.role === "user" ? t("chat.history.you") : "AI"}: ${m.content}`)
-      .join("\n\n");
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      /* ignore */
-    }
-  };
-
   const selectSession = (session: ChatHistorySession) => {
     setSelectedId(session.id);
     onRestoreSession?.(session);
+    onMobileOpenChange?.(false);
   };
 
-  const sessionList = (compact = false) =>
+  const deleteSession = (id: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    remove(id);
+    if (activeSessionId === id) onSessionDeleted?.(id);
+  };
+
+  const sessionList = () =>
     sessions.map((item) => {
       const active = item.id === selected?.id || item.id === activeSessionId;
       return (
         <li key={item.id}>
-          <button
-            type="button"
-            onClick={() => selectSession(item)}
-            className={`w-full rounded-lg px-2.5 py-2 text-left transition-colors ${
+          <div
+            className={`group flex items-start gap-1 rounded-lg transition-colors ${
               active
                 ? "bg-accent/15 ring-1 ring-accent/30"
                 : "hover:bg-surface-hover"
             } ${flashId === item.id ? "animate-pulse bg-accent/20" : ""}`}
           >
-            {!compact && (
+            <button
+              type="button"
+              onClick={() => selectSession(item)}
+              className="min-w-0 flex-1 rounded-lg px-2.5 py-2 text-left"
+            >
               <span className="truncate text-[10px] text-muted">
                 {formatSavedDate(item.updatedAt, locale)}
               </span>
-            )}
-            <p className={`line-clamp-2 text-xs leading-snug text-foreground ${compact ? "" : "mt-0.5"}`}>
-              {item.preview}
-            </p>
-          </button>
+              <p className="mt-0.5 line-clamp-2 text-xs leading-snug text-foreground">
+                {item.preview}
+              </p>
+            </button>
+            <button
+              type="button"
+              onClick={(e) => deleteSession(item.id, e)}
+              className="mt-2 shrink-0 rounded-lg p-1.5 text-muted opacity-0 transition-opacity hover:text-red-500 group-hover:opacity-100"
+              aria-label={t("chat.history.remove")}
+            >
+              <Trash2 className="h-3.5 w-3.5" />
+            </button>
+          </div>
         </li>
       );
     });
-
-  const sessionDetail = selected ? (
-    <div className="flex min-h-0 flex-1 flex-col p-3">
-      <div className="min-h-0 flex-1 space-y-3 overflow-y-auto pr-1">
-        {selected.messages.map((msg, i) => (
-          <div key={i}>
-            <p
-              className={`mb-1 text-[10px] font-bold uppercase tracking-wider ${
-                msg.role === "user" ? "text-accent" : "text-muted"
-              }`}
-            >
-              {msg.role === "user" ? t("chat.history.you") : t("chat.history.ai")}
-            </p>
-            <ChatMarkdown
-              content={msg.content}
-              variant={msg.role === "user" ? "user" : "assistant"}
-              compact
-            />
-          </div>
-        ))}
-      </div>
-      <div className="mt-2 flex shrink-0 gap-2 border-t border-border pt-2">
-        <button
-          type="button"
-          onClick={copySelected}
-          className="inline-flex flex-1 items-center justify-center gap-1 rounded-lg border border-border py-1.5 text-xs font-semibold text-muted hover:text-foreground"
-        >
-          {copied ? (
-            <Check className="h-3.5 w-3.5 text-green-500" />
-          ) : (
-            <Copy className="h-3.5 w-3.5" />
-          )}
-          {t("chat.copy")}
-        </button>
-        <button
-          type="button"
-          onClick={() => {
-            const id = selected.id;
-            remove(id);
-            if (activeSessionId === id) onSessionDeleted?.(id);
-          }}
-          className="inline-flex items-center justify-center rounded-lg border border-border px-2.5 py-1.5 text-xs font-semibold text-muted hover:border-red-500/40 hover:text-red-500"
-          aria-label={t("chat.history.remove")}
-        >
-          <Trash2 className="h-3.5 w-3.5" />
-        </button>
-      </div>
-    </div>
-  ) : null;
 
   return (
     <>
@@ -212,18 +162,13 @@ export function ChatSavedPanel({
         </div>
 
         {!collapsed && (
-          <div className="flex min-h-0 flex-1 flex-col">
+          <div className="min-h-0 flex-1 overflow-y-auto p-2">
             {sessions.length === 0 ? (
-              <p className="px-3 py-6 text-center text-xs leading-relaxed text-muted">
+              <p className="px-1 py-6 text-center text-xs leading-relaxed text-muted">
                 {t("chat.history.empty")}
               </p>
             ) : (
-              <>
-                <ul className="max-h-44 shrink-0 space-y-1 overflow-y-auto border-b border-border p-2">
-                  {sessionList()}
-                </ul>
-                {sessionDetail}
-              </>
+              <ul className="space-y-1">{sessionList()}</ul>
             )}
           </div>
         )}
@@ -278,18 +223,15 @@ export function ChatSavedPanel({
                   </button>
                 </div>
 
-                {sessions.length === 0 ? (
-                  <p className="px-4 py-10 text-center text-sm text-muted">
-                    {t("chat.history.empty")}
-                  </p>
-                ) : (
-                  <div className="flex min-h-0 flex-1 flex-col">
-                    <ul className="max-h-48 shrink-0 space-y-1 overflow-y-auto border-b border-border p-2">
-                      {sessionList(true)}
-                    </ul>
-                    {sessionDetail}
-                  </div>
-                )}
+                <div className="min-h-0 flex-1 overflow-y-auto p-2">
+                  {sessions.length === 0 ? (
+                    <span className="block px-2 py-10 text-center text-sm text-muted">
+                      {t("chat.history.empty")}
+                    </span>
+                  ) : (
+                    <ul className="space-y-1">{sessionList()}</ul>
+                  )}
+                </div>
               </motion.aside>
             </>
           )}

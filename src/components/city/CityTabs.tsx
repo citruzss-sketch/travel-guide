@@ -52,6 +52,7 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
   const [activeTab, setActiveTab] = useState<CityTab>("overview");
   const [chatLaunch, setChatLaunch] = useState<ChatLaunchConfig | undefined>();
   const [chatLaunchKey, setChatLaunchKey] = useState(0);
+  const [chatExpanded, setChatExpanded] = useState(false);
 
   const tabLabel = (id: CityTab) => t(`city.${id}`);
 
@@ -112,7 +113,7 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
   const cityName = city.name[locale];
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pb-24 sm:px-6 md:pb-16">
+    <div className="mx-auto max-w-6xl px-3 pb-24 sm:px-6 md:pb-16">
       <nav className="tab-scroll sticky top-[72px] z-40 -mx-4 hidden overflow-x-auto border-b border-border/60 bg-background/75 px-4 backdrop-blur-xl sm:top-[65px] md:block">
         <div className="flex min-w-max gap-1 py-3">
           {TABS.map(({ id, icon: Icon }) => {
@@ -143,7 +144,7 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
         </div>
       </nav>
 
-      <div className="mt-8">
+      <div className={activeTab === "chat" ? "mt-3 md:mt-8" : "mt-8"}>
         <AnimatePresence mode="wait">
           {activeTab === "overview" && (
             <OverviewPanel
@@ -289,6 +290,7 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
                 locale={locale}
                 launchConfig={chatLaunch}
                 launchKey={chatLaunchKey}
+                onExpandChange={setChatExpanded}
               />
             </motion.div>
           )}
@@ -309,8 +311,12 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
         </AnimatePresence>
       </div>
 
-      <BackToTop />
-      <MobileCityNav activeTab={activeTab} onChange={setActiveTab} />
+      <BackToTop hidden={chatExpanded && activeTab === "chat"} />
+      <MobileCityNav
+        activeTab={activeTab}
+        onChange={setActiveTab}
+        hidden={chatExpanded && activeTab === "chat"}
+      />
     </div>
   );
 }
