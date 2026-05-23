@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Coins, Globe2, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 import type { CityContent, Locale } from "@/types/content";
 import { useT } from "@/components/providers/LocaleProvider";
 import { CityLiveWidget } from "./CityLiveWidget";
+import { SafeImage } from "@/components/ui/SafeImage";
 
 interface CityHeroProps {
   city: CityContent;
@@ -25,25 +25,39 @@ export function CityHero({ city, locale, countrySlug }: CityHeroProps) {
   ];
 
   return (
-    <section className="relative -mt-px overflow-hidden">
-      <div className="relative h-[42vh] min-h-[280px] max-h-[480px] w-full sm:h-[48vh]">
-        <Image
-          src={city.heroImage}
-          alt={city.name[locale]}
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
+    <section className="relative -mt-px">
+      <div className="relative h-[44vh] min-h-[300px] max-h-[520px] w-full sm:h-[50vh]">
+        <div className="absolute inset-0 overflow-hidden">
+          <motion.div
+            className="absolute inset-0"
+            initial={{ scale: 1.06 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <SafeImage
+              src={city.heroImage}
+              alt=""
+              fill
+              priority
+              className="scale-[1.04] object-cover object-center"
+              sizes="100vw"
+            />
+          </motion.div>
+        </div>
+        <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-background via-background/55 to-background/10" />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute bottom-0 left-0 right-0 z-[2]"
+          style={{ height: 8, background: "var(--background)" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="-mt-24 sm:-mt-32"
+          className="-mt-28 sm:-mt-36"
         >
           <Link
             href={`/${locale}/${countrySlug}`}
@@ -53,8 +67,8 @@ export function CityHero({ city, locale, countrySlug }: CityHeroProps) {
             {t("nav.back")}
           </Link>
 
-          <h1 className="font-display text-4xl font-black tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            {city.name[locale]}
+          <h1 className="font-display text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
+            <span className="text-gradient">{city.name[locale]}</span>
           </h1>
           <p className="mt-2 max-w-2xl text-lg text-muted">{city.tagline[locale]}</p>
 
@@ -62,7 +76,7 @@ export function CityHero({ city, locale, countrySlug }: CityHeroProps) {
             {facts.map(({ icon: Icon, label, value }) => (
               <div
                 key={label}
-                className="rounded-xl border border-border bg-surface/90 p-4 backdrop-blur"
+                className="card-shine rounded-xl border border-border/80 bg-surface/80 p-4 shadow-sm backdrop-blur-md transition-all hover:border-accent/30 hover:shadow-md hover:shadow-accent/5"
               >
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent">
                   <Icon className="h-3.5 w-3.5" />

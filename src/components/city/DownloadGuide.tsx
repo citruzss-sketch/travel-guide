@@ -22,7 +22,10 @@ export function DownloadGuide({
   const handleDownload = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`/api/pdf/${countrySlug}/${citySlug}`);
+      const res = await fetch(
+        `/api/pdf/${countrySlug}/${citySlug}?v=3&_=${Date.now()}`,
+        { cache: "no-store" }
+      );
       if (!res.ok) throw new Error("PDF generation failed");
       const blob = await res.blob();
       const url = URL.createObjectURL(blob);

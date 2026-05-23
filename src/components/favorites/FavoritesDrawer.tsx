@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Heart, X, Trash2, MessageCircle, MapPin } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
 import { useLocale, useT } from "@/components/providers/LocaleProvider";
+import { ChatMarkdown } from "@/components/chat/ChatMarkdown";
+import { plainTextFromMarkdown } from "@/lib/chat-markdown";
 
 interface FavoritesDrawerProps {
   open: boolean;
@@ -15,7 +17,11 @@ interface FavoritesDrawerProps {
 export function FavoritesDrawer({ open, onClose }: FavoritesDrawerProps) {
   const t = useT();
   const { locale } = useLocale();
-  const { favorites, remove } = useFavorites();
+  const { favorites, remove, refresh } = useFavorites();
+
+  useEffect(() => {
+    if (open) refresh();
+  }, [open, refresh]);
 
   useEffect(() => {
     if (open) {
@@ -88,13 +94,21 @@ export function FavoritesDrawer({ open, onClose }: FavoritesDrawerProps) {
                           </p>
                           {item.subtitle && (
                             <p className="mt-1 line-clamp-2 text-xs text-muted">
-                              {item.subtitle}
+                              {plainTextFromMarkdown(item.subtitle)}
                             </p>
                           )}
                           {item.body && item.type === "chat" && (
-                            <p className="mt-2 line-clamp-3 text-xs text-muted">
-                              {item.body}
-                            </p>
+                            <div className="relative mt-2 max-h-40 overflow-hidden">
+                              <ChatMarkdown
+                                content={item.body}
+                                variant="assistant"
+                                compact
+                              />
+                              <div
+                                className="pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-surface to-transparent"
+                                aria-hidden
+                              />
+                            </div>
                           )}
                         </div>
                         <button
@@ -107,7 +121,11 @@ export function FavoritesDrawer({ open, onClose }: FavoritesDrawerProps) {
                         </button>
                       </div>
                       <Link
-                        href={`/${locale}/${item.countrySlug}/${item.citySlug}`}
+                        href={`/${locale}/${item.countrySlug}/${item.citySlug}${
+                          item.type === "content" && item.sectionKey != null && item.itemIndex != null
+                            ? `#${item.sectionKey}-item-${item.itemIndex}`
+                            : ""
+                        }`}
                         onClick={onClose}
                         className="mt-3 inline-block text-xs font-bold text-accent hover:underline"
                       >

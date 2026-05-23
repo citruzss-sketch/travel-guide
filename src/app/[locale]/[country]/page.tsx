@@ -23,18 +23,27 @@ export default async function CountryPage({
   const messages = await getMessages(locale);
 
   return (
-    <div>
-      <section className="relative h-[40vh] min-h-[240px] max-h-[400px]">
-        <Image
-          src={country.heroImage}
-          alt={country.name[locale]}
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
+    <div className="bg-background">
+      <section
+        className="relative h-[40vh] min-h-[240px] max-h-[400px]"
+      >
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src={country.heroImage}
+            alt={country.name[locale]}
+            fill
+            priority
+            className="scale-[1.06] object-cover object-center"
+            sizes="100vw"
+          />
+        </div>
+        <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-background via-background/90 to-transparent" />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute left-0 right-0 z-[2]"
+          style={{ bottom: 0, height: 8, background: "var(--background)" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 mx-auto max-w-6xl px-4 pb-8 sm:px-6">
+        <div className="absolute bottom-0 left-0 right-0 z-[3] mx-auto max-w-6xl px-4 pb-8 sm:px-6">
           <Link
             href={`/${locale}`}
             className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-border bg-surface/80 px-3 py-1.5 text-sm text-muted backdrop-blur hover:text-foreground"
@@ -50,7 +59,7 @@ export default async function CountryPage({
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+      <section className="relative -mt-3 bg-background pt-3 mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <h2 className="font-display text-2xl font-black">
           {t(messages, "country.cities")}
         </h2>
@@ -61,17 +70,17 @@ export default async function CountryPage({
               href={`/${locale}/${countrySlug}/${city.slug}`}
               className="group overflow-hidden rounded-2xl border border-border bg-surface transition-all hover:border-accent/40"
             >
-              <div className="relative h-52">
+              <div className="card-media relative h-52">
                 <Image
                   src={city.heroImage}
                   alt={city.name[locale]}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="block object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, 50vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-surface via-surface/25 to-transparent" />
               </div>
-              <div className="flex items-center justify-between p-5">
+              <div className="relative z-10 -mt-px flex items-center justify-between bg-surface p-5">
                 <div>
                   <h3 className="font-display text-xl font-black">
                     {city.name[locale]}

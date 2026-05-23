@@ -5,7 +5,10 @@ import {
   addFavorite,
   getFavorites,
   removeFavorite,
+  FAVORITES_CHANGED_EVENT,
+  FAVORITES_STORAGE_KEY,
   type FavoriteItem,
+  type FavoritesChangeDetail,
 } from "@/lib/favorites";
 
 export function useFavorites() {
@@ -21,15 +24,25 @@ export function useFavorites() {
     setReady(true);
 
     const onStorage = (e: StorageEvent) => {
-      if (e.key === "travel-guide-favorites") refresh();
+      if (e.key === FAVORITES_STORAGE_KEY) refresh();
     };
+
+    const onChanged = () => refresh();
+
     window.addEventListener("storage", onStorage);
-    return () => window.removeEventListener("storage", onStorage);
+    window.addEventListener(FAVORITES_CHANGED_EVENT, onChanged);
+    return () => {
+      window.removeEventListener("storage", onStorage);
+      window.removeEventListener(FAVORITES_CHANGED_EVENT, onChanged);
+    };
   }, [refresh]);
 
   const add = useCallback(
-    (item: Omit<FavoriteItem, "id" | "createdAt">) => {
-      const entry = addFavorite(item);
+    (
+      item: Omit<FavoriteItem, "id" | "createdAt">,
+      options?: FavoritesChangeDetail
+    ) => {
+      const entry = addFavorite(item, options);
       refresh();
       return entry;
     },

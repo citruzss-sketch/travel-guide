@@ -46,28 +46,29 @@ export default async function HomePage({
   return (
     <div>
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 -z-10 overflow-hidden">
           <Image
             src="https://images.unsplash.com/photo-1528127269322-539801943592?w=1920&q=80"
             alt=""
             fill
             priority
-            className="object-cover opacity-30 dark:opacity-20"
+            className="scale-[1.03] object-cover opacity-30 dark:opacity-20"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/90 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/90 to-transparent" />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background via-background/90 to-transparent" />
         </div>
 
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-          <h1 className="max-w-3xl font-display text-4xl font-black leading-[1.1] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-            {t(messages, "home.heroTitle")}
+          <h1 className="max-w-3xl font-display text-4xl font-black leading-[1.1] tracking-tight sm:text-6xl lg:text-7xl">
+            <span className="text-gradient">{t(messages, "home.heroTitle")}</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted sm:text-xl">
             {t(messages, "home.heroSubtitle")}
           </p>
           <Link
             href={`/${locale}/${countries[0]?.slug ?? "vietnam"}`}
-            className="mt-10 inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3.5 text-sm font-bold text-white transition-opacity hover:opacity-90"
+            className="mt-10 inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-accent/25 transition-all hover:scale-[1.02] hover:shadow-xl hover:shadow-accent/30"
           >
             {t(messages, "home.exploreCountries")}
             <ArrowRight className="h-4 w-4" />
@@ -84,20 +85,22 @@ export default async function HomePage({
             <Link
               key={country.slug}
               href={`/${locale}/${country.slug}`}
-              className="group overflow-hidden rounded-2xl border border-border bg-surface transition-all hover:border-accent/40 hover:shadow-lg"
+              className="group card-shine overflow-hidden rounded-2xl border border-border/80 bg-surface shadow-sm transition-all hover:-translate-y-1 hover:border-accent/40 hover:shadow-lg hover:shadow-accent/10"
             >
-              <div className="relative h-48">
+              <div className="card-media relative h-48">
                 <Image
                   src={country.heroImage}
                   alt={country.name[locale]}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="block object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, 50vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
-                <span className="absolute bottom-4 left-4 text-3xl">{country.flag}</span>
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-surface via-surface/25 to-transparent" />
+                <span className="absolute bottom-4 left-4 z-10 text-3xl drop-shadow-md">
+                  {country.flag}
+                </span>
               </div>
-              <div className="p-5">
+              <div className="relative z-10 -mt-px bg-surface p-5">
                 <h3 className="font-display text-xl font-black">
                   {country.name[locale]}
                 </h3>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Compass, Heart } from "lucide-react";
 import { useLocale, useT } from "@/components/providers/LocaleProvider";
@@ -9,12 +9,26 @@ import { LocaleToggle } from "@/components/ui/LocaleToggle";
 import { SearchBar } from "@/components/ui/SearchBar";
 import { FavoritesDrawer } from "@/components/favorites/FavoritesDrawer";
 import { useFavorites } from "@/hooks/useFavorites";
+import {
+  FAVORITES_CHANGED_EVENT,
+  type FavoritesChangeDetail,
+} from "@/lib/favorites";
 
 export function Header() {
   const { locale } = useLocale();
   const t = useT();
   const { count } = useFavorites();
   const [favoritesOpen, setFavoritesOpen] = useState(false);
+
+  useEffect(() => {
+    const onFavoritesChanged = (e: Event) => {
+      const detail = (e as CustomEvent<FavoritesChangeDetail>).detail;
+      if (detail?.openDrawer) setFavoritesOpen(true);
+    };
+    window.addEventListener(FAVORITES_CHANGED_EVENT, onFavoritesChanged);
+    return () =>
+      window.removeEventListener(FAVORITES_CHANGED_EVENT, onFavoritesChanged);
+  }, []);
 
   return (
     <>

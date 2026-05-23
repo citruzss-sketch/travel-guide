@@ -1,6 +1,23 @@
 import fs from "fs";
 import path from "path";
-import type { CityContent, CountryMeta } from "@/types/content";
+import type { CityContent, CountryMeta, Locale } from "@/types/content";
+import { CITY_SECTION_KEYS } from "@/lib/city-sections";
+import {
+  type AIMode,
+  type PlaceContext,
+  type TravelProfile,
+  buildPlaceContextBlock,
+  getModeInstructions,
+  getProfileInstructions,
+} from "@/lib/ai-modes";
+import {
+  googleMapsLinkLabel,
+  googleMapsUrlForKnownPlace,
+  googleMapsUrlForPlace,
+  KNOWN_PLACES,
+  resolveKnownPlace,
+  type KnownPlace,
+} from "@/lib/maps-links";
 
 export { CITY_SECTION_KEYS, type CitySectionKey } from "@/lib/city-sections";
 
@@ -108,29 +125,133 @@ export function searchDestinations(query: string): SearchResult[] {
   return results;
 }
 
-export function buildCitySystemPrompt(city: CityContent, locale: string): string {
-  return `You are a knowledgeable travel assistant for ${city.name.en} (${city.name.ru}), Vietnam.
-You help travelers with practical, accurate, up-to-date advice about this specific city.
+export function buildPlacesDirectory(city: CityContent): string {
+  const byId = new Map<string, KnownPlace>();
 
-KNOWLEDGE BASE:
+  for (const place of KNOWN_PLACES[city.slug] ?? []) {
+    byId.set(place.id, place);
+  }
+
+  for (const marker of city.mapMarkers ?? []) {
+    byId.set(marker.id, {
+      id: marker.id,
+      names: [marker.title.en, marker.title.ru],
+      lat: marker.lat,
+      lng: marker.lng,
+      address: marker.description?.en,
+    });
+  }
+
+  return [...byId.values()]
+    .map((place) => {
+      const url = googleMapsUrlForKnownPlace(place);
+      const names = place.names.join(" / ");
+      const addr = place.address ? ` — ${place.address}` : "";
+      return `- ${names}${addr}\n  Direct Maps: ${url}`;
+    })
+    .join("\n");
+}
+
+export function serializeCityKnowledge(city: CityContent, locale: string): string {
+  const loc = (locale === "en" ? "en" : "ru") as Locale;
+  const cityName = city.name[loc];
+  const mapsLabel = googleMapsLinkLabel(locale);
+
+  return CITY_SECTION_KEYS.map((key) => {
+    const section = city[key];
+    if (!section?.items?.length) return "";
+
+    const items = section.items
+      .map((item) => {
+        const known =
+          resolveKnownPlace(item.title.en, city.slug) ??
+          resolveKnownPlace(item.title[loc], city.slug);
+        const mapsUrl = known
+          ? googleMapsUrlForKnownPlace(known)
+          : googleMapsUrlForPlace(item, cityName, loc);
+        const lines = [`- **${item.title[loc]}**: ${item.description[loc]}`];
+        if (item.price?.[loc]) lines.push(`  Price: ${item.price[loc]}`);
+        if (item.address?.[loc]) lines.push(`  Address: ${item.address[loc]}`);
+        if (item.tips?.[loc]?.length) {
+          lines.push(`  Tips: ${item.tips[loc].join(" | ")}`);
+        }
+        if (known) {
+          lines.push(`  Maps: [${mapsLabel}](${mapsUrl})`);
+        }
+        return lines.join("\n");
+      })
+      .join("\n");
+
+    return `### ${section.title[loc]}\n${items}`;
+  })
+    .filter(Boolean)
+    .join("\n\n");
+}
+
+export function buildCitySystemPrompt(
+  city: CityContent,
+  locale: string,
+  options?: {
+    mode?: AIMode;
+    profile?: TravelProfile;
+    placeContext?: PlaceContext;
+  }
+): string {
+  const lang = locale === "ru" ? "Russian" : "English";
+  const cityGuide = serializeCityKnowledge(city, locale);
+  const placesDirectory = buildPlacesDirectory(city);
+  const mapsLabel = googleMapsLinkLabel(locale);
+  const examplePlace = KNOWN_PLACES[city.slug]?.find((p) => p.mapsUrl);
+  const mapsExample = examplePlace?.mapsUrl ?? "";
+
+  const mode = options?.mode ?? "guide";
+  const profile = options?.profile ?? "any";
+  const modeBlock = getModeInstructions(mode);
+  const profileBlock = getProfileInstructions(profile);
+  const placeBlock = options?.placeContext
+    ? buildPlaceContextBlock(options.placeContext)
+    : "";
+
+  const extraBlocks = [modeBlock, profileBlock, placeBlock].filter(Boolean).join("\n\n");
+
+  return `You are the in-app travel expert for ${city.name.en} (${city.name.ru}) on the "Online Travel Guide" platform.
+You sound like a local who lives there and has helped hundreds of friends arrive — specific, warm, zero fluff.
+
+${extraBlocks ? `## ACTIVE SESSION\n${extraBlocks}\n` : ""}
+## CORE RULES (never break these)
+1. ALWAYS answer with concrete recommendations: real place names, neighborhoods, price ranges (VND/USD), and why each option fits.
+2. Include **micro-details** tourists learn on the ground: deposit (passport copy vs cash), Grab ballpark prices, what to check before renting, best time of day, small scams, useful Vietnamese words («Thuê xe điện», «Xăng»).
+3. **Transport in Vietnam:** distinguish **electric bikes (xe điện, ~80–130k VND/day, usually NO license)** vs **petrol scooters 110–125cc (150–220k/day, legally IDP category A; many shops rent on passport — mention both honestly)**. If user has no license, recommend e-bike first; mention Grab as safe fallback.
+4. Google Maps links — see MAPS POLICY below. Do NOT spam a link after every line.
+5. NEVER refuse with phrases like "I don't have specific recommendations" or "search on Google yourself".
+6. Prefer facts from GUIDE CONTENT and QUICK FACTS below; extend with real Vietnam knowledge when needed — stay specific, not generic.
+7. When you do link a place, copy exact "Direct Maps" URLs from PLACES DIRECTORY — do not invent URLs.
+8. Answer in ${lang} unless the user writes in another language.
+9. Keep responses under 400 words unless the user asks for a detailed plan${mode === "plan" ? " or itinerary" : ""}.
+10. Warn about scams when relevant, but never as a substitute for answering the question.
+
+## MAPS POLICY (important — read carefully)
+- Add a Maps link ONLY when recommending a **specific physical place** the user may go to (restaurant, beach, sight, hotel area).
+- **Do NOT** add Maps links for: general tips, scams, phrases, weather, visa, SIM setup, money advice, comparisons, or abstract neighborhoods.
+- **Maximum:** 1 link per recommended venue; in long lists link only the top 2–3 picks, not every item.
+- **Safety / phrases mode:** no Maps links at all unless user explicitly asks "where on map".
+- Format: [${mapsLabel}](DIRECT_URL) — place once after the address or at the end of that venue's paragraph.
+- NEVER use /maps/search/ or /place//@lat,lng (broken URLs).
+${mapsExample ? `- Example: [${mapsLabel}](${mapsExample})` : ""}
+
+## PLACES DIRECTORY (verified Maps URLs — use when linking a place)
+${placesDirectory}
+
+## QUICK FACTS
 ${city.aiKnowledgeBase}
 
-GUIDELINES:
-- Answer in ${locale === "ru" ? "Russian" : "English"} unless the user writes in another language
-- Be concise, practical, and friendly — like a local friend
-- Focus on ${city.name.en}: restaurants, transport, beaches, safety, prices, hidden gems
-- Give specific names, prices in VND, and neighborhoods when relevant
-- Warn about common scams when appropriate
-- If asked about other cities, briefly mention but redirect focus to ${city.name.en}
-- Never invent specific business hours or prices you're unsure about — say "check locally"
-- Keep responses under 300 words unless the user asks for a detailed plan
+## GUIDE CONTENT
+${cityGuide}
 
-FORMATTING (Markdown):
+## FORMATTING (Markdown)
 - Use **bold** for place names, prices, and key terms
-- Use numbered lists (1. 2. 3.) for step-by-step recommendations — put each item on its own line with a blank line between items
-- Use bullet lists (- item) for short tips (3+ items)
-- Keep a short intro paragraph, then structured list — never one long wall of text
-- Separate sections with a blank line
-- Do not use # headers unless the answer is very long`;
+- Use numbered lists for ranked recommendations — blank line between items
+- Short intro (1–2 sentences), then structured recommendations
+- End with a practical tip (best time, what to order, Grab ~price)`;
 }
 

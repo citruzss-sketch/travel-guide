@@ -17,9 +17,16 @@ import { useT } from "@/components/providers/LocaleProvider";
 import { OverviewPanel } from "./OverviewPanel";
 import { LifehacksPanel } from "./LifehacksPanel";
 import { SectionCard } from "./SectionCard";
-import { AIChat } from "@/components/chat/AIChat";
+import { AIChat, type ChatLaunchConfig } from "@/components/chat/AIChat";
+import { inferModeFromSection } from "@/lib/ai-modes";
+import { buildTripDayPrompt } from "@/lib/build-day-prompt";
+import { getSOSPrompt } from "@/lib/sos-scenarios";
+import type { TripPlanItem } from "@/lib/trip-plan";
+import { useTravelProfile } from "@/hooks/useTravelProfile";
+import type { AskAIPayload } from "./SectionCard";
 import { DownloadGuide } from "./DownloadGuide";
 import { CityMapDynamic } from "./CityMapDynamic";
+import { MobileCityNav } from "./MobileCityNav";
 import { BackToTop } from "@/components/ui/BackToTop";
 
 const TABS: { id: CityTab; icon: typeof LayoutGrid }[] = [
@@ -41,9 +48,56 @@ interface CityTabsProps {
 
 export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
   const t = useT();
+  const { profile } = useTravelProfile();
   const [activeTab, setActiveTab] = useState<CityTab>("overview");
+  const [chatLaunch, setChatLaunch] = useState<ChatLaunchConfig | undefined>();
+  const [chatLaunchKey, setChatLaunchKey] = useState(0);
 
   const tabLabel = (id: CityTab) => t(`city.${id}`);
+
+  const openChat = useCallback((config: ChatLaunchConfig) => {
+    setChatLaunch(config);
+    setChatLaunchKey((k) => k + 1);
+    setActiveTab("chat");
+  }, []);
+
+  const handleAskAI = useCallback(
+    (payload: AskAIPayload) => {
+      openChat({
+        mode: inferModeFromSection(payload.sectionId),
+        placeContext: {
+          title: payload.title,
+          section: payload.sectionTitle ?? payload.sectionId,
+          description: payload.description,
+        },
+        initialInput:
+          payload.initialInput ?? t("chat.askPrompt", { place: payload.title }),
+      });
+    },
+    [t, openChat]
+  );
+
+  const handleBuildDay = useCallback(
+    (day: number, items: TripPlanItem[]) => {
+      openChat({
+        mode: "plan",
+        initialInput: buildTripDayPrompt(locale, city.name[locale], day, items, profile),
+        autoSend: true,
+      });
+    },
+    [locale, city.name, profile, openChat]
+  );
+
+  const handleSOS = useCallback(
+    (scenarioId: string) => {
+      openChat({
+        mode: "sos",
+        initialInput: getSOSPrompt(scenarioId, locale, city.name[locale]),
+        autoSend: true,
+      });
+    },
+    [locale, city.name, openChat]
+  );
 
   const handleNavigate = useCallback((tab: CityTab, sectionId?: string) => {
     setActiveTab(tab);
@@ -58,8 +112,8 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
   const cityName = city.name[locale];
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
-      <nav className="tab-scroll sticky top-[72px] z-40 -mx-4 overflow-x-auto border-b border-border bg-background/90 px-4 backdrop-blur-xl sm:top-[65px]">
+    <div className="mx-auto max-w-6xl px-4 pb-24 sm:px-6 md:pb-16">
+      <nav className="tab-scroll sticky top-[72px] z-40 -mx-4 hidden overflow-x-auto border-b border-border/60 bg-background/75 px-4 backdrop-blur-xl sm:top-[65px] md:block">
         <div className="flex min-w-max gap-1 py-3">
           {TABS.map(({ id, icon: Icon }) => {
             const isActive = activeTab === id;
@@ -77,7 +131,7 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
                 {isActive && (
                   <motion.span
                     layoutId="city-tab-pill"
-                    className="absolute inset-0 rounded-full bg-accent"
+                    className="absolute inset-0 rounded-full bg-accent shadow-md shadow-accent/30"
                     transition={{ type: "spring", stiffness: 400, damping: 30 }}
                   />
                 )}
@@ -96,7 +150,10 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
               key="overview"
               city={city}
               locale={locale}
+              countrySlug={countrySlug}
               onNavigate={handleNavigate}
+              onAskAI={handleAskAI}
+              onBuildDay={handleBuildDay}
             />
           )}
           {activeTab === "sights" && (
@@ -110,22 +167,31 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
               <SectionCard
                 section={city.sights}
                 locale={locale}
+                countrySlug={countrySlug}
+                citySlug={city.slug}
                 cityName={cityName}
                 sectionId="sights"
+                onAskAI={handleAskAI}
               />
               <SectionCard
                 section={city.beaches}
                 locale={locale}
+                countrySlug={countrySlug}
+                citySlug={city.slug}
                 cityName={cityName}
                 sectionId="beaches"
                 index={1}
+                onAskAI={handleAskAI}
               />
               <SectionCard
                 section={city.tours}
                 locale={locale}
+                countrySlug={countrySlug}
+                citySlug={city.slug}
                 cityName={cityName}
                 sectionId="tours"
                 index={2}
+                onAskAI={handleAskAI}
               />
             </motion.div>
           )}
@@ -140,15 +206,21 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
               <SectionCard
                 section={city.food}
                 locale={locale}
+                countrySlug={countrySlug}
+                citySlug={city.slug}
                 cityName={cityName}
                 sectionId="food"
+                onAskAI={handleAskAI}
               />
               <SectionCard
                 section={city.markets}
                 locale={locale}
+                countrySlug={countrySlug}
+                citySlug={city.slug}
                 cityName={cityName}
                 sectionId="markets"
                 index={1}
+                onAskAI={handleAskAI}
               />
             </motion.div>
           )}
@@ -163,20 +235,33 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
               <SectionCard
                 section={city.airport}
                 locale={locale}
+                countrySlug={countrySlug}
+                citySlug={city.slug}
                 cityName={cityName}
                 sectionId="airport"
+                onAskAI={handleAskAI}
               />
               <SectionCard
                 section={city.transport}
                 locale={locale}
+                countrySlug={countrySlug}
+                citySlug={city.slug}
                 cityName={cityName}
                 sectionId="transport"
                 index={1}
+                onAskAI={handleAskAI}
               />
             </motion.div>
           )}
           {activeTab === "lifehacks" && (
-            <LifehacksPanel city={city} locale={locale} cityName={cityName} />
+            <LifehacksPanel
+              city={city}
+              locale={locale}
+              countrySlug={countrySlug}
+              cityName={cityName}
+              onAskAI={handleAskAI}
+              onSOS={handleSOS}
+            />
           )}
           {activeTab === "map" && (
             <motion.div
@@ -202,6 +287,8 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
                 countrySlug={countrySlug}
                 citySlug={city.slug}
                 locale={locale}
+                launchConfig={chatLaunch}
+                launchKey={chatLaunchKey}
               />
             </motion.div>
           )}
@@ -223,6 +310,7 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
       </div>
 
       <BackToTop />
+      <MobileCityNav activeTab={activeTab} onChange={setActiveTab} />
     </div>
   );
 }

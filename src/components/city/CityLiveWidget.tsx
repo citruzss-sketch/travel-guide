@@ -5,6 +5,8 @@ import { CloudSun, Clock, DollarSign, Sparkles } from "lucide-react";
 import type { CityContent, Locale } from "@/types/content";
 import { useLiveData } from "@/hooks/useLiveData";
 import { useT } from "@/components/providers/LocaleProvider";
+import { formatNumber } from "@/lib/format-number";
+import { CurrencyConverter } from "./CurrencyConverter";
 
 interface CityLiveWidgetProps {
   city: CityContent;
@@ -32,7 +34,7 @@ export function CityLiveWidget({ city, locale }: CityLiveWidgetProps) {
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.15 }}
-      className="mt-6 rounded-2xl border border-border bg-surface/90 p-4 backdrop-blur sm:p-5"
+      className="mt-6 rounded-2xl border border-accent/20 bg-surface/80 p-4 shadow-sm shadow-accent/5 backdrop-blur-md sm:p-5"
     >
       <p className="mb-3 text-xs font-bold uppercase tracking-wider text-accent">
         {t("live.title")}
@@ -57,7 +59,7 @@ export function CityLiveWidget({ city, locale }: CityLiveWidgetProps) {
             <p className="text-xs font-semibold text-muted">{t("live.exchange")}</p>
             <p className="mt-0.5 text-sm font-bold text-foreground">
               {usdToVnd
-                ? `1 USD = ${usdToVnd.toLocaleString()} VND`
+                ? `1 USD = ${formatNumber(usdToVnd, locale)} VND`
                 : loading
                   ? "…"
                   : t("live.unavailable")}
@@ -81,6 +83,7 @@ export function CityLiveWidget({ city, locale }: CityLiveWidgetProps) {
           </div>
         </div>
       </div>
+      <CurrencyConverter usdToVnd={usdToVnd} />
     </motion.div>
   );
 }

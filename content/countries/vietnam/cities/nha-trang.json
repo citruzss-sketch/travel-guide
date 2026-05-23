@@ -10,7 +10,7 @@
     "ru": "Курортный город с лучшими пляжами центрального Вьетнама",
     "en": "Resort city with the best beaches in central Vietnam"
   },
-  "heroImage": "https://images.unsplash.com/photo-1559592413-7cedfb0d8bfa?w=1920&q=80",
+  "heroImage": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&q=80&auto=format&fit=crop",
   "overview": {
     "ru": "Нячанг — главный пляжный курорт Вьетнама на побережье Южно-Китайского моря. Город сочетает длинную набережную, острова для снорклинга, термальные источники и оживлённую ночную жизнь. Идеален для первого знакомства с Вьетнамом: инфраструктура развита, много русскоязычных сервисов, но сохраняется аутентичная атмосфера.",
     "en": "Nha Trang is Vietnam's premier beach resort on the South China Sea coast. The city combines a long promenade, snorkeling islands, hot springs, and vibrant nightlife. Perfect for first-time visitors to Vietnam: well-developed infrastructure, many Russian-speaking services, yet an authentic atmosphere remains."
@@ -60,7 +60,7 @@
             "Pre-book hotel transfer: from $12"
           ]
         },
-        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -75,7 +75,7 @@
           "ru": "Soft seat: от 400,000 VND",
           "en": "Soft seat: from 400,000 VND"
         },
-        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80"
+        "image": "https://images.pexels.com/photos/2098427/pexels-photo-2098427.jpeg?auto=compress&cs=tinysrgb&w=800"
       }
     ]
   },
@@ -98,7 +98,7 @@
           "ru": "Отель 3*: $25–45/ночь",
           "en": "3* hotel: $25–45/night"
         },
-        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -113,7 +113,7 @@
           "ru": "5* курорт: $150–400/ночь",
           "en": "5* resort: $150–400/night"
         },
-        "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80"
+        "image": "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "title": {
@@ -128,7 +128,7 @@
           "ru": "Апартаменты: $15–30/ночь",
           "en": "Apartments: $15–30/night"
         },
-        "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80&auto=format&fit=crop"
       }
     ]
   },
@@ -151,7 +151,7 @@
           "ru": "30,000 VND (~$1.2)",
           "en": "30,000 VND (~$1.2)"
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/04052023_Ponagar_Hindu_temples_complex%2C_Nha_Trang_Vietnam_-_274.jpg?width=800"
       },
       {
         "title": {
@@ -166,7 +166,7 @@
           "ru": "Бесплатно",
           "en": "Free"
         },
-        "image": "https://images.unsplash.com/photo-1528183429752-a97d0bf99f05?w=800&q=80"
+        "image": "https://images.pexels.com/photos/2671074/pexels-photo-2671074.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "title": {
@@ -181,7 +181,7 @@
           "ru": "800,000–950,000 VND",
           "en": "800,000–950,000 VND"
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nha_Trang_from_Vinpearl_cable_car.JPG?width=800"
       },
       {
         "title": {
@@ -195,7 +195,8 @@
         "price": {
           "ru": "40,000 VND",
           "en": "40,000 VND"
-        }
+        },
+        "image": "https://images.pexels.com/photos/1287561/pexels-photo-1287561.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "title": {
@@ -209,7 +210,8 @@
         "price": {
           "ru": "20,000 VND + трансфер",
           "en": "20,000 VND + transfer"
-        }
+        },
+        "image": "https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=800"
       }
     ]
   },
@@ -228,7 +230,7 @@
           "ru": "Главный городской пляж — 6 км белого песка. Живой, с лежаками, водными видами спорта. Лучше утром до 10:00.",
           "en": "Main city beach — 6 km of white sand. Lively, with sunbeds and water sports. Best before 10 AM."
         },
-        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -239,7 +241,7 @@
           "ru": "50 км севернее — один из самых красивых пляжей Вьетнама. Мелководье, чистая вода, мало туристов.",
           "en": "50 km north — one of Vietnam's most beautiful beaches. Shallow water, clean, few tourists."
         },
-        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -254,7 +256,7 @@
           "ru": "Тур: от 450,000 VND",
           "en": "Tour: from 450,000 VND"
         },
-        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
+        "image": "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=800"
       }
     ]
   },
@@ -277,7 +279,7 @@
           "ru": "$5–10 на человека",
           "en": "$5–10 per person"
         },
-        "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -292,7 +294,7 @@
           "ru": "$15–25 на человека",
           "en": "$15–25 per person"
         },
-        "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -307,7 +309,7 @@
           "ru": "$8–15 на человека",
           "en": "$8–15 per person"
         },
-        "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -321,7 +323,8 @@
         "price": {
           "ru": "30,000–50,000 VND",
           "en": "30,000–50,000 VND"
-        }
+        },
+        "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80&auto=format&fit=crop"
       }
     ]
   },
@@ -340,7 +343,7 @@
           "ru": "Главный крытый рынок города. Одежда, сувениры, специи, фрукты. Торгуйтесь — начальная цена завышена в 2–3 раза.",
           "en": "Main covered market. Clothes, souvenirs, spices, fruits. Bargain — initial prices are 2–3x inflated."
         },
-        "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -351,7 +354,7 @@
           "ru": "Ночной рынок с уличной едой. Открыт с 17:00. Лучшее место для аутентичных вьетнамских блюд.",
           "en": "Night market with street food. Open from 5 PM. Best place for authentic Vietnamese dishes."
         },
-        "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&q=80&auto=format&fit=crop"
       }
     ]
   },
@@ -374,7 +377,7 @@
           "ru": "350,000–500,000 VND",
           "en": "350,000–500,000 VND"
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "title": {
@@ -389,7 +392,7 @@
           "ru": "250,000–400,000 VND",
           "en": "250,000–400,000 VND"
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -404,7 +407,7 @@
           "ru": "800,000–1,200,000 VND",
           "en": "800,000–1,200,000 VND"
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1583847261026-407d42d67c84?w=800&q=80&auto=format&fit=crop"
       }
     ]
   },
@@ -427,18 +430,65 @@
           "ru": "GrabBike: 15,000–30,000 VND",
           "en": "GrabBike: 15,000–30,000 VND"
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.pexels.com/photos/4480501/pexels-photo-4480501.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "title": {
-          "ru": "Аренда мото/скутера",
-          "en": "Scooter rental"
+          "ru": "Электробайк (xe điện) — без прав",
+          "en": "Electric bike (xe điện) — no license"
         },
         "description": {
-          "ru": "150,000–200,000 VND/день. Нужны права категории A (международные). Шлем обязателен. Будьте осторожны — хаотичный трафик.",
-          "en": "150,000–200,000 VND/day. Category A license required (international). Helmet mandatory. Careful — chaotic traffic."
+          "ru": "Самый простой вариант для туриста: электроскутер до ~50 км/ч, права не нужны. Удобен по центру и набережной Tran Phu, на острова не поедешь. Заряд обычно на 40–70 км — уточняйте у проката.",
+          "en": "Easiest option for tourists: electric scooter up to ~50 km/h, no license needed. Fine for downtown and Tran Phu promenade; not for long island trips. Typical range 40–70 km — confirm with the shop."
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "price": {
+          "ru": "80,000–130,000 VND/день",
+          "en": "80,000–130,000 VND/day"
+        },
+        "tips": {
+          "ru": [
+            "Прокаты на Tran Phu и в Loc Tho — вывески «Thuê xe điện» / «Electric bike»",
+            "Залог: паспорт (лучше копия + депозит 500k–2M VND) или только депозит",
+            "Перед выездом: фото царапин, проверьте тормоза и заряд (3–4 деления)",
+            "Шлем обязателен — часто выдают старый, можно купить новый за 100–150k",
+            "Ночью включайте фары; полиция редко останавливает туристов на e-bike, но штраф возможен без шлема"
+          ],
+          "en": [
+            "Rentals on Tran Phu and in Loc Tho — signs «Thuê xe điện» / «Electric bike»",
+            "Deposit: passport (copy + 500k–2M VND deposit is safer) or cash deposit only",
+            "Before leaving: photo scratches, test brakes and battery (3–4 bars)",
+            "Helmet required — often old; new one costs 100–150k VND",
+            "Use headlights at night; police rarely stop tourists on e-bikes, but no helmet can mean a fine"
+          ]
+        },
+        "image": "https://images.pexels.com/photos/1632109/pexels-photo-1632109.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": {
+          "ru": "Бензиновый скутер 110–125cc",
+          "en": "Petrol scooter 110–125cc"
+        },
+        "description": {
+          "ru": "Honda Lead / Airblade и аналоги. По закону нужны международные права категории A; многие прокаты всё равно сдают по паспорту — риск штрафа при проверке. Быстрее и дальше, чем электробайк.",
+          "en": "Honda Lead / Airblade class. By law you need IDP category A; many shops still rent on passport only — fine risk if stopped. Faster and longer range than e-bikes."
+        },
+        "price": {
+          "ru": "150,000–220,000 VND/день",
+          "en": "150,000–220,000 VND/day"
+        },
+        "tips": {
+          "ru": [
+            "Топливо: 30–50k на день по городу; заправки Petrolimex, Shell — «Xăng»",
+            "Парковка у пляжа и рынков часто платная 5–10k или «страж» 10–20k",
+            "Не оставляйте паспорт в залоге без крайней нужды — берите копию + деньги"
+          ],
+          "en": [
+            "Fuel: 30–50k VND/day around town; Petrolimex, Shell — ask for «Xăng»",
+            "Beach/market parking often 5–10k or informal attendant 10–20k",
+            "Avoid leaving passport as deposit if possible — copy + cash is safer"
+          ]
+        },
+        "image": "https://images.pexels.com/photos/1632109/pexels-photo-1632109.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "title": {
@@ -449,7 +499,7 @@
           "ru": "От 700,000 VND/день с водителем. Самостоятельная аренда возможна, но не рекомендуется новичкам.",
           "en": "From 700,000 VND/day with driver. Self-drive possible but not recommended for beginners."
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "title": {
@@ -463,7 +513,8 @@
         "price": {
           "ru": "100,000–150,000 VND за поездку",
           "en": "100,000–150,000 VND per ride"
-        }
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Xich_lo_in_Vietnam.jpg?width=800"
       }
     ]
   },
@@ -486,7 +537,7 @@
           "ru": "30 GB / 30 дней: ~150,000 VND",
           "en": "30 GB / 30 days: ~150,000 VND"
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "title": {
@@ -497,7 +548,7 @@
           "ru": "Airalo, Holafly — удобно, если телефон поддерживает eSIM. Дороже локальных, но без визита в салон.",
           "en": "Airalo, Holafly — convenient if phone supports eSIM. More expensive than local, but no store visit."
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "title": {
@@ -508,7 +559,7 @@
           "ru": "Бесплатный Wi-Fi почти во всех кафе, отелях и ресторанах. Скорость обычно 20–50 Mbps.",
           "en": "Free Wi-Fi in most cafes, hotels, and restaurants. Speed usually 20–50 Mbps."
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800"
       }
     ]
   },
@@ -527,7 +578,7 @@
           "ru": "Лучший курс — в ювелирных лавках на Nguyen Hue или Tran Phu (не в отелях). USD и EUR принимают.",
           "en": "Best rates at jewelry shops on Nguyen Hue or Tran Phu (not hotels). USD and EUR accepted."
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "title": {
@@ -538,7 +589,7 @@
           "ru": "Vietcombank, Techcombank — комиссия 20,000–55,000 VND. Снимайте крупными суммами.",
           "en": "Vietcombank, Techcombank — fee 20,000–55,000 VND. Withdraw larger amounts."
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "title": {
@@ -549,7 +600,7 @@
           "ru": "Уличная еда: 30,000–50,000 VND | Кофе: 25,000–40,000 VND | Обед в ресторане: 80,000–150,000 VND | Массаж 1ч: 150,000–250,000 VND",
           "en": "Street food: 30,000–50,000 VND | Coffee: 25,000–40,000 VND | Restaurant lunch: 80,000–150,000 VND | 1h massage: 150,000–250,000 VND"
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=800"
       }
     ]
   },
@@ -568,7 +619,7 @@
           "ru": "Нячанг — безопасный город. Основные риски: карманники на рынках, мOTO-угоны (не оставляйте документы в байке), обман таксистов.",
           "en": "Nha Trang is a safe city. Main risks: pickpockets at markets, scooter theft (don't leave documents in bike), taxi scams."
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -579,7 +630,7 @@
           "ru": "Не плавайте далеко от берега — сильные течения. В сезон дождей (окт–дек) возможны медузы.",
           "en": "Don't swim far from shore — strong currents. During rainy season (Oct–Dec) jellyfish possible."
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -590,7 +641,7 @@
           "ru": "Полиция: 113 | Скорая: 115 | Пожарная: 114 | Туристическая полиция: +84 258 3812 345",
           "en": "Police: 113 | Ambulance: 115 | Fire: 114 | Tourist police: +84 258 3812 345"
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80&auto=format&fit=crop"
       }
     ]
   },
@@ -609,7 +660,7 @@
           "ru": "Сin chào (sin chao)",
           "en": "Sin chao"
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -620,7 +671,7 @@
           "ru": "Gam un (kam un)",
           "en": "Gam un (kam un)"
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -631,7 +682,7 @@
           "ru": "Baow nyew",
           "en": "Baow nyew"
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -641,7 +692,8 @@
         "description": {
           "ru": "Dat kwa",
           "en": "Dat kwa"
-        }
+        },
+        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -651,7 +703,8 @@
         "description": {
           "ru": "Ng-on",
           "en": "Ng-on"
-        }
+        },
+        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -661,7 +714,8 @@
         "description": {
           "ru": "Toy muon di...",
           "en": "Toy muon di..."
-        }
+        },
+        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80&auto=format&fit=crop"
       }
     ]
   },
@@ -680,7 +734,7 @@
           "ru": "Приходите на пляж до 9:00 — меньше людей, мягкий свет, не так жарко.",
           "en": "Come to the beach before 9 AM — fewer people, soft light, not as hot."
         },
-        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -691,7 +745,7 @@
           "ru": "Туры на острова дешевле при покупке на набережной, чем онлайн.",
           "en": "Island tours are cheaper when bought on the promenade than online."
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "title": {
@@ -702,7 +756,7 @@
           "ru": "Бары на Tran Phu предлагают 2-forEach-1 коктейли с 17:00 до 19:00.",
           "en": "Bars on Tran Phu offer 2-for-1 cocktails from 5–7 PM."
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -712,7 +766,8 @@
         "description": {
           "ru": "Не пейте из-под крана. Бутилированная вода стоит 10,000 VND — покупайте в магазинах, не у пляжа.",
           "en": "Don't drink tap water. Bottled water costs 10,000 VND — buy at stores, not at the beach."
-        }
+        },
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80&auto=format&fit=crop"
       }
     ]
   },
@@ -731,7 +786,7 @@
           "ru": "Таксисты без счётчика на вокзале и в аэропорту завышают в 2–3 раза. Используйте Grab.",
           "en": "Unmetered taxis at station and airport charge 2–3x. Use Grab."
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -742,7 +797,7 @@
           "ru": "Бесплатные туры = обязательные покупки в магазинах жемчуга и шёлка. Настоящая цена заложена в комиссию.",
           "en": "'Free' tours = mandatory shopping at pearl and silk shops. Real cost hidden in commissions."
         },
-        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+        "image": "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "title": {
@@ -753,7 +808,7 @@
           "ru": "Всегда проверяйте счёт — иногда добавляют блюда, которых не заказывали.",
           "en": "Always check the bill — sometimes dishes you didn't order are added."
         },
-        "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80&auto=format&fit=crop"
       },
       {
         "title": {
@@ -763,9 +818,10 @@
         "description": {
           "ru": "Курс в отелях на 5–10% хуже, чем в ювелирных лавках.",
           "en": "Hotel exchange rates are 5–10% worse than jewelry shops."
-        }
+        },
+        "image": "https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=800"
       }
     ]
   },
-  "aiKnowledgeBase": "Nha Trang is a coastal city in Khanh Hoa province, Vietnam. Airport: Cam Ranh International (CXR), 35km south. Main beach: Tran Phu (7km). Key sights: Po Nagar Cham Towers, Long Son Pagoda, VinWonders, Ba Ho Waterfalls. Best beaches: Tran Phu, Doc Let (50km north), Hon Mun Island (snorkeling). Food: Lanterns Restaurant, Sailing Club, seafood on Nguyen Thi Minh Khai street, banh can street food. Transport: Grab (main), scooter rental 150-200k VND/day. SIM: Viettel best coverage, ~150k for 30GB/30 days. Currency: VND, 1 USD ≈ 25,000 VND. Best time: Feb-May dry season. Scams: unmetered taxis, free tours with shopping stops, inflated restaurant bills. Emergency: Police 113, Ambulance 115. Districts: Tran Phu (tourist), Ninh Van Bay (luxury), City Center (budget/long stay)."
+  "aiKnowledgeBase": "Nha Trang — Khanh Hoa, Vietnam. Airport CXR 35km south: Grab 350-450k to center 40-50min, bus Dat Moi 65k slow, pre-book hotel transfer from $12. Train station in center. Transport micro-details: GrabCar/GrabBike main app (cash or card); GrabBike 15-30k short hops. ELECTRIC BIKES (xe điện): 80-130k/day, NO license required, ~25-50 km/h, range ~40-70km — best for tourists on Tran Phu/Loc Tho; rent from shops with «Thuê xe điện» signs; deposit passport copy + 500k-2M VND safer than passport alone; photo bike condition, check brakes/battery; helmet mandatory (~100-150k to buy decent one). PETROL scooters 110-125cc: 150-220k/day, legally need IDP category A but many shops rent on passport only — police checks rare but possible fine; fuel 30-50k/day. Car with driver from 700k/day. Cyclo promenade 100-150k — negotiate first. SIM: Viettel best, airport or official store, passport, ~150k/30GB/30d. Money: jewelry shops on Nguyen Hue/Tran Phu better rate than hotels. Sights/food: Po Nagar, Long Son, VinWonders Hon Tre, Oceanographic Museum, Ba Ho falls; Lanterns, Sailing Club, seafood Nguyen Thi Minh Khai, banh can Yersin/Le Hong Phong; Yen Garden Bistro, Sweet Secret, iVegan Loc Tho. Scams: unmetered taxis, free island tours with pearl/silk shops, bill padding. Emergency 113/115/114. Best Feb-May dry. Districts: Tran Phu tourist strip, Ninh Van luxury boat access, Loc Tho budget/cafes."
 }

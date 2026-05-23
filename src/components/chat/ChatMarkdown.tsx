@@ -2,6 +2,7 @@
 
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { MapPin } from "lucide-react";
 import type { Components } from "react-markdown";
 import { normalizeChatMarkdown } from "@/lib/chat-markdown";
 
@@ -10,17 +11,22 @@ type ChatMarkdownVariant = "assistant" | "user";
 interface ChatMarkdownProps {
   content: string;
   variant?: ChatMarkdownVariant;
+  compact?: boolean;
 }
 
 export function ChatMarkdown({
   content,
   variant = "assistant",
+  compact = false,
 }: ChatMarkdownProps) {
   const isUser = variant === "user";
+  const tight = compact ? "my-1.5 space-y-1" : "my-2.5 space-y-2";
 
   const components: Components = {
     p: ({ children }) => (
-      <p className={`mb-2.5 last:mb-0 leading-relaxed ${isUser ? "text-white" : ""}`}>
+      <p
+        className={`last:mb-0 leading-relaxed ${compact ? "mb-1.5 text-xs" : "mb-2.5"} ${isUser ? "text-white" : ""}`}
+      >
         {children}
       </p>
     ),
@@ -34,7 +40,7 @@ export function ChatMarkdown({
     ),
     ul: ({ children }) => (
       <ul
-        className={`my-2.5 ml-1 space-y-2 pl-4 ${
+        className={`ml-1 pl-4 ${tight} ${
           isUser ? "list-disc marker:text-white/70" : "list-disc marker:text-accent"
         }`}
       >
@@ -43,7 +49,7 @@ export function ChatMarkdown({
     ),
     ol: ({ children }) => (
       <ol
-        className={`my-2.5 ml-1 space-y-3 pl-4 ${
+        className={`ml-1 pl-4 ${compact ? "my-1.5 space-y-1.5" : "my-2.5 space-y-3"} ${
           isUser
             ? "list-decimal marker:text-white/80"
             : "list-decimal marker:font-semibold marker:text-accent"
@@ -53,22 +59,36 @@ export function ChatMarkdown({
       </ol>
     ),
     li: ({ children }) => (
-      <li className={`leading-relaxed ${isUser ? "text-white/95" : "text-foreground/95"}`}>
+      <li
+        className={`leading-relaxed ${compact ? "text-xs" : ""} ${isUser ? "text-white/95" : "text-muted"}`}
+      >
         {children}
       </li>
     ),
-    a: ({ href, children }) => (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`underline underline-offset-2 transition-opacity hover:opacity-80 ${
-          isUser ? "text-white" : "text-accent"
-        }`}
-      >
-        {children}
-      </a>
-    ),
+    a: ({ href, children }) => {
+      const isMaps =
+        href?.includes("google.com/maps/place") ||
+        href?.includes("google.com/maps/@");
+      return (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`inline-flex items-center gap-1 underline underline-offset-2 transition-opacity hover:opacity-80 ${
+            isMaps
+              ? isUser
+                ? "rounded-md bg-white/15 px-2 py-0.5 font-semibold text-white no-underline"
+                : "rounded-md border border-accent/30 bg-accent/10 px-2 py-0.5 font-semibold text-accent no-underline hover:bg-accent/15"
+              : isUser
+                ? "text-white"
+                : "text-accent"
+          }`}
+        >
+          {isMaps && <MapPin className="h-3.5 w-3.5 shrink-0" />}
+          {children}
+        </a>
+      );
+    },
     h3: ({ children }) => (
       <h3
         className={`mb-2 mt-3 font-display text-sm font-bold first:mt-0 ${
@@ -127,7 +147,7 @@ export function ChatMarkdown({
   const normalized = normalizeChatMarkdown(content);
 
   return (
-    <div className="chat-markdown text-sm">
+    <div className={`chat-markdown ${compact ? "text-xs" : "text-sm"}`}>
       <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
         {normalized}
       </ReactMarkdown>

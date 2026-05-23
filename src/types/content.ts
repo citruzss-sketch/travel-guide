@@ -40,6 +40,7 @@ export interface ContentItem {
   coordinates?: Coordinates;
   address?: LocalizedString;
   grabQuery?: string;
+  googlePlaceId?: string;
 }
 
 export interface CitySection {

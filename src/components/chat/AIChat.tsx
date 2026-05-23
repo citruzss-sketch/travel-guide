@@ -1,16 +1,48 @@
 "use client";
 
-import { useState, useRef, useEffect, useMemo } from "react";
-import { Send, Bot, User, Loader2, Copy, Check, Heart } from "lucide-react";
+import { useState, useRef, useEffect, useMemo, useCallback } from "react";
+import {
+  Send,
+  Bot,
+  User,
+  Loader2,
+  Copy,
+  Check,
+  Heart,
+  ListCollapse,
+  Bookmark,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import type { Locale } from "@/types/content";
+import type { AIMode, PlaceContext } from "@/lib/ai-modes";
 import { useT } from "@/components/providers/LocaleProvider";
 import { ChatMarkdown } from "@/components/chat/ChatMarkdown";
+import { AIModeSelector } from "@/components/chat/AIModeSelector";
+import { TravelProfileBar } from "@/components/chat/TravelProfileBar";
+import { ChatSavedPanel } from "@/components/chat/ChatSavedPanel";
+import { SOSChatBar } from "@/components/city/SOSPanel";
+import { useToast } from "@/components/providers/ToastProvider";
 import { useFavorites } from "@/hooks/useFavorites";
+import { useChatHistory } from "@/hooks/useChatHistory";
+import { useTravelProfile } from "@/hooks/useTravelProfile";
+import { enrichMapsLinksInText } from "@/lib/maps-links";
+import {
+  normalizeChatMarkdown,
+  plainTextFromMarkdown,
+} from "@/lib/chat-markdown";
+import { getSOSPrompt } from "@/lib/sos-scenarios";
+import { createSessionId, type ChatHistorySession } from "@/lib/chat-history";
 
 interface Message {
   role: "user" | "assistant";
   content: string;
+}
+
+export interface ChatLaunchConfig {
+  mode?: AIMode;
+  initialInput?: string;
+  placeContext?: PlaceContext;
+  autoSend?: boolean;
 }
 
 interface AIChatProps {
@@ -18,6 +50,16 @@ interface AIChatProps {
   countrySlug: string;
   citySlug: string;
   locale: Locale;
+  launchConfig?: ChatLaunchConfig;
+  launchKey?: number;
+}
+
+function welcomeForMode(
+  t: (key: string, vars?: Record<string, string>) => string,
+  cityName: string,
+  mode: AIMode
+) {
+  return t(`chat.welcome.${mode}`, { city: cityName });
 }
 
 export function AIChat({
@@ -25,38 +67,147 @@ export function AIChat({
   countrySlug,
   citySlug,
   locale,
+  launchConfig,
+  launchKey = 0,
 }: AIChatProps) {
   const t = useT();
   const { add } = useFavorites();
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      role: "assistant",
-      content: t("chat.welcome", { city: cityName }),
-    },
-  ]);
+  const { upsert: upsertHistory, sessions: historySessions } = useChatHistory(citySlug);
+  const { toast } = useToast();
+  const { profile, setProfile } = useTravelProfile();
+  const [mode, setMode] = useState<AIMode>(launchConfig?.mode ?? "guide");
+  const [placeContext, setPlaceContext] = useState<PlaceContext | undefined>(
+    launchConfig?.placeContext
+  );
+  const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+  const [compactedByIndex, setCompactedByIndex] = useState<Record<number, string>>(
+    {}
+  );
+  const [compactingIndex, setCompactingIndex] = useState<number | null>(null);
+  const [favoriteSavedKey, setFavoriteSavedKey] = useState<string | null>(null);
+  const [highlightHistoryId, setHighlightHistoryId] = useState<string | null>(null);
+  const [activeSessionId, setActiveSessionId] = useState<string | null>(null);
+  const [savedPanelMobileOpen, setSavedPanelMobileOpen] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const launchApplied = useRef(-1);
+  const sessionIdRef = useRef<string | null>(null);
 
-  const quickPrompts = useMemo(
-    () => [
-      t("chat.prompts.food"),
-      t("chat.prompts.beach"),
-      t("chat.prompts.transport"),
-      t("chat.prompts.scams"),
-    ],
-    [t]
+  const resetWelcome = useCallback(
+    (nextMode: AIMode) => {
+      setMessages([
+        {
+          role: "assistant",
+          content: welcomeForMode(t, cityName, nextMode),
+        },
+      ]);
+    },
+    [t, cityName]
+  );
+
+  const resetSession = useCallback(() => {
+    sessionIdRef.current = null;
+    setActiveSessionId(null);
+  }, []);
+
+  const persistHistory = useCallback(
+    (finalMessages: Message[], activeMode: AIMode) => {
+      const conversationOnly = finalMessages.filter(
+        (m, i) => !(i === 0 && m.role === "assistant")
+      );
+      const userMsgs = conversationOnly.filter((m) => m.role === "user");
+      if (userMsgs.length === 0) return;
+
+      if (!sessionIdRef.current) {
+        sessionIdRef.current = createSessionId(citySlug);
+      }
+
+      const preview = userMsgs[0].content.trim();
+      const entry = upsertHistory({
+        id: sessionIdRef.current,
+        countrySlug,
+        citySlug,
+        mode: activeMode,
+        messages: conversationOnly,
+        preview:
+          preview.slice(0, 100) + (preview.length > 100 ? "…" : ""),
+      });
+      setActiveSessionId(entry.id);
+      setHighlightHistoryId(entry.id);
+    },
+    [citySlug, countrySlug, upsertHistory]
+  );
+
+  const restoreSession = useCallback(
+    (session: ChatHistorySession) => {
+      sessionIdRef.current = session.id;
+      setActiveSessionId(session.id);
+      setMode(session.mode);
+      setPlaceContext(undefined);
+      setCompactedByIndex({});
+      setMessages([
+        {
+          role: "assistant",
+          content: welcomeForMode(t, cityName, session.mode),
+        },
+        ...session.messages,
+      ]);
+    },
+    [t, cityName]
+  );
+
+  const handleSessionDeleted = useCallback(
+    (deletedId: string) => {
+      if (sessionIdRef.current !== deletedId) return;
+      resetSession();
+      resetWelcome(mode);
+    },
+    [mode, resetSession, resetWelcome]
   );
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+    resetSession();
+    resetWelcome(mode);
+  }, [cityName]); // eslint-disable-line react-hooks/exhaustive-deps -- reset on city change only
 
-  const sendMessage = async (textOverride?: string) => {
+  useEffect(() => {
+    if (launchKey === launchApplied.current) return;
+    launchApplied.current = launchKey;
+    if (!launchConfig) return;
+
+    resetSession();
+    const nextMode = launchConfig.mode ?? "guide";
+    setMode(nextMode);
+    if (launchConfig.placeContext) setPlaceContext(launchConfig.placeContext);
+    resetWelcome(nextMode);
+
+    if (launchConfig.autoSend && launchConfig.initialInput) {
+      setInput("");
+      queueMicrotask(() => {
+        void sendMessage(launchConfig.initialInput, {
+          mode: nextMode,
+          placeContext: launchConfig.placeContext,
+        });
+      });
+    } else if (launchConfig.initialInput) {
+      setInput(launchConfig.initialInput);
+    }
+    requestAnimationFrame(() => inputRef.current?.focus());
+  }, [launchKey, launchConfig, resetWelcome]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const sendMessage = async (
+    textOverride?: string,
+    overrides?: { mode?: AIMode; placeContext?: PlaceContext }
+  ) => {
     const text = (textOverride ?? input).trim();
     if (!text || loading) return;
+
+    const activeMode = overrides?.mode ?? mode;
+    const activePlaceContext = overrides?.placeContext ?? placeContext;
 
     const userMessage: Message = { role: "user", content: text };
     const nextMessages = [...messages, userMessage];
@@ -81,6 +232,9 @@ export function AIChat({
           countrySlug,
           citySlug,
           locale,
+          mode: activeMode,
+          profile,
+          placeContext: activePlaceContext,
         }),
       });
 
@@ -113,11 +267,46 @@ export function AIChat({
           return updated;
         });
       }
+
+      assistantText = enrichMapsLinksInText(assistantText, citySlug);
+      const finalMessages: Message[] = [
+        ...nextMessages,
+        { role: "assistant", content: assistantText },
+      ];
+      setMessages(finalMessages);
+      persistHistory(finalMessages, activeMode);
+      setPlaceContext(undefined);
     } catch {
       setError(t("chat.error"));
       setMessages(messages);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleSOSScenario = (scenarioId: string) => {
+    void sendMessage(getSOSPrompt(scenarioId, locale, cityName), { mode: "sos" });
+  };
+
+  const quickPrompts = useMemo(() => {
+    const keys = ["1", "2", "3"] as const;
+    return keys
+      .map((n) => t(`chat.prompts.${mode}.${n}`, { city: cityName }))
+      .filter(Boolean);
+  }, [t, mode, cityName]);
+
+  const placeholder = t(`chat.placeholder.${mode}`);
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
+  const handleModeChange = (next: AIMode) => {
+    setMode(next);
+    setPlaceContext(undefined);
+    if (messages.length <= 1) {
+      resetSession();
+      resetWelcome(next);
     }
   };
 
@@ -131,25 +320,106 @@ export function AIChat({
     }
   };
 
-  const saveToFavorites = (content: string) => {
+  const historyCount = historySessions.length;
+
+  const saveToFavorites = (content: string, compact = false) => {
     add({
       type: "chat",
       countrySlug,
       citySlug,
-      title: t("favorites.chatTitle", { city: cityName }),
-      subtitle: content.slice(0, 80) + (content.length > 80 ? "…" : ""),
+      title: compact
+        ? `${t("favorites.chatTitle", { city: cityName })} — ${t("chat.compactTitle")}`
+        : t("favorites.chatTitle", { city: cityName }),
+      subtitle: (() => {
+        const plain = plainTextFromMarkdown(content);
+        return plain.slice(0, 100) + (plain.length > 100 ? "…" : "");
+      })(),
       body: content,
     });
+    toast(t("chat.savedFavorite"));
+  };
+
+  const compactMessage = async (content: string, index: number) => {
+    if (compactingIndex !== null) return;
+    setCompactingIndex(index);
+    setError(null);
+
+    try {
+      const res = await fetch("/api/chat/compact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text: content, locale }),
+      });
+
+      if (res.status === 503) {
+        setError(t("chat.noApiKey"));
+        return;
+      }
+
+      if (!res.ok) {
+        throw new Error("compact failed");
+      }
+
+      const data = (await res.json()) as { text?: string };
+      const compact = data.text?.trim();
+      if (!compact) throw new Error("empty compact");
+
+      const enriched = enrichMapsLinksInText(
+        normalizeChatMarkdown(compact),
+        citySlug
+      );
+      setCompactedByIndex((prev) => ({ ...prev, [index]: enriched }));
+    } catch {
+      setError(t("chat.compactError"));
+    } finally {
+      setCompactingIndex(null);
+    }
+  };
+
+  const saveFavoriteWithFeedback = (content: string, index: number, compact = false) => {
+    saveToFavorites(content, compact);
+    const key = `${index}-${compact ? "compact" : "full"}`;
+    setFavoriteSavedKey(key);
+    setTimeout(() => setFavoriteSavedKey(null), 2000);
   };
 
   return (
-    <div className="flex h-[min(70vh,600px)] flex-col overflow-hidden rounded-2xl border border-border bg-surface">
-      <div className="border-b border-border px-5 py-4">
-        <h3 className="font-display text-lg font-black">{t("chat.title")}</h3>
-        <p className="text-sm text-muted">
-          {t("chat.subtitle", { city: cityName })}
-        </p>
-        <div className="mt-3 flex flex-wrap gap-2">
+    <div className="relative flex h-[min(78vh,720px)] overflow-hidden rounded-2xl border border-border bg-surface">
+      <ChatSavedPanel
+        citySlug={citySlug}
+        activeSessionId={activeSessionId}
+        highlightId={highlightHistoryId}
+        mobileOpen={savedPanelMobileOpen}
+        onMobileOpenChange={setSavedPanelMobileOpen}
+        onRestoreSession={restoreSession}
+        onSessionDeleted={handleSessionDeleted}
+      />
+
+      <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
+      <div className="space-y-4 border-b border-border px-4 py-4 sm:px-5">
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <h3 className="font-display text-lg font-black">{t("chat.title")}</h3>
+            <p className="text-sm text-muted">{t("chat.subtitle", { city: cityName })}</p>
+          </div>
+          <button
+            type="button"
+            onClick={() => setSavedPanelMobileOpen(true)}
+            className="flex shrink-0 items-center gap-1.5 rounded-xl border border-border px-3 py-2 text-xs font-semibold text-muted transition-colors hover:border-accent/40 hover:text-accent md:hidden"
+          >
+            <Bookmark className="h-4 w-4 text-accent" />
+            {historyCount > 0 ? historyCount : t("chat.history.short")}
+          </button>
+        </div>
+        <AIModeSelector value={mode} onChange={handleModeChange} disabled={loading} />
+        <TravelProfileBar value={profile} onChange={setProfile} disabled={loading} />
+        {placeContext && (
+          <p className="rounded-lg border border-accent/30 bg-accent/10 px-3 py-2 text-xs text-foreground">
+            {t("chat.aboutPlace", { place: placeContext.title })}
+          </p>
+        )}
+        {mode === "sos" && <SOSChatBar onScenario={handleSOSScenario} />}
+        <div className="flex flex-wrap gap-2">
           {quickPrompts.map((prompt) => (
             <button
               key={prompt}
@@ -170,74 +440,136 @@ export function AIChat({
             key={i}
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            className={`flex gap-3 ${msg.role === "user" ? "flex-row-reverse" : ""}`}
+            className={msg.role === "assistant" ? "space-y-2" : ""}
           >
             <div
-              className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full ${
-                msg.role === "user"
-                  ? "bg-accent text-white"
-                  : "bg-surface-hover text-accent"
-              }`}
+              className={`flex gap-3 ${msg.role === "user" ? "flex-row-reverse" : ""}`}
             >
-              {msg.role === "user" ? (
-                <User className="h-4 w-4" />
-              ) : (
-                <Bot className="h-4 w-4" />
-              )}
+              <div
+                className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full ${
+                  msg.role === "user"
+                    ? "bg-accent text-white"
+                    : "bg-surface-hover text-accent"
+                }`}
+              >
+                {msg.role === "user" ? (
+                  <User className="h-4 w-4" />
+                ) : (
+                  <Bot className="h-4 w-4" />
+                )}
+              </div>
+              <div
+                className={`group relative max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
+                  msg.role === "user"
+                    ? "bg-accent text-white"
+                    : "bg-surface-hover text-foreground"
+                }`}
+              >
+                {msg.content ? (
+                  <ChatMarkdown
+                    content={msg.content}
+                    variant={msg.role === "user" ? "user" : "assistant"}
+                  />
+                ) : loading && i === messages.length - 1 ? (
+                  <span className="inline-flex gap-1 text-muted">
+                    <span className="animate-pulse">●</span>
+                    <span className="animate-pulse [animation-delay:150ms]">●</span>
+                    <span className="animate-pulse [animation-delay:300ms]">●</span>
+                  </span>
+                ) : null}
+                {msg.role === "assistant" && msg.content && i > 0 && (
+                  <div className="mt-2 flex flex-wrap gap-2 border-t border-border/50 pt-2">
+                    <button
+                      type="button"
+                      onClick={() => copyMessage(msg.content, i)}
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-muted hover:text-foreground"
+                    >
+                      {copiedIndex === i ? (
+                        <Check className="h-3.5 w-3.5 text-green-500" />
+                      ) : (
+                        <Copy className="h-3.5 w-3.5" />
+                      )}
+                      {t("chat.copy")}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => compactMessage(msg.content, i)}
+                      disabled={compactingIndex !== null}
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-muted hover:text-foreground disabled:opacity-50"
+                    >
+                      {compactingIndex === i ? (
+                        <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                      ) : (
+                        <ListCollapse className="h-3.5 w-3.5" />
+                      )}
+                      {compactingIndex === i ? t("chat.compacting") : t("chat.compact")}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => saveFavoriteWithFeedback(msg.content, i)}
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-muted hover:text-accent"
+                    >
+                      {favoriteSavedKey === `${i}-full` ? (
+                        <Check className="h-3.5 w-3.5 text-green-500" />
+                      ) : (
+                        <Heart className="h-3.5 w-3.5" />
+                      )}
+                      {favoriteSavedKey === `${i}-full`
+                        ? t("chat.savedFavorite")
+                        : t("chat.saveFavorite")}
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
-            <div
-              className={`group relative max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
-                msg.role === "user"
-                  ? "bg-accent text-white"
-                  : "bg-surface-hover text-foreground"
-              }`}
-            >
-              {msg.content ? (
-                <ChatMarkdown
-                  content={msg.content}
-                  variant={msg.role === "user" ? "user" : "assistant"}
-                />
-              ) : loading && i === messages.length - 1 ? (
-                <span className="inline-flex gap-1 text-muted">
-                  <span className="animate-pulse">●</span>
-                  <span className="animate-pulse [animation-delay:150ms]">●</span>
-                  <span className="animate-pulse [animation-delay:300ms]">●</span>
-                </span>
-              ) : null}
-              {msg.role === "assistant" && msg.content && i > 0 && (
-                <div className="mt-2 flex gap-2 border-t border-border/50 pt-2">
-                  <button
-                    type="button"
-                    onClick={() => copyMessage(msg.content, i)}
-                    className="inline-flex items-center gap-1 text-xs font-semibold text-muted hover:text-foreground"
-                  >
-                    {copiedIndex === i ? (
-                      <Check className="h-3.5 w-3.5 text-green-500" />
-                    ) : (
-                      <Copy className="h-3.5 w-3.5" />
-                    )}
-                    {t("chat.copy")}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => saveToFavorites(msg.content)}
-                    className="inline-flex items-center gap-1 text-xs font-semibold text-muted hover:text-accent"
-                  >
-                    <Heart className="h-3.5 w-3.5" />
-                    {t("chat.saveFavorite")}
-                  </button>
+
+            {msg.role === "assistant" && compactedByIndex[i] && (
+              <div className="ml-11 min-w-0 max-w-[min(100%,42rem)] pr-2">
+                <div className="rounded-xl border border-accent/25 bg-accent/5 px-3 py-2.5">
+                  <p className="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-accent">
+                    {t("chat.compactTitle")}
+                  </p>
+                  <ChatMarkdown content={compactedByIndex[i]} variant="assistant" />
+                  <div className="mt-2 flex flex-wrap gap-2 border-t border-accent/20 pt-2">
+                    <button
+                      type="button"
+                      onClick={() => copyMessage(compactedByIndex[i], i)}
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-muted hover:text-foreground"
+                    >
+                      {copiedIndex === i ? (
+                        <Check className="h-3.5 w-3.5 text-green-500" />
+                      ) : (
+                        <Copy className="h-3.5 w-3.5" />
+                      )}
+                      {t("chat.copy")}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        saveFavoriteWithFeedback(compactedByIndex[i], i, true)
+                      }
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-muted hover:text-accent"
+                    >
+                      {favoriteSavedKey === `${i}-compact` ? (
+                        <Check className="h-3.5 w-3.5 text-green-500" />
+                      ) : (
+                        <Heart className="h-3.5 w-3.5 fill-accent/20" />
+                      )}
+                      {favoriteSavedKey === `${i}-compact`
+                        ? t("chat.savedFavorite")
+                        : t("chat.saveFavoriteCompact")}
+                    </button>
+                  </div>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </motion.div>
         ))}
         <div ref={bottomRef} />
       </div>
 
       {error && (
-        <p className="border-t border-border px-4 py-2 text-sm text-red-500">
-          {error}
-        </p>
+        <p className="border-t border-border px-4 py-2 text-sm text-red-500">{error}</p>
       )}
 
       <form
@@ -248,10 +580,11 @@ export function AIChat({
         }}
       >
         <input
+          ref={inputRef}
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder={t("chat.placeholder")}
+          placeholder={placeholder}
           disabled={loading}
           className="flex-1 rounded-xl border border-border bg-background px-4 py-2.5 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 disabled:opacity-60"
         />
@@ -268,6 +601,7 @@ export function AIChat({
           )}
         </button>
       </form>
+      </div>
     </div>
   );
 }

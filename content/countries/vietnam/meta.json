@@ -9,7 +9,10 @@
     "ru": "Страна длинного побережья, рисовых террас и невероятной кухни. Идеальное направление для пляжного отдыха и приключений.",
     "en": "A country of long coastlines, rice terraces, and incredible cuisine. Perfect for beach holidays and adventures."
   },
-  "heroImage": "https://images.unsplash.com/photo-1528127269322-539801943592?w=1920&q=80",
+  "heroImage": "https://images.unsplash.com/photo-1528127269322-539801943592?w=1920&q=80&auto=format&fit=crop",
   "flag": "🇻🇳",
-  "cities": ["nha-trang", "da-nang"]
+  "cities": [
+    "nha-trang",
+    "da-nang"
+  ]
 }

@@ -1,5 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { getCity, buildCitySystemPrompt } from "@/lib/content";
+import type { AIMode, PlaceContext, TravelProfile } from "@/lib/ai-modes";
 
 interface ChatMessage {
   role: "user" | "assistant";
@@ -13,11 +14,17 @@ export async function POST(request: Request) {
     countrySlug,
     citySlug,
     locale,
+    mode,
+    profile,
+    placeContext,
   }: {
     messages: ChatMessage[];
     countrySlug: string;
     citySlug: string;
     locale: string;
+    mode?: AIMode;
+    profile?: TravelProfile;
+    placeContext?: PlaceContext;
   } = body;
 
   const city = getCity(countrySlug, citySlug);
@@ -47,11 +54,19 @@ export async function POST(request: Request) {
     historyMessages = historyMessages.slice(1);
   }
 
-  const systemPrompt = buildCitySystemPrompt(city, locale);
+  const systemPrompt = buildCitySystemPrompt(city, locale, {
+    mode: mode ?? "guide",
+    profile: profile ?? "any",
+    placeContext,
+  });
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({
     model: "gemini-2.5-flash",
     systemInstruction: systemPrompt,
+    generationConfig: {
+      temperature: 0.55,
+      topP: 0.9,
+    },
   });
 
   const history = historyMessages.map((m) => ({

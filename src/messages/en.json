@@ -48,26 +48,130 @@
   },
   "chat": {
     "title": "AI Assistant",
-    "subtitle": "Ask about {city} — I know transport, food, beaches, and local tips",
-    "placeholder": "Where to eat? How to get to the beach? Where to exchange currency?",
+    "subtitle": "Pick a task — I'll help you with {city}",
     "send": "Send",
     "thinking": "Thinking...",
     "error": "Error. Check your Gemini API key or try again.",
-    "welcome": "Hi! I'm your guide to {city}. Ask me anything — from best restaurants to avoiding scams.",
     "noApiKey": "AI chat unavailable: GEMINI_API_KEY not configured",
     "copy": "Copy",
+    "compact": "Summarize",
+    "compacting": "Summarizing…",
+    "compactTitle": "Short version",
+    "compactError": "Could not summarize. Try again.",
     "saveFavorite": "Save",
+    "saveFavoriteCompact": "Save summary",
+    "savedFavorite": "Saved on the left",
+    "savedPanel": {
+      "title": "Saved",
+      "short": "Saved",
+      "count": "{count} replies",
+      "empty": "Tap Save on an AI reply — it goes to global favorites",
+      "expand": "Expand panel",
+      "collapse": "Collapse panel"
+    },
+    "history": {
+      "title": "History",
+      "short": "History",
+      "count": "{count} chats",
+      "empty": "Ask a question — the chat will be saved here automatically",
+      "you": "You",
+      "ai": "AI",
+      "remove": "Remove from history"
+    },
+    "aboutPlace": "Question about: {place}",
+    "askAboutPlace": "Ask AI",
+    "askPrompt": "Tell me more about {place}",
+    "modes": {
+      "label": "What do you need?",
+      "guide": {
+        "title": "Ask",
+        "desc": "Any question about the city"
+      },
+      "plan": {
+        "title": "Itinerary",
+        "desc": "Plan for 1–3 days"
+      },
+      "food": {
+        "title": "Food & places",
+        "desc": "Where to eat and go"
+      },
+      "logistics": {
+        "title": "Getting around",
+        "desc": "Transport, SIM, money"
+      },
+      "safety": {
+        "title": "Safety",
+        "desc": "Scams, phrases, emergencies"
+      },
+      "sos": {
+        "title": "SOS",
+        "desc": "Urgent help right now"
+      }
+    },
+    "profile": {
+      "label": "Who's traveling? (optional)",
+      "any": "Everyone",
+      "family": "Family",
+      "couple": "Couple",
+      "budget": "Budget",
+      "active": "Active trip"
+    },
+    "welcome": {
+      "guide": "Hello! I'm your guide to {city}. Ask anything — I'll give specific places, prices, and map links.",
+      "plan": "Itinerary mode. Tell me how many days you have in {city} — I'll build a morning/afternoon/evening plan with prices and maps.",
+      "food": "Food & places mode. I'll recommend where to eat in {city}: what to order, prices, and how to get there.",
+      "logistics": "Getting around mode. Airport, Grab, SIM card, currency exchange, and your first day in {city}.",
+      "safety": "Safety mode. Common scams, useful phrases, and what to do in {city} if something goes wrong.",
+      "sos": "SOS mode. If you need urgent help in {city} — tap a scenario below or describe the situation. I'll reply step-by-step: what to do now, 113/115 numbers, Vietnamese phrases."
+    },
+    "placeholder": {
+      "guide": "e.g. Where to go in the evening?",
+      "plan": "e.g. 2-day plan for a couple",
+      "food": "e.g. Best seafood restaurants?",
+      "logistics": "e.g. Airport to hotel?",
+      "safety": "e.g. What scams to watch for?",
+      "sos": "e.g. I'm being scammed right now"
+    },
     "prompts": {
-      "food": "Best local food?",
-      "beach": "Which beach today?",
-      "transport": "Airport to hotel?",
-      "scams": "Common scams?"
+      "guide": {
+        "1": "What to see on day one?",
+        "2": "Best area to stay?",
+        "3": "Best time to visit?"
+      },
+      "plan": {
+        "1": "1-day itinerary",
+        "2": "3-day itinerary",
+        "3": "Family with kids plan"
+      },
+      "food": {
+        "1": "Best local food?",
+        "2": "Best breakfast by the sea",
+        "3": "Cheap and tasty spots?"
+      },
+      "logistics": {
+        "1": "Airport to downtown",
+        "2": "Where to buy a SIM?",
+        "3": "Where to exchange money?"
+      },
+      "safety": {
+        "1": "Common scams",
+        "2": "Phrases for taxi & market",
+        "3": "First-day checklist"
+      },
+      "sos": {
+        "1": "Being scammed",
+        "2": "SIM not working",
+        "3": "Bike problem"
+      }
     }
   },
   "live": {
     "title": "Live info",
     "weather": "Weather",
     "exchange": "Exchange",
+    "converterTitle": "Converter",
+    "converterInput": "Amount",
+    "converterSwap": "Swap currencies",
     "localTime": "Local time",
     "tip": "Tip",
     "unavailable": "—",
@@ -85,6 +189,48 @@
       "sight": "Sight",
       "district": "District",
       "transport": "Transport"
+    }
+  },
+  "overview": {
+    "profileHint": "Who's traveling? AI tips and your route adapt to you"
+  },
+  "firstDay": {
+    "title": "First day in {city}",
+    "subtitle": "Four steps so you don't get lost or overpay",
+    "steps": {
+      "airport": "Airport to city",
+      "sim": "Get a SIM and data",
+      "money": "Exchange money",
+      "safety": "Know common scams"
+    }
+  },
+  "tripPlan": {
+    "title": "My itinerary",
+    "empty": "Tap Add to plan on a place card to build day-by-day routes",
+    "add": "Add to plan",
+    "inPlan": "In plan",
+    "added": "Added to itinerary",
+    "count": "{count} places",
+    "day": "Day {day}",
+    "daySelect": "Itinerary day",
+    "remove": "Remove from plan",
+    "buildDay": "AI, build my day"
+  },
+  "copilot": {
+    "label": "Ask AI"
+  },
+  "sos": {
+    "title": "SOS — urgent help",
+    "subtitle": "Common emergencies in {city}. Tap — AI replies step by step.",
+    "numbers": "113 — police · 115 — ambulance · 114 — fire",
+    "quickLabel": "Quick scenarios",
+    "scenarios": {
+      "passport": "Lost passport",
+      "hospital": "Need medical help",
+      "scam": "Being scammed",
+      "sim": "SIM not working",
+      "bike": "Bike / xe điện",
+      "police": "Police / fine"
     }
   },
   "checklist": {
@@ -110,7 +256,11 @@
     "close": "Close",
     "remove": "Remove",
     "openCity": "Open city guide",
-    "chatTitle": "AI tip — {city}"
+    "chatTitle": "AI tip — {city}",
+    "save": "Save",
+    "saved": "Saved",
+    "added": "Added to favorites",
+    "removed": "Removed from favorites"
   },
   "search": {
     "cityPlaceholder": "Search in {city}...",
@@ -121,7 +271,9 @@
     "copy": "Copy",
     "copied": "Copied",
     "maps": "Maps",
-    "grab": "Grab"
+    "grab": "Grab",
+    "share": "Share",
+    "linkCopied": "Link copied"
   },
   "backToTop": {
     "label": "Back to top"
