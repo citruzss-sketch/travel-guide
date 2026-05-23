@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Online Travel Guide
+
+A premium Next.js travel guide app with bilingual content (RU/EN), AI city assistant powered by Google Gemini, and offline PDF guides.
+
+## Features
+
+- Structured city guides (transport, food, sights, lifehacks, scams, phrases)
+- Locale routing (`/ru`, `/en`)
+- Dark/light theme
+- Global search across countries and cities
+- Streaming AI chat with city-specific context
+- Bilingual PDF download (Russian + English sections)
 
 ## Getting Started
 
-First, run the development server:
+```bash
+cd travel-guide
+npm install
+cp .env.example .env.local
+```
+
+Add your [Gemini API key](https://aistudio.google.com/apikey) to `.env.local`:
+
+```
+GEMINI_API_KEY=your_key_here
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) — you will be redirected to `/ru`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+content/countries/     # Country meta + city JSON content
+src/app/[locale]/      # Localized pages
+src/app/api/           # Search, chat, PDF APIs
+src/components/        # UI, city panels, chat
+src/lib/               # Content loading, i18n, PDF template
+src/messages/          # UI translations (ru.json, en.json)
+```
 
-## Learn More
+## Adding Content
 
-To learn more about Next.js, take a look at the following resources:
+1. Create `content/countries/{slug}/meta.json`
+2. Add city files under `content/countries/{slug}/cities/{city-slug}.json`
+3. List city slugs in `meta.json` → `cities` array
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy to Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push the repository to GitHub
+2. Import the project in [Vercel](https://vercel.com/new)
+3. Set environment variable:
+   - `GEMINI_API_KEY` — required for AI chat
+4. Deploy
 
-## Deploy on Vercel
+PDF generation works without an API key. AI chat returns a friendly error if `GEMINI_API_KEY` is missing.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Environment Variables
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Variable         | Required | Description              |
+|------------------|----------|--------------------------|
+| `GEMINI_API_KEY` | For chat | Google Gemini API key    |
+
+## Scripts
+
+- `npm run dev` — development server
+- `npm run build` — production build
+- `npm run start` — start production server
+- `npm run lint` — ESLint
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- Tailwind CSS v4
+- Framer Motion
+- next-themes
+- @google/generative-ai
+- @react-pdf/renderer

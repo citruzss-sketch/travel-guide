@@ -1,0 +1,15 @@
+{
+  "id": "vietnam",
+  "slug": "vietnam",
+  "name": {
+    "ru": "Вьетнам",
+    "en": "Vietnam"
+  },
+  "description": {
+    "ru": "Страна длинного побережья, рисовых террас и невероятной кухни. Идеальное направление для пляжного отдыха и приключений.",
+    "en": "A country of long coastlines, rice terraces, and incredible cuisine. Perfect for beach holidays and adventures."
+  },
+  "heroImage": "https://images.unsplash.com/photo-1528127269322-539801943592?w=1920&q=80",
+  "flag": "🇻🇳",
+  "cities": ["nha-trang", "da-nang"]
+}

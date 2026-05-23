@@ -1,0 +1,165 @@
+{
+  "coordinates": { "lat": 12.2388, "lng": 109.1967 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "cxr-airport",
+      "title": { "ru": "Аэропорт Камрань (CXR)", "en": "Cam Ranh Airport (CXR)" },
+      "description": {
+        "ru": "35 км от центра. Grab ~350–450k VND",
+        "en": "35 km from center. Grab ~350–450k VND"
+      },
+      "lat": 11.9982,
+      "lng": 109.2194,
+      "category": "airport"
+    },
+    {
+      "id": "po-nagar",
+      "title": { "ru": "Башни По Нагар", "en": "Po Nagar Cham Towers" },
+      "description": {
+        "ru": "Храмовый комплекс чамов VIII–XII вв.",
+        "en": "Cham temple complex, 8th–12th century"
+      },
+      "lat": 12.2654,
+      "lng": 109.1951,
+      "category": "sight"
+    },
+    {
+      "id": "tran-phu",
+      "title": { "ru": "Пляж Чан Фу", "en": "Tran Phu Beach" },
+      "description": {
+        "ru": "Главная 7-км набережная",
+        "en": "Main 7-km promenade beach"
+      },
+      "lat": 12.2381,
+      "lng": 109.1963,
+      "category": "beach"
+    },
+    {
+      "id": "long-son",
+      "title": { "ru": "Пагода Лонг Шон", "en": "Long Son Pagoda" },
+      "lat": 12.265,
+      "lng": 109.1912,
+      "category": "sight"
+    },
+    {
+      "id": "vinwonders",
+      "title": { "ru": "VinWonders Hon Tre", "en": "VinWonders Hon Tre" },
+      "lat": 12.2135,
+      "lng": 109.2262,
+      "category": "sight"
+    },
+    {
+      "id": "dam-market",
+      "title": { "ru": "Рынок Дам", "en": "Dam Market" },
+      "description": {
+        "ru": "Сувениры, фрукты, уличная еда",
+        "en": "Souvenirs, fruit, street food"
+      },
+      "lat": 12.2482,
+      "lng": 109.1941,
+      "category": "food"
+    },
+    {
+      "id": "nguyen-thien-thuat",
+      "title": { "ru": "Район Nguyen Thien Thuat", "en": "Nguyen Thien Thuat area" },
+      "description": {
+        "ru": "Бары, кафе, бэкпэкеры",
+        "en": "Bars, cafes, backpacker zone"
+      },
+      "lat": 12.2418,
+      "lng": 109.1925,
+      "category": "district"
+    },
+    {
+      "id": "train-station",
+      "title": { "ru": "Ж/д вокзал Нячанг", "en": "Nha Trang Railway Station" },
+      "lat": 12.2491,
+      "lng": 109.1843,
+      "category": "transport"
+    },
+    {
+      "id": "hon-mun",
+      "title": { "ru": "Остров Хон Мун", "en": "Hon Mun Island" },
+      "description": {
+        "ru": "Снорклинг и дайвинг",
+        "en": "Snorkeling and diving"
+      },
+      "lat": 12.1667,
+      "lng": 109.2833,
+      "category": "beach"
+    },
+    {
+      "id": "thap-ba",
+      "title": { "ru": "Горячие источники Тхап Ба", "en": "Thap Ba Hot Springs" },
+      "lat": 12.2778,
+      "lng": 109.1689,
+      "category": "sight"
+    },
+    {
+      "id": "sailing-club",
+      "title": { "ru": "Sailing Club Nha Trang", "en": "Sailing Club Nha Trang" },
+      "lat": 12.2345,
+      "lng": 109.1988,
+      "category": "food"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel/Mobifone в аэропорту",
+        "en": "Buy Viettel/Mobifone SIM at airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab и привязать карту",
+        "en": "Install Grab and link card"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять/обменять VND (наличные для рынков)",
+        "en": "Withdraw/exchange VND (cash for markets)"
+      }
+    },
+    {
+      "id": "sunscreen",
+      "label": {
+        "ru": "Крем SPF 50+ и головной убор",
+        "en": "SPF 50+ sunscreen and hat"
+      }
+    },
+    {
+      "id": "island-tour",
+      "label": {
+        "ru": "Забронировать тур на острова (снорклинг)",
+        "en": "Book island hopping / snorkeling tour"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Тревел-страховка с покрытием дайвинга",
+        "en": "Travel insurance with diving cover"
+      }
+    },
+    {
+      "id": "hotel",
+      "label": {
+        "ru": "Подтвердить бронь отеля и трансфер",
+        "en": "Confirm hotel booking and transfer"
+      }
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "coordinates": { "lat": 16.0544, "lng": 108.2022 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "dad-airport",
+      "title": { "ru": "Аэропорт Дананг (DAD)", "en": "Da Nang Airport (DAD)" },
+      "description": {
+        "ru": "3 км от центра, Grab ~80–120k VND",
+        "en": "3 km from center, Grab ~80–120k VND"
+      },
+      "lat": 16.0439,
+      "lng": 108.199,
+      "category": "airport"
+    },
+    {
+      "id": "my-khe",
+      "title": { "ru": "Пляж Ми Кхе", "en": "My Khe Beach" },
+      "description": {
+        "ru": "Один из лучших городских пляжей Азии",
+        "en": "One of Asia's best urban beaches"
+      },
+      "lat": 16.0471,
+      "lng": 108.2468,
+      "category": "beach"
+    },
+    {
+      "id": "marble-mountains",
+      "title": { "ru": "Мраморные горы", "en": "Marble Mountains" },
+      "lat": 15.9794,
+      "lng": 108.2614,
+      "category": "sight"
+    },
+    {
+      "id": "dragon-bridge",
+      "title": { "ru": "Мост Дракона", "en": "Dragon Bridge" },
+      "description": {
+        "ru": "Шоу огня по субботам ~21:00",
+        "en": "Fire show Saturdays ~9 PM"
+      },
+      "lat": 16.0614,
+      "lng": 108.2275,
+      "category": "sight"
+    },
+    {
+      "id": "ba-na",
+      "title": { "ru": "Ba Na Hills / Golden Bridge", "en": "Ba Na Hills / Golden Bridge" },
+      "lat": 15.995,
+      "lng": 107.9892,
+      "category": "sight"
+    },
+    {
+      "id": "han-market",
+      "title": { "ru": "Рынок Хан", "en": "Han Market" },
+      "lat": 16.0682,
+      "lng": 108.2231,
+      "category": "food"
+    },
+    {
+      "id": "an-thuong",
+      "title": { "ru": "Район An Thuong", "en": "An Thuong district" },
+      "description": {
+        "ru": "Экспаты, кафе, ночная жизнь у пляжа",
+        "en": "Expats, cafes, beach nightlife"
+      },
+      "lat": 16.0512,
+      "lng": 108.2435,
+      "category": "district"
+    },
+    {
+      "id": "son-tra",
+      "title": { "ru": "Полуостров Сон Тра", "en": "Son Tra Peninsula" },
+      "description": {
+        "ru": "Lady Buddha, виды, обезьяны",
+        "en": "Lady Buddha, views, monkeys"
+      },
+      "lat": 16.1158,
+      "lng": 108.2772,
+      "category": "sight"
+    },
+    {
+      "id": "train-station",
+      "title": { "ru": "Ж/д вокзал Дананг", "en": "Da Nang Railway Station" },
+      "lat": 16.0722,
+      "lng": 108.2201,
+      "category": "transport"
+    },
+    {
+      "id": "bach-dang",
+      "title": { "ru": "Набережная Bach Dang", "en": "Bach Dang Waterfront" },
+      "lat": 16.0675,
+      "lng": 108.2258,
+      "category": "district"
+    },
+    {
+      "id": "mi-quang-street",
+      "title": { "ru": "Улица Mi Quang", "en": "Mi Quang food street" },
+      "lat": 16.0628,
+      "lng": 108.2145,
+      "category": "food"
+    },
+    {
+      "id": "hai-van",
+      "title": { "ru": "Перевал Хай Ван", "en": "Hai Van Pass viewpoint" },
+      "lat": 16.2003,
+      "lng": 108.1122,
+      "category": "transport"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM в аэропорту DAD",
+        "en": "Buy SIM at DAD airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab / Be",
+        "en": "Install Grab / Be apps"
+      }
+    },
+    {
+      "id": "bana-tickets",
+      "label": {
+        "ru": "Купить билеты Ba Na Hills заранее",
+        "en": "Pre-book Ba Na Hills tickets"
+      }
+    },
+    {
+      "id": "hội-an",
+      "label": {
+        "ru": "Запланировать день в Хойане (30 км)",
+        "en": "Plan a day trip to Hoi An (30 km)"
+      }
+    },
+    {
+      "id": "scooter",
+      "label": {
+        "ru": "Аренда скутера: права + шлем",
+        "en": "Scooter rental: license + helmet"
+      }
+    },
+    {
+      "id": "dragon-bridge",
+      "label": {
+        "ru": "Проверить расписание шоу Dragon Bridge",
+        "en": "Check Dragon Bridge fire show schedule"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Наличные VND для уличной еды",
+        "en": "VND cash for street food"
+      }
+    }
+  ]
+}

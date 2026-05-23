@@ -1,0 +1,773 @@
+{
+  "id": "da-nang",
+  "slug": "da-nang",
+  "countryId": "vietnam",
+  "name": {
+    "ru": "Дананг",
+    "en": "Da Nang"
+  },
+  "tagline": {
+    "ru": "Современный прибрежный город между древними Хойаном и имперским Хue",
+    "en": "Modern coastal city between ancient Hoi An and imperial Hue"
+  },
+  "heroImage": "https://images.unsplash.com/photo-1583417319070-4a3b245245a8?w=1920&q=80",
+  "overview": {
+    "ru": "Дананг — третий по величине город Вьетнама и быстро растущий туристический хаб. Золотой мост на руках Будды, мраморные горы, пляж My Khe (один из лучших в Азии по Forbes) и отличная еда делают его must-visit. Город чище и современнее Нячанга, идеальная база для поездок в Хойан (30 мин) и Hue (2 ч).",
+    "en": "Da Nang is Vietnam's third-largest city and a rapidly growing tourist hub. The Golden Bridge held by Buddha's hands, Marble Mountains, My Khe beach (ranked among Asia's best by Forbes), and excellent food make it a must-visit. Cleaner and more modern than Nha Trang, perfect base for trips to Hoi An (30 min) and Hue (2h)."
+  },
+  "bestTime": {
+    "ru": "Февраль–август (сухой сезон). Сентябрь–январь — дожди, но меньше туристов и ниже цены.",
+    "en": "February–August (dry season). September–January — rains, but fewer tourists and lower prices."
+  },
+  "currency": {
+    "ru": "Вьетнамский донг (VND). 1 USD ≈ 25,000 VND.",
+    "en": "Vietnamese Dong (VND). 1 USD ≈ 25,000 VND."
+  },
+  "language": {
+    "ru": "Вьетнамский. Английский хорошо понимают в туристических зонах.",
+    "en": "Vietnamese. English well understood in tourist areas."
+  },
+  "timezone": {
+    "ru": "UTC+7",
+    "en": "UTC+7"
+  },
+  "airport": {
+    "title": {
+      "ru": "Как добраться из аэропорта",
+      "en": "Getting from the airport"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Da Nang International Airport (DAD)",
+          "en": "Da Nang International Airport (DAD)"
+        },
+        "description": {
+          "ru": "Аэропорт в 3 км от центра — один из ближайших к городу в ЮВА. Международные рейсы из Сеула, Бангкока, Сингапура, Токио.",
+          "en": "Airport 3 km from center — one of the closest to a city in Southeast Asia. International flights from Seoul, Bangkok, Singapore, Tokyo."
+        },
+        "tips": {
+          "ru": [
+            "Grab до центра: 50,000–80,000 VND (~$2–3), 10–15 мин",
+            "Такси Mai Linh: ~100,000 VND, счётчик обязателен",
+            "Автобус №12 до Han Market: 15,000 VND",
+            "Пешком до My Khe beach: 20 мин"
+          ],
+          "en": [
+            "Grab to center: 50,000–80,000 VND (~$2–3), 10–15 min",
+            "Mai Linh taxi: ~100,000 VND, meter mandatory",
+            "Bus #12 to Han Market: 15,000 VND",
+            "Walk to My Khe beach: 20 min"
+          ]
+        },
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Поезд Da Nang Station",
+          "en": "Da Nang Train Station"
+        },
+        "description": {
+          "ru": "Вокзал в 2 км от центра. Поеза из Ханоя (16 ч) и Хошимина (17 ч). Живописный маршрут через Hai Van Pass.",
+          "en": "Station 2 km from center. Trains from Hanoi (16h) and Ho Chi Minh City (17h). Scenic route through Hai Van Pass."
+        },
+        "price": {
+          "ru": "Soft seat: от 450,000 VND",
+          "en": "Soft seat: from 450,000 VND"
+        },
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80"
+      }
+    ]
+  },
+  "districts": {
+    "title": {
+      "ru": "Где жить",
+      "en": "Where to stay"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "My Khe Beach",
+          "en": "My Khe Beach"
+        },
+        "description": {
+          "ru": "Лучший район для пляжного отдыха. Отели от бюджетных до 5*. Рестораны, бары, спокойная атмосфера.",
+          "en": "Best area for beach holiday. Hotels from budget to 5*. Restaurants, bars, calm atmosphere."
+        },
+        "price": {
+          "ru": "3* отель: $30–60/ночь",
+          "en": "3* hotel: $30–60/night"
+        },
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Han River / City Center",
+          "en": "Han River / City Center"
+        },
+        "description": {
+          "ru": "Современный центр с небоскрёбами, мостами Dragon Bridge и Han River Bridge. Близко к ресторанам и ночной жизни.",
+          "en": "Modern center with skyscrapers, Dragon Bridge and Han River Bridge. Close to restaurants and nightlife."
+        },
+        "price": {
+          "ru": "4* отель: $50–90/ночь",
+          "en": "4* hotel: $50–90/night"
+        },
+        "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "An Thuong (пляжная зона)",
+          "en": "An Thuong (beach area)"
+        },
+        "description": {
+          "ru": "Молодёжный район у My Khe с кафе, coworking и expat-сообществом. Популярен у digital nomads.",
+          "en": "Youthful area near My Khe with cafes, coworking, and expat community. Popular with digital nomads."
+        },
+        "price": {
+          "ru": "Апартаменты: $20–40/ночь",
+          "en": "Apartments: $20–40/night"
+        },
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Son Tra Peninsula",
+          "en": "Son Tra Peninsula"
+        },
+        "description": {
+          "ru": "Природный полуостров с видом на залив. Люксовые курорts и InterContinental. Тихо и зелено.",
+          "en": "Natural peninsula overlooking the bay. Luxury resorts and InterContinental. Quiet and green."
+        },
+        "price": {
+          "ru": "5* курорт: $120–300/ночь",
+          "en": "5* resort: $120–300/night"
+        }
+      }
+    ]
+  },
+  "sights": {
+    "title": {
+      "ru": "Что посмотреть",
+      "en": "Must-see sights"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Golden Bridge (Bà Nà Hills)",
+          "en": "Golden Bridge (Ba Na Hills)"
+        },
+        "description": {
+          "ru": "Знаменитый мост на высоте 1400 м, поддерживаемый гигантскими руками. Канатная дорога — одна из самых длинных в мире. Бронируйте билеты онлайн.",
+          "en": "Famous bridge at 1,400m held by giant hands. Cable car among the world's longest. Book tickets online."
+        },
+        "price": {
+          "ru": "900,000 VND (вкл. канатную дорогу)",
+          "en": "900,000 VND (incl. cable car)"
+        },
+        "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Marble Mountains (Ngũ Hành Sơn)",
+          "en": "Marble Mountains (Ngu Hanh Son)"
+        },
+        "description": {
+          "ru": "Пять мраморных холмов с пещерами, буддийскими святынями и смотровыми площадками. 15 мин от центра.",
+          "en": "Five marble hills with caves, Buddhist sanctuaries, and viewpoints. 15 min from center."
+        },
+        "price": {
+          "ru": "40,000 VND",
+          "en": "40,000 VND"
+        },
+        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Dragon Bridge",
+          "en": "Dragon Bridge"
+        },
+        "description": {
+          "ru": "Мост в форме дракона через реку Han. По выходным в 21:00 — шоу с огнём и водой.",
+          "en": "Dragon-shaped bridge over Han River. Weekends at 9 PM — fire and water show."
+        },
+        "price": {
+          "ru": "Бесплатно",
+          "en": "Free"
+        },
+        "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Lady Buddha (Lin Ung Pagoda)",
+          "en": "Lady Buddha (Lin Ung Pagoda)"
+        },
+        "description": {
+          "ru": "67-метровая статуя Будды на полуострове Son Tra. Вид на весь залив Дананга.",
+          "en": "67-meter Buddha statue on Son Tra peninsula. View over entire Da Nang bay."
+        },
+        "price": {
+          "ru": "Бесплатно",
+          "en": "Free"
+        }
+      },
+      {
+        "title": {
+          "ru": "Hoi An Ancient Town",
+          "en": "Hoi An Ancient Town"
+        },
+        "description": {
+          "ru": "UNESCO-город в 30 км. Сохранившийся торговый порт XVI–XVIII вв., фонари, кастомные портные. Лучше вечером.",
+          "en": "UNESCO town 30 km away. Preserved 16th–18th century trading port, lanterns, custom tailors. Best in evening."
+        },
+        "price": {
+          "ru": "120,000 VND (входной билет)",
+          "en": "120,000 VND (entrance ticket)"
+        }
+      },
+      {
+        "title": {
+          "ru": "Hai Van Pass",
+          "en": "Hai Van Pass"
+        },
+        "description": {
+          "ru": "Живописный горный перевал между Данангом и Hue. Top Gear назвали его одной из лучших дорог мира.",
+          "en": "Scenic mountain pass between Da Nang and Hue. Top Gear called it one of the world's best roads."
+        },
+        "price": {
+          "ru": "Аренда байка: 150,000 VND/день",
+          "en": "Scooter rental: 150,000 VND/day"
+        }
+      }
+    ]
+  },
+  "beaches": {
+    "title": {
+      "ru": "Лучшие пляжи",
+      "en": "Best beaches"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "My Khe Beach",
+          "en": "My Khe Beach"
+        },
+        "description": {
+          "ru": "30 км белого песка, Forbes назвал одним из 6 лучших пляжей мира. Спокойные волны, чистая вода.",
+          "en": "30 km of white sand, Forbes ranked among world's 6 best beaches. Calm waves, clean water."
+        },
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Non Nuoc Beach",
+          "en": "Non Nuoc Beach"
+        },
+        "description": {
+          "ru": "У подножия Marble Mountains. Менее crowded, отлично для серфинга (сент–ноя).",
+          "en": "At the foot of Marble Mountains. Less crowded, great for surfing (Sep–Nov)."
+        },
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Son Tra Beach",
+          "en": "Son Tra Beach"
+        },
+        "description": {
+          "ru": "Дикие пляжи на полуострове. Чистая вода, мало людей, но инфраструктуры нет.",
+          "en": "Wild beaches on the peninsula. Clean water, few people, but no infrastructure."
+        },
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
+      }
+    ]
+  },
+  "food": {
+    "title": {
+      "ru": "Где поесть",
+      "en": "Where to eat"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Madame Lan",
+          "en": "Madame Lan"
+        },
+        "description": {
+          "ru": "Культовый ресторан вietnamese кухни в центре. Mi Quang, banh xeo, fresh spring rolls.",
+          "en": "Iconic Vietnamese restaurant downtown. Mi Quang, banh xeo, fresh spring rolls."
+        },
+        "price": {
+          "ru": "$5–8 на человека",
+          "en": "$5–8 per person"
+        },
+        "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Bé Mặn",
+          "en": "Be Man"
+        },
+        "description": {
+          "ru": "Лучшие морепродукты в Дананге. Выбирайте живой лобстер, crabs, clams. На берегу My Khe.",
+          "en": "Best seafood in Da Nang. Choose live lobster, crabs, clams. On My Khe shore."
+        },
+        "price": {
+          "ru": "$12–20 на человека",
+          "en": "$12–20 per person"
+        },
+        "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Mi Quang 1A",
+          "en": "Mi Quang 1A"
+        },
+        "description": {
+          "ru": "Фирменное блюдо Дананга — лапша Mi Quang с креветками, свининой и арахисом. Must try!",
+          "en": "Da Nang signature dish — Mi Quang noodles with shrimp, pork, and peanuts. Must try!"
+        },
+        "price": {
+          "ru": "40,000–50,000 VND",
+          "en": "40,000–50,000 VND"
+        },
+        "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Banh Mi Ba Lan",
+          "en": "Banh Mi Ba Lan"
+        },
+        "description": {
+          "ru": "Легендарный banh mi с 1990 года. Очередь с утра — знак качества.",
+          "en": "Legendary banh mi since 1990. Morning queue is a sign of quality."
+        },
+        "price": {
+          "ru": "25,000–35,000 VND",
+          "en": "25,000–35,000 VND"
+        }
+      },
+      {
+        "title": {
+          "ru": "Helio Night Market",
+          "en": "Helio Night Market"
+        },
+        "description": {
+          "ru": "Современный ночной рынок с 100+ стендами уличной еды. Чисто, безопасно, много местных.",
+          "en": "Modern night market with 100+ street food stalls. Clean, safe, many locals."
+        },
+        "price": {
+          "ru": "$3–6 на человека",
+          "en": "$3–6 per person"
+        }
+      }
+    ]
+  },
+  "markets": {
+    "title": {
+      "ru": "Рынки",
+      "en": "Markets"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Han Market (Cho Han)",
+          "en": "Han Market (Cho Han)"
+        },
+        "description": {
+          "ru": "Центральный рынок у реки Han. Специи, сухофрукты, одежда, сувениры. Утром — свежие продукты.",
+          "en": "Central market by Han River. Spices, dried fruits, clothes, souvenirs. Fresh produce in the morning."
+        },
+        "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Con Market (Cho Con)",
+          "en": "Con Market (Cho Con)"
+        },
+        "description": {
+          "ru": "Самый большой рынок Дананга. Дешевле Han Market, больше местных покупателей.",
+          "en": "Da Nang's largest market. Cheaper than Han Market, more local shoppers."
+        },
+        "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=800&q=80"
+      }
+    ]
+  },
+  "tours": {
+    "title": {
+      "ru": "Экскурсии",
+      "en": "Tours & excursions"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Ba Na Hills + Golden Bridge",
+          "en": "Ba Na Hills + Golden Bridge"
+        },
+        "description": {
+          "ru": "Полный день: канатная дорога, Golden Bridge, French Village, Fantasy Park. Бронируйте заранее.",
+          "en": "Full day: cable car, Golden Bridge, French Village, Fantasy Park. Book in advance."
+        },
+        "price": {
+          "ru": "900,000–1,100,000 VND",
+          "en": "900,000–1,100,000 VND"
+        },
+        "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Hoi An Evening Tour",
+          "en": "Hoi An Evening Tour"
+        },
+        "description": {
+          "ru": "Трансфер + прогулка по старому городу вечером, когда зажигаются фонари. Волшебная атмосфера.",
+          "en": "Transfer + old town walk in evening when lanterns light up. Magical atmosphere."
+        },
+        "price": {
+          "ru": "300,000–500,000 VND",
+          "en": "300,000–500,000 VND"
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Hue Imperial City Day Trip",
+          "en": "Hue Imperial City Day Trip"
+        },
+        "description": {
+          "ru": "Императорская цитадель, гробницы, pagodas. 2.5 ч в одну сторону через Hai Van Pass.",
+          "en": "Imperial citadel, tombs, pagodas. 2.5h each way via Hai Van Pass."
+        },
+        "price": {
+          "ru": "800,000–1,500,000 VND",
+          "en": "800,000–1,500,000 VND"
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Marble Mountains + Non Nuoc",
+          "en": "Marble Mountains + Non Nuoc"
+        },
+        "description": {
+          "ru": "Полдня: пещеры, храмы, пляж. Можно самостоятельно на Grab.",
+          "en": "Half day: caves, temples, beach. Easy DIY with Grab."
+        },
+        "price": {
+          "ru": "40,000 VND + транспорт",
+          "en": "40,000 VND + transport"
+        }
+      }
+    ]
+  },
+  "transport": {
+    "title": {
+      "ru": "Транспорт",
+      "en": "Getting around"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Grab",
+          "en": "Grab"
+        },
+        "description": {
+          "ru": "GrabCar и GrabBike — основной транспорт. Дешевле такси, прозрачные цены. GrabBike от 10,000 VND.",
+          "en": "GrabCar and GrabBike — main transport. Cheaper than taxi, transparent pricing. GrabBike from 10,000 VND."
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Аренда скутера",
+          "en": "Scooter rental"
+        },
+        "description": {
+          "ru": "120,000–180,000 VND/день. Идеально для Hai Van Pass и Hoi An. Права категории A обязательны.",
+          "en": "120,000–180,000 VND/day. Perfect for Hai Van Pass and Hoi An. Category A license required."
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Автобус до Hoi An",
+          "en": "Bus to Hoi An"
+        },
+        "description": {
+          "ru": "Yellow bus #1 от Han Market до Hoi An: 30,000 VND, 45–60 мин. Каждые 20 мин.",
+          "en": "Yellow bus #1 from Han Market to Hoi An: 30,000 VND, 45–60 min. Every 20 min."
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Велосипед",
+          "en": "Bicycle"
+        },
+        "description": {
+          "ru": "Город плоский, My Khe и центр удобны на велосипеде. Аренда 50,000–80,000 VND/день.",
+          "en": "Flat city, My Khe and center easy by bike. Rental 50,000–80,000 VND/day."
+        }
+      }
+    ]
+  },
+  "simAndInternet": {
+    "title": {
+      "ru": "Сим-карты и интернет",
+      "en": "SIM cards & internet"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Viettel / Vinaphone",
+          "en": "Viettel / Vinaphone"
+        },
+        "description": {
+          "ru": "Салоны на каждом углу. Viettel — лучший интернет. Паспорт для регистрации.",
+          "en": "Shops on every corner. Viettel — best internet. Passport for registration."
+        },
+        "price": {
+          "ru": "30 GB / 30 дней: ~150,000 VND",
+          "en": "30 GB / 30 days: ~150,000 VND"
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Coworking Wi-Fi",
+          "en": "Coworking Wi-Fi"
+        },
+        "description": {
+          "ru": "An Thuong — много coworking (Enouvo Space, Start). Day pass от 100,000 VND с быстрым интернетом.",
+          "en": "An Thuong has many coworking spaces (Enouvo Space, Start). Day pass from 100,000 VND with fast internet."
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      }
+    ]
+  },
+  "money": {
+    "title": {
+      "ru": "Деньги и цены",
+      "en": "Money & prices"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Обмен валюты",
+          "en": "Currency exchange"
+        },
+        "description": {
+          "ru": "Лучший курс — ювелирные лавки на Tran Phu и Dong Da. Избегайте обмена в аэропорту.",
+          "en": "Best rates at jewelry shops on Tran Phu and Dong Da. Avoid airport exchange."
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Примерные цены",
+          "en": "Sample prices"
+        },
+        "description": {
+          "ru": "Mi Quang: 40,000 VND | Banh mi: 25,000 VND | Обед: 80,000–120,000 VND | Grab до Hoi An: 200,000 VND | Массаж: 150,000 VND/ч",
+          "en": "Mi Quang: 40,000 VND | Banh mi: 25,000 VND | Lunch: 80,000–120,000 VND | Grab to Hoi An: 200,000 VND | Massage: 150,000 VND/h"
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      }
+    ]
+  },
+  "safety": {
+    "title": {
+      "ru": "Безопасность",
+      "en": "Safety"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Общая безопасность",
+          "en": "General safety"
+        },
+        "description": {
+          "ru": "Дананг — один из самых безопасных городов Вьетнама. Низкий уровень преступности, чистые улицы, хорошая инфраструктура.",
+          "en": "Da Nang is one of Vietnam's safest cities. Low crime, clean streets, good infrastructure."
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Hai Van Pass",
+          "en": "Hai Van Pass"
+        },
+        "description": {
+          "ru": "На байке — только опытным. Туман, грузовики, крутые повороты. Шлем обязателен.",
+          "en": "On scooter — experienced riders only. Fog, trucks, sharp turns. Helmet mandatory."
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Экстренные номера",
+          "en": "Emergency numbers"
+        },
+        "description": {
+          "ru": "Полиция: 113 | Скорая: 115 | Пожарная: 114",
+          "en": "Police: 113 | Ambulance: 115 | Fire: 114"
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      }
+    ]
+  },
+  "phrases": {
+    "title": {
+      "ru": "Базовые фразы",
+      "en": "Basic phrases"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Xin chào — Здравствуйте",
+          "en": "Xin chào — Hello"
+        },
+        "description": {
+          "ru": "Sin chao",
+          "en": "Sin chao"
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Cảm ơn — Спасибо",
+          "en": "Cảm ơn — Thank you"
+        },
+        "description": {
+          "ru": "Gam un",
+          "en": "Gam un"
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Ngon quá! — Очень вкусно!",
+          "en": "Ngon quá! — Very delicious!"
+        },
+        "description": {
+          "ru": "Ng-on kwa",
+          "en": "Ng-on kwa"
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Cho tôi... — Дайте мне...",
+          "en": "Cho tôi... — Give me..."
+        },
+        "description": {
+          "ru": "Cho toy",
+          "en": "Cho toy"
+        }
+      },
+      {
+        "title": {
+          "ru": "Đi Hội An — В Хойан",
+          "en": "Đi Hội An — To Hoi An"
+        },
+        "description": {
+          "ru": "Di hoy an",
+          "en": "Di hoy an"
+        }
+      }
+    ]
+  },
+  "lifehacks": {
+    "title": {
+      "ru": "Лайфхаки",
+      "en": "Lifehacks"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Ba Na Hills — приходите рано",
+          "en": "Ba Na Hills — arrive early"
+        },
+        "description": {
+          "ru": "Открывается в 7:00. К 10:00 очереди на канатку — 1–2 часа. Билеты онлайн дешевле.",
+          "en": "Opens at 7 AM. By 10 AM cable car queues are 1–2 hours. Online tickets cheaper."
+        },
+        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Hoi An бесплатно после 17:00",
+          "en": "Hoi An free after 5 PM"
+        },
+        "description": {
+          "ru": "Входной билет не нужен вечером, когда зажигаются фонари. Самое красивое время.",
+          "en": "No entrance ticket needed in evening when lanterns light up. Most beautiful time."
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Dragon Bridge шоу",
+          "en": "Dragon Bridge show"
+        },
+        "description": {
+          "ru": "Суббота и воскресенье в 21:00 — огненное шоу. Приходите за 30 мин, мест на мосту мало.",
+          "en": "Saturday and Sunday at 9 PM — fire show. Arrive 30 min early, limited bridge spots."
+        },
+        "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Заказ костюма в Hoi An",
+          "en": "Custom suit in Hoi An"
+        },
+        "description": {
+          "ru": "Костюм за 24–48 ч от $100. Yaly Couture, Bebe — проверенные ателье. Торгуйтесь.",
+          "en": "Suit in 24–48h from $100. Yaly Couture, Bebe — trusted tailors. Negotiate."
+        }
+      }
+    ]
+  },
+  "scams": {
+    "title": {
+      "ru": "Разводы и предупреждения",
+      "en": "Scams & warnings"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Завышенные цены на Marble Mountains",
+          "en": "Overpriced Marble Mountains guides"
+        },
+        "description": {
+          "ru": "«Гиды» у входа предлагают тур за 500,000+ VND. Осмотр самостоятельно — 40,000 VND.",
+          "en": "'Guides' at entrance offer tours for 500,000+ VND. Self-visit costs 40,000 VND."
+        },
+        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Такси без счётчика",
+          "en": "Unmetered taxis"
+        },
+        "description": {
+          "ru": "Белые такси без логотипа Mai Linh/Vinasun — часто завышают. Только Grab или официальные.",
+          "en": "White taxis without Mai Linh/Vinasun logo — often overcharge. Only Grab or official."
+        },
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80"
+      },
+      {
+        "title": {
+          "ru": "Фейковые билеты Ba Na Hills",
+          "en": "Fake Ba Na Hills tickets"
+        },
+        "description": {
+          "ru": "Покупайте только на официальном сайте banahills.sunworld.vn или в кассах.",
+          "en": "Buy only on official site banahills.sunworld.vn or at ticket counters."
+        },
+        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+      }
+    ]
+  },
+  "aiKnowledgeBase": "Da Nang is Vietnam's third-largest city in central Vietnam. Airport: Da Nang International (DAD), only 3km from center. Key sights: Golden Bridge at Ba Na Hills (900k VND, book online), Marble Mountains (40k VND), Dragon Bridge (fire show weekends 9PM), Lady Buddha on Son Tra, Hoi An (30km, 120k entrance), Hai Van Pass. Best beach: My Khe (Forbes top 6). Food: Madame Lan, Be Man seafood, Mi Quang 1A, Banh Mi Ba Lan, Helio Night Market. Transport: Grab main option, scooter 120-180k/day, bus #1 to Hoi An 30k VND. Districts: My Khe (beach), Han River (center), An Thuong (nomads), Son Tra (luxury). SIM: Viettel best, ~150k for 30GB. Best time: Feb-Aug dry season. Scams: overpriced Marble Mountain guides, unmetered taxis, fake Ba Na tickets. Hoi An free after 5PM. Emergency: 113/115/114."
+}

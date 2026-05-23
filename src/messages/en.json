@@ -1,0 +1,140 @@
+{
+  "app": {
+    "name": "Online Travel Guide",
+    "tagline": "Your pocket travel guide with AI assistant",
+    "description": "Structured city information and a smart assistant for travelers worldwide"
+  },
+  "nav": {
+    "home": "Home",
+    "countries": "Countries",
+    "search": "Search countries and cities...",
+    "searchNoResults": "Nothing found",
+    "back": "Back"
+  },
+  "home": {
+    "heroTitle": "Travel Smarter",
+    "heroSubtitle": "Pick a destination — get everything you need for your trip and an AI assistant who knows every corner of the city",
+    "exploreCountries": "Explore countries",
+    "featuredDestinations": "Featured destinations",
+    "whyUs": "Why us",
+    "feature1Title": "Everything in one place",
+    "feature1Desc": "Transport, food, beaches, lifehacks — structured and to the point",
+    "feature2Title": "AI assistant",
+    "feature2Desc": "Ask questions about the city and get answers with local context",
+    "feature3Title": "Offline PDF guide",
+    "feature3Desc": "Download a complete guide in Russian and English"
+  },
+  "country": {
+    "cities": "Cities",
+    "exploreCity": "Open guide"
+  },
+  "city": {
+    "overview": "Overview",
+    "sights": "Sights",
+    "food": "Food",
+    "transport": "Transport",
+    "lifehacks": "Lifehacks",
+    "map": "Map",
+    "chat": "AI Chat",
+    "download": "Download PDF",
+    "bestTime": "Best time",
+    "currency": "Currency",
+    "language": "Language",
+    "timezone": "Timezone",
+    "downloadGuide": "Download guide",
+    "downloadDesc": "Complete bilingual guide for offline use",
+    "downloading": "Generating PDF...",
+    "tips": "Tips"
+  },
+  "chat": {
+    "title": "AI Assistant",
+    "subtitle": "Ask about {city} — I know transport, food, beaches, and local tips",
+    "placeholder": "Where to eat? How to get to the beach? Where to exchange currency?",
+    "send": "Send",
+    "thinking": "Thinking...",
+    "error": "Error. Check your Gemini API key or try again.",
+    "welcome": "Hi! I'm your guide to {city}. Ask me anything — from best restaurants to avoiding scams.",
+    "noApiKey": "AI chat unavailable: GEMINI_API_KEY not configured",
+    "copy": "Copy",
+    "saveFavorite": "Save",
+    "prompts": {
+      "food": "Best local food?",
+      "beach": "Which beach today?",
+      "transport": "Airport to hotel?",
+      "scams": "Common scams?"
+    }
+  },
+  "live": {
+    "title": "Live info",
+    "weather": "Weather",
+    "exchange": "Exchange",
+    "localTime": "Local time",
+    "tip": "Tip",
+    "unavailable": "—",
+    "tipHot": "It's hot — drink water, use SPF 50+, avoid midday sun.",
+    "tipRain": "Rain expected — pack a light rain jacket and flexible plans.",
+    "tipDefault": "Explore {city} early morning for fewer crowds and cooler temps."
+  },
+  "map": {
+    "hint": "Tap markers for details. Colors show category.",
+    "noMarkers": "No map markers for this city yet.",
+    "category": {
+      "airport": "Airport",
+      "beach": "Beach",
+      "food": "Food",
+      "sight": "Sight",
+      "district": "District",
+      "transport": "Transport"
+    }
+  },
+  "checklist": {
+    "title": "Trip checklist",
+    "progress": "{done} / {total} done"
+  },
+  "compare": {
+    "title": "Compare cities",
+    "subtitle": "Quick side-by-side for your route planning",
+    "criteria": "Criteria",
+    "row": {
+      "tagline": "Vibe",
+      "bestTime": "Best time",
+      "beaches": "Beach spots",
+      "sightsFood": "Sights & food items",
+      "markers": "Map pins",
+      "checklist": "Checklist items"
+    }
+  },
+  "favorites": {
+    "title": "Favorites",
+    "empty": "Nothing saved yet. Save places from the guide or AI replies.",
+    "close": "Close",
+    "remove": "Remove",
+    "openCity": "Open city guide",
+    "chatTitle": "AI tip — {city}"
+  },
+  "search": {
+    "cityPlaceholder": "Search in {city}...",
+    "clear": "Clear",
+    "noResults": "No matches"
+  },
+  "quickActions": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "maps": "Maps",
+    "grab": "Grab"
+  },
+  "backToTop": {
+    "label": "Back to top"
+  },
+  "pwa": {
+    "installHint": "Add to home screen for offline access"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "footer": {
+    "madeWith": "Made for travelers",
+    "comingSoon": "More countries coming soon"
+  }
+}
