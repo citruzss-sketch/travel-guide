@@ -129,7 +129,7 @@ export function ChatSavedPanel({
       <motion.div
         initial={false}
         animate={{ width: collapsed ? 48 : 288 }}
-        className="hidden h-full shrink-0 flex-col border-r border-border bg-background/95 md:flex"
+        className="hidden h-full min-h-0 shrink-0 flex-col border-r border-border bg-background/95 md:flex"
       >
         <div className="flex items-center justify-between border-b border-border px-3 py-3">
           {!collapsed && (
