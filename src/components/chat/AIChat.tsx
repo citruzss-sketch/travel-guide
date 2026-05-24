@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useMemo, useCallback } from "react";
+import { createPortal } from "react-dom";
 import {
   Send,
   Bot,
@@ -48,6 +49,34 @@ export interface ChatLaunchConfig {
   initialInput?: string;
   placeContext?: PlaceContext;
   autoSend?: boolean;
+}
+
+function ChatShell({
+  expanded,
+  portalReady,
+  children,
+}: {
+  expanded: boolean;
+  portalReady: boolean;
+  children: React.ReactNode;
+}) {
+  const shell = (
+    <div
+      className={`flex h-full overflow-hidden bg-surface ${
+        expanded
+          ? "fixed inset-0 z-[200] h-[100dvh] max-h-[100dvh] w-full rounded-none border-0 pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]"
+          : "relative h-[min(calc(100dvh-9.5rem),820px)] rounded-2xl border border-border md:h-[min(78vh,720px)]"
+      }`}
+    >
+      {children}
+    </div>
+  );
+
+  if (expanded && portalReady) {
+    return createPortal(shell, document.body);
+  }
+
+  return shell;
 }
 
 interface AIChatProps {
@@ -101,7 +130,9 @@ export function AIChat({
   const [savedPanelMobileOpen, setSavedPanelMobileOpen] = useState(false);
   const [expanded, setExpanded] = useState(false);
   const [controlsOpen, setControlsOpen] = useState(true);
+  const [portalReady, setPortalReady] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const messagesScrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const launchApplied = useRef(-1);
   const sessionIdRef = useRef<string | null>(null);
@@ -307,7 +338,12 @@ export function AIChat({
   const placeholder = t(`chat.placeholder.${mode}`);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    const el = messagesScrollRef.current;
+    if (el) {
+      el.scrollTo({ top: el.scrollHeight, behavior: "smooth" });
+    } else {
+      bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
   }, [messages]);
 
   const handleModeChange = (next: AIMode) => {
@@ -333,12 +369,20 @@ export function AIChat({
   const hasConversation = messages.some((m) => m.role === "user");
 
   useEffect(() => {
+    setPortalReady(true);
+  }, []);
+
+  useEffect(() => {
     onExpandChange?.(expanded);
     if (!expanded) return;
-    const prev = document.body.style.overflow;
+    const html = document.documentElement;
+    const prevBody = document.body.style.overflow;
+    const prevHtml = html.style.overflow;
     document.body.style.overflow = "hidden";
+    html.style.overflow = "hidden";
     return () => {
-      document.body.style.overflow = prev;
+      document.body.style.overflow = prevBody;
+      html.style.overflow = prevHtml;
     };
   }, [expanded, onExpandChange]);
 
@@ -346,7 +390,16 @@ export function AIChat({
     if (hasConversation) setControlsOpen(false);
   }, [hasConversation]);
 
-  const toggleExpanded = () => setExpanded((v) => !v);
+  const toggleExpanded = () => {
+    setExpanded((v) => {
+      if (!v) setControlsOpen(false);
+      return !v;
+    });
+  };
+
+  const handleControlsToggle = () => {
+    setControlsOpen((v) => !v);
+  };
 
   const saveToFavorites = (content: string, compact = false) => {
     add({
@@ -410,13 +463,7 @@ export function AIChat({
   };
 
   return (
-    <motion.div
-      className={`relative flex overflow-hidden bg-surface ${
-        expanded
-          ? "fixed inset-0 z-[200] h-[100dvh] rounded-none border-0 pt-[env(safe-area-inset-top)]"
-          : "h-[min(calc(100dvh-9.5rem),820px)] rounded-2xl border border-border md:h-[min(78vh,720px)]"
-      }`}
-    >
+    <ChatShell expanded={expanded} portalReady={portalReady}>
       <ChatSavedPanel
         citySlug={citySlug}
         activeSessionId={activeSessionId}
@@ -427,7 +474,7 @@ export function AIChat({
         onSessionDeleted={handleSessionDeleted}
       />
 
-      <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
+      <div className="flex h-full min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
       <div className="shrink-0 border-b border-border px-3 py-3 sm:px-5 sm:py-4">
         <div className="flex items-start justify-between gap-2">
           <div className="min-w-0">
@@ -441,7 +488,7 @@ export function AIChat({
           <div className="flex shrink-0 items-center gap-1">
             <button
               type="button"
-              onClick={() => setControlsOpen((v) => !v)}
+              onClick={handleControlsToggle}
               className="inline-flex items-center gap-1 rounded-xl border border-border px-2.5 py-2 text-xs font-semibold text-muted transition-colors hover:border-accent/40 hover:text-accent"
               aria-expanded={controlsOpen}
             >
@@ -478,9 +525,9 @@ export function AIChat({
           </div>
         </div>
 
-        {controlsOpen && (
+        {controlsOpen && !expanded && (
           <div className="mt-3 space-y-3 sm:space-y-4">
-            <AIModeSelector value={mode} onChange={handleModeChange} disabled={loading} compact={!expanded} />
+            <AIModeSelector value={mode} onChange={handleModeChange} disabled={loading} />
             <TravelProfileBar value={profile} onChange={setProfile} disabled={loading} />
             {placeContext && (
               <p className="rounded-lg border border-accent/30 bg-accent/10 px-3 py-2 text-xs text-foreground">
@@ -505,11 +552,44 @@ export function AIChat({
         )}
       </div>
 
+      {expanded && controlsOpen && (
+        <div className="chat-scroll shrink-0 border-b border-border px-3 py-3 sm:px-5 max-h-[min(34dvh,320px)] overflow-y-auto overscroll-contain">
+          <AIModeSelector value={mode} onChange={handleModeChange} disabled={loading} compact />
+          <div className="mt-3 space-y-3">
+            <TravelProfileBar value={profile} onChange={setProfile} disabled={loading} />
+            {placeContext && (
+              <p className="rounded-lg border border-accent/30 bg-accent/10 px-3 py-2 text-xs text-foreground">
+                {t("chat.aboutPlace", { place: placeContext.title })}
+              </p>
+            )}
+            {mode === "sos" && <SOSChatBar onScenario={handleSOSScenario} />}
+            <div className="flex flex-wrap gap-2">
+              {quickPrompts.map((prompt) => (
+                <button
+                  key={prompt}
+                  type="button"
+                  onClick={() => sendMessage(prompt)}
+                  disabled={loading}
+                  className="rounded-full border border-border bg-background px-3 py-1.5 text-xs font-semibold text-muted transition-colors hover:border-accent/40 hover:text-foreground disabled:opacity-50"
+                >
+                  {prompt}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
       <div
-        className={`flex-1 space-y-4 overflow-y-auto overscroll-contain p-3 sm:p-5 ${
-          expanded ? "mx-auto w-full max-w-3xl px-4 sm:px-6" : ""
+        className={`flex min-h-0 flex-1 basis-0 flex-col overflow-hidden ${
+          expanded ? "mx-auto w-full max-w-3xl" : ""
         }`}
       >
+        <div
+          ref={messagesScrollRef}
+          className="chat-scroll min-h-0 flex-1 basis-0 space-y-4 overflow-y-auto overscroll-contain p-3 sm:p-5"
+          onWheel={(e) => e.stopPropagation()}
+        >
 
         {messages.map((msg, i) => (
           <motion.div
@@ -644,10 +724,10 @@ export function AIChat({
           </motion.div>
         ))}
         <div ref={bottomRef} />
-      </div>
+        </div>
 
       {error && (
-        <p className="border-t border-border px-4 py-2 text-sm text-red-500">{error}</p>
+        <p className="shrink-0 border-t border-border px-4 py-2 text-sm text-red-500">{error}</p>
       )}
 
       <form
@@ -680,6 +760,7 @@ export function AIChat({
         </button>
       </form>
       </div>
-    </motion.div>
+      </div>
+    </ChatShell>
   );
 }

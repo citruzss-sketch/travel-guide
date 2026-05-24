@@ -126,6 +126,12 @@ body {
   display: none;
 }
 
+.chat-scroll {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
+
 /* Prevents 1px gap under Next/Image in card headers */
 .card-media {
   overflow: hidden;
