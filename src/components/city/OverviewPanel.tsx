@@ -48,7 +48,7 @@ export function OverviewPanel({
         <TravelProfileBar value={profile} onChange={setProfile} />
       </div>
 
-      <FirstDayGuide locale={locale} cityName={cityName} onNavigate={onNavigate} />
+      <FirstDayGuide cityName={cityName} onNavigate={onNavigate} />
 
       <TripPlanPanel
         citySlug={city.slug}

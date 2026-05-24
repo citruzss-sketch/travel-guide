@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, useMemo, useCallback } from "react";
+import { useState, useRef, useEffect, useLayoutEffect, useMemo, useCallback } from "react";
 import {
   Send,
   Bot,
@@ -105,6 +105,7 @@ export function AIChat({
   const inputRef = useRef<HTMLInputElement>(null);
   const launchApplied = useRef(-1);
   const sessionIdRef = useRef<string | null>(null);
+  const sendMessageRef = useRef<((text?: string, overrides?: { mode?: AIMode; placeContext?: PlaceContext }) => void) | null>(null);
 
   const resetWelcome = useCallback(
     (nextMode: AIMode) => {
@@ -197,7 +198,7 @@ export function AIChat({
     if (launchConfig.autoSend && launchConfig.initialInput) {
       setInput("");
       queueMicrotask(() => {
-        void sendMessage(launchConfig.initialInput, {
+        void sendMessageRef.current?.(launchConfig.initialInput, {
           mode: nextMode,
           placeContext: launchConfig.placeContext,
         });
@@ -292,6 +293,10 @@ export function AIChat({
       setLoading(false);
     }
   };
+
+  useLayoutEffect(() => {
+    sendMessageRef.current = sendMessage;
+  });
 
   const handleSOSScenario = (scenarioId: string) => {
     void sendMessage(getSOSPrompt(scenarioId, locale, cityName), { mode: "sos" });

@@ -163,7 +163,7 @@ export function useLiveData(
       cancelled = true;
       clearInterval(refresh);
     };
-  }, [coordinates?.lat, coordinates?.lng, timezoneOffset]);
+  }, [coordinates?.lat, coordinates?.lng, timezoneOffset]); // eslint-disable-line react-hooks/exhaustive-deps -- primitive values from coordinates are the correct deps
 
   return {
     ...data,

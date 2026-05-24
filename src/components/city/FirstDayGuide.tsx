@@ -7,11 +7,10 @@ import {
   ShieldAlert,
   ChevronRight,
 } from "lucide-react";
-import type { CityTab, Locale } from "@/types/content";
+import type { CityTab } from "@/types/content";
 import { useT } from "@/components/providers/LocaleProvider";
 
 interface FirstDayGuideProps {
-  locale: Locale;
   cityName: string;
   onNavigate: (tab: CityTab, sectionId?: string) => void;
 }
@@ -23,7 +22,7 @@ const STEPS = [
   { icon: ShieldAlert, tab: "lifehacks" as CityTab, sectionId: "scams", key: "safety" },
 ];
 
-export function FirstDayGuide({ locale, cityName, onNavigate }: FirstDayGuideProps) {
+export function FirstDayGuide({ cityName, onNavigate }: FirstDayGuideProps) {
   const t = useT();
 
   return (

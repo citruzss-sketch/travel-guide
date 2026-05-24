@@ -23,7 +23,7 @@ export function CurrencyConverter({ usdToVnd }: CurrencyConverterProps) {
       return `${formatNumber(Math.round(value * rate), locale)} VND`;
     }
     return `$${(value / rate).toFixed(2)}`;
-  }, [amount, direction, rate]);
+  }, [amount, direction, rate, locale]);
 
   const swap = () => {
     setDirection((d) => (d === "usd-vnd" ? "vnd-usd" : "usd-vnd"));
