@@ -129,7 +129,7 @@ export function AIChat({
   const [activeSessionId, setActiveSessionId] = useState<string | null>(null);
   const [savedPanelMobileOpen, setSavedPanelMobileOpen] = useState(false);
   const [expanded, setExpanded] = useState(false);
-  const [controlsOpen, setControlsOpen] = useState(true);
+  const [controlsOpen, setControlsOpen] = useState(false);
   const [portalReady, setPortalReady] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
   const messagesScrollRef = useRef<HTMLDivElement>(null);
@@ -471,12 +471,8 @@ export function AIChat({
       />
 
       <div
-        className={`grid h-full min-h-0 min-w-0 flex-1 overflow-hidden ${
+        className={`flex h-full min-h-0 min-w-0 flex-1 flex-col overflow-hidden ${
           expanded ? "mx-auto w-full max-w-3xl" : ""
-        } ${
-          controlsOpen
-            ? "grid-rows-[auto_auto_minmax(0,1fr)_auto_auto]"
-            : "grid-rows-[auto_minmax(0,1fr)_auto_auto]"
         }`}
       >
         <header className="border-b border-border px-3 py-3 sm:px-5 sm:py-4">
@@ -525,7 +521,7 @@ export function AIChat({
         </header>
 
         {controlsOpen && (
-          <div className="chat-scroll min-h-0 overflow-y-auto overscroll-contain border-b border-border px-3 py-3 sm:px-5 max-h-[min(36vh,300px)]">
+          <div className="chat-scroll shrink-0 overflow-y-auto overscroll-contain border-b border-border px-3 py-3 sm:px-5 max-h-[min(28vh,240px)]">
             <AIModeSelector value={mode} onChange={handleModeChange} disabled={loading} compact />
             <div className="mt-3 space-y-3">
               <TravelProfileBar value={profile} onChange={setProfile} disabled={loading} />
@@ -552,10 +548,11 @@ export function AIChat({
           </div>
         )}
 
+        <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
         <div
           ref={messagesScrollRef}
           tabIndex={0}
-          className="chat-scroll min-h-0 space-y-4 overflow-y-auto overscroll-contain p-3 sm:p-5 focus:outline-none"
+          className="chat-scroll min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain p-3 sm:p-5 focus:outline-none"
         >
         {messages.map((msg, i) => (
           <motion.div
@@ -692,12 +689,30 @@ export function AIChat({
           <div ref={bottomRef} />
         </div>
 
+      {!controlsOpen && quickPrompts.length > 0 && (
+        <div className="mode-scroll shrink-0 overflow-x-auto border-t border-border px-3 py-2 sm:px-4">
+          <div className="flex w-max gap-2">
+            {quickPrompts.map((prompt) => (
+              <button
+                key={prompt}
+                type="button"
+                onClick={() => sendMessage(prompt)}
+                disabled={loading}
+                className="shrink-0 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-semibold text-muted transition-colors hover:border-accent/40 hover:text-foreground disabled:opacity-50"
+              >
+                {prompt}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
       {error && (
-        <p className="shrink-0 border-t border-border px-4 py-2 text-sm text-red-500">{error}</p>
+        <p className="shrink-0 border-t border-border bg-surface px-4 py-2 text-sm text-red-500">{error}</p>
       )}
 
       <form
-        className="flex shrink-0 gap-2 border-t border-border p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:p-4"
+        className="relative z-10 flex shrink-0 gap-2 border-t border-border bg-surface p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:p-4"
         onSubmit={(e) => {
           e.preventDefault();
           sendMessage();
@@ -725,6 +740,7 @@ export function AIChat({
           )}
         </button>
       </form>
+        </div>
       </div>
     </ChatShell>
   );
