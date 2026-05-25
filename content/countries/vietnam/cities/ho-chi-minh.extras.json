@@ -1,0 +1,214 @@
+{
+  "coordinates": { "lat": 10.7769, "lng": 106.7009 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Сон Ньят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "8 км от центра, Grab ~150k VND",
+        "en": "8 km from center, Grab ~150k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6519,
+      "category": "airport"
+    },
+    {
+      "id": "ben-thanh",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Символ Сайгона, торгуйтесь!",
+        "en": "Symbol of Saigon, bargain hard!"
+      },
+      "lat": 10.7724,
+      "lng": 106.6983,
+      "category": "food"
+    },
+    {
+      "id": "war-museum",
+      "title": { "ru": "Музей военных реликвий", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "Лучше прийти к 7:30, до туристических групп",
+        "en": "Best to arrive at 7:30 before tour groups"
+      },
+      "lat": 10.7797,
+      "lng": 106.6926,
+      "category": "sight"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец Воссоединения", "en": "Reunification Palace" },
+      "description": {
+        "ru": "Исторический символ окончания войны 1975 г.",
+        "en": "Historic symbol of the 1975 war's end"
+      },
+      "lat": 10.7769,
+      "lng": 106.6952,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "description": {
+        "ru": "Французская готика + почтамт Эйфеля рядом",
+        "en": "French Gothic + Eiffel post office next door"
+      },
+      "lat": 10.7797,
+      "lng": 106.699,
+      "category": "sight"
+    },
+    {
+      "id": "jade-pagoda",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Черепахи, боги, благовония — лучший храм Сайгона",
+        "en": "Turtles, deities, incense — Saigon's best temple"
+      },
+      "lat": 10.7895,
+      "lng": 106.6929,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco",
+      "title": { "ru": "Башня Bitexco — смотровая", "en": "Bitexco Tower — Skydeck" },
+      "description": {
+        "ru": "49-й этаж, вид 360°, лучше вечером",
+        "en": "49th floor, 360° view, best in the evening"
+      },
+      "lat": 10.7717,
+      "lng": 106.7033,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Улица Буй Вьен (ночная)", "en": "Bui Vien Walking Street" },
+      "description": {
+        "ru": "Ночная жизнь, уличная еда с 18:00",
+        "en": "Nightlife, street food from 6 PM"
+      },
+      "lat": 10.7673,
+      "lng": 106.6946,
+      "category": "district"
+    },
+    {
+      "id": "pham-ngu-lao",
+      "title": { "ru": "Район Фам Нгу Лао", "en": "Pham Ngu Lao district" },
+      "description": {
+        "ru": "Центр бэкпекеров — хостелы, туры, обменники",
+        "en": "Backpacker hub — hostels, tours, currency exchange"
+      },
+      "lat": 10.7679,
+      "lng": 106.692,
+      "category": "district"
+    },
+    {
+      "id": "thao-dien",
+      "title": { "ru": "Tháo Điền (expat-квартал)", "en": "Thao Dien (expat quarter)" },
+      "description": {
+        "ru": "Рестораны, coworking, international вилы",
+        "en": "Restaurants, coworking, international villas"
+      },
+      "lat": 10.8023,
+      "lng": 106.7333,
+      "category": "district"
+    },
+    {
+      "id": "ben-thanh-metro",
+      "title": { "ru": "Метро Ben Thanh (Линия 1)", "en": "Ben Thanh Metro (Line 1)" },
+      "description": {
+        "ru": "До Suoi Tien, 14 станций, открыта 2024",
+        "en": "To Suoi Tien, 14 stations, opened 2024"
+      },
+      "lat": 10.7722,
+      "lng": 106.698,
+      "category": "transport"
+    },
+    {
+      "id": "bach-dang-pier",
+      "title": { "ru": "Причал Bach Dang (паромы)", "en": "Bach Dang Pier (ferries)" },
+      "description": {
+        "ru": "Паром в Вунгтау и переправа через реку",
+        "en": "Vung Tau ferry and cross-river crossing"
+      },
+      "lat": 10.7796,
+      "lng": 106.7048,
+      "category": "transport"
+    },
+    {
+      "id": "cho-lon",
+      "title": { "ru": "Чайнатаун Чо Лон", "en": "Cho Lon Chinatown" },
+      "description": {
+        "ru": "Рынок Бинь Тай, храмы, аутентичная атмосфера",
+        "en": "Binh Tay market, temples, authentic atmosphere"
+      },
+      "lat": 10.7524,
+      "lng": 106.6586,
+      "category": "district"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам (90 дней)",
+        "en": "Check Vietnam visa / e-visa (90 days)"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM в аэропорту SGN (Viettel)",
+        "en": "Buy SIM at SGN airport (Viettel)"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab — только официальные машины",
+        "en": "Install Grab — official cars only, no street taxis"
+      }
+    },
+    {
+      "id": "metro",
+      "label": {
+        "ru": "Скачать схему метро (линия 1)",
+        "en": "Download metro map (Line 1)"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур в туннели Ку Чи",
+        "en": "Book Cu Chi Tunnels tour in advance"
+      }
+    },
+    {
+      "id": "phone-safety",
+      "label": {
+        "ru": "Сумка через плечо — от кражи телефона на улице",
+        "en": "Crossbody bag — phone theft prevention on streets"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять наличные VND (Vietcombank — низкая комиссия)",
+        "en": "Withdraw VND cash (Vietcombank — low fees)"
+      }
+    },
+    {
+      "id": "cross-street",
+      "label": {
+        "ru": "Запомнить: переходить улицу медленно и равномерно",
+        "en": "Remember: cross streets slowly and steadily"
+      }
+    },
+    {
+      "id": "busmap",
+      "label": {
+        "ru": "Скачать BusMap — карта автобусов Хошимина",
+        "en": "Download BusMap — Ho Chi Minh City bus routes"
+      }
+    }
+  ]
+}
