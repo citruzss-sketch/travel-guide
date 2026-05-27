@@ -8,7 +8,16 @@ interface ChatMessage {
 }
 
 export async function POST(request: Request) {
-  const body = await request.json();
+  let body: unknown;
+  try {
+    body = await request.json();
+  } catch {
+    return new Response(JSON.stringify({ error: "invalid_json" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
   const {
     messages,
     countrySlug,
@@ -17,7 +26,7 @@ export async function POST(request: Request) {
     mode,
     profile,
     placeContext,
-  }: {
+  } = body as {
     messages: ChatMessage[];
     countrySlug: string;
     citySlug: string;
@@ -25,7 +34,7 @@ export async function POST(request: Request) {
     mode?: AIMode;
     profile?: TravelProfile;
     placeContext?: PlaceContext;
-  } = body;
+  };
 
   const city = getCity(countrySlug, citySlug);
   if (!city) {
@@ -59,6 +68,7 @@ export async function POST(request: Request) {
     profile: profile ?? "any",
     placeContext,
   });
+
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({
     model: "gemini-2.5-flash",
@@ -74,14 +84,25 @@ export async function POST(request: Request) {
     parts: [{ text: m.content }],
   }));
 
-  const chat = model.startChat({ history });
-  const result = await chat.sendMessageStream(lastMessage.content);
+  let streamResult: Awaited<ReturnType<ReturnType<typeof model.startChat>["sendMessageStream"]>>;
+  try {
+    const chat = model.startChat({ history });
+    streamResult = await chat.sendMessageStream(lastMessage.content);
+  } catch {
+    return new Response(
+      JSON.stringify({ error: "model_unavailable" }),
+      {
+        status: 502,
+        headers: { "Content-Type": "application/json" },
+      }
+    );
+  }
 
   const stream = new ReadableStream({
     async start(controller) {
       const encoder = new TextEncoder();
       try {
-        for await (const chunk of result.stream) {
+        for await (const chunk of streamResult.stream) {
           const text = chunk.text();
           if (text) controller.enqueue(encoder.encode(text));
         }
