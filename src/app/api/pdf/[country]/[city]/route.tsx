@@ -19,10 +19,19 @@ export async function GET(
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
     new URL(request.url).origin;
 
-  registerPdfFonts();
-  const buffer = await renderToBuffer(
-    <CityPdfDocument city={city} country={country} siteUrl={siteUrl} />
-  );
+  let buffer: Buffer;
+  try {
+    registerPdfFonts();
+    buffer = await renderToBuffer(
+      <CityPdfDocument city={city} country={country} siteUrl={siteUrl} />
+    );
+  } catch (err) {
+    const message = err instanceof Error ? err.message : "PDF generation failed";
+    return new Response(JSON.stringify({ error: "pdf_generation_failed", detail: message }), {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
 
   return new Response(new Uint8Array(buffer), {
     headers: {

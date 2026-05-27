@@ -3,6 +3,10 @@ import { searchDestinations } from "@/lib/content";
 
 export async function GET(request: NextRequest) {
   const q = request.nextUrl.searchParams.get("q") ?? "";
-  const results = searchDestinations(q);
-  return NextResponse.json({ results });
+  try {
+    const results = searchDestinations(q);
+    return NextResponse.json({ results });
+  } catch {
+    return NextResponse.json({ error: "search_failed", results: [] }, { status: 500 });
+  }
 }
