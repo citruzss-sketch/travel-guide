@@ -6,6 +6,7 @@ import type { CityContent, Locale } from "@/types/content";
 import { useLiveData } from "@/hooks/useLiveData";
 import { useT } from "@/components/providers/LocaleProvider";
 import { formatNumber } from "@/lib/format-number";
+import { Skeleton, SkeletonBlock } from "@/components/ui/Skeleton";
 import { CurrencyConverter } from "./CurrencyConverter";
 
 interface CityLiveWidgetProps {
@@ -23,11 +24,13 @@ export function CityLiveWidget({ city, locale }: CityLiveWidgetProps) {
   );
 
   const tip =
-    weather && weather.temperature >= 32
-      ? t("live.tipHot")
-      : weather && weather.weatherCode >= 61
-        ? t("live.tipRain")
-        : t("live.tipDefault", { city: city.name[locale] });
+    loading && !weather
+      ? null
+      : weather && weather.temperature >= 32
+        ? t("live.tipHot")
+        : weather && weather.weatherCode >= 61
+          ? t("live.tipRain")
+          : t("live.tipDefault", { city: city.name[locale] });
 
   return (
     <motion.div
@@ -45,11 +48,13 @@ export function CityLiveWidget({ city, locale }: CityLiveWidgetProps) {
           <div>
             <p className="text-xs font-semibold text-muted">{t("live.weather")}</p>
             <p className="mt-0.5 text-sm font-bold text-foreground">
-              {loading && !weather
-                ? "…"
-                : weather
-                  ? `${weather.temperature}°C · ${weatherLabel(weather.weatherCode)}`
-                  : t("live.unavailable")}
+              {loading && !weather ? (
+                <Skeleton className="h-4 w-28" />
+              ) : weather ? (
+                `${weather.temperature}°C · ${weatherLabel(weather.weatherCode)}`
+              ) : (
+                t("live.unavailable")
+              )}
             </p>
           </div>
         </div>
@@ -58,11 +63,13 @@ export function CityLiveWidget({ city, locale }: CityLiveWidgetProps) {
           <div>
             <p className="text-xs font-semibold text-muted">{t("live.exchange")}</p>
             <p className="mt-0.5 text-sm font-bold text-foreground">
-              {usdToVnd
-                ? `1 USD = ${formatNumber(usdToVnd, locale)} VND`
-                : loading
-                  ? "…"
-                  : t("live.unavailable")}
+              {usdToVnd ? (
+                `1 USD = ${formatNumber(usdToVnd, locale)} VND`
+              ) : loading ? (
+                <Skeleton className="h-4 w-36" />
+              ) : (
+                t("live.unavailable")
+              )}
             </p>
           </div>
         </div>
@@ -79,7 +86,14 @@ export function CityLiveWidget({ city, locale }: CityLiveWidgetProps) {
           <Sparkles className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
           <div>
             <p className="text-xs font-semibold text-muted">{t("live.tip")}</p>
-            <p className="mt-0.5 text-sm leading-snug text-foreground">{tip}</p>
+            {tip ? (
+              <p className="mt-0.5 text-sm leading-snug text-foreground">{tip}</p>
+            ) : (
+              <div className="mt-1 space-y-1.5">
+                <SkeletonBlock className="h-3.5 w-full" />
+                <SkeletonBlock className="h-3.5 w-4/5" />
+              </div>
+            )}
           </div>
         </div>
       </div>
