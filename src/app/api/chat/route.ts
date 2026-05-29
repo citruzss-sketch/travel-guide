@@ -75,7 +75,21 @@ export async function POST(request: Request) {
   }));
 
   const chat = model.startChat({ history });
-  const result = await chat.sendMessageStream(lastMessage.content);
+
+  let result: Awaited<ReturnType<typeof chat.sendMessageStream>>;
+  try {
+    result = await chat.sendMessageStream(lastMessage.content);
+  } catch (err: unknown) {
+    const msg = err instanceof Error ? err.message : String(err);
+    const isRateLimit = msg.includes("429") || msg.toLowerCase().includes("quota") || msg.toLowerCase().includes("rate");
+    return new Response(
+      JSON.stringify({ error: isRateLimit ? "rate_limited" : "gemini_unavailable" }),
+      {
+        status: isRateLimit ? 429 : 502,
+        headers: { "Content-Type": "application/json" },
+      }
+    );
+  }
 
   const stream = new ReadableStream({
     async start(controller) {
@@ -87,7 +101,7 @@ export async function POST(request: Request) {
         }
       } catch {
         controller.enqueue(
-          encoder.encode("Sorry, something went wrong. Please try again.")
+          encoder.encode("\n\n[AI stream interrupted — please try again.]")
         );
       } finally {
         controller.close();
