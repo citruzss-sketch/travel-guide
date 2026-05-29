@@ -119,6 +119,8 @@ export function AIChat({
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [errorType, setErrorType] = useState<"no-key" | "unavailable" | "rate-limit" | "general" | null>(null);
+  const lastUserMessageRef = useRef<string | null>(null);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
   const [compactedByIndex, setCompactedByIndex] = useState<Record<number, string>>(
     {}
@@ -255,6 +257,8 @@ export function AIChat({
     setInput("");
     setLoading(true);
     setError(null);
+    setErrorType(null);
+    lastUserMessageRef.current = text;
 
     try {
       const conversationMessages = nextMessages.filter(
@@ -280,12 +284,30 @@ export function AIChat({
 
       if (res.status === 503) {
         setError(t("chat.noApiKey"));
+        setErrorType("no-key");
+        setMessages(messages);
+        return;
+      }
+
+      if (res.status === 502) {
+        setError(t("chat.geminiUnavailable"));
+        setErrorType("unavailable");
+        setMessages(messages);
+        return;
+      }
+
+      if (res.status === 429) {
+        setError(t("chat.rateLimited"));
+        setErrorType("rate-limit");
         setMessages(messages);
         return;
       }
 
       if (!res.ok || !res.body) {
-        throw new Error("Request failed");
+        setError(t("chat.error"));
+        setErrorType("general");
+        setMessages(messages);
+        return;
       }
 
       const reader = res.body.getReader();
@@ -318,6 +340,7 @@ export function AIChat({
       setPlaceContext(undefined);
     } catch {
       setError(t("chat.error"));
+      setErrorType("general");
       setMessages(messages);
     } finally {
       setLoading(false);
@@ -326,6 +349,11 @@ export function AIChat({
 
   const handleSOSScenario = (scenarioId: string) => {
     void sendMessage(getSOSPrompt(scenarioId, locale, cityName), { mode: "sos" });
+  };
+
+  const handleRetry = () => {
+    if (!lastUserMessageRef.current || loading) return;
+    void sendMessage(lastUserMessageRef.current);
   };
 
   const quickPrompts = useMemo(() => {
@@ -708,7 +736,21 @@ export function AIChat({
       )}
 
       {error && (
-        <p className="shrink-0 border-t border-border bg-surface px-4 py-2 text-sm text-red-500">{error}</p>
+        <div className="shrink-0 border-t border-border bg-surface px-4 py-2.5">
+          <div className="flex items-center justify-between gap-3">
+            <p className="text-sm text-red-500">{error}</p>
+            {(errorType === "unavailable" || errorType === "rate-limit" || errorType === "general") && lastUserMessageRef.current && (
+              <button
+                type="button"
+                onClick={handleRetry}
+                disabled={loading}
+                className="shrink-0 rounded-lg border border-red-300/40 bg-red-50/50 px-3 py-1 text-xs font-semibold text-red-500 transition-colors hover:bg-red-100/60 disabled:opacity-50 dark:border-red-800/40 dark:bg-red-900/20 dark:hover:bg-red-900/40"
+              >
+                {t("chat.retry")}
+              </button>
+            )}
+          </div>
+        </div>
       )}
 
       <form

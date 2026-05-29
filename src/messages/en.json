@@ -189,7 +189,10 @@
         "2": "SIM not working",
         "3": "Bike problem"
       }
-    }
+    },
+    "geminiUnavailable": "AI is temporarily unavailable — please try again in a moment.",
+    "rateLimited": "Too many requests — please wait a moment and try again.",
+    "retry": "Retry"
   },
   "live": {
     "title": "Live info",
