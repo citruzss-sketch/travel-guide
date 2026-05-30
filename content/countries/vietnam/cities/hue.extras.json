@@ -1,0 +1,214 @@
+{
+  "coordinates": { "lat": 16.4637, "lng": 107.5909 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "hue-citadel",
+      "title": { "ru": "Императорская цитадель", "en": "Imperial Citadel" },
+      "description": {
+        "ru": "Объект ЮНЕСКО, сердце Хюэ. Вход 200,000 VND",
+        "en": "UNESCO site, heart of Hue. Entry 200,000 VND"
+      },
+      "lat": 16.4701,
+      "lng": 107.5777,
+      "category": "sight"
+    },
+    {
+      "id": "hue-airport",
+      "title": { "ru": "Аэропорт Фу Бай (HUI)", "en": "Phu Bai Airport (HUI)" },
+      "description": {
+        "ru": "15 км от центра, Grab ~150,000 VND",
+        "en": "15 km from center, Grab ~150,000 VND"
+      },
+      "lat": 16.4015,
+      "lng": 107.7027,
+      "category": "airport"
+    },
+    {
+      "id": "thien-mu-pagoda",
+      "title": { "ru": "Пагода Тхиен Му", "en": "Thien Mu Pagoda" },
+      "description": {
+        "ru": "Символ Хюэ, бесплатный вход",
+        "en": "Symbol of Hue, free entry"
+      },
+      "lat": 16.4537,
+      "lng": 107.5508,
+      "category": "sight"
+    },
+    {
+      "id": "tu-duc-tomb",
+      "title": { "ru": "Гробница Ты Дыка", "en": "Tu Duc Royal Tomb" },
+      "description": {
+        "ru": "Самая романтичная гробница, 8 км, 150,000 VND",
+        "en": "Most romantic tomb, 8 km, 150,000 VND"
+      },
+      "lat": 16.4561,
+      "lng": 107.5531,
+      "category": "sight"
+    },
+    {
+      "id": "khai-dinh-tomb",
+      "title": { "ru": "Гробница Кхай Диня", "en": "Khai Dinh Royal Tomb" },
+      "description": {
+        "ru": "Мозаичный интерьер, 150,000 VND",
+        "en": "Mosaic interior, 150,000 VND"
+      },
+      "lat": 16.4291,
+      "lng": 107.5786,
+      "category": "sight"
+    },
+    {
+      "id": "minh-mang-tomb",
+      "title": { "ru": "Гробница Минь Манга", "en": "Minh Mang Royal Tomb" },
+      "description": {
+        "ru": "Самая грандиозная, 12 км, 150,000 VND",
+        "en": "The grandest, 12 km, 150,000 VND"
+      },
+      "lat": 16.4657,
+      "lng": 107.5271,
+      "category": "sight"
+    },
+    {
+      "id": "dong-ba-market",
+      "title": { "ru": "Рынок Донг Ба", "en": "Dong Ba Market" },
+      "description": {
+        "ru": "Главный рынок Хюэ у реки",
+        "en": "Hue's main market by the river"
+      },
+      "lat": 16.4696,
+      "lng": 107.5956,
+      "category": "food"
+    },
+    {
+      "id": "perfume-river",
+      "title": { "ru": "Парфюмерная река (набережная)", "en": "Perfume River (waterfront)" },
+      "description": {
+        "ru": "Лодочные прогулки, причал Toa Kham",
+        "en": "Boat trips, Toa Kham pier"
+      },
+      "lat": 16.4625,
+      "lng": 107.5956,
+      "category": "district"
+    },
+    {
+      "id": "hue-train-station",
+      "title": { "ru": "Ж/д вокзал Хюэ", "en": "Hue Railway Station" },
+      "description": {
+        "ru": "До Дананга 2.5 ч от 75,000 VND",
+        "en": "To Da Nang 2.5h from 75,000 VND"
+      },
+      "lat": 16.4588,
+      "lng": 107.5979,
+      "category": "transport"
+    },
+    {
+      "id": "pham-ngu-lao-district",
+      "title": { "ru": "Турист. квартал (Pham Ngu Lao)", "en": "Tourist district (Pham Ngu Lao)" },
+      "description": {
+        "ru": "Кафе, рестораны, хостелы",
+        "en": "Cafes, restaurants, hostels"
+      },
+      "lat": 16.4641,
+      "lng": 107.5975,
+      "category": "district"
+    },
+    {
+      "id": "bun-bo-hue-street",
+      "title": { "ru": "Улица бун бо Хюэ", "en": "Bun Bo Hue street" },
+      "description": {
+        "ru": "Лучший суп города, 35,000–50,000 VND",
+        "en": "City's best soup, 35,000–50,000 VND"
+      },
+      "lat": 16.4619,
+      "lng": 107.5921,
+      "category": "food"
+    },
+    {
+      "id": "lac-thien-restaurant",
+      "title": { "ru": "Ресторан Lac Thien", "en": "Lac Thien Restaurant" },
+      "description": {
+        "ru": "Баnh кхоай у цитадели, легенда Хюэ",
+        "en": "Banh khoai near citadel, Hue legend"
+      },
+      "lat": 16.4649,
+      "lng": 107.5843,
+      "category": "food"
+    },
+    {
+      "id": "lang-co-beach",
+      "title": { "ru": "Пляж Лан Ко", "en": "Lang Co Beach" },
+      "description": {
+        "ru": "Тихий пляж, 30 км на юг",
+        "en": "Quiet beach, 30 km south"
+      },
+      "lat": 16.2167,
+      "lng": 108.0667,
+      "category": "beach"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "combo-ticket",
+      "label": {
+        "ru": "Купить комплексный билет на гробницы (530,000 VND)",
+        "en": "Buy royal tombs combo ticket (530,000 VND)"
+      }
+    },
+    {
+      "id": "grab-app",
+      "label": {
+        "ru": "Установить Grab для поездок к гробницам",
+        "en": "Install Grab for tomb transport"
+      }
+    },
+    {
+      "id": "bun-bo-hue",
+      "label": {
+        "ru": "Попробовать бун бо Хюэ на завтрак",
+        "en": "Try bun bo hue for breakfast"
+      }
+    },
+    {
+      "id": "citadel-morning",
+      "label": {
+        "ru": "Цитадель — прийти до 9:00 (прохладнее, меньше туристов)",
+        "en": "Citadel — arrive before 9 AM (cooler, fewer crowds)"
+      }
+    },
+    {
+      "id": "boat-trip",
+      "label": {
+        "ru": "Забронировать лодку по Парфюмерной реке",
+        "en": "Book Perfume River dragon boat"
+      }
+    },
+    {
+      "id": "nha-nhac-show",
+      "label": {
+        "ru": "Билеты на Нма Ньяк — придворная музыка ЮНЕСКО",
+        "en": "Nha Nhac UNESCO court music show tickets"
+      }
+    },
+    {
+      "id": "me-xung",
+      "label": {
+        "ru": "Купить кунжутную халву mè xửng на подарки",
+        "en": "Buy sesame candy me xung as souvenirs"
+      }
+    },
+    {
+      "id": "rain-gear",
+      "label": {
+        "ru": "Взять зонт / дождевик (самый дождливый город Вьетнама)",
+        "en": "Pack umbrella / raincoat (Vietnam's rainiest city)"
+      }
+    }
+  ]
+}
