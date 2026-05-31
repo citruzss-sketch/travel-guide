@@ -38,6 +38,7 @@ import {
 } from "@/lib/chat-markdown";
 import { getSOSPrompt } from "@/lib/sos-scenarios";
 import { createSessionId, type ChatHistorySession } from "@/lib/chat-history";
+import { getCityQuickPrompts } from "@/lib/city-quick-prompts";
 
 interface Message {
   role: "user" | "assistant";
@@ -329,11 +330,13 @@ export function AIChat({
   };
 
   const quickPrompts = useMemo(() => {
+    const citySpecific = getCityQuickPrompts(citySlug, mode, locale);
+    if (citySpecific.length > 0) return citySpecific;
     const keys = ["1", "2", "3"] as const;
     return keys
       .map((n) => t(`chat.prompts.${mode}.${n}`, { city: cityName }))
       .filter(Boolean);
-  }, [t, mode, cityName]);
+  }, [t, mode, cityName, citySlug, locale]);
 
   const placeholder = t(`chat.placeholder.${mode}`);
 
