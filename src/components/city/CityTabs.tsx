@@ -115,13 +115,17 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
   return (
     <div className="mx-auto max-w-6xl px-3 pb-24 sm:px-6 md:pb-16">
       <nav className="tab-scroll sticky top-[72px] z-40 -mx-4 hidden overflow-x-auto border-b border-border/60 bg-background/75 px-4 backdrop-blur-xl sm:top-[65px] md:block">
-        <div className="flex min-w-max gap-1 py-3">
+        <div role="tablist" aria-label={cityName} className="flex min-w-max gap-1 py-3">
           {TABS.map(({ id, icon: Icon }) => {
             const isActive = activeTab === id;
             return (
               <button
                 key={id}
                 type="button"
+                role="tab"
+                id={`city-tab-${id}`}
+                aria-selected={isActive}
+                aria-controls={`city-panel-${id}`}
                 onClick={() => setActiveTab(id)}
                 className={`relative flex items-center gap-2 whitespace-nowrap rounded-full px-4 py-2 text-sm font-semibold transition-colors ${
                   isActive
@@ -144,7 +148,12 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
         </div>
       </nav>
 
-      <div className={activeTab === "chat" ? "mt-3 md:mt-8" : "mt-8"}>
+      <div
+        role="tabpanel"
+        id={`city-panel-${activeTab}`}
+        aria-labelledby={`city-tab-${activeTab}`}
+        className={activeTab === "chat" ? "mt-3 md:mt-8" : "mt-8"}
+      >
         <AnimatePresence mode="wait">
           {activeTab === "overview" && (
             <OverviewPanel
