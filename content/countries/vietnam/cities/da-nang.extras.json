@@ -105,6 +105,50 @@
       "lat": 16.2003,
       "lng": 108.1122,
       "category": "transport"
+    },
+    {
+      "id": "cham-museum",
+      "title": { "ru": "Музей скульптуры чамов", "en": "Museum of Cham Sculpture" },
+      "description": {
+        "ru": "300+ шедевров IX–XV вв., вход 60,000 VND",
+        "en": "300+ masterpieces 9th–15th c., entry 60,000 VND"
+      },
+      "lat": 16.0687,
+      "lng": 108.2236,
+      "category": "sight"
+    },
+    {
+      "id": "son-tra-wildlife",
+      "title": { "ru": "Лангуры Шон Тра (Bãi Bắc)", "en": "Son Tra Langurs (Bãi Bắc)" },
+      "description": {
+        "ru": "Редкие красношапочные лангуры, рассвет",
+        "en": "Rare red-shanked douc langurs, dawn viewing"
+      },
+      "lat": 16.1098,
+      "lng": 108.2715,
+      "category": "sight"
+    },
+    {
+      "id": "con-market",
+      "title": { "ru": "Рынок Кон (Cho Con)", "en": "Con Market (Cho Con)" },
+      "description": {
+        "ru": "Bánh Tráng Cuốn Thịt Heo и местная еда",
+        "en": "Bánh Tráng Cuốn Thịt Heo and local food"
+      },
+      "lat": 16.0657,
+      "lng": 108.2159,
+      "category": "food"
+    },
+    {
+      "id": "rainbowl",
+      "title": { "ru": "Rainbowl & Co.", "en": "Rainbowl & Co." },
+      "description": {
+        "ru": "Smoothie bowls, acai, poke — An Thuong, от 07:30",
+        "en": "Smoothie bowls, açaí, poké — An Thuong, from 07:30"
+      },
+      "lat": 16.0508,
+      "lng": 108.2421,
+      "category": "food"
     }
   ],
   "checklist": [

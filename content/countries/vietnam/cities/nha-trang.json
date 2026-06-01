@@ -212,6 +212,21 @@
           "en": "20,000 VND + transfer"
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A1c%20B%E1%BA%A1c.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Yang Bay Eco Park",
+          "en": "Yang Bay Eco Park"
+        },
+        "description": {
+          "ru": "Эко-парк в 45 км от Нячанга с трёхкаскадным водопадом, горячими источниками и животными (страусы, крокодилы, олени). Можно купаться в природных бассейнах прямо у водопада.",
+          "en": "Eco-park 45 km from Nha Trang with a three-tier waterfall, hot springs, and animals (ostriches, crocodiles, deer). Swim in natural pools right below the falls."
+        },
+        "price": {
+          "ru": "150,000 VND; трансфер на мотобайке: 200,000–300,000 VND",
+          "en": "150,000 VND; motorbike transfer: 200,000–300,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A1c%20B%E1%BA%A1c.jpg?width=800"
       }
     ]
   },
@@ -325,6 +340,36 @@
           "en": "30,000–50,000 VND"
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%AC%20Qu%E1%BA%A3ng.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Yen Garden Bistro",
+          "en": "Yen Garden Bistro"
+        },
+        "description": {
+          "ru": "Ресторан в утопающем в зелени тропическом саду на улице Yersin. Fusion вьетнамской и западной кухни, большой выбор для вегетарианцев. Один из самых атмосферных адресов города.",
+          "en": "Restaurant in a lush tropical garden on Yersin St. Fusion of Vietnamese and Western cuisine, great vegetarian selection. One of the most atmospheric spots in town."
+        },
+        "price": {
+          "ru": "120,000–250,000 VND на человека",
+          "en": "120,000–250,000 VND per person"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Bún Chả Cá — рыбная лапша",
+          "en": "Bún Chả Cá — fish cake noodle soup"
+        },
+        "description": {
+          "ru": "Визитная карточка кухни Нячанга: рисовая лапша bún, золотистые рыбные котлетки chả cá, свежие травы и пряный бульон. Ищите точки на улице Phan Chu Trinh — порция с 06:00.",
+          "en": "Nha Trang's signature dish: rice noodle bún, golden fish cakes chả cá, fresh herbs and spiced broth. Find stalls on Phan Chu Trinh — served from 6 AM."
+        },
+        "price": {
+          "ru": "40,000–60,000 VND",
+          "en": "40,000–60,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%AC%20Qu%E1%BA%A3ng.jpg?width=800"
       }
     ]
   },
@@ -408,6 +453,21 @@
           "en": "800,000–1,200,000 VND"
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_city.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Дайвинг: Rainbow Divers / Sailing Club Divers",
+          "en": "Diving: Rainbow Divers / Sailing Club Divers"
+        },
+        "description": {
+          "ru": "Лучшие PADI-операторы Нячанга в 2026 году. Rainbow Divers — пионеры дайвинга во Вьетнаме (с 1997), 2 погружения у Хон Мун включая снаряжение. Sailing Club Divers — Discover Scuba для новичков с инструктором прямо с пляжа.",
+          "en": "Top PADI operators in Nha Trang for 2026. Rainbow Divers — Vietnam's dive pioneers (since 1997), 2-tank dive at Hon Mun including gear. Sailing Club Divers — Discover Scuba for beginners with instructor, departing right from the beach."
+        },
+        "price": {
+          "ru": "2 погружения: 1,100,000–1,500,000 VND; Discover Scuba: 1,200,000 VND",
+          "en": "2-tank dive: 1,100,000–1,500,000 VND; Discover Scuba: 1,200,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vinpearl%20Cable%20Car%20to%20Hon%20Tre%2C%20Nha%20Trang%2C%20Khanh%20Hoa.jpg?width=800"
       }
     ]
   },
@@ -768,6 +828,17 @@
           "en": "Don't drink tap water. Bottled water costs 10,000 VND — buy at stores, not at the beach."
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nhatrang%20Oceanographic%20Institute.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Рынок Дам на рассвете",
+          "en": "Dam Market at dawn"
+        },
+        "description": {
+          "ru": "Приходите на Cho Dam к 06:00–07:00 — местные завтракают за 30,000–40,000 VND: bún bò, cháo cá, свежие фрукты прямо с лодок. Никаких туристов, живая атмосфера. К 09:00 суматоха спадает.",
+          "en": "Visit Cho Dam at 06:00–07:00 — locals eat breakfast for 30,000–40,000 VND: bún bò, cháo cá, fresh fruit straight from boats. Zero tourists, vibrant atmosphere. Quieter by 9 AM."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ben%20Thanh%20Market%20Ho%20Chi%20Minh%20City.jpg?width=800"
       }
     ]
   },
@@ -823,5 +894,5 @@
       }
     ]
   },
-  "aiKnowledgeBase": "Nha Trang — Khanh Hoa, Vietnam. Airport CXR 35km south: Grab 350-450k to center 40-50min, bus Dat Moi 65k slow, pre-book hotel transfer from $12. Train station in center. Transport micro-details: GrabCar/GrabBike main app (cash or card); GrabBike 15-30k short hops. ELECTRIC BIKES (xe điện): 80-130k/day, NO license required, ~25-50 km/h, range ~40-70km — best for tourists on Tran Phu/Loc Tho; rent from shops with «Thuê xe điện» signs; deposit passport copy + 500k-2M VND safer than passport alone; photo bike condition, check brakes/battery; helmet mandatory (~100-150k to buy decent one). PETROL scooters 110-125cc: 150-220k/day, legally need IDP category A but many shops rent on passport only — police checks rare but possible fine; fuel 30-50k/day. Car with driver from 700k/day. Cyclo promenade 100-150k — negotiate first. SIM: Viettel best, airport or official store, passport, ~150k/30GB/30d. Money: jewelry shops on Nguyen Hue/Tran Phu better rate than hotels. Sights/food: Po Nagar, Long Son, VinWonders Hon Tre, Oceanographic Museum, Ba Ho falls; Lanterns, Sailing Club, seafood Nguyen Thi Minh Khai, banh can Yersin/Le Hong Phong; Yen Garden Bistro, Sweet Secret, iVegan Loc Tho. Scams: unmetered taxis, free island tours with pearl/silk shops, bill padding. Emergency 113/115/114. Best Feb-May dry. Districts: Tran Phu tourist strip, Ninh Van luxury boat access, Loc Tho budget/cafes."
+  "aiKnowledgeBase": "Nha Trang — Khanh Hoa, Vietnam. Airport CXR 35km south: Grab 350-450k to center 40-50min, bus Dat Moi 65k slow, pre-book hotel transfer from $12. Train station in center. Transport micro-details: GrabCar/GrabBike main app (cash or card); GrabBike 15-30k short hops. ELECTRIC BIKES (xe điện): 80-130k/day, NO license required, ~25-50 km/h, range ~40-70km — best for tourists on Tran Phu/Loc Tho; rent from shops with «Thuê xe điện» signs; deposit passport copy + 500k-2M VND safer than passport alone; photo bike condition, check brakes/battery; helmet mandatory (~100-150k to buy decent one). PETROL scooters 110-125cc: 150-220k/day, legally need IDP category A but many shops rent on passport only — police checks rare but possible fine; fuel 30-50k/day. Car with driver from 700k/day. Cyclo promenade 100-150k — negotiate first. SIM: Viettel best, airport or official store, passport, ~150k/30GB/30d. Money: jewelry shops on Nguyen Hue/Tran Phu better rate than hotels. SIGHTS: Po Nagar, Long Son, VinWonders Hon Tre, Oceanographic Museum, Ba Ho falls 25km, Yang Bay Eco Park 45km (150k entry, waterfall+springs+animals). FOOD: Lanterns, Sailing Club, seafood Nguyen Thi Minh Khai, banh can Yersin/Le Hong Phong; Yen Garden Bistro (Yersin St, garden bistro, vegetarian-friendly, 120-250k); Bún Chả Cá Nha Trang (fish cake noodle soup, 40-60k, Phan Chu Trinh stalls from 6am). DIVING: Rainbow Divers (since 1997, 2-tank Hon Mun 1100-1500k), Sailing Club Divers (Discover Scuba 1200k). TOURS: Four Islands 350-500k, Mud Bath I-Resort 250-400k, Dalat 3h 800-1200k. LIFEHACKS: Dam Market 6-7am local breakfast 30-40k; beach before 9am; book tours on promenade not online. Scams: unmetered taxis, free island tours with pearl/silk shops, bill padding. Emergency 113/115/114. Best Feb-May dry. Districts: Tran Phu tourist strip, Ninh Van luxury boat access, Loc Tho budget/cafes."
 }
