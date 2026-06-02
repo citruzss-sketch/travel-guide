@@ -209,36 +209,6 @@ export function AIChat({
     [mode, resetSession, resetWelcome]
   );
 
-  useEffect(() => {
-    resetSession();
-    resetWelcome(mode);
-  }, [cityName]); // eslint-disable-line react-hooks/exhaustive-deps -- reset on city change only
-
-  useEffect(() => {
-    if (launchKey === launchApplied.current) return;
-    launchApplied.current = launchKey;
-    if (!launchConfig) return;
-
-    resetSession();
-    const nextMode = launchConfig.mode ?? "guide";
-    setMode(nextMode);
-    if (launchConfig.placeContext) setPlaceContext(launchConfig.placeContext);
-    resetWelcome(nextMode);
-
-    if (launchConfig.autoSend && launchConfig.initialInput) {
-      setInput("");
-      queueMicrotask(() => {
-        void sendMessage(launchConfig.initialInput, {
-          mode: nextMode,
-          placeContext: launchConfig.placeContext,
-        });
-      });
-    } else if (launchConfig.initialInput) {
-      setInput(launchConfig.initialInput);
-    }
-    requestAnimationFrame(() => inputRef.current?.focus());
-  }, [launchKey, launchConfig, resetWelcome]); // eslint-disable-line react-hooks/exhaustive-deps
-
   const sendMessage = async (
     textOverride?: string,
     overrides?: { mode?: AIMode; placeContext?: PlaceContext }
@@ -324,6 +294,38 @@ export function AIChat({
     }
   };
 
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    resetSession();
+    resetWelcome(mode);
+  }, [cityName]); // eslint-disable-line react-hooks/exhaustive-deps -- reset on city change only
+
+  useEffect(() => {
+    if (launchKey === launchApplied.current) return;
+    launchApplied.current = launchKey;
+    if (!launchConfig) return;
+
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    resetSession();
+    const nextMode = launchConfig.mode ?? "guide";
+    setMode(nextMode);
+    if (launchConfig.placeContext) setPlaceContext(launchConfig.placeContext);
+    resetWelcome(nextMode);
+
+    if (launchConfig.autoSend && launchConfig.initialInput) {
+      setInput("");
+      queueMicrotask(() => {
+        void sendMessage(launchConfig.initialInput, {
+          mode: nextMode,
+          placeContext: launchConfig.placeContext,
+        });
+      });
+    } else if (launchConfig.initialInput) {
+      setInput(launchConfig.initialInput);
+    }
+    requestAnimationFrame(() => inputRef.current?.focus());
+  }, [launchKey, launchConfig, resetWelcome]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const handleSOSScenario = (scenarioId: string) => {
     void sendMessage(getSOSPrompt(scenarioId, locale, cityName), { mode: "sos" });
   };
@@ -369,6 +371,7 @@ export function AIChat({
   const hasConversation = messages.some((m) => m.role === "user");
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setPortalReady(true);
   }, []);
 
@@ -383,6 +386,7 @@ export function AIChat({
   }, [expanded, onExpandChange]);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (hasConversation) setControlsOpen(false);
   }, [hasConversation]);
 

@@ -190,6 +190,6 @@ export function resolveItemImage(
   }
 }
 
-export function pickSectionImage(sectionKey: string, _index: number): string {
+export function pickSectionImage(sectionKey: string): string {
   return resolveItemImage("", sectionKey);
 }

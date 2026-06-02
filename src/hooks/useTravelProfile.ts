@@ -19,6 +19,7 @@ export function useTravelProfile() {
         stored === "budget" ||
         stored === "active"
       ) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setProfileState(stored);
       }
     } catch {

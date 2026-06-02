@@ -19,6 +19,7 @@ export function useTripPlan(citySlug?: string) {
   }, [citySlug]);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     refresh();
     const onStorage = (e: StorageEvent) => {
       if (e.key === TRIP_PLAN_STORAGE_KEY) refresh();
