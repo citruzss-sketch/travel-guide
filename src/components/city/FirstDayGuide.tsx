@@ -23,7 +23,7 @@ const STEPS = [
   { icon: ShieldAlert, tab: "lifehacks" as CityTab, sectionId: "scams", key: "safety" },
 ];
 
-export function FirstDayGuide({ locale, cityName, onNavigate }: FirstDayGuideProps) {
+export function FirstDayGuide({ cityName, onNavigate }: FirstDayGuideProps) {
   const t = useT();
 
   return (

@@ -19,6 +19,7 @@ export function useChatHistory(citySlug?: string) {
   }, [citySlug]);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     refresh();
     setReady(true);
 

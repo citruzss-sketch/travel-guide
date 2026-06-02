@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { Lightbulb, Bot, Heart, CalendarPlus, Check } from "lucide-react";
 import type { CitySection, Locale } from "@/types/content";
@@ -129,16 +129,18 @@ function CardBody({
   t: (key: string, params?: Record<string, string>) => string;
 }) {
   const { toast } = useToast();
-  const { add, remove } = useFavorites();
+  const { favorites, add, remove } = useFavorites();
   const { add: addToPlan, hasItem } = useTripPlan(citySlug);
-  const [saved, setSaved] = useState(false);
-  const [inPlan, setInPlan] = useState(false);
 
-  useEffect(() => {
-    if (!sectionId) return;
-    setSaved(!!findContentFavorite(citySlug, sectionId, itemIndex));
-    setInPlan(hasItem(sectionId, itemIndex));
-  }, [citySlug, sectionId, itemIndex, hasItem]);
+  const saved = useMemo(
+    () => (sectionId ? !!findContentFavorite(citySlug, sectionId, itemIndex) : false),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [citySlug, sectionId, itemIndex, favorites]
+  );
+  const inPlan = useMemo(
+    () => (sectionId ? hasItem(sectionId, itemIndex) : false),
+    [sectionId, itemIndex, hasItem]
+  );
 
   const title = item.title[locale];
   const copilotPrompts = getCopilotPrompts(locale, cityName, title, sectionId);
@@ -148,7 +150,6 @@ function CardBody({
     const existing = findContentFavorite(citySlug, sectionId, itemIndex);
     if (existing) {
       remove(existing.id);
-      setSaved(false);
       toast(t("favorites.removed"));
       return;
     }
@@ -163,7 +164,6 @@ function CardBody({
       sectionKey: sectionId,
       itemIndex,
     });
-    setSaved(true);
     toast(t("favorites.added"));
   };
 
@@ -177,7 +177,6 @@ function CardBody({
       sectionTitle,
       itemIndex,
     });
-    setInPlan(true);
     toast(t("tripPlan.added"));
   };
 

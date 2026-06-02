@@ -53,6 +53,7 @@ export function ChatSavedPanel({
 
   useEffect(() => {
     if (sessions.length === 0) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setSelectedId(null);
       return;
     }
@@ -67,6 +68,7 @@ export function ChatSavedPanel({
 
   useEffect(() => {
     if (!highlightId) return;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setSelectedId(highlightId);
     setCollapsed(false);
     onMobileOpenChange?.(true);

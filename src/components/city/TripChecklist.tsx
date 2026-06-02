@@ -24,6 +24,7 @@ export function TripChecklist({ citySlug, items, locale }: TripChecklistProps) {
   useEffect(() => {
     try {
       const raw = localStorage.getItem(storageKey(citySlug));
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       if (raw) setChecked(JSON.parse(raw) as Record<string, boolean>);
     } catch {
       /* ignore */

@@ -163,6 +163,7 @@ export function useLiveData(
       cancelled = true;
       clearInterval(refresh);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- using primitive coords to avoid re-runs on object reference change
   }, [coordinates?.lat, coordinates?.lng, timezoneOffset]);
 
   return {
