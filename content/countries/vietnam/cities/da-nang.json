@@ -283,6 +283,17 @@
           "en": "Wild beaches on the peninsula. Clean water, few people, but no infrastructure."
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lady_Buddha_Da_Nang.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "An Bang Beach",
+          "en": "An Bang Beach"
+        },
+        "description": {
+          "ru": "Тихий пляж в 30 мин от центра, в 5 км от Хойана. Деревянные лежаки, кафе с видом на море, практически без высоток и отелей. Лучшая альтернатива переполненному My Khe для тех, кто ищет покой.",
+          "en": "Quiet beach 30 min from downtown, 5 km from Hoi An. Wooden sunbeds, sea-view cafes, almost no high-rises or chain hotels. Best alternative to crowded My Khe for those seeking peace."
+        },
+        "image": "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=800"
       }
     ]
   },
@@ -366,6 +377,51 @@
           "en": "$3–6 per person"
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Com Ga A Hai",
+          "en": "Com Ga A Hai"
+        },
+        "description": {
+          "ru": "Легендарный куриный рис по-дананжски — рис варится в курином бульоне, курица разбирается вручную, подаётся с имбирным соусом и свежими травами. Очереди с 11:00. Туристы и местные едят бок о бок.",
+          "en": "Legendary Da Nang-style chicken rice — rice cooked in chicken broth, hand-pulled chicken, served with ginger sauce and fresh herbs. Lines from 11 AM. Tourists and locals eat side by side."
+        },
+        "price": {
+          "ru": "50,000–70,000 VND",
+          "en": "50,000–70,000 VND"
+        },
+        "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": {
+          "ru": "Bún Chả Cá 109",
+          "en": "Bún Chả Cá 109"
+        },
+        "description": {
+          "ru": "Культовая точка с bún chả cá — рыбными котлетами на углях в рыбном бульоне с рисовой лапшой. Фирменное блюдо Дананга, которое почти не встретишь за пределами города.",
+          "en": "Iconic spot for bún chả cá — charcoal-grilled fish cakes in fish broth with rice noodles. Da Nang's signature dish, rarely found outside the city."
+        },
+        "price": {
+          "ru": "40,000–55,000 VND",
+          "en": "40,000–55,000 VND"
+        },
+        "image": "https://images.pexels.com/photos/2664216/pexels-photo-2664216.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": {
+          "ru": "The Breda Rooftop Bar",
+          "en": "The Breda Rooftop Bar"
+        },
+        "description": {
+          "ru": "Rooftop-бар на берегу My Khe с панорамным видом на море и Dragon Bridge. Коктейли, западная еда, закат. Резервируйте стол на 17:30–18:30 для лучшего вида.",
+          "en": "Rooftop bar on My Khe beachfront with panoramic views of the sea and Dragon Bridge. Cocktails, Western food, sunset. Reserve a table for 5:30–6:30 PM for the best view."
+        },
+        "price": {
+          "ru": "$8–18 на человека",
+          "en": "$8–18 per person"
+        },
+        "image": "https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&w=800"
       }
     ]
   },
@@ -817,5 +873,5 @@
       }
     ]
   },
-  "aiKnowledgeBase": "Da Nang, central Vietnam. Airport DAD ~3km from center — Grab 50-80k, taxi 100-150k. Transport: GrabCar/GrabBike from 10k. E-BIKES (xe điện) 70-120k/day — NO license, good for My Khe, Han River, An Thuong; NOT for Hai Van Pass. Petrol scooters 120-200k/day — for Hai Van, Marble Mountains, Hoi An; legally IDP category A, many shops rent on passport; full tank before pass, avoid fog. Bus #1 Han Market to Hoi An 30k, 45-60min. Bicycle 50-80k flat city. Sights: Golden Bridge Ba Na 900k book online, Marble Mountains 40k, Dragon Bridge fire Sat/Sun 9PM arrive 20:30, Lady Buddha Son Tra, Hoi An 30km 120k ticket free after 5PM. Food: Madame Lan, Be Man, Mi Quang 1A, Banh Mi Ba Lan, Helio market; Rainbowl Poke, Frumi An Thuong. Districts: My Khe beach, Han River center, An Thuong nomads, Son Tra luxury. SIM Viettel ~150k/30GB. Scams: Marble Mtn pushy guides, fake Ba Na tickets (official banahills.sunworld.vn), unmetered taxis. Emergency 113/115/114."
+  "aiKnowledgeBase": "Da Nang, central Vietnam. Airport DAD ~3km from center — Grab 50-80k, taxi 100-150k. Transport: GrabCar/GrabBike from 10k. E-BIKES (xe điện) 70-120k/day — NO license, good for My Khe, Han River, An Thuong; NOT for Hai Van Pass. Petrol scooters 120-200k/day — for Hai Van, Marble Mountains, Hoi An; legally IDP category A, many shops rent on passport; full tank before pass, avoid fog. Bus #1 Han Market to Hoi An 30k, 45-60min. Bicycle 50-80k flat city. SIGHTS: Golden Bridge Ba Na Hills 900k (book online banahills.sunworld.vn); Marble Mountains 40k; Dragon Bridge fire show Sat/Sun 9PM arrive 20:30; Lady Buddha Son Tra peninsula free; Hoi An Ancient Town 30km ticket 120k free after 5PM; Hai Van Pass scenic motorbike route. BEACHES: My Khe Beach main city beach Forbes top Asia; Non Nuoc Beach near Marble Mountains calm; Son Tra Beach wild peninsula; An Bang Beach quiet 30min from center 5km from Hoi An wooden sunbeds best alternative to crowded My Khe. FOOD 2026 prices: Madame Lan $5-8 Mi Quang banh xeo; Be Man seafood $12-20 live lobster crab My Khe; Mi Quang 1A 40-50k VND signature noodles; Banh Mi Ba Lan 25-35k best banh mi; Helio Night Market $3-6; Com Ga A Hai chicken rice 50-70k VND legendary; Bun Cha Ca 109 charcoal grilled fish cakes 40-55k VND Da Nang signature; The Breda Rooftop Bar sea views cocktails $8-18. TOURS: Ba Na Hills + Golden Bridge (full day); Hoi An evening lanterns; Hue Imperial City day trip; Marble Mountains + Non Nuoc half day. Districts: My Khe beach, Han River center, An Thuong nomads/cafes, Son Tra luxury. SIM Viettel ~150k/30GB. Scams: Marble Mtn pushy guides, fake Ba Na tickets, unmetered taxis. Emergency 113/115/114."
 }
