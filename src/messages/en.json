@@ -107,6 +107,8 @@
     "aboutPlace": "Question about: {place}",
     "askAboutPlace": "Ask AI",
     "askPrompt": "Tell me more about {place}",
+    "newChat": "New chat",
+    "resumed": "Continuing your last session",
     "modes": {
       "label": "What do you need?",
       "guide": {

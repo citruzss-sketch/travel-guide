@@ -107,6 +107,8 @@
     "aboutPlace": "Вопрос про место: {place}",
     "askAboutPlace": "Спросить AI",
     "askPrompt": "Расскажи подробнее про {place}",
+    "newChat": "Новый чат",
+    "resumed": "Продолжаем прошлый разговор",
     "modes": {
       "label": "Что вам нужно?",
       "guide": {
