@@ -54,6 +54,7 @@ export const IMAGES = {
     vietnam: getCountryHeroImage(),
     nhaTrang: getCityHeroImage("nha-trang"),
     daNang: getCityHeroImage("da-nang"),
+    hoChiMinh: getCityHeroImage("ho-chi-minh"),
   },
 } as const;
 

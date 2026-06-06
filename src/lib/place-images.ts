@@ -67,6 +67,8 @@ export function getCityHeroImage(citySlug: string): string {
       return WIKI.nhaTrangSkyline;
     case "da-nang":
       return WIKI.goldenBridge;
+    case "ho-chi-minh":
+      return WIKI.benThanhMarket;
     default:
       return WIKI.haLongBay;
   }
@@ -159,6 +161,32 @@ export const PLACE_IMAGES: Record<string, Record<string, string>> = {
     "fake ba na hills tickets": WIKI.goldenBridge,
     "general safety": WIKI.myKhe,
     "emergency numbers": WIKI.daNangAirport,
+  },
+  "ho-chi-minh": {
+    "tan son nhat international airport sgn": WIKI.camRanhAirport,
+    "saigon railway station": WIKI.gaNhaTrang,
+    "war remnants museum": WIKI.benThanhMarket,
+    "reunification palace": WIKI.benThanhMarket,
+    "jade emperor pagoda": WIKI.longSonBuddha,
+    "notre dame cathedral": WIKI.benThanhMarket,
+    "landmark 81 skydeck": WIKI.benThanhMarket,
+    "ben thanh market": WIKI.benThanhMarket,
+    "binh tay market": WIKI.benThanhMarket,
+    "bui vien": WIKI.benThanhMarket,
+    "the workshop coffee": WIKI.banhMi,
+    "pho hoa pasteur": WIKI.miQuang,
+    "banh mi huynh hoa": WIKI.banhMiThit,
+    "com tam": WIKI.miQuang,
+    "cu chi tunnels": WIKI.benThanhMarket,
+    "mekong delta": WIKI.benThanhMarket,
+    "grab": WIKI.haiVanMotorbike,
+    "metro line 1": WIKI.benThanhMarket,
+    "vinasun": WIKI.haiVanMotorbike,
+    "motorbike rental": WIKI.haiVanMotorbike,
+    "vung tau": WIKI.ninhVan,
+    "mui ne": WIKI.docLet,
+    "general safety": WIKI.benThanhMarket,
+    "emergency numbers": WIKI.camRanhAirport,
   },
 };
 
