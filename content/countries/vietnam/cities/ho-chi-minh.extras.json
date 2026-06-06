@@ -1,0 +1,210 @@
+{
+  "coordinates": { "lat": 10.7769, "lng": 106.7009 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Шон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7–8 км от центра. Grab ~100–160k VND",
+        "en": "7–8 km from center. Grab ~100–160k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6519,
+      "category": "airport"
+    },
+    {
+      "id": "ben-thanh",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Символ Хошимина с 1914 г. Сувениры, еда, торг",
+        "en": "Symbol of HCMC since 1914. Souvenirs, food, bargain"
+      },
+      "lat": 10.7726,
+      "lng": 106.6980,
+      "category": "food"
+    },
+    {
+      "id": "war-museum",
+      "title": { "ru": "Музей военных реликвий", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "40,000 VND. Открыт 7:30–17:00",
+        "en": "40,000 VND. Open 7:30 AM–5 PM"
+      },
+      "lat": 10.7794,
+      "lng": 106.6925,
+      "category": "sight"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец Воссоединения", "en": "Reunification Palace" },
+      "description": {
+        "ru": "40,000 VND. Бункеры, история холодной войны",
+        "en": "40,000 VND. Bunkers, Cold War history"
+      },
+      "lat": 10.7765,
+      "lng": 106.6958,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "description": {
+        "ru": "Французская базилика 1880 г. Рядом — Центральный почтамт",
+        "en": "French basilica from 1880. Central Post Office nearby"
+      },
+      "lat": 10.7797,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "jade-emperor",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Бесплатно. Атмосферный храм 1909 г.",
+        "en": "Free. Atmospheric temple from 1909"
+      },
+      "lat": 10.7892,
+      "lng": 106.6911,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Улица Буй Вьен (ночная жизнь)", "en": "Bui Vien Street (nightlife)" },
+      "description": {
+        "ru": "Пешеходная зона, крафтовое пиво, уличная еда",
+        "en": "Walking street, craft beer, street food"
+      },
+      "lat": 10.7668,
+      "lng": 106.6938,
+      "category": "food"
+    },
+    {
+      "id": "landmark-81",
+      "title": { "ru": "Landmark 81 — Скайдек", "en": "Landmark 81 — Skydeck" },
+      "description": {
+        "ru": "400,000 VND. Смотровая 79-й этаж, 461 м",
+        "en": "400,000 VND. Observation deck 79th floor, 461 m"
+      },
+      "lat": 10.7949,
+      "lng": 106.7218,
+      "category": "sight"
+    },
+    {
+      "id": "binh-tay",
+      "title": { "ru": "Рынок Бинь Тай (Чолон)", "en": "Binh Tay Market (Cholon)" },
+      "description": {
+        "ru": "Китайский квартал. Специи, ткани, оптовые цены",
+        "en": "Chinatown. Spices, fabrics, wholesale prices"
+      },
+      "lat": 10.7483,
+      "lng": 106.6495,
+      "category": "food"
+    },
+    {
+      "id": "saigon-station",
+      "title": { "ru": "Ж/д вокзал Сайгон", "en": "Saigon Railway Station" },
+      "description": {
+        "ru": "Поезда из Нячанга (8–9 ч) и Дананга (16–17 ч)",
+        "en": "Trains from Nha Trang (8–9h) and Da Nang (16–17h)"
+      },
+      "lat": 10.7815,
+      "lng": 106.6803,
+      "category": "transport"
+    },
+    {
+      "id": "ben-thanh-metro",
+      "title": { "ru": "Метро Бен Тхань (Линия 1)", "en": "Ben Thanh Metro (Line 1)" },
+      "description": {
+        "ru": "15,000–22,000 VND. Работает 5:30–22:00",
+        "en": "15,000–22,000 VND. Open 5:30 AM–10 PM"
+      },
+      "lat": 10.7718,
+      "lng": 106.6979,
+      "category": "transport"
+    },
+    {
+      "id": "the-workshop",
+      "title": { "ru": "The Workshop Coffee", "en": "The Workshop Coffee" },
+      "description": {
+        "ru": "27 Ngo Duc Ke, D1. Specialty кофе в доме 1930-х",
+        "en": "27 Ngo Duc Ke, D1. Specialty coffee in 1930s building"
+      },
+      "lat": 10.7776,
+      "lng": 106.7038,
+      "category": "food"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам (90 дней)",
+        "en": "Check Vietnam visa / e-visa (90 days)"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab и привязать карту",
+        "en": "Install Grab and link payment card"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel в аэропорту (150k VND/30GB)",
+        "en": "Buy Viettel SIM at airport (150k VND/30GB)"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять VND (наличные для рынков и уличной еды)",
+        "en": "Withdraw VND (cash for markets and street food)"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур на Cu Chi Tunnels",
+        "en": "Book Cu Chi Tunnels tour in advance"
+      }
+    },
+    {
+      "id": "mekong",
+      "label": {
+        "ru": "Тур в дельту Меконга (при желании)",
+        "en": "Mekong Delta tour (if interested)"
+      }
+    },
+    {
+      "id": "hotel",
+      "label": {
+        "ru": "Бронь отеля в Районе 1 или 3",
+        "en": "Book hotel in District 1 or 3"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Тревел-страховка (включая мотобайк)",
+        "en": "Travel insurance (including motorbike cover)"
+      }
+    },
+    {
+      "id": "banh-mi",
+      "label": {
+        "ru": "Попробовать Bánh Mì Huỳnh Hoa — очередь с утра",
+        "en": "Try Bánh Mì Huỳnh Hoa — queue from morning"
+      }
+    },
+    {
+      "id": "museum",
+      "label": {
+        "ru": "War Remnants Museum — прийти до 9:00, до толп",
+        "en": "War Remnants Museum — arrive before 9 AM to beat crowds"
+      }
+    }
+  ]
+}

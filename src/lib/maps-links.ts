@@ -276,6 +276,112 @@ export const KNOWN_PLACES: Record<string, KnownPlace[]> = {
       lng: 109.1941,
     },
   ],
+  "ho-chi-minh": [
+    {
+      id: "war-remnants-museum",
+      names: ["War Remnants Museum", "Bao Tang Chung Tich Chien Tranh"],
+      lat: 10.7794,
+      lng: 106.6925,
+      address: "28 Vo Van Tan, District 3, Ho Chi Minh City",
+      mapsUrl:
+        "https://www.google.com/maps/search/?api=1&query=War+Remnants+Museum+Ho+Chi+Minh+City",
+    },
+    {
+      id: "reunification-palace",
+      names: ["Reunification Palace", "Dinh Thong Nhat", "Independence Palace"],
+      lat: 10.7765,
+      lng: 106.6958,
+      address: "135 Nam Ky Khoi Nghia, District 1, Ho Chi Minh City",
+      mapsUrl:
+        "https://www.google.com/maps/search/?api=1&query=Reunification+Palace+Ho+Chi+Minh+City",
+    },
+    {
+      id: "ben-thanh-market",
+      names: ["Ben Thanh Market", "Cho Ben Thanh"],
+      lat: 10.7726,
+      lng: 106.6980,
+      address: "Le Loi, District 1, Ho Chi Minh City",
+      mapsUrl:
+        "https://www.google.com/maps/search/?api=1&query=Ben+Thanh+Market+Ho+Chi+Minh+City",
+    },
+    {
+      id: "jade-emperor-pagoda",
+      names: ["Jade Emperor Pagoda", "Phuoc Hai Tu", "Chua Ngoc Hoang"],
+      lat: 10.7892,
+      lng: 106.6911,
+      address: "73 Mai Thi Luu, District 1, Ho Chi Minh City",
+      mapsUrl:
+        "https://www.google.com/maps/search/?api=1&query=Jade+Emperor+Pagoda+Ho+Chi+Minh+City",
+    },
+    {
+      id: "landmark-81",
+      names: ["Landmark 81", "Landmark 81 Skydeck"],
+      lat: 10.7949,
+      lng: 106.7218,
+      address: "720A Dien Bien Phu, Binh Thanh, Ho Chi Minh City",
+      mapsUrl:
+        "https://www.google.com/maps/search/?api=1&query=Landmark+81+Ho+Chi+Minh+City",
+    },
+    {
+      id: "pho-hoa-pasteur",
+      names: ["Pho Hoa Pasteur", "Pho Hoa"],
+      lat: 10.7785,
+      lng: 106.6944,
+      address: "260C Pasteur, District 3, Ho Chi Minh City",
+      mapsUrl:
+        "https://www.google.com/maps/search/?api=1&query=Pho+Hoa+Pasteur+Ho+Chi+Minh+City",
+    },
+    {
+      id: "banh-mi-huynh-hoa",
+      names: ["Banh Mi Huynh Hoa", "Huynh Hoa"],
+      lat: 10.7666,
+      lng: 106.6946,
+      address: "26 Le Thi Rieng, District 1, Ho Chi Minh City",
+      mapsUrl:
+        "https://www.google.com/maps/search/?api=1&query=Banh+Mi+Huynh+Hoa+Ho+Chi+Minh+City",
+    },
+    {
+      id: "the-workshop-coffee",
+      names: ["The Workshop Coffee", "Workshop Coffee"],
+      lat: 10.7776,
+      lng: 106.7038,
+      address: "27 Ngo Duc Ke, District 1, Ho Chi Minh City",
+      mapsUrl:
+        "https://www.google.com/maps/search/?api=1&query=The+Workshop+Coffee+Ho+Chi+Minh+City",
+    },
+    {
+      id: "sgn-airport",
+      names: ["Tan Son Nhat Airport", "SGN Airport", "Tan Son Nhat International Airport"],
+      lat: 10.8188,
+      lng: 106.6519,
+    },
+    {
+      id: "bui-vien",
+      names: ["Bui Vien Walking Street", "Bui Vien Street", "Bui Vien"],
+      lat: 10.7668,
+      lng: 106.6938,
+      address: "Bui Vien, District 1, Ho Chi Minh City",
+      mapsUrl:
+        "https://www.google.com/maps/search/?api=1&query=Bui+Vien+Walking+Street+Ho+Chi+Minh+City",
+    },
+    {
+      id: "binh-tay-market",
+      names: ["Binh Tay Market", "Cho Binh Tay", "Cholon Market"],
+      lat: 10.7483,
+      lng: 106.6495,
+      address: "57 Thap Muoi, District 6, Ho Chi Minh City",
+      mapsUrl:
+        "https://www.google.com/maps/search/?api=1&query=Binh+Tay+Market+Ho+Chi+Minh+City",
+    },
+    {
+      id: "cu-chi-tunnels",
+      names: ["Cu Chi Tunnels", "Ben Duoc Tunnels", "Ben Dinh Tunnels"],
+      lat: 11.0782,
+      lng: 106.4634,
+      mapsUrl:
+        "https://www.google.com/maps/search/?api=1&query=Cu+Chi+Tunnels+Vietnam",
+    },
+  ],
   "da-nang": [
     {
       id: "rainbowl-poke",
