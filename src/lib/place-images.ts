@@ -32,6 +32,14 @@ export const WIKI = {
   dalat: wiki("Da_Lat_city.jpg"),
   thacBac: wiki("Thác Bạc.jpg"),
 
+  // Hue
+  hueImperialCitadel: wiki("Citadel_of_Hue.jpg"),
+  thienMuPagoda: wiki("Thien_Mu_Pagoda.jpg"),
+  khaiDinhTomb: wiki("Khai_Dinh_Tomb.jpg"),
+  minhMangTomb: wiki("Minh_Mang_Tomb.jpg"),
+  tuDucTomb: wiki("Tu_Duc_Tomb.jpg"),
+  haiVanMotorcycler: wiki("Hai Van Pass, Vietnam, Vietnamese motorbike rider near US military bunker.jpg"),
+
   // Da Nang & surroundings
   hoiAn: wiki("Hoi_An_Ancient_Town.jpg"),
   hoiAnLanterns: wiki("Hoi_An_lanterns.jpg"),
@@ -67,6 +75,8 @@ export function getCityHeroImage(citySlug: string): string {
       return WIKI.nhaTrangSkyline;
     case "da-nang":
       return WIKI.goldenBridge;
+    case "hue":
+      return WIKI.hueImperialCitadel;
     default:
       return WIKI.haLongBay;
   }
@@ -159,6 +169,54 @@ export const PLACE_IMAGES: Record<string, Record<string, string>> = {
     "fake ba na hills tickets": WIKI.goldenBridge,
     "general safety": WIKI.myKhe,
     "emergency numbers": WIKI.daNangAirport,
+  },
+  "hue": {
+    "phu bai international airport hui": WIKI.camRanhAirport,
+    "phu bai airport": WIKI.camRanhAirport,
+    "train to hue": WIKI.gaNhaTrang,
+    "hue railway station": WIKI.gaNhaTrang,
+    "bus from da nang": WIKI.haiVan,
+    "citadel area imperial city": WIKI.hueImperialCitadel,
+    "city center dong ba le loi area": WIKI.citadelHue,
+    "pham ngu lao backpacker zone": WIKI.hoiAn,
+    "imperial citadel kinh thanh hue": WIKI.hueImperialCitadel,
+    "thien mu pagoda": WIKI.thienMuPagoda,
+    "minh mang royal tomb": WIKI.minhMangTomb,
+    "khai dinh royal tomb": WIKI.khaiDinhTomb,
+    "tu duc royal tomb": WIKI.tuDucTomb,
+    "dong ba market": WIKI.benThanhMarket,
+    "thuan an beach": WIKI.myKhe,
+    "lang co beach": WIKI.haiVan,
+    "bun bo hue noodle soup": WIKI.miQuang,
+    "com hen baby clam rice": WIKI.miQuang,
+    "banh khoai sizzling crispy pancakes": WIKI.banhMiThit,
+    "les jardins de la carambole": WIKI.hoiAnLanterns,
+    "hue street food alleys": WIKI.miQuang,
+    "dong ba market cho dong ba": WIKI.benThanhMarket,
+    "an cuu market": WIKI.benThanhMarket,
+    "huong giang night market": WIKI.hoiAnLanterns,
+    "royal tombs cycling tour": WIKI.khaiDinhTomb,
+    "perfume river dragon boat": WIKI.thienMuPagoda,
+    "dmz tour demilitarized zone": WIKI.haiVan,
+    "hai van pass motorbike or car": WIKI.haiVanMotorbike,
+    "grab taxi bike": WIKI.haiVanMotorbike,
+    "bicycle rental": WIKI.cyclo,
+    "cyclo pedicab": WIKI.cyclo,
+    "xe om motorbike taxi": WIKI.haiVanMotorbike,
+    "sim card": WIKI.camRanhAirport,
+    "currency exchange": WIKI.benThanhMarket,
+    "atms": WIKI.benThanhMarket,
+    "sample prices": WIKI.benThanhMarket,
+    "general safety": WIKI.hueImperialCitadel,
+    "weather typhoons": WIKI.haiVan,
+    "emergency numbers": WIKI.camRanhAirport,
+    "cyclo rides without fixed price": WIKI.cyclo,
+    "free tea ceremony": WIKI.hoiAnLanterns,
+    "unmetered taxis": WIKI.camRanhAirport,
+    "unesco combo ticket": WIKI.hueImperialCitadel,
+    "best citadel view from a bicycle": WIKI.hueImperialCitadel,
+    "coffee with a river view": WIKI.thienMuPagoda,
+    "dont drink tap water": WIKI.hueImperialCitadel,
   },
 };
 

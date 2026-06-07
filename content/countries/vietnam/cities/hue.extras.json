@@ -1,0 +1,210 @@
+{
+  "coordinates": { "lat": 16.4637, "lng": 107.5909 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "phu-bai-airport",
+      "title": { "ru": "Аэропорт Фу Бай (HUI)", "en": "Phu Bai Airport (HUI)" },
+      "description": {
+        "ru": "15 км от центра. Grab ~120–180k VND",
+        "en": "15 km from center. Grab ~120–180k VND"
+      },
+      "lat": 16.4015,
+      "lng": 107.7027,
+      "category": "airport"
+    },
+    {
+      "id": "imperial-citadel",
+      "title": { "ru": "Императорская Цитадель", "en": "Imperial Citadel (Đại Nội)" },
+      "description": {
+        "ru": "ЮНЕСКО. Вход: 200,000 VND. 7:00–17:30",
+        "en": "UNESCO WHS. Entry: 200,000 VND. 7am–5:30pm"
+      },
+      "lat": 16.4700,
+      "lng": 107.5769,
+      "category": "sight"
+    },
+    {
+      "id": "thien-mu-pagoda",
+      "title": { "ru": "Пагода Тхиен Му", "en": "Thien Mu Pagoda" },
+      "description": {
+        "ru": "7-ярусная пагода — символ Хюэ. Вход бесплатный",
+        "en": "7-storey pagoda — symbol of Hue. Free entry"
+      },
+      "lat": 16.4526,
+      "lng": 107.5480,
+      "category": "sight"
+    },
+    {
+      "id": "dong-ba-market",
+      "title": { "ru": "Рынок Донг Ба", "en": "Dong Ba Market" },
+      "description": {
+        "ru": "Главный рынок Хюэ. Еда, сувениры, шёлк",
+        "en": "Hue's main market. Food, souvenirs, silk"
+      },
+      "lat": 16.4693,
+      "lng": 107.5849,
+      "category": "food"
+    },
+    {
+      "id": "khai-dinh-tomb",
+      "title": { "ru": "Гробница Кхай Динь", "en": "Khai Dinh Tomb" },
+      "description": {
+        "ru": "Мозаика из фарфора. Вход: 150,000 VND",
+        "en": "Porcelain mosaic interior. Entry: 150,000 VND"
+      },
+      "lat": 16.3895,
+      "lng": 107.5758,
+      "category": "sight"
+    },
+    {
+      "id": "minh-mang-tomb",
+      "title": { "ru": "Гробница Минь Манг", "en": "Minh Mang Tomb" },
+      "description": {
+        "ru": "Самая грандиозная гробница. Вход: 150,000 VND",
+        "en": "Grandest royal tomb. Entry: 150,000 VND"
+      },
+      "lat": 16.3929,
+      "lng": 107.5424,
+      "category": "sight"
+    },
+    {
+      "id": "tu-duc-tomb",
+      "title": { "ru": "Гробница Ты Дык", "en": "Tu Duc Tomb" },
+      "description": {
+        "ru": "Поэтичный озёрный сад. Вход: 150,000 VND",
+        "en": "Poetic lake garden. Entry: 150,000 VND"
+      },
+      "lat": 16.4010,
+      "lng": 107.5568,
+      "category": "sight"
+    },
+    {
+      "id": "hue-train-station",
+      "title": { "ru": "Ж/д вокзал Хюэ", "en": "Hue Railway Station" },
+      "description": {
+        "ru": "Поезда в Дананг (3ч), Ханой, Хошимин",
+        "en": "Trains to Da Nang (3h), Hanoi, HCMC"
+      },
+      "lat": 16.4630,
+      "lng": 107.5963,
+      "category": "transport"
+    },
+    {
+      "id": "bun-bo-hue-street",
+      "title": { "ru": "Улица Bun Bo Hue", "en": "Bun Bo Hue restaurants" },
+      "description": {
+        "ru": "Hung Vuong Street — лучший bun bo hue",
+        "en": "Hung Vuong Street — best bun bo hue"
+      },
+      "lat": 16.4678,
+      "lng": 107.5781,
+      "category": "food"
+    },
+    {
+      "id": "perfume-river-pier",
+      "title": { "ru": "Причал Реки Ароматов", "en": "Perfume River Boat Pier" },
+      "description": {
+        "ru": "Аренда dragon boat для тура по реке",
+        "en": "Dragon boat rentals for river tours"
+      },
+      "lat": 16.4635,
+      "lng": 107.5842,
+      "category": "transport"
+    },
+    {
+      "id": "lac-thien-restaurant",
+      "title": { "ru": "Ресторан Lac Thien", "en": "Lac Thien Restaurant" },
+      "description": {
+        "ru": "Лучший Bánh Khoái в Хюэ",
+        "en": "Best Bánh Khoái in Hue"
+      },
+      "lat": 16.4664,
+      "lng": 107.5776,
+      "category": "food"
+    },
+    {
+      "id": "thuan-an-beach",
+      "title": { "ru": "Пляж Тхуан Ан", "en": "Thuan An Beach" },
+      "description": {
+        "ru": "Ближайший пляж, 13 км от центра",
+        "en": "Closest beach, 13 km from center"
+      },
+      "lat": 16.5254,
+      "lng": 107.6885,
+      "category": "beach"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "combo-ticket",
+      "label": {
+        "ru": "Купить комбо-билет (Цитадель + гробницы)",
+        "en": "Buy combo ticket (Citadel + tombs)"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel/Mobifone",
+        "en": "Buy Viettel/Mobifone SIM card"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить приложение Grab",
+        "en": "Install Grab app"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять наличные VND (на рынках нужны)",
+        "en": "Withdraw VND cash (needed at markets)"
+      }
+    },
+    {
+      "id": "bicycle",
+      "label": {
+        "ru": "Арендовать велосипед для осмотра города",
+        "en": "Rent a bicycle to explore the city"
+      }
+    },
+    {
+      "id": "bun-bo",
+      "label": {
+        "ru": "Попробовать Bún Bò Huế — главное блюдо города",
+        "en": "Try Bún Bò Huế — the city's signature dish"
+      }
+    },
+    {
+      "id": "raincoat",
+      "label": {
+        "ru": "Взять лёгкий дождевик (Хюэ — дождливый город)",
+        "en": "Pack a light raincoat (Hue is Vietnam's rainiest city)"
+      }
+    },
+    {
+      "id": "modest-clothes",
+      "label": {
+        "ru": "Скромная одежда для пагод и храмов",
+        "en": "Modest clothing for pagodas and temples"
+      }
+    },
+    {
+      "id": "dragon-boat",
+      "label": {
+        "ru": "Забронировать закатный круиз по Реке Ароматов",
+        "en": "Book sunset dragon boat cruise on Perfume River"
+      }
+    }
+  ]
+}
