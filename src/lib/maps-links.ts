@@ -352,4 +352,73 @@ export const KNOWN_PLACES: Record<string, KnownPlace[]> = {
       lng: 108.247,
     },
   ],
+  "hue": [
+    {
+      id: "imperial-citadel",
+      names: ["Imperial Citadel", "Hue Citadel", "Kinh Thanh Hue", "Dai Noi", "Forbidden Purple City", "Imperial City"],
+      lat: 16.4700,
+      lng: 107.5769,
+    },
+    {
+      id: "thien-mu-pagoda",
+      names: ["Thien Mu Pagoda", "Phuoc Duyen Tower", "Thien Mu", "Thien Mu Temple"],
+      lat: 16.4526,
+      lng: 107.5480,
+    },
+    {
+      id: "khai-dinh-tomb",
+      names: ["Khai Dinh Tomb", "Khai Dinh Mausoleum", "Lang Khai Dinh"],
+      lat: 16.3895,
+      lng: 107.5758,
+    },
+    {
+      id: "minh-mang-tomb",
+      names: ["Minh Mang Tomb", "Minh Mang Mausoleum", "Lang Minh Mang"],
+      lat: 16.3929,
+      lng: 107.5424,
+    },
+    {
+      id: "tu-duc-tomb",
+      names: ["Tu Duc Tomb", "Tu Duc Mausoleum", "Lang Tu Duc"],
+      lat: 16.4010,
+      lng: 107.5568,
+    },
+    {
+      id: "dong-ba-market",
+      names: ["Dong Ba Market", "Cho Dong Ba"],
+      lat: 16.4693,
+      lng: 107.5849,
+    },
+    {
+      id: "hue-train-station",
+      names: ["Hue Railway Station", "Hue Train Station", "Hue Station", "Ga Hue"],
+      lat: 16.4630,
+      lng: 107.5963,
+    },
+    {
+      id: "phu-bai-airport",
+      names: ["Phu Bai International Airport", "Phu Bai Airport", "HUI"],
+      lat: 16.4015,
+      lng: 107.7027,
+    },
+    {
+      id: "lac-thien",
+      names: ["Lac Thien Restaurant", "Lac Thien", "Banh Khoai Lac Thien"],
+      lat: 16.4664,
+      lng: 107.5776,
+      address: "6 Dinh Tien Hoang, Hue",
+    },
+    {
+      id: "perfume-river",
+      names: ["Perfume River", "Song Huong", "Huong River", "Perfume River pier"],
+      lat: 16.4635,
+      lng: 107.5842,
+    },
+    {
+      id: "thuan-an-beach",
+      names: ["Thuan An Beach", "Thuan An"],
+      lat: 16.5254,
+      lng: 107.6885,
+    },
+  ],
 };
