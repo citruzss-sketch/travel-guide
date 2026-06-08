@@ -54,6 +54,7 @@ export const IMAGES = {
     vietnam: getCountryHeroImage(),
     nhaTrang: getCityHeroImage("nha-trang"),
     daNang: getCityHeroImage("da-nang"),
+    hoChiMinhCity: getCityHeroImage("ho-chi-minh-city"),
   },
 } as const;
 
@@ -77,8 +78,8 @@ export function resolveItemImage(
 ): string {
   const t = titleEn.toLowerCase();
 
-  if (t.includes("airport") || t.includes("(cxr)") || t.includes("(dad)"))
-    return citySlug === "da-nang" ? WIKI.daNangAirport : WIKI.camRanhAirport;
+  if (t.includes("airport") || t.includes("(cxr)") || t.includes("(dad)") || t.includes("(sgn)") || t.includes("tan son nhat"))
+    return citySlug === "da-nang" ? WIKI.daNangAirport : citySlug === "ho-chi-minh-city" ? WIKI.tanSonNhat : WIKI.camRanhAirport;
   if (t.includes("train") || t.includes("station") || t.includes("railway"))
     return WIKI.gaNhaTrang;
   if (t.includes("golden bridge") || t.includes("bà nà") || t.includes("ba na"))
@@ -101,6 +102,24 @@ export function resolveItemImage(
   )
     return t.includes("long son") ? WIKI.longSonBuddha : WIKI.poNagar;
   if (t.includes("hoi an") || t.includes("ancient town")) return WIKI.hoiAn;
+  if (t.includes("reunification") || t.includes("independence palace"))
+    return WIKI.hcmcReunificationPalace;
+  if (t.includes("war remnants") || t.includes("war museum"))
+    return WIKI.hcmcWarMuseum;
+  if (t.includes("cu chi"))
+    return WIKI.hcmcCuChi;
+  if (t.includes("jade emperor") || t.includes("ngoc hoang"))
+    return WIKI.hcmcJadeEmperor;
+  if (t.includes("landmark 81") || t.includes("skydeck"))
+    return WIKI.hcmcSkyline;
+  if (t.includes("notre dame") && t.includes("saigon"))
+    return WIKI.hcmcNotreDame;
+  if (t.includes("mekong"))
+    return WIKI.mekongDelta;
+  if (t.includes("vung tau"))
+    return WIKI.vungTau;
+  if (t.includes("pho 2000") || t.includes("com tam") || t.includes("broken rice"))
+    return WIKI.pho;
   if (t.includes("hue") || t.includes("imperial") || t.includes("hai van"))
     return t.includes("hue") ? WIKI.citadelHue : WIKI.haiVan;
   if (t.includes("dalat")) return WIKI.dalat;
@@ -156,37 +175,39 @@ export function resolveItemImage(
   if (t.includes("scam") || t.includes("warning") || t.includes("fake"))
     return WIKI.benThanhMarket;
 
+  const isHCMC = citySlug === "ho-chi-minh-city";
+  const isDaNang = citySlug === "da-nang";
   switch (sectionKey) {
     case "districts":
-      return citySlug === "da-nang" ? WIKI.myKhe : WIKI.nhaTrangSkyline;
+      return isHCMC ? WIKI.hcmcBenThanh : isDaNang ? WIKI.myKhe : WIKI.nhaTrangSkyline;
     case "airport":
-      return citySlug === "da-nang" ? WIKI.daNangAirport : WIKI.camRanhAirport;
+      return isHCMC ? WIKI.tanSonNhat : isDaNang ? WIKI.daNangAirport : WIKI.camRanhAirport;
     case "sights":
-      return citySlug === "da-nang" ? WIKI.goldenBridge : WIKI.poNagar;
+      return isHCMC ? WIKI.hcmcReunificationPalace : isDaNang ? WIKI.goldenBridge : WIKI.poNagar;
     case "beaches":
-      return citySlug === "da-nang" ? WIKI.myKhe : WIKI.docLet;
+      return isHCMC ? WIKI.vungTau : isDaNang ? WIKI.myKhe : WIKI.docLet;
     case "food":
-      return WIKI.miQuang;
+      return isHCMC ? WIKI.pho : WIKI.miQuang;
     case "markets":
-      return WIKI.benThanhMarket;
+      return WIKI.hcmcBenThanh;
     case "tours":
-      return WIKI.goldenBridge;
+      return isHCMC ? WIKI.hcmcCuChi : WIKI.goldenBridge;
     case "transport":
-      return WIKI.haiVanMotorbike;
+      return isHCMC ? WIKI.cyclo : WIKI.haiVanMotorbike;
     case "simAndInternet":
       return IMAGES.sim;
     case "money":
       return IMAGES.money;
     case "safety":
-      return WIKI.myKhe;
+      return isHCMC ? WIKI.hcmcBenThanh : WIKI.myKhe;
     case "phrases":
       return WIKI.hoiAnLanterns;
     case "lifehacks":
-      return WIKI.docLet;
+      return isHCMC ? WIKI.hcmcReunificationPalace : WIKI.docLet;
     case "scams":
-      return WIKI.benThanhMarket;
+      return isHCMC ? WIKI.tanSonNhat : WIKI.benThanhMarket;
     default:
-      return citySlug === "da-nang" ? WIKI.myKhe : WIKI.nhaTrangSkyline;
+      return isHCMC ? WIKI.hcmcBenThanh : isDaNang ? WIKI.myKhe : WIKI.nhaTrangSkyline;
   }
 }
 

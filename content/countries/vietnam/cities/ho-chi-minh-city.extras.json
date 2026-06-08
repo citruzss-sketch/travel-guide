@@ -1,0 +1,210 @@
+{
+  "coordinates": { "lat": 10.7769, "lng": 106.7009 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Сон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7–8 км от центра, Grab ~100–150k VND",
+        "en": "7–8 km from center, Grab ~100–150k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6521,
+      "category": "airport"
+    },
+    {
+      "id": "ben-thanh",
+      "title": { "ru": "Рынок Бентхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Символ Хошимина с 1914 года",
+        "en": "Symbol of Ho Chi Minh City since 1914"
+      },
+      "lat": 10.7724,
+      "lng": 106.6985,
+      "category": "food"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец объединения", "en": "Reunification Palace" },
+      "description": {
+        "ru": "Исторический дворец 1975 года",
+        "en": "Historic palace from 1975"
+      },
+      "lat": 10.7772,
+      "lng": 106.6956,
+      "category": "sight"
+    },
+    {
+      "id": "war-museum",
+      "title": { "ru": "Музей Военных Реликвий", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "Документирует Вьетнамскую войну",
+        "en": "Documents the Vietnam War"
+      },
+      "lat": 10.7796,
+      "lng": 106.6922,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre Dame Cathedral" },
+      "description": {
+        "ru": "Французский собор 1880 года",
+        "en": "French cathedral from 1880"
+      },
+      "lat": 10.7797,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "jade-emperor",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Таоистская пагода 1909 года",
+        "en": "Taoist pagoda from 1909"
+      },
+      "lat": 10.7893,
+      "lng": 106.6944,
+      "category": "sight"
+    },
+    {
+      "id": "landmark-81",
+      "title": { "ru": "Landmark 81 Skydeck", "en": "Landmark 81 Skydeck" },
+      "description": {
+        "ru": "Самое высокое здание Вьетнама (461 м)",
+        "en": "Vietnam's tallest building (461m)"
+      },
+      "lat": 10.7948,
+      "lng": 106.7219,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Улица Буй Вьен", "en": "Bui Vien Walking Street" },
+      "description": {
+        "ru": "Центр ночной жизни, бары и хостелы",
+        "en": "Nightlife center, bars and hostels"
+      },
+      "lat": 10.7679,
+      "lng": 106.6926,
+      "category": "district"
+    },
+    {
+      "id": "saigon-station",
+      "title": { "ru": "Ж/д вокзал Сайгон", "en": "Saigon Railway Station" },
+      "description": {
+        "ru": "Поезда в Нячанг, Да Нанг, Ханой",
+        "en": "Trains to Nha Trang, Da Nang, Hanoi"
+      },
+      "lat": 10.7792,
+      "lng": 106.6796,
+      "category": "transport"
+    },
+    {
+      "id": "cholon",
+      "title": { "ru": "Чолон (Китайский квартал)", "en": "Cholon (Chinatown)" },
+      "description": {
+        "ru": "Рынок Биньтэй и китайские храмы",
+        "en": "Binh Tay market and Chinese temples"
+      },
+      "lat": 10.7494,
+      "lng": 106.6531,
+      "category": "district"
+    },
+    {
+      "id": "cu-chi",
+      "title": { "ru": "Тоннели Ку Чи", "en": "Cu Chi Tunnels" },
+      "description": {
+        "ru": "75 км от центра, экскурсия полдня",
+        "en": "75 km from center, half-day excursion"
+      },
+      "lat": 11.1434,
+      "lng": 106.4613,
+      "category": "sight"
+    },
+    {
+      "id": "metro-ben-thanh",
+      "title": { "ru": "Метро: Станция Бентхань", "en": "Metro: Ben Thanh Station" },
+      "description": {
+        "ru": "Линия 1, открыта в 2024 году",
+        "en": "Line 1, opened in 2024"
+      },
+      "lat": 10.7728,
+      "lng": 106.6985,
+      "category": "transport"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM у стойки в аэропорту T2",
+        "en": "Buy SIM at airport T2 counter"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab — не брать такси без счётчика",
+        "en": "Install Grab — never take taxis without meter"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур Cu Chi Tunnels заранее",
+        "en": "Pre-book Cu Chi Tunnels tour"
+      }
+    },
+    {
+      "id": "ben-thanh-bargain",
+      "label": {
+        "ru": "Торговаться в Бентхань — 40% от цены продавца",
+        "en": "Bargain at Ben Thanh — offer 40% of seller price"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Наличные VND — банкомат в аэропорту лучше",
+        "en": "VND cash — airport ATM is better than hotel"
+      }
+    },
+    {
+      "id": "banh-mi",
+      "label": {
+        "ru": "Попробовать баньми у Huynh Hoa и фо Pho 2000",
+        "en": "Try banh mi at Huynh Hoa and Pho 2000"
+      }
+    },
+    {
+      "id": "weather",
+      "label": {
+        "ru": "Проверить сезон: декабрь–апрель (сухой) идеально",
+        "en": "Check season: December–April (dry) is ideal"
+      }
+    },
+    {
+      "id": "bag-safety",
+      "label": {
+        "ru": "Держать сумку на стороне от дороги (рывок с мотоцикла)",
+        "en": "Keep bag on sidewalk side (motorbike snatching risk)"
+      }
+    },
+    {
+      "id": "mekong",
+      "label": {
+        "ru": "Рассмотреть однодневный тур в дельту Меконга",
+        "en": "Consider a Mekong Delta day trip"
+      }
+    }
+  ]
+}
