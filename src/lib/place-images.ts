@@ -59,6 +59,19 @@ export const WIKI = {
   banhMi: wiki("Vietnamese Bánh mì (Banh Mi) Sandwich.jpg"),
   banhMiThit: wiki("Banh_mi_thit_Nhu_Lan.jpg"),
   benThanhMarket: wiki("Ben Thanh Market Ho Chi Minh City.jpg"),
+
+  // Ho Chi Minh City
+  hcmcBenThanh: wiki("Ben_Thanh_market,_Hồ_Chí_Minh.jpg"),
+  hcmcReunificationPalace: wiki("Independence_Palace_of_Vietnam.jpg"),
+  hcmcNotreDame: wiki("Notre-Dame_Cathedral_Basilica_of_Saigon_2022.jpg"),
+  hcmcWarMuseum: wiki("War_Remnants_Museum_HCMC_compressed.jpg"),
+  hcmcCuChi: wiki("Cu_Chi_Tunnels.jpg"),
+  hcmcJadeEmperor: wiki("Chua_Ngoc_Hoang.jpg"),
+  hcmcSkyline: wiki("Ben_Thanh_market,_Hồ_Chí_Minh.jpg"),
+  tanSonNhat: wiki("Tan_Son_Nhat_International_Airport.jpg"),
+  mekongDelta: wiki("Mekong_Delta_Vietnam.jpg"),
+  vungTau: wiki("Vung_Tau_beach.jpg"),
+  pho: wiki("Vietnamese_pho.jpg"),
 } as const;
 
 export function getCityHeroImage(citySlug: string): string {
@@ -67,6 +80,8 @@ export function getCityHeroImage(citySlug: string): string {
       return WIKI.nhaTrangSkyline;
     case "da-nang":
       return WIKI.goldenBridge;
+    case "ho-chi-minh-city":
+      return WIKI.hcmcBenThanh;
     default:
       return WIKI.haLongBay;
   }
@@ -159,6 +174,56 @@ export const PLACE_IMAGES: Record<string, Record<string, string>> = {
     "fake ba na hills tickets": WIKI.goldenBridge,
     "general safety": WIKI.myKhe,
     "emergency numbers": WIKI.daNangAirport,
+  },
+  "ho-chi-minh-city": {
+    "tan son nhat international airport sgn": WIKI.tanSonNhat,
+    "bus train from other cities": WIKI.gaNhaTrang,
+    "district 1 city center": WIKI.hcmcBenThanh,
+    "bui vien backpacker street d1": WIKI.hcmcBenThanh,
+    "district 3 local chill": WIKI.hcmcBenThanh,
+    "phu my hung district 7 expat": WIKI.hcmcBenThanh,
+    "ben thanh market": WIKI.hcmcBenThanh,
+    "reunification palace independence palace": WIKI.hcmcReunificationPalace,
+    "war remnants museum": WIKI.hcmcWarMuseum,
+    "cu chi tunnels": WIKI.hcmcCuChi,
+    "notre dame cathedral basilica": WIKI.hcmcNotreDame,
+    "jade emperor pagoda ngoc hoang": WIKI.hcmcJadeEmperor,
+    "skydeck landmark 81": WIKI.hcmcSkyline,
+    "vung tau": WIKI.vungTau,
+    "mui ne 5 6h": WIKI.docLet,
+    "banh mi huynh hoa": WIKI.banhMiThit,
+    "pho 2000 near ben thanh": WIKI.pho,
+    "com tam ba ghien broken rice": WIKI.pho,
+    "lunch lady nguyen thi thanh": WIKI.miQuang,
+    "the deck saigon": WIKI.hcmcBenThanh,
+    "bun thit nuong bbq vermicelli": WIKI.miQuang,
+    "binh tay market cholon": WIKI.hcmcBenThanh,
+    "saigon square": WIKI.hcmcBenThanh,
+    "cu chi tunnels half day": WIKI.hcmcCuChi,
+    "mekong delta day trip": WIKI.mekongDelta,
+    "saigon night food tour": WIKI.hcmcBenThanh,
+    "saigon city highlights": WIKI.hcmcReunificationPalace,
+    "grab": WIKI.cyclo,
+    "metro line 1 ben thanh suoi tien": WIKI.hcmcBenThanh,
+    "vinasun mai linh taxi": WIKI.tanSonNhat,
+    "cyclo cycle rickshaw": WIKI.cyclo,
+    "public bus xe buyt": WIKI.hcmcBenThanh,
+    "viettel vietnamobile": WIKI.hcmcBenThanh,
+    "cafes coworking": WIKI.hcmcBenThanh,
+    "phone bag snatching": WIKI.hcmcBenThanh,
+    "traffic roads": WIKI.cyclo,
+    "emergency numbers": WIKI.hcmcBenThanh,
+    "taxi without meter": WIKI.tanSonNhat,
+    "inflated prices at ben thanh": WIKI.hcmcBenThanh,
+    "cyclo tours with no agreed price": WIKI.cyclo,
+    "fake guides at attractions": WIKI.hcmcReunificationPalace,
+    "crossing the street in hcmc": WIKI.cyclo,
+    "vietnamese coffee culture": WIKI.hcmcBenThanh,
+    "best time for sightseeing": WIKI.hcmcReunificationPalace,
+    "cholon chinese quarter": WIKI.hcmcBenThanh,
+    "general safety": WIKI.hcmcBenThanh,
+    "currency exchange": WIKI.hcmcBenThanh,
+    "sample prices 2026": WIKI.hcmcBenThanh,
   },
 };
 
