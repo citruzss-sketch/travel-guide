@@ -1,0 +1,207 @@
+{
+  "coordinates": { "lat": 16.4637, "lng": 107.5909 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "hui-airport",
+      "title": { "ru": "Аэропорт Фу Бай (HUI)", "en": "Phu Bai Airport (HUI)" },
+      "description": {
+        "ru": "15 км от центра. Grab ~120–160k VND",
+        "en": "15 km from center. Grab ~120–160k VND"
+      },
+      "lat": 16.4015,
+      "lng": 107.7030,
+      "category": "airport"
+    },
+    {
+      "id": "imperial-citadel",
+      "title": { "ru": "Императорский город (Đại Nội)", "en": "Imperial Citadel (Đại Nội)" },
+      "description": {
+        "ru": "ЮНЕСКО. Вход 200k VND. Открыт 7:00–17:30",
+        "en": "UNESCO. Entry 200k VND. Open 7:00–17:30"
+      },
+      "lat": 16.4693,
+      "lng": 107.5778,
+      "category": "sight"
+    },
+    {
+      "id": "thien-mu-pagoda",
+      "title": { "ru": "Пагода Тхиен Му", "en": "Thien Mu Pagoda" },
+      "description": {
+        "ru": "7-ярусная башня 1601 г. Вход бесплатный",
+        "en": "7-tier tower built 1601. Free entry"
+      },
+      "lat": 16.4539,
+      "lng": 107.5483,
+      "category": "sight"
+    },
+    {
+      "id": "khai-dinh-tomb",
+      "title": { "ru": "Гробница Кхай Динь", "en": "Khai Dinh Tomb" },
+      "description": {
+        "ru": "Мозаичный дворец 1920–31. Вход 150k VND",
+        "en": "Mosaic palace 1920–31. Entry 150k VND"
+      },
+      "lat": 16.4356,
+      "lng": 107.5797,
+      "category": "sight"
+    },
+    {
+      "id": "minh-mang-tomb",
+      "title": { "ru": "Гробница Минь Манг", "en": "Minh Mang Tomb" },
+      "description": {
+        "ru": "Крупнейшая усыпальница, 40 строений. Вход 150k",
+        "en": "Largest tomb complex, 40 structures. Entry 150k VND"
+      },
+      "lat": 16.4189,
+      "lng": 107.5517,
+      "category": "sight"
+    },
+    {
+      "id": "tu-duc-tomb",
+      "title": { "ru": "Гробница Ты Дык", "en": "Tu Duc Tomb" },
+      "description": {
+        "ru": "Романтичный сад с озёрами. Вход 150k VND",
+        "en": "Romantic garden with lotus lake. Entry 150k VND"
+      },
+      "lat": 16.4564,
+      "lng": 107.5517,
+      "category": "sight"
+    },
+    {
+      "id": "dong-ba-market",
+      "title": { "ru": "Рынок Dong Ba", "en": "Dong Ba Market" },
+      "description": {
+        "ru": "Крупнейший рынок. Еда, шёлк, нон-ла",
+        "en": "Largest market. Food, silk, non la hats"
+      },
+      "lat": 16.4719,
+      "lng": 107.5834,
+      "category": "food"
+    },
+    {
+      "id": "le-loi-strip",
+      "title": { "ru": "Район Le Loi (туристический центр)", "en": "Le Loi tourist strip" },
+      "description": {
+        "ru": "Отели, рестораны, турагентства",
+        "en": "Hotels, restaurants, tour agencies"
+      },
+      "lat": 16.4658,
+      "lng": 107.5895,
+      "category": "district"
+    },
+    {
+      "id": "perfume-river-pier",
+      "title": { "ru": "Пристань Toa Kham (лодки по реке)", "en": "Toa Kham Pier (river boats)" },
+      "description": {
+        "ru": "Лицензированные лодки к Тхиен Му и гробницам",
+        "en": "Licensed boats to Thien Mu and royal tombs"
+      },
+      "lat": 16.4630,
+      "lng": 107.5659,
+      "category": "transport"
+    },
+    {
+      "id": "hue-train-station",
+      "title": { "ru": "Ж/д вокзал Хюэ", "en": "Hue Railway Station" },
+      "description": {
+        "ru": "Ул. Bui Thi Xuan. Поезда Ханой–HCMC",
+        "en": "Bui Thi Xuan St. Trains Hanoi–HCMC"
+      },
+      "lat": 16.4654,
+      "lng": 107.5958,
+      "category": "transport"
+    },
+    {
+      "id": "lac-thien-restaurant",
+      "title": { "ru": "Lac Thien — Banh Khoai", "en": "Lac Thien — Bánh Khoái" },
+      "description": {
+        "ru": "Культовые рисовые блинчики с 1960-х. Ул. Dinh Tien Hoang",
+        "en": "Iconic rice crepes since the 1960s. Dinh Tien Hoang St"
+      },
+      "lat": 16.4643,
+      "lng": 107.5873,
+      "category": "food"
+    },
+    {
+      "id": "thuan-an-beach",
+      "title": { "ru": "Пляж Тхуан Ан", "en": "Thuan An Beach" },
+      "description": {
+        "ru": "12 км от центра. Местный, тихий",
+        "en": "12 km from center. Local, calm"
+      },
+      "lat": 16.5309,
+      "lng": 107.7028,
+      "category": "beach"
+    },
+    {
+      "id": "night-market",
+      "title": { "ru": "Ночной рынок Chu Van An", "en": "Chu Van An Night Market" },
+      "description": {
+        "ru": "Пешеходная зона, уличная еда с 19:00",
+        "en": "Pedestrian zone, street food from 7 PM"
+      },
+      "lat": 16.4671,
+      "lng": 107.5869,
+      "category": "food"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel в аэропорту Фу Бай",
+        "en": "Buy Viettel SIM at Phu Bai Airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab и привязать карту",
+        "en": "Install Grab and link a card"
+      }
+    },
+    {
+      "id": "combo-ticket",
+      "label": {
+        "ru": "Взять комплексный билет на 4 объекта ЮНЕСКО (530k VND)",
+        "en": "Get the 4-site UNESCO combo ticket (530k VND)"
+      }
+    },
+    {
+      "id": "modest-clothing",
+      "label": {
+        "ru": "Одежда, прикрывающая плечи и колени (для храмов и гробниц)",
+        "en": "Pack modest clothing covering shoulders and knees (for temples and tombs)"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять наличные VND (рынок Dong Ba и уличная еда — только кэш)",
+        "en": "Withdraw VND cash (Dong Ba Market and street food are cash only)"
+      }
+    },
+    {
+      "id": "boat-trip",
+      "label": {
+        "ru": "Забронировать лодочный тур по реке Хыонг",
+        "en": "Book a Perfume River boat tour"
+      }
+    },
+    {
+      "id": "food-checklist",
+      "label": {
+        "ru": "Попробовать 3 блюда Хюэ: bun bo, banh khoai, com hen",
+        "en": "Try the 3 Hue classics: bun bo, banh khoai, com hen"
+      }
+    }
+  ]
+}
