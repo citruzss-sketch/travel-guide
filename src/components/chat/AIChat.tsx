@@ -17,6 +17,8 @@ import {
   SlidersHorizontal,
   ChevronDown,
   ChevronUp,
+  SquarePen,
+  RotateCcw,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import type { Locale } from "@/types/content";
@@ -37,7 +39,11 @@ import {
   plainTextFromMarkdown,
 } from "@/lib/chat-markdown";
 import { getSOSPrompt } from "@/lib/sos-scenarios";
-import { createSessionId, type ChatHistorySession } from "@/lib/chat-history";
+import {
+  createSessionId,
+  getChatHistory,
+  type ChatHistorySession,
+} from "@/lib/chat-history";
 
 interface Message {
   role: "user" | "assistant";
@@ -119,6 +125,7 @@ export function AIChat({
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [isAutoRestored, setIsAutoRestored] = useState(false);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
   const [compactedByIndex, setCompactedByIndex] = useState<Record<number, string>>(
     {}
@@ -211,6 +218,27 @@ export function AIChat({
 
   useEffect(() => {
     resetSession();
+    setIsAutoRestored(false);
+
+    // Auto-restore the most recent session if it's < 24 hours old and no launch override is pending.
+    if (!launchConfig?.initialInput && !launchConfig?.autoSend) {
+      const recent = getChatHistory(citySlug)[0];
+      const RESUME_MS = 24 * 60 * 60 * 1000;
+      if (recent && Date.now() - recent.updatedAt < RESUME_MS) {
+        sessionIdRef.current = recent.id;
+        setActiveSessionId(recent.id);
+        setMode(recent.mode);
+        setPlaceContext(undefined);
+        setCompactedByIndex({});
+        setIsAutoRestored(true);
+        setMessages([
+          { role: "assistant", content: welcomeForMode(t, cityName, recent.mode) },
+          ...recent.messages,
+        ]);
+        return;
+      }
+    }
+
     resetWelcome(mode);
   }, [cityName]); // eslint-disable-line react-hooks/exhaustive-deps -- reset on city change only
 
@@ -220,6 +248,7 @@ export function AIChat({
     if (!launchConfig) return;
 
     resetSession();
+    setIsAutoRestored(false);
     const nextMode = launchConfig.mode ?? "guide";
     setMode(nextMode);
     if (launchConfig.placeContext) setPlaceContext(launchConfig.placeContext);
@@ -355,6 +384,12 @@ export function AIChat({
     }
   };
 
+  const handleNewChat = useCallback(() => {
+    setIsAutoRestored(false);
+    resetSession();
+    resetWelcome(mode);
+  }, [resetSession, resetWelcome, mode]);
+
   const copyMessage = async (content: string, index: number) => {
     try {
       await navigator.clipboard.writeText(content);
@@ -484,6 +519,17 @@ export function AIChat({
               </p>
             </div>
             <div className="flex shrink-0 items-center gap-1">
+              {(hasConversation || isAutoRestored) && (
+                <button
+                  type="button"
+                  onClick={handleNewChat}
+                  className="inline-flex items-center gap-1 rounded-xl border border-border px-2.5 py-2 text-xs font-semibold text-muted transition-colors hover:border-accent/40 hover:text-accent"
+                  aria-label={t("chat.newChat")}
+                >
+                  <SquarePen className="h-3.5 w-3.5" />
+                  <span className="hidden sm:inline">{t("chat.newChat")}</span>
+                </button>
+              )}
               <button
                 type="button"
                 onClick={handleControlsToggle}
@@ -554,6 +600,19 @@ export function AIChat({
           tabIndex={0}
           className="chat-scroll min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain p-3 sm:p-5 focus:outline-none"
         >
+        {isAutoRestored && (
+          <div className="flex items-center gap-2 rounded-xl border border-accent/20 bg-accent/5 px-3 py-2 text-xs text-muted">
+            <RotateCcw className="h-3.5 w-3.5 shrink-0 text-accent" />
+            <span>{t("chat.resumed")}</span>
+            <button
+              type="button"
+              onClick={handleNewChat}
+              className="ml-auto shrink-0 font-semibold text-accent hover:underline"
+            >
+              {t("chat.newChat")}
+            </button>
+          </div>
+        )}
         {messages.map((msg, i) => (
           <motion.div
             key={i}
