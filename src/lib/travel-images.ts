@@ -54,6 +54,7 @@ export const IMAGES = {
     vietnam: getCountryHeroImage(),
     nhaTrang: getCityHeroImage("nha-trang"),
     daNang: getCityHeroImage("da-nang"),
+    hue: getCityHeroImage("hue"),
   },
 } as const;
 
@@ -77,7 +78,7 @@ export function resolveItemImage(
 ): string {
   const t = titleEn.toLowerCase();
 
-  if (t.includes("airport") || t.includes("(cxr)") || t.includes("(dad)"))
+  if (t.includes("airport") || t.includes("(cxr)") || t.includes("(dad)") || t.includes("(hui)"))
     return citySlug === "da-nang" ? WIKI.daNangAirport : WIKI.camRanhAirport;
   if (t.includes("train") || t.includes("station") || t.includes("railway"))
     return WIKI.gaNhaTrang;
@@ -101,8 +102,18 @@ export function resolveItemImage(
   )
     return t.includes("long son") ? WIKI.longSonBuddha : WIKI.poNagar;
   if (t.includes("hoi an") || t.includes("ancient town")) return WIKI.hoiAn;
+  if (t.includes("citadel") || t.includes("dai noi") || t.includes("forbidden city"))
+    return WIKI.citadelHue;
+  if (t.includes("thien mu") || t.includes("phuoc duyen")) return WIKI.hueThienMu;
+  if (t.includes("khai dinh")) return WIKI.hueKhaiDinh;
+  if (t.includes("minh mang")) return WIKI.hueMinhMang;
+  if (t.includes("tu duc")) return WIKI.hueTuDuc;
+  if (t.includes("perfume river") || t.includes("song huong") || t.includes("dragon boat"))
+    return WIKI.huePerfumeRiver;
+  if (t.includes("bun bo") || t.includes("bún bò")) return WIKI.hueBunBo;
+  if (t.includes("banh khoai") || t.includes("bánh khoái")) return WIKI.hueBanhKhoai;
   if (t.includes("hue") || t.includes("imperial") || t.includes("hai van"))
-    return t.includes("hue") ? WIKI.citadelHue : WIKI.haiVan;
+    return t.includes("hue") || t.includes("imperial") ? WIKI.citadelHue : WIKI.haiVan;
   if (t.includes("dalat")) return WIKI.dalat;
   if (t.includes("island") || t.includes("hon ") || t.includes("snorkel"))
     return WIKI.vinpearlCable;
@@ -158,19 +169,19 @@ export function resolveItemImage(
 
   switch (sectionKey) {
     case "districts":
-      return citySlug === "da-nang" ? WIKI.myKhe : WIKI.nhaTrangSkyline;
+      return citySlug === "da-nang" ? WIKI.myKhe : citySlug === "hue" ? WIKI.citadelHue : WIKI.nhaTrangSkyline;
     case "airport":
       return citySlug === "da-nang" ? WIKI.daNangAirport : WIKI.camRanhAirport;
     case "sights":
-      return citySlug === "da-nang" ? WIKI.goldenBridge : WIKI.poNagar;
+      return citySlug === "da-nang" ? WIKI.goldenBridge : citySlug === "hue" ? WIKI.citadelHue : WIKI.poNagar;
     case "beaches":
       return citySlug === "da-nang" ? WIKI.myKhe : WIKI.docLet;
     case "food":
-      return WIKI.miQuang;
+      return citySlug === "hue" ? WIKI.hueBunBo : WIKI.miQuang;
     case "markets":
       return WIKI.benThanhMarket;
     case "tours":
-      return WIKI.goldenBridge;
+      return citySlug === "hue" ? WIKI.citadelHue : WIKI.goldenBridge;
     case "transport":
       return WIKI.haiVanMotorbike;
     case "simAndInternet":
@@ -178,15 +189,15 @@ export function resolveItemImage(
     case "money":
       return IMAGES.money;
     case "safety":
-      return WIKI.myKhe;
+      return citySlug === "hue" ? WIKI.citadelHue : WIKI.myKhe;
     case "phrases":
       return WIKI.hoiAnLanterns;
     case "lifehacks":
-      return WIKI.docLet;
+      return citySlug === "hue" ? WIKI.citadelHue : WIKI.docLet;
     case "scams":
       return WIKI.benThanhMarket;
     default:
-      return citySlug === "da-nang" ? WIKI.myKhe : WIKI.nhaTrangSkyline;
+      return citySlug === "da-nang" ? WIKI.myKhe : citySlug === "hue" ? WIKI.citadelHue : WIKI.nhaTrangSkyline;
   }
 }
 
