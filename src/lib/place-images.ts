@@ -53,6 +53,15 @@ export const WIKI = {
   beachDaNangGulf: wiki("Beach of Da Nang, inner-gulf.jpg"),
   citadelHue: wiki("Citadel_of_Hue.jpg"),
 
+  // Hue specific
+  hueThienMu: wiki("Thien_Mu_Pagoda.jpg"),
+  hueKhaiDinh: wiki("Khai_Dinh_mausoleum_exterior.jpg"),
+  hueMinhMang: wiki("Minh_Mang_Tomb.jpg"),
+  hueTuDuc: wiki("Tu_Duc_Tomb.jpg"),
+  huePerfumeRiver: wiki("Hue_perfume_river.jpg"),
+  hueBunBo: wiki("Bún_bò_Huế.jpg"),
+  hueBanhKhoai: wiki("Bánh_khoái.jpg"),
+
   // Transport & food (Vietnam)
   cyclo: wiki("Cycle rickshaw in Hanoi.jpg"),
   miQuang: wiki("Mì Quảng.jpg"),
@@ -67,6 +76,8 @@ export function getCityHeroImage(citySlug: string): string {
       return WIKI.nhaTrangSkyline;
     case "da-nang":
       return WIKI.goldenBridge;
+    case "hue":
+      return WIKI.citadelHue;
     default:
       return WIKI.haLongBay;
   }
@@ -159,6 +170,50 @@ export const PLACE_IMAGES: Record<string, Record<string, string>> = {
     "fake ba na hills tickets": WIKI.goldenBridge,
     "general safety": WIKI.myKhe,
     "emergency numbers": WIKI.daNangAirport,
+  },
+  "hue": {
+    "phu bai international airport hui": WIKI.camRanhAirport,
+    "train hue railway station": WIKI.gaNhaTrang,
+    "hung vuong city center": WIKI.citadelHue,
+    "le loi riverside": WIKI.huePerfumeRiver,
+    "pham ngu lao backpacker": WIKI.hoiAn,
+    "thuan an beach resort area": WIKI.docLet,
+    "imperial citadel dai noi": WIKI.citadelHue,
+    "thien mu pagoda": WIKI.hueThienMu,
+    "tomb of khai dinh": WIKI.hueKhaiDinh,
+    "tomb of minh mang": WIKI.hueMinhMang,
+    "tomb of tu duc": WIKI.hueTuDuc,
+    "museum of royal fine arts": WIKI.citadelHue,
+    "bun bo hue ba tuan": WIKI.hueBunBo,
+    "banh khoai hoa dong ba": WIKI.hueBanhKhoai,
+    "com hen baby clam rice": WIKI.miQuang,
+    "hanh restaurant royal cuisine": WIKI.hoiAnLanterns,
+    "hue night market": WIKI.hoiAnLanterns,
+    "banh canh nam pho": WIKI.miQuang,
+    "dong ba market": WIKI.benThanhMarket,
+    "vo thi sau night market": WIKI.hoiAnLanterns,
+    "royal tombs day driver": WIKI.citadelHue,
+    "perfume river boat trip": WIKI.huePerfumeRiver,
+    "dmz tour 17th parallel": WIKI.haiVan,
+    "village cycling tour": WIKI.hoiAn,
+    "bicycle": pexels(276506),
+    "electric scooter xe dien no license": WIKI.cyclo,
+    "petrol scooter 110 125cc": WIKI.haiVanMotorbike,
+    "grab": WIKI.haiVanMotorbike,
+    "xe om motorbike taxi": WIKI.cyclo,
+    "viettel vinaphone": pexels(442150),
+    "currency exchange and atms": pexels(3943723),
+    "sample prices": pexels(3943723),
+    "general safety": WIKI.citadelHue,
+    "rain and typhoons": WIKI.haiVan,
+    "emergency numbers": WIKI.camRanhAirport,
+    "combo ticket for all heritage sites": WIKI.citadelHue,
+    "citadel arrive at 7 00 am": WIKI.citadelHue,
+    "breakfast at dong ba": WIKI.benThanhMarket,
+    "evening at truong tien bridge": WIKI.huePerfumeRiver,
+    "cyclo and xe om overcharging": WIKI.cyclo,
+    "free boat ride trap": WIKI.huePerfumeRiver,
+    "fake guides at the tombs": WIKI.citadelHue,
   },
 };
 
