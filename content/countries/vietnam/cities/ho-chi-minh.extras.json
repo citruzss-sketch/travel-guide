@@ -1,0 +1,203 @@
+{
+  "coordinates": { "lat": 10.7769, "lng": 106.7009 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Сон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "8 км от центра. Grab ~100–150k VND",
+        "en": "8 km from center. Grab ~100–150k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6520,
+      "category": "airport"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец Объединения", "en": "Reunification Palace" },
+      "description": {
+        "ru": "Символ окончания войны. 40,000 VND",
+        "en": "Symbol of war's end. 40,000 VND"
+      },
+      "lat": 10.7771,
+      "lng": 106.6956,
+      "category": "sight"
+    },
+    {
+      "id": "war-museum",
+      "title": { "ru": "Музей военных преступлений", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "40,000 VND. Эмоционально сильная экспозиция",
+        "en": "40,000 VND. Emotionally powerful exhibition"
+      },
+      "lat": 10.7796,
+      "lng": 106.6922,
+      "category": "sight"
+    },
+    {
+      "id": "ben-thanh",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Главный рынок города с 1914 г.",
+        "en": "City's main market since 1914"
+      },
+      "lat": 10.7725,
+      "lng": 106.6980,
+      "category": "food"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "description": {
+        "ru": "Французский собор 1880 г. Бесплатно",
+        "en": "French colonial cathedral 1880. Free"
+      },
+      "lat": 10.7796,
+      "lng": 106.6993,
+      "category": "sight"
+    },
+    {
+      "id": "central-post-office",
+      "title": { "ru": "Центральное почтамтство", "en": "Central Post Office" },
+      "description": {
+        "ru": "Проект Эйфеля, 1891 г. Бесплатно",
+        "en": "Eiffel-designed, 1891. Free to enter"
+      },
+      "lat": 10.7799,
+      "lng": 106.6999,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Улица Буй Виен", "en": "Bui Vien Walking Street" },
+      "description": {
+        "ru": "Neon lights, bars, nightlife",
+        "en": "Neon lights, bars, nightlife"
+      },
+      "lat": 10.7674,
+      "lng": 106.6939,
+      "category": "district"
+    },
+    {
+      "id": "jade-pagoda",
+      "title": { "ru": "Пагода нефритового императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Даосская пагода 1909 г. Бесплатно",
+        "en": "Taoist pagoda 1909. Free"
+      },
+      "lat": 10.7876,
+      "lng": 106.6959,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco",
+      "title": { "ru": "Башня Bitexco", "en": "Bitexco Financial Tower" },
+      "description": {
+        "ru": "Смотровая площадка. 200,000 VND",
+        "en": "Observation deck. 200,000 VND"
+      },
+      "lat": 10.7718,
+      "lng": 106.7045,
+      "category": "sight"
+    },
+    {
+      "id": "saigon-station",
+      "title": { "ru": "Ж/д вокзал Сайгон", "en": "Saigon Railway Station" },
+      "description": {
+        "ru": "Поезда в Нячанг, Дананг, Ханой",
+        "en": "Trains to Nha Trang, Da Nang, Hanoi"
+      },
+      "lat": 10.7817,
+      "lng": 106.6820,
+      "category": "transport"
+    },
+    {
+      "id": "thao-dien",
+      "title": { "ru": "Тхао Диен (Район 2)", "en": "Thao Dien (District 2)" },
+      "description": {
+        "ru": "Экспаты, coworking, кафе",
+        "en": "Expats, coworking, cafes"
+      },
+      "lat": 10.8017,
+      "lng": 106.7359,
+      "category": "district"
+    },
+    {
+      "id": "binh-tay",
+      "title": { "ru": "Рынок Биньтэй (Чолон)", "en": "Binh Tay Market (Cholon)" },
+      "description": {
+        "ru": "Китайский квартал, специи, лучший курс обмена",
+        "en": "Chinatown, spices, best exchange rates"
+      },
+      "lat": 10.7516,
+      "lng": 106.6511,
+      "category": "food"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel/Vinaphone в аэропорту",
+        "en": "Buy Viettel/Vinaphone SIM at airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab и привязать карту",
+        "en": "Install Grab and link card"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять/обменять VND (наличные для рынков)",
+        "en": "Withdraw/exchange VND (cash for markets)"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур в Ку-Чи",
+        "en": "Book Cu Chi Tunnels tour"
+      }
+    },
+    {
+      "id": "mekong",
+      "label": {
+        "ru": "Решить: Дельта Меконга самостоятельно или тур",
+        "en": "Decide: Mekong Delta solo or guided tour"
+      }
+    },
+    {
+      "id": "bag-safety",
+      "label": {
+        "ru": "Взять маленькую сумку через плечо (против краж)",
+        "en": "Bring small cross-body bag (anti-snatch)"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Тревел-страховка",
+        "en": "Travel insurance"
+      }
+    },
+    {
+      "id": "hotel",
+      "label": {
+        "ru": "Подтвердить бронь отеля в Районе 1",
+        "en": "Confirm hotel booking in District 1"
+      }
+    }
+  ]
+}
