@@ -1,0 +1,203 @@
+{
+  "coordinates": { "lat": 10.7769, "lng": 106.7009 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Шон Нхат (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "8 км от центра. Grab ~100–150k VND",
+        "en": "8 km from center. Grab ~100–150k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6520,
+      "category": "airport"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец Воссоединения", "en": "Reunification Palace" },
+      "description": {
+        "ru": "Символ окончания Вьетнамской войны. Вход 40k VND",
+        "en": "Symbol of the end of the Vietnam War. Entry 40k VND"
+      },
+      "lat": 10.7769,
+      "lng": 106.6956,
+      "category": "sight"
+    },
+    {
+      "id": "war-remnants-museum",
+      "title": { "ru": "Музей военных преступлений", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "История войны глазами вьетнамцев. Вход 40k VND",
+        "en": "War history from the Vietnamese perspective. Entry 40k VND"
+      },
+      "lat": 10.7792,
+      "lng": 106.6927,
+      "category": "sight"
+    },
+    {
+      "id": "ben-thanh-market",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Иконический рынок города. Сувениры, специи, еда",
+        "en": "Iconic city market. Souvenirs, spices, food"
+      },
+      "lat": 10.7727,
+      "lng": 106.6980,
+      "category": "food"
+    },
+    {
+      "id": "notre-dame-cathedral",
+      "title": { "ru": "Базилика Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "description": {
+        "ru": "Французская католическая церковь 1880 г. Бесплатно",
+        "en": "French Catholic church, 1880. Free entry"
+      },
+      "lat": 10.7797,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "central-post-office",
+      "title": { "ru": "Центральная почта", "en": "Central Post Office" },
+      "description": {
+        "ru": "Здание Эйфеля 1891 г. Бесплатно",
+        "en": "Eiffel building 1891. Free entry"
+      },
+      "lat": 10.7799,
+      "lng": 106.6997,
+      "category": "sight"
+    },
+    {
+      "id": "jade-emperor-pagoda",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Буддийско-даосский храм с черепаховым прудом. Бесплатно",
+        "en": "Buddhist-Taoist temple with turtle pond. Free"
+      },
+      "lat": 10.7888,
+      "lng": 106.6924,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien-street",
+      "title": { "ru": "Улица Буй Вьен (ночная жизнь)", "en": "Bui Vien Walking Street" },
+      "description": {
+        "ru": "Бары и ночная жизнь. Пиво Tiger 25–30k VND",
+        "en": "Bars and nightlife. Tiger beer 25–30k VND"
+      },
+      "lat": 10.7673,
+      "lng": 106.6929,
+      "category": "district"
+    },
+    {
+      "id": "bitexco-tower",
+      "title": { "ru": "Башня Bitexco (смотровая)", "en": "Bitexco Tower (observation)" },
+      "description": {
+        "ru": "Смотровая 49 этаж, вид 360°. Вход 200k VND",
+        "en": "Observation floor 49, 360° views. Entry 200k VND"
+      },
+      "lat": 10.7717,
+      "lng": 106.7043,
+      "category": "sight"
+    },
+    {
+      "id": "binh-tay-market",
+      "title": { "ru": "Рынок Бинь Тай (Чолон)", "en": "Binh Tay Market (Cholon)" },
+      "description": {
+        "ru": "Оптовый рынок в Китайском квартале",
+        "en": "Wholesale market in Chinatown (District 5)"
+      },
+      "lat": 10.7470,
+      "lng": 106.6560,
+      "category": "food"
+    },
+    {
+      "id": "ga-sai-gon",
+      "title": { "ru": "Ж/д вокзал Га Сайгон", "en": "Ga Sai Gon Railway Station" },
+      "description": {
+        "ru": "Поезда в Нячанг (8–9ч), Ханой (30–36ч)",
+        "en": "Trains to Nha Trang (8–9h), Hanoi (30–36h)"
+      },
+      "lat": 10.7812,
+      "lng": 106.6806,
+      "category": "transport"
+    },
+    {
+      "id": "thao-dien",
+      "title": { "ru": "Thao Dien (экспат-район)", "en": "Thao Dien (expat district)" },
+      "description": {
+        "ru": "Коворкинги, западные рестораны, тихо",
+        "en": "Coworking spaces, Western restaurants, peaceful"
+      },
+      "lat": 10.8015,
+      "lng": 106.7367,
+      "category": "district"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам (до 90 дней)",
+        "en": "Check Vietnam visa / e-visa (up to 90 days)"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel в аэропорту Тан Шон Нхат",
+        "en": "Buy Viettel SIM at Tan Son Nhat Airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab — основной транспорт в городе",
+        "en": "Install Grab — main transport in the city"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Обменять валюту в ювелирных магазинах (Nguyen Tri Phuong)",
+        "en": "Exchange currency at jewelry shops (Nguyen Tri Phuong)"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур в Тоннели Ку Чи заранее",
+        "en": "Book Cu Chi Tunnels tour in advance"
+      }
+    },
+    {
+      "id": "bag-safety",
+      "label": {
+        "ru": "Носить сумку на стороне зданий (не дороги) — защита от хватальщиков",
+        "en": "Carry bag on building side (not road side) — protect from snatchers"
+      }
+    },
+    {
+      "id": "umbrella",
+      "label": {
+        "ru": "Взять складной зонт (дожди мая–ноября в 14:00–16:00)",
+        "en": "Pack a compact umbrella (May–Nov rain at 2–4 PM)"
+      }
+    },
+    {
+      "id": "crossing",
+      "label": {
+        "ru": "Научиться переходить дорогу в хошиминском трафике (медленно и равномерно)",
+        "en": "Learn to cross the road in HCMC traffic (slow and steady)"
+      }
+    },
+    {
+      "id": "museum",
+      "label": {
+        "ru": "Посетить Музей военных преступлений и Дворец Воссоединения",
+        "en": "Visit War Remnants Museum and Reunification Palace"
+      }
+    }
+  ]
+}
