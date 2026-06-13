@@ -1,0 +1,203 @@
+{
+  "coordinates": { "lat": 16.4637, "lng": 107.5909 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "phu-bai-airport",
+      "title": { "ru": "Аэропорт Фу Бай (HUI)", "en": "Phu Bai Airport (HUI)" },
+      "description": {
+        "ru": "15 км от центра. Grab ~150–200k VND",
+        "en": "15 km from center. Grab ~150–200k VND"
+      },
+      "lat": 16.4015,
+      "lng": 107.7026,
+      "category": "airport"
+    },
+    {
+      "id": "imperial-citadel",
+      "title": { "ru": "Цитадель и Запретный Пурпурный город", "en": "Imperial Citadel & Forbidden Purple City" },
+      "description": {
+        "ru": "ЮНЕСКО. Вход 200,000 VND",
+        "en": "UNESCO. Entry 200,000 VND"
+      },
+      "lat": 16.4698,
+      "lng": 107.5774,
+      "category": "sight"
+    },
+    {
+      "id": "thien-mu-pagoda",
+      "title": { "ru": "Пагода Тхиен Му", "en": "Thien Mu Pagoda" },
+      "description": {
+        "ru": "7-ярусная пагода — символ Хюэ. Бесплатно",
+        "en": "7-story pagoda — symbol of Hue. Free"
+      },
+      "lat": 16.4532,
+      "lng": 107.5484,
+      "category": "sight"
+    },
+    {
+      "id": "khai-dinh-tomb",
+      "title": { "ru": "Гробница Кхай Динь", "en": "Khai Dinh Royal Tomb" },
+      "description": {
+        "ru": "Барочно-вьетнамский стиль. 150,000 VND",
+        "en": "Baroque-Vietnamese style. 150,000 VND"
+      },
+      "lat": 16.3992,
+      "lng": 107.5898,
+      "category": "sight"
+    },
+    {
+      "id": "tu-duc-tomb",
+      "title": { "ru": "Гробница Ты Дык", "en": "Tu Duc Royal Tomb" },
+      "description": {
+        "ru": "Сады с лотосами. 150,000 VND",
+        "en": "Lotus gardens. 150,000 VND"
+      },
+      "lat": 16.4566,
+      "lng": 107.5593,
+      "category": "sight"
+    },
+    {
+      "id": "minh-mang-tomb",
+      "title": { "ru": "Гробница Минь Манг", "en": "Minh Mang Royal Tomb" },
+      "description": {
+        "ru": "Самая гармоничная из гробниц. 150,000 VND",
+        "en": "Most harmonious of the tombs. 150,000 VND"
+      },
+      "lat": 16.4358,
+      "lng": 107.5551,
+      "category": "sight"
+    },
+    {
+      "id": "dong-ba-market",
+      "title": { "ru": "Рынок Донг Ба", "en": "Dong Ba Market" },
+      "description": {
+        "ru": "Специи, сувениры, местные продукты",
+        "en": "Spices, souvenirs, local products"
+      },
+      "lat": 16.4694,
+      "lng": 107.5879,
+      "category": "food"
+    },
+    {
+      "id": "perfume-river",
+      "title": { "ru": "Набережная реки Хыонг", "en": "Perfume River Embankment" },
+      "description": {
+        "ru": "Аренда лодок для тура по реке",
+        "en": "Boat hire for river tour"
+      },
+      "lat": 16.4634,
+      "lng": 107.5920,
+      "category": "sight"
+    },
+    {
+      "id": "hue-train-station",
+      "title": { "ru": "Ж/д вокзал Хюэ", "en": "Hue Railway Station" },
+      "description": {
+        "ru": "1 км от центра. Поезда в Дананг 2,5 ч",
+        "en": "1 km from center. Trains to Da Nang 2.5h"
+      },
+      "lat": 16.4601,
+      "lng": 107.5962,
+      "category": "transport"
+    },
+    {
+      "id": "thuan-an-beach",
+      "title": { "ru": "Пляж Тхуан Ан", "en": "Thuan An Beach" },
+      "description": {
+        "ru": "13 км от центра. Grab ~80–100k VND",
+        "en": "13 km from center. Grab ~80–100k VND"
+      },
+      "lat": 16.5332,
+      "lng": 107.6859,
+      "category": "beach"
+    },
+    {
+      "id": "tam-giang-lagoon",
+      "title": { "ru": "Лагуна Там Жанг", "en": "Tam Giang Lagoon" },
+      "description": {
+        "ru": "Крупнейшая лагуна ЮВА. Закаты на велосипеде",
+        "en": "Largest lagoon in SE Asia. Sunset cycling"
+      },
+      "lat": 16.5498,
+      "lng": 107.6256,
+      "category": "sight"
+    },
+    {
+      "id": "lac-thien-restaurant",
+      "title": { "ru": "Lac Thien — Nem Lui & Banh Khoai", "en": "Lac Thien — Nem Lui & Banh Khoai" },
+      "description": {
+        "ru": "Семья глухих, лучшие хюэские закуски",
+        "en": "Deaf family restaurant, best Hue snacks"
+      },
+      "lat": 16.4663,
+      "lng": 107.5937,
+      "category": "food"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "combo-ticket",
+      "label": {
+        "ru": "Купить комбо-билет Imperial Hue (360k VND)",
+        "en": "Get Imperial Hue combo ticket (360k VND)"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel в аэропорту Фу Бай",
+        "en": "Buy Viettel SIM at Phu Bai Airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab (для аэропорта и поездок)",
+        "en": "Install Grab (for airport and trips)"
+      }
+    },
+    {
+      "id": "raincoat",
+      "label": {
+        "ru": "Взять дождевик (самый дождливый город Вьетнама)",
+        "en": "Pack a raincoat (Vietnam's rainiest city)"
+      }
+    },
+    {
+      "id": "bicycle",
+      "label": {
+        "ru": "Арендовать велосипед для поездки к лагуне",
+        "en": "Rent a bicycle for the lagoon trip"
+      }
+    },
+    {
+      "id": "bun-bo",
+      "label": {
+        "ru": "Попробовать bun bo Hue в Quan Ngu Binh (6:00–12:00)",
+        "en": "Try bun bo Hue at Quan Ngu Binh (6 AM–12 PM)"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять VND наличными (наличные нужны у гробниц)",
+        "en": "Withdraw VND cash (needed at the tombs)"
+      }
+    },
+    {
+      "id": "river-boat",
+      "label": {
+        "ru": "Забронировать лодку на закатный тур по реке",
+        "en": "Book a sunset river boat tour"
+      }
+    }
+  ]
+}
