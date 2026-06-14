@@ -1,0 +1,239 @@
+{
+  "coordinates": { "lat": 10.8231, "lng": 106.6297 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": {
+        "ru": "Аэропорт Тан Шон Нят (SGN)",
+        "en": "Tan Son Nhat Airport (SGN)"
+      },
+      "description": {
+        "ru": "7–8 км от центра. Grab ~80–150k VND",
+        "en": "7–8 km from center. Grab ~80–150k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6519,
+      "category": "airport"
+    },
+    {
+      "id": "ben-thanh-market",
+      "title": {
+        "ru": "Рынок Бен Тхань",
+        "en": "Ben Thanh Market"
+      },
+      "description": {
+        "ru": "Главный символ города. Торгуйтесь!",
+        "en": "City's main landmark. Bargain hard!"
+      },
+      "lat": 10.7724,
+      "lng": 106.6983,
+      "category": "food"
+    },
+    {
+      "id": "reunification-palace",
+      "title": {
+        "ru": "Дворец Воссоединения",
+        "en": "Reunification Palace"
+      },
+      "description": {
+        "ru": "Дворец, где закончилась война в 1975",
+        "en": "Palace where the war ended in 1975"
+      },
+      "lat": 10.7769,
+      "lng": 106.6956,
+      "category": "sight"
+    },
+    {
+      "id": "war-remnants-museum",
+      "title": {
+        "ru": "Музей военных трофеев",
+        "en": "War Remnants Museum"
+      },
+      "description": {
+        "ru": "Самый посещаемый музей Вьетнама",
+        "en": "Vietnam's most visited museum"
+      },
+      "lat": 10.7797,
+      "lng": 106.6923,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": {
+        "ru": "Собор Нотр-Дам",
+        "en": "Notre-Dame Cathedral"
+      },
+      "description": {
+        "ru": "Французский собор 1880 г.",
+        "en": "French cathedral from 1880"
+      },
+      "lat": 10.7795,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "central-post-office",
+      "title": {
+        "ru": "Центральный почтамт",
+        "en": "Central Post Office"
+      },
+      "description": {
+        "ru": "Спроектирован Гюставом Эйфелем",
+        "en": "Designed by Gustave Eiffel"
+      },
+      "lat": 10.7799,
+      "lng": 106.6994,
+      "category": "sight"
+    },
+    {
+      "id": "jade-emperor-pagoda",
+      "title": {
+        "ru": "Пагода нефритового императора",
+        "en": "Jade Emperor Pagoda"
+      },
+      "description": {
+        "ru": "Даосский храм 1909 г. — бесплатно",
+        "en": "Taoist temple 1909 — free entry"
+      },
+      "lat": 10.7883,
+      "lng": 106.6934,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco-tower",
+      "title": {
+        "ru": "Башня Bitexco (Skydeck 49F)",
+        "en": "Bitexco Tower (Skydeck 49F)"
+      },
+      "description": {
+        "ru": "Смотровая площадка 200k VND",
+        "en": "Observation deck 200k VND"
+      },
+      "lat": 10.7717,
+      "lng": 106.7046,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien",
+      "title": {
+        "ru": "Улица Буй Виен (Bui Vien)",
+        "en": "Bui Vien Walking Street"
+      },
+      "description": {
+        "ru": "Улица баров и уличной еды до 4:00",
+        "en": "Bar and street food street until 4 AM"
+      },
+      "lat": 10.7673,
+      "lng": 106.6928,
+      "category": "district"
+    },
+    {
+      "id": "nguyen-hue",
+      "title": {
+        "ru": "Пешеходная Nguyen Hue",
+        "en": "Nguyen Hue Walking Street"
+      },
+      "description": {
+        "ru": "Главная пешеходная улица, обмен валюты",
+        "en": "Main pedestrian boulevard, currency exchange"
+      },
+      "lat": 10.7742,
+      "lng": 106.7041,
+      "category": "district"
+    },
+    {
+      "id": "saigon-station",
+      "title": {
+        "ru": "Ж/д вокзал Сайгон",
+        "en": "Saigon Railway Station"
+      },
+      "description": {
+        "ru": "3 км от центра. Grab ~50k VND",
+        "en": "3 km from center. Grab ~50k VND"
+      },
+      "lat": 10.7978,
+      "lng": 106.6672,
+      "category": "transport"
+    },
+    {
+      "id": "bach-dang-pier",
+      "title": {
+        "ru": "Причал Bach Dang (паромы)",
+        "en": "Bach Dang Pier (ferries)"
+      },
+      "description": {
+        "ru": "Паромы на Vung Tau и по реке",
+        "en": "Ferries to Vung Tau and river routes"
+      },
+      "lat": 10.7789,
+      "lng": 106.7049,
+      "category": "transport"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "grab-app",
+      "label": {
+        "ru": "Установить Grab и привязать карту",
+        "en": "Install Grab app and link payment card"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel в аэропорту SGN",
+        "en": "Buy Viettel SIM at SGN airport"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Обменять USD на VND (ювелирные лавки Nguyen Hue)",
+        "en": "Exchange USD to VND (jewelry shops on Nguyen Hue)"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур на тоннели Ку Чи",
+        "en": "Book Cu Chi Tunnels day tour"
+      }
+    },
+    {
+      "id": "war-museum",
+      "label": {
+        "ru": "Музей военных трофеев — идти утром",
+        "en": "War Remnants Museum — go in the morning"
+      }
+    },
+    {
+      "id": "mekong",
+      "label": {
+        "ru": "Тур в дельту Меконга (если есть день)",
+        "en": "Mekong Delta tour (if you have a day)"
+      }
+    },
+    {
+      "id": "banh-mi",
+      "label": {
+        "ru": "Bánh mì Huynh Hoa — прийти к 14:30",
+        "en": "Bánh mì Huynh Hoa — arrive by 2:30 PM"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Тревел-страховка (карманные кражи часты)",
+        "en": "Travel insurance (phone snatching is common)"
+      }
+    }
+  ]
+}
