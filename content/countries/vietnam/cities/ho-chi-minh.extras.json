@@ -1,0 +1,203 @@
+{
+  "coordinates": { "lat": 10.7769, "lng": 106.7009 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Шон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7–8 км от центра. Grab ~80–150k VND",
+        "en": "7–8 km from center. Grab ~80–150k VND"
+      },
+      "lat": 10.8185,
+      "lng": 106.6519,
+      "category": "airport"
+    },
+    {
+      "id": "war-remnants-museum",
+      "title": { "ru": "Музей Свидетельств Войны", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "Вход 40,000 VND. Открыто 7:30–18:00",
+        "en": "Entry 40,000 VND. Open 7:30–18:00"
+      },
+      "lat": 10.7797,
+      "lng": 106.6927,
+      "category": "sight"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец Воссоединения", "en": "Reunification Palace" },
+      "description": {
+        "ru": "Вход 40,000 VND. 8:00–17:00",
+        "en": "Entry 40,000 VND. 8:00–17:00"
+      },
+      "lat": 10.7769,
+      "lng": 106.6953,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "description": {
+        "ru": "Французский колониальный стиль 1880. Реставрация 2022–2027",
+        "en": "French colonial 1880. Renovation 2022–2027"
+      },
+      "lat": 10.7798,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "central-post-office",
+      "title": { "ru": "Центральный почтамт", "en": "Central Post Office" },
+      "description": {
+        "ru": "Архитектор учился у Эйфеля. Работающий почтамт",
+        "en": "Architect trained under Eiffel. Working post office"
+      },
+      "lat": 10.7797,
+      "lng": 106.6998,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco-tower",
+      "title": { "ru": "Башня Bitexco — Saigon Skydeck", "en": "Bitexco Tower — Saigon Skydeck" },
+      "description": {
+        "ru": "49-й этаж, 200,000 VND. Лучший вид на закате",
+        "en": "49th floor, 200,000 VND. Best at sunset"
+      },
+      "lat": 10.7717,
+      "lng": 106.7041,
+      "category": "sight"
+    },
+    {
+      "id": "jade-emperor-pagoda",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Даосский храм 1909. Вход бесплатно",
+        "en": "Taoist temple 1909. Free entry"
+      },
+      "lat": 10.7901,
+      "lng": 106.6987,
+      "category": "sight"
+    },
+    {
+      "id": "ben-thanh-market",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Главный рынок с 1914. Торгуйтесь!",
+        "en": "Main market since 1914. Always bargain!"
+      },
+      "lat": 10.7723,
+      "lng": 106.6981,
+      "category": "food"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Улица Бюи Вьен (backpacker street)", "en": "Bui Vien Street (backpacker street)" },
+      "description": {
+        "ru": "Ночная жизнь, еда, музыка. Пик 20:00–23:00",
+        "en": "Nightlife, food, music. Peak 20:00–23:00"
+      },
+      "lat": 10.7688,
+      "lng": 106.6934,
+      "category": "food"
+    },
+    {
+      "id": "pho-hoa-pasteur",
+      "title": { "ru": "Phở Hòa Pasteur — легендарный фо", "en": "Phở Hòa Pasteur — legendary pho" },
+      "description": {
+        "ru": "Работает с 1960. 80,000–110,000 VND. Pasteur St.",
+        "en": "Since 1960. 80,000–110,000 VND. Pasteur St."
+      },
+      "lat": 10.7734,
+      "lng": 106.6953,
+      "category": "food"
+    },
+    {
+      "id": "bach-dang-pier",
+      "title": { "ru": "Причал Bach Dang — паром и речные туры", "en": "Bach Dang pier — ferry and river cruises" },
+      "description": {
+        "ru": "Паром в Thu Thiem: 4,000 VND. Речные туры от 100k",
+        "en": "Ferry to Thu Thiem: 4,000 VND. River tours from 100k"
+      },
+      "lat": 10.7752,
+      "lng": 106.7059,
+      "category": "transport"
+    },
+    {
+      "id": "ben-thanh-metro",
+      "title": { "ru": "Метро Бен Тхань (Линия 1)", "en": "Ben Thanh Metro Station (Line 1)" },
+      "description": {
+        "ru": "С 2024. Билет 6,000–20,000 VND до Suoi Tien",
+        "en": "Since 2024. Ticket 6,000–20,000 VND to Suoi Tien"
+      },
+      "lat": 10.7723,
+      "lng": 106.6981,
+      "category": "transport"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Оформить е-визу Вьетнам (evisa.xuatnhapcanh.gov.vn)",
+        "en": "Apply for Vietnam e-visa (evisa.xuatnhapcanh.gov.vn)"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel или Mobifone в аэропорту (Тан Шон Нят)",
+        "en": "Buy Viettel or Mobifone SIM at Tan Son Nhat airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab и привязать карту до вылета",
+        "en": "Install Grab and link payment card before departure"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять VND в банкомате Vietcombank/ACB (min комиссия)",
+        "en": "Withdraw VND from Vietcombank/ACB ATM (lowest fees)"
+      }
+    },
+    {
+      "id": "war-museum",
+      "label": {
+        "ru": "Посетить Музей Свидетельств Войны (утром, до 10:00)",
+        "en": "Visit War Remnants Museum (morning, before 10:00)"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур в тоннели Ку Чи (однодневный выезд)",
+        "en": "Book Cu Chi Tunnels day trip"
+      }
+    },
+    {
+      "id": "banh-mi",
+      "label": {
+        "ru": "Попробовать bánh mì Huỳnh Hoa (открывается 14:30, прийти пораньше)",
+        "en": "Try bánh mì Huỳnh Hoa (opens 14:30, arrive early)"
+      }
+    },
+    {
+      "id": "mekong",
+      "label": {
+        "ru": "Выехать на Меконг (My Tho или Ben Tre, целый день)",
+        "en": "Day trip to Mekong Delta (My Tho or Ben Tre, full day)"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Купить тревел-страховку с покрытием мотоциклов (если планируете аренду)",
+        "en": "Get travel insurance covering motorcycle use (if renting)"
+      }
+    }
+  ]
+}
