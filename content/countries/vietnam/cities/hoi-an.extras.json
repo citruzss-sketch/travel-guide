@@ -1,0 +1,207 @@
+{
+  "coordinates": { "lat": 15.8801, "lng": 108.3380 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "dad-airport",
+      "title": { "ru": "Аэропорт Дананг (DAD)", "en": "Da Nang Airport (DAD)" },
+      "description": {
+        "ru": "30 км, Grab ~200–250k VND, 40–50 мин",
+        "en": "30 km, Grab ~200–250k VND, 40–50 min"
+      },
+      "lat": 16.0439,
+      "lng": 108.199,
+      "category": "airport"
+    },
+    {
+      "id": "japanese-bridge",
+      "title": { "ru": "Японский крытый мост", "en": "Japanese Covered Bridge" },
+      "description": {
+        "ru": "Символ Хойана, XVII в., входит в комбинированный билет",
+        "en": "Symbol of Hoi An, 17th century, included in combined ticket"
+      },
+      "lat": 15.8774,
+      "lng": 108.3247,
+      "category": "sight"
+    },
+    {
+      "id": "ancient-town-center",
+      "title": { "ru": "Старый город (центр)", "en": "Ancient Town (center)" },
+      "description": {
+        "ru": "UNESCO — купеческие дома XVI–XIX вв., фонари, портные",
+        "en": "UNESCO — merchant houses 16th–19th c., lanterns, tailors"
+      },
+      "lat": 15.8801,
+      "lng": 108.3275,
+      "category": "sight"
+    },
+    {
+      "id": "central-market",
+      "title": { "ru": "Центральный рынок Хойана", "en": "Hoi An Central Market" },
+      "description": {
+        "ru": "Рыба, специи, ткани — лучшим утром",
+        "en": "Fish, spices, fabrics — best in the morning"
+      },
+      "lat": 15.8790,
+      "lng": 108.3330,
+      "category": "food"
+    },
+    {
+      "id": "banh-mi-phuong",
+      "title": { "ru": "Bánh Mì Phương", "en": "Bánh Mì Phương" },
+      "description": {
+        "ru": "Лучший bánh mì в мире по Бурдену, 2B Phan Chu Trinh",
+        "en": "Best bánh mì in the world per Bourdain, 2B Phan Chu Trinh"
+      },
+      "lat": 15.8793,
+      "lng": 108.3270,
+      "category": "food"
+    },
+    {
+      "id": "thu-bon-river",
+      "title": { "ru": "Река Тху Бон — фонарные лодки", "en": "Thu Bon River — lantern boats" },
+      "description": {
+        "ru": "Вечерние прогулки на лодках с фонарями, 60–100k VND",
+        "en": "Evening lantern boat rides, 60–100k VND"
+      },
+      "lat": 15.8780,
+      "lng": 108.3290,
+      "category": "sight"
+    },
+    {
+      "id": "an-bang-beach",
+      "title": { "ru": "Пляж Ан Банг", "en": "An Bang Beach" },
+      "description": {
+        "ru": "Лучший пляж Хойана, 4 км, 15 мин на велосипеде",
+        "en": "Hoi An's best beach, 4 km, 15 min by bicycle"
+      },
+      "lat": 15.8989,
+      "lng": 108.3510,
+      "category": "beach"
+    },
+    {
+      "id": "cua-dai-beach",
+      "title": { "ru": "Пляж Куа Дай", "en": "Cua Dai Beach" },
+      "description": {
+        "ru": "5 км от Старого города, курортная зона",
+        "en": "5 km from Ancient Town, resort zone"
+      },
+      "lat": 15.8700,
+      "lng": 108.3620,
+      "category": "beach"
+    },
+    {
+      "id": "tra-que",
+      "title": { "ru": "Деревня Тра Куэ", "en": "Tra Que Vegetable Village" },
+      "description": {
+        "ru": "Органические грядки, кулинарный опыт, 3 км на север",
+        "en": "Organic fields, cooking experience, 3 km north"
+      },
+      "lat": 15.9029,
+      "lng": 108.3337,
+      "category": "sight"
+    },
+    {
+      "id": "cam-thanh",
+      "title": { "ru": "Кокосовый лес Кам Тхань", "en": "Cam Thanh Coconut Forest" },
+      "description": {
+        "ru": "Корзиночные лодки среди мангровых деревьев, 200–350k",
+        "en": "Basket boats among mangroves, 200–350k VND"
+      },
+      "lat": 15.8640,
+      "lng": 108.3530,
+      "category": "sight"
+    },
+    {
+      "id": "night-market",
+      "title": { "ru": "Ночной рынок Хойана", "en": "Hoi An Night Market" },
+      "description": {
+        "ru": "Фонари, сувениры, уличная еда — с 17:00 до 23:00",
+        "en": "Lanterns, souvenirs, street food — 5 PM to 11 PM"
+      },
+      "lat": 15.8779,
+      "lng": 108.3271,
+      "category": "food"
+    },
+    {
+      "id": "yaly-couture",
+      "title": { "ru": "Yaly Couture — ателье", "en": "Yaly Couture — tailor" },
+      "description": {
+        "ru": "Лучшее ателье Хойана, 47 Trần Phú",
+        "en": "Top tailor in Hoi An, 47 Tran Phu"
+      },
+      "lat": 15.8783,
+      "lng": 108.3249,
+      "category": "district"
+    },
+    {
+      "id": "my-son",
+      "title": { "ru": "Храмы Мой Шон (ЮНЕСКО)", "en": "My Son Sanctuary (UNESCO)" },
+      "description": {
+        "ru": "Чамские храмы, 45 км, вход 150k VND",
+        "en": "Cham temples, 45 km away, entry 150k VND"
+      },
+      "lat": 15.7751,
+      "lng": 108.1252,
+      "category": "sight"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel в аэропорту Дананга",
+        "en": "Buy Viettel SIM at Da Nang Airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab для поездки из DAD",
+        "en": "Install Grab for ride from DAD airport"
+      }
+    },
+    {
+      "id": "tailor",
+      "label": {
+        "ru": "Заказать ao dai или костюм в 1-й день",
+        "en": "Order ao dai or suit on day one"
+      }
+    },
+    {
+      "id": "cooking-class",
+      "label": {
+        "ru": "Забронировать кулинарный класс заранее",
+        "en": "Pre-book a cooking class"
+      }
+    },
+    {
+      "id": "bicycle",
+      "label": {
+        "ru": "Арендовать велосипед для поездки на пляж",
+        "en": "Rent a bicycle for beach cycling"
+      }
+    },
+    {
+      "id": "full-moon",
+      "label": {
+        "ru": "Узнать дату полнолуния (фестиваль фонарей)",
+        "en": "Check full moon date (lantern festival)"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Наличные VND — для рынка и уличной еды",
+        "en": "VND cash — for market and street food"
+      }
+    }
+  ]
+}
