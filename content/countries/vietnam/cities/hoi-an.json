@@ -1,0 +1,900 @@
+{
+  "id": "hoi-an",
+  "slug": "hoi-an",
+  "countryId": "vietnam",
+  "name": {
+    "ru": "Хойан",
+    "en": "Hoi An"
+  },
+  "tagline": {
+    "ru": "Фонарный город — живой UNESCO-порт с портными, кулинарными классами и закатами над рекой Тху Бон",
+    "en": "The Lantern City — a living UNESCO port of tailors, cooking classes, and sunsets over Thu Bon River"
+  },
+  "heroImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_-_panoramio.jpg?width=1920",
+  "overview": {
+    "ru": "Хойан — одно из самых красивых мест Вьетнама: сохранившийся торговый порт XVI–XVIII вв., признанный ЮНЕСКО. Сотни фонарей, желтые фасады колониальных домов, Японский крытый мост, лучший bánh mì в мире (по Энтони Бурдену) и тысячи ателье — всё это в радиусе пешей прогулки. Идеальная база для велосипедных поездок на пляжи Ан Бан и Куа Дай, а также для экскурсии к храмам Мой Шон (ЮНЕСКО). 30 км от аэропорта Дананга.",
+    "en": "Hoi An is one of Vietnam's most beautiful places: a 16th–18th century trading port preserved as a UNESCO World Heritage Site. Hundreds of lanterns, yellow colonial facades, the Japanese Covered Bridge, the best bánh mì in the world (per Anthony Bourdain), and thousands of tailors — all within walking distance. Perfect base for cycling to An Bang and Cua Dai beaches, and for day trips to My Son Sanctuary (UNESCO). 30 km from Da Nang Airport."
+  },
+  "bestTime": {
+    "ru": "Февраль–июль: сухой сезон, солнечно, до +32°C. Август–сентябрь: влажно и жарко. Октябрь–ноябрь: сезон дождей, Старый город иногда затапливается (уникальная атмосфера, но берите резиновые сапоги). Декабрь–январь: прохладно (~20°C), меньше туристов.",
+    "en": "February–July: dry season, sunny, up to 32°C. August–September: humid and hot. October–November: rainy season, Ancient Town sometimes floods (unique atmosphere but bring rubber boots). December–January: cool (~20°C), fewer tourists."
+  },
+  "currency": {
+    "ru": "Вьетнамский донг (VND). 1 USD ≈ 25,000 VND. Карты принимают в большинстве ресторанов и отелей. Для уличной еды и рынков нужны наличные.",
+    "en": "Vietnamese Dong (VND). 1 USD ≈ 25,000 VND. Cards accepted at most restaurants and hotels. Street food and markets require cash."
+  },
+  "language": {
+    "ru": "Вьетнамский. Английский хорошо понимают почти везде в Старом городе.",
+    "en": "Vietnamese. English widely understood throughout the Ancient Town."
+  },
+  "timezone": {
+    "ru": "UTC+7",
+    "en": "UTC+7"
+  },
+  "airport": {
+    "title": {
+      "ru": "Как добраться",
+      "en": "Getting there"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Из аэропорта Дананга (DAD) — Grab или такси",
+          "en": "From Da Nang Airport (DAD) — Grab or taxi"
+        },
+        "description": {
+          "ru": "Ближайший аэропорт — Дананг (DAD), 30 км (40–50 мин). Международные рейсы из Сеула, Бангкока, Куала-Лумпура, Токио.",
+          "en": "Nearest airport is Da Nang (DAD), 30 km away (40–50 min). International flights from Seoul, Bangkok, Kuala Lumpur, Tokyo."
+        },
+        "price": {
+          "ru": "Grab: 200,000–250,000 VND | Такси: 300,000–400,000 VND",
+          "en": "Grab: 200,000–250,000 VND | Taxi: 300,000–400,000 VND"
+        },
+        "tips": {
+          "ru": [
+            "Заказывайте Grab на выходе из терминала — дешевле стойки такси в 1.5–2 раза",
+            "Автобус #1 из Дананга до Хойана: 30,000 VND, 45–60 мин, каждые 20 мин",
+            "Трансфер отеля: часто 250,000–350,000 VND — уточняйте при бронировании"
+          ],
+          "en": [
+            "Order Grab at terminal exit — 1.5–2x cheaper than taxi stands",
+            "Bus #1 from Da Nang to Hoi An: 30,000 VND, 45–60 min, every 20 min",
+            "Hotel transfer: often 250,000–350,000 VND — check at booking"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Nang_Airport.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Из Данaнга — автобус №1",
+          "en": "From Da Nang — Bus #1"
+        },
+        "description": {
+          "ru": "Жёлтый автобус №1 отправляется от рынка Хан в Дананге до центра Хойана. Самый дешёвый вариант.",
+          "en": "Yellow bus #1 departs from Han Market in Da Nang to Hoi An center. Cheapest option."
+        },
+        "price": {
+          "ru": "30,000 VND",
+          "en": "30,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Из Хue — автобус или машина",
+          "en": "From Hue — bus or car"
+        },
+        "description": {
+          "ru": "Рейсовый автобус Хue–Хойан: 3.5–4.5 ч (130 км), 150,000–200,000 VND. Через Хайванский перевал — живописный маршрут. Grab/taksi: 600,000–900,000 VND.",
+          "en": "Scheduled bus Hue–Hoi An: 3.5–4.5h (130 km), 150,000–200,000 VND. Via Hai Van Pass — scenic route. Grab/taxi: 600,000–900,000 VND."
+        },
+        "price": {
+          "ru": "Автобус: от 150,000 VND",
+          "en": "Bus: from 150,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hai_Van_Pass%2C_Vietnam.jpg?width=800"
+      }
+    ]
+  },
+  "districts": {
+    "title": {
+      "ru": "Где жить",
+      "en": "Where to stay"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Старый город (Phố Cổ)",
+          "en": "Ancient Town (Phố Cổ)"
+        },
+        "description": {
+          "ru": "Жить прямо в ЮНЕСКО-зоне — лучший выбор для атмосферы. Старинные дома-отели (heritage homes), фонари на балконах, всё в шаговой доступности. Автомобильный трафик ограничен.",
+          "en": "Staying right inside the UNESCO zone is the top pick for atmosphere. Heritage home-hotels, lanterns on balconies, everything walkable. Vehicle traffic restricted."
+        },
+        "price": {
+          "ru": "Гестхаус: $20–40/ночь | Heritage-отель: $60–150/ночь",
+          "en": "Guesthouse: $20–40/night | Heritage hotel: $60–150/night"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_-_panoramio.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Пляж Ан Банг (An Bằng)",
+          "en": "An Bang Beach"
+        },
+        "description": {
+          "ru": "4 км от Старого города. Пляжные бунгало, кафе с шезлонгами, спокойная атмосфера. Лучший пляж Хойана для длительного отдыха. Велосипедная дорожка до Старого города.",
+          "en": "4 km from Ancient Town. Beach bungalows, sunbed cafés, relaxed vibe. Best Hoi An beach for extended stays. Cycling path to Ancient Town."
+        },
+        "price": {
+          "ru": "Бунгало/гестхаус: $20–55/ночь",
+          "en": "Bungalow/guesthouse: $20–55/night"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/An_Bang_Beach_Hoi_An_Vietnam.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Пляж Куа Дай (Cửa Đại)",
+          "en": "Cua Dai Beach"
+        },
+        "description": {
+          "ru": "5 км от Старого города. Крупные курортные отели и виллы. Тихо, хорошая инфраструктура. Местами есть защитные сетки от эрозии берега — выбирайте отель с обзором.",
+          "en": "5 km from Ancient Town. Large resort hotels and villas. Quiet, good infrastructure. Some erosion-protection nets visible — choose hotel with a view."
+        },
+        "price": {
+          "ru": "Бутик-отель: $40–80/ночь | Курорт 4*: $80–200/ночь",
+          "en": "Boutique hotel: $40–80/night | 4* resort: $80–200/night"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cua_Dai_Beach_Hoi_An.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Остров Кам Ким (Cẩm Kim)",
+          "en": "Cam Kim Island"
+        },
+        "description": {
+          "ru": "Тихий остров через реку, 5 мин на пароме. Деревня резчиков по дереву, отсутствие туристов, местный ритм жизни. Для любителей погружения в культуру.",
+          "en": "Quiet island across the river, 5 min by ferry. Wood-carving village, no tourist crowds, authentic local rhythm. Perfect for cultural immersion."
+        },
+        "price": {
+          "ru": "Гестхаус: $15–25/ночь",
+          "en": "Guesthouse: $15–25/night"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      }
+    ]
+  },
+  "sights": {
+    "title": {
+      "ru": "Что посмотреть",
+      "en": "Must-see sights"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Японский крытый мост (Cầu Nhật Bản)",
+          "en": "Japanese Covered Bridge (Cầu Nhật Bản)"
+        },
+        "description": {
+          "ru": "Символ Хойана — крытый мост с пагодой, построен японскими купцами в XVII в. Изображён на банкноте 20,000 VND. Входит в комбинированный билет Старого города.",
+          "en": "Symbol of Hoi An — a covered bridge with a pagoda, built by Japanese merchants in the 17th century. Featured on the 20,000 VND banknote. Included in the Ancient Town combined ticket."
+        },
+        "price": {
+          "ru": "120,000 VND (комбинированный билет на 5 объектов)",
+          "en": "120,000 VND (combined ticket for 5 heritage sites)"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/H%E1%BB%99i_An_-_panoramio_(131).jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Старый город — прогулка по улицам",
+          "en": "Ancient Town — street walking"
+        },
+        "description": {
+          "ru": "Улицы Трần Phú, Nguyễn Thái Học, Bạch Đằng — купеческие дома XVI–XIX вв., китайские общинные залы (hội quán), японские дома. Атмосфера прошлого без ретуши.",
+          "en": "Tran Phu, Nguyen Thai Hoc, Bach Dang streets — merchant houses from the 16th–19th century, Chinese assembly halls (hội quán), Japanese merchant houses. Unretouched past atmosphere."
+        },
+        "price": {
+          "ru": "120,000 VND (для heritage-объектов), прогулка — бесплатно",
+          "en": "120,000 VND (for heritage sites), street walk — free"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Фонарные лодки на реке Тху Бон",
+          "en": "Lantern boats on Thu Bon River"
+        },
+        "description": {
+          "ru": "Вечерние прогулки на деревянных лодках с бумажными фонариками. Особенно красиво в ночь полнолуния (14-й день лунного месяца), когда выключают уличное освещение.",
+          "en": "Evening rides on wooden boats with paper lanterns. Especially beautiful on the full moon night (14th day of lunar month) when street lights are turned off."
+        },
+        "price": {
+          "ru": "60,000–100,000 VND/чел.",
+          "en": "60,000–100,000 VND/person"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Деревня Тра Куэ (Trà Quế)",
+          "en": "Tra Que Vegetable Village"
+        },
+        "description": {
+          "ru": "Органическая огородная деревня в 3 км от Старого города. Можно поработать на грядках, собрать зелень и приготовить обед. Популярна для утренних велосипедных поездок.",
+          "en": "Organic vegetable village 3 km from Ancient Town. Work in the fields, harvest greens, and cook lunch. Popular for morning cycling excursions."
+        },
+        "price": {
+          "ru": "200,000–350,000 VND (опыт с готовкой)",
+          "en": "200,000–350,000 VND (cooking experience)"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tra_Que_Village_Hoi_An.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Святилище Мой Шон (Mỹ Sơn) — ЮНЕСКО",
+          "en": "My Son Sanctuary — UNESCO"
+        },
+        "description": {
+          "ru": "Руины индуистских храмов народа чам IV–XIV вв., 45 км от Хойана. Ранние тур отправляются в 6:00, когда нет жары. Второй объект ЮНЕСКО в регионе после Хойана.",
+          "en": "Hindu temple ruins of the Cham people, 4th–14th century, 45 km from Hoi An. Early tours depart at 6 AM before the heat. Second UNESCO site in the region after Hoi An."
+        },
+        "price": {
+          "ru": "150,000 VND (вход) | Тур: от 500,000 VND",
+          "en": "150,000 VND (entry) | Tour: from 500,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/My_Son_Sanctuary_Vietnam.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Купеческий дом Тан Ки (Tấn Ký)",
+          "en": "Tan Ky Ancient House"
+        },
+        "description": {
+          "ru": "Один из лучших примеров купеческой архитектуры: 200-летний дом с японскими, китайскими и вьетнамскими элементами. Семья-владелец до сих пор живёт внутри.",
+          "en": "One of the best examples of merchant architecture: 200-year-old house with Japanese, Chinese, and Vietnamese elements. The owner family still lives inside."
+        },
+        "price": {
+          "ru": "Входит в комбинированный билет 120,000 VND",
+          "en": "Included in combined ticket 120,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      }
+    ]
+  },
+  "beaches": {
+    "title": {
+      "ru": "Пляжи",
+      "en": "Beaches"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Пляж Ан Банг (An Bằng)",
+          "en": "An Bang Beach"
+        },
+        "description": {
+          "ru": "4 км от Старого города — лучший пляж Хойана, включён в список лучших Азии по Lonely Planet. Кафе с шезлонгами прямо на пляже, свежие морепродукты, спокойные волны. Велосипедом от Старого города — 15 мин.",
+          "en": "4 km from Ancient Town — Hoi An's best beach, listed among Asia's best by Lonely Planet. Beach cafés with sunbeds, fresh seafood, calm waves. 15 min cycle from Ancient Town."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/An_Bang_Beach_Hoi_An_Vietnam.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Пляж Куа Дай (Cửa Đại)",
+          "en": "Cua Dai Beach"
+        },
+        "description": {
+          "ru": "5 км востока Старого города. Широкий, с отелями и ресторанами вдоль берега. Часть берега защищена сетками от эрозии, но к северу от главного участка — чисто.",
+          "en": "5 km east of Ancient Town. Wide, with hotels and restaurants along the shore. Parts of the beach have erosion-protection nets, but north of the main stretch remains clean."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cua_Dai_Beach_Hoi_An.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Кокосовый лес Кам Тхань (Rừng Dừa Cẩm Thanh)",
+          "en": "Cam Thanh Coconut Forest"
+        },
+        "description": {
+          "ru": "7 км от Старого города. Не пляж, но водная прогулка на бамбуковых корзиночных лодках (thuyền thúng) среди кокосовых пальм и мангровых деревьев. Уникальный опыт.",
+          "en": "7 km from Ancient Town. Not a beach, but a water trip in bamboo basket boats (thuyền thúng) among coconut palms and mangroves. Unique experience."
+        },
+        "price": {
+          "ru": "200,000–350,000 VND/чел.",
+          "en": "200,000–350,000 VND/person"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Basket_boat_Hoi_An.jpg?width=800"
+      }
+    ]
+  },
+  "food": {
+    "title": {
+      "ru": "Где поесть",
+      "en": "Where to eat"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Bánh Mì Phương (Мадам Хань)",
+          "en": "Bánh Mì Phương (Madam Khánh)"
+        },
+        "description": {
+          "ru": "Энтони Бурден назвал это заведение «лучшим bánh mì в мире» в шоу No Reservations. Хрустящий багет, несколько видов начинки. Очередь с 6:30, берут на вынос. Адрес: 2B Phan Chu Trinh.",
+          "en": "Anthony Bourdain called it the 'best bánh mì in the world' on No Reservations. Crispy baguette, multiple fillings. Queue from 6:30 AM, takeaway only. Address: 2B Phan Chu Trinh."
+        },
+        "price": {
+          "ru": "30,000–45,000 VND",
+          "en": "30,000–45,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Banh_mi_thit_Nhu_Lan.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Cao Lầu — фирменное блюдо Хойана",
+          "en": "Cao Lầu — Hoi An signature dish"
+        },
+        "description": {
+          "ru": "Толстая лапша с тушёной свининой, свежей зеленью, рисовыми крекерами и соусом умами. Считается, что настоящий Cao Lau можно попробовать только в Хойане — вода для теста берётся из старинных чамских колодцев. Лучшие заведения: Trung Bắc (109 Trần Phú), Morning Glory.",
+          "en": "Thick noodles with braised pork, fresh greens, rice crackers, and umami sauce. Authentic Cao Lau is said to exist only in Hoi An — the dough water comes from ancient Cham wells. Best spots: Trung Bắc (109 Tran Phu), Morning Glory."
+        },
+        "price": {
+          "ru": "40,000–70,000 VND",
+          "en": "40,000–70,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cao_Lau_Hoi_An.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Белая роза (Bánh Bao Vạc)",
+          "en": "White Rose Dumplings (Bánh Bao Vạc)"
+        },
+        "description": {
+          "ru": "Полупрозрачные рисовые пельмени с начинкой из креветок в форме розы, поданные с хрустящим жареным луком-шалотом. Производит одна семья White Rose на ул. 533 Hai Ba Trung, продаёт по всему Хойану.",
+          "en": "Translucent rice-paper shrimp dumplings shaped like a rose, served with crispy fried shallot. Made exclusively by one White Rose family at 533 Hai Ba Trung, sold throughout Hoi An."
+        },
+        "price": {
+          "ru": "40,000–60,000 VND",
+          "en": "40,000–60,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Cơm Gà (Куриный рис)",
+          "en": "Cơm Gà (Hoi An Chicken Rice)"
+        },
+        "description": {
+          "ru": "Жёлтый рис с куркумой, нежная варёная курица, маринованная папайя и зелёный лук. Традиционный завтрак хойанцев. Лучший адрес: Bà Bé (26 Trần Cao Vân).",
+          "en": "Turmeric-yellow rice, tender poached chicken, pickled papaya, and spring onion. Traditional Hoi An breakfast. Best spot: Bà Bé (26 Tran Cao Van)."
+        },
+        "price": {
+          "ru": "35,000–55,000 VND",
+          "en": "35,000–55,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Morning Glory Restaurant",
+          "en": "Morning Glory Restaurant"
+        },
+        "description": {
+          "ru": "Знаменитый ресторан шефа Мс. Вэ — готовят блюда центрального Вьетнама: Cao Lau, White Rose, bánh xèo. Занятия кулинарией при ресторане. 106 Nguyễn Thái Học.",
+          "en": "Famous restaurant by chef Ms. Vy — Central Vietnamese dishes: Cao Lau, White Rose, bánh xèo. Cooking school attached. 106 Nguyen Thai Hoc."
+        },
+        "price": {
+          "ru": "$6–12 на человека",
+          "en": "$6–12 per person"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%AC%20Qu%E1%BA%A3ng.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Ресторан на пляже Ан Банг",
+          "en": "An Bang Beach restaurants"
+        },
+        "description": {
+          "ru": "Ряд ресторанов вдоль пляжа с шезлонгами. Soul Kitchen, Coconut Home — свежие морепродукты, коктейли, закаты. Лобстер, осьминог, гребешки прямо с рыбацких лодок.",
+          "en": "Row of restaurants along the beach with sunbeds. Soul Kitchen, Coconut Home — fresh seafood, cocktails, sunsets. Lobster, octopus, scallops fresh from fishing boats."
+        },
+        "price": {
+          "ru": "$8–18 на человека",
+          "en": "$8–18 per person"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/An_Bang_Beach_Hoi_An_Vietnam.jpg?width=800"
+      }
+    ]
+  },
+  "markets": {
+    "title": {
+      "ru": "Рынки и шопинг",
+      "en": "Markets & shopping"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Центральный рынок Хойана (Chợ Hội An)",
+          "en": "Hoi An Central Market (Chợ Hội An)"
+        },
+        "description": {
+          "ru": "Рынок на берегу реки Тху Бон. Первый этаж — свежие продукты, специи, рыба. Второй этаж — ткани, одежда, сувениры. Лучшее время — рано утром, когда рыбаки привозят улов.",
+          "en": "Market on the Thu Bon riverbank. Ground floor — fresh produce, spices, fish. Upper floor — fabrics, clothing, souvenirs. Best time — early morning when fishermen bring their catch."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Ночной рынок (Chợ Đêm Hội An)",
+          "en": "Hoi An Night Market (Chợ Đêm)"
+        },
+        "description": {
+          "ru": "Вечерний рынок на острове с 17:00 до 23:00. Шелковые лампионы, ароматические свечи, вышивка, уличная еда. Атмосфера праздника под светом фонарей.",
+          "en": "Evening market on the island from 5 PM to 11 PM. Silk lanterns, aromatherapy candles, embroidery, street food. Festival atmosphere under lantern light."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Ателье и портные Хойана",
+          "en": "Hoi An tailors & fabric shops"
+        },
+        "description": {
+          "ru": "Хойан — мировая столица портных. Более 500 ателье шьют ao dai, костюмы, платья за 24–48 ч. Лучшие: Yaly Couture (47 Trần Phú), A Dong Silk (62 Trần Phú), Bebe (97 Trần Phú).",
+          "en": "Hoi An is the world's tailoring capital. Over 500 tailors make ao dai, suits, dresses in 24–48h. Top picks: Yaly Couture (47 Tran Phu), A Dong Silk (62 Tran Phu), Bebe (97 Tran Phu)."
+        },
+        "price": {
+          "ru": "Ao dai: от 500,000 VND | Костюм: от $80",
+          "en": "Ao dai: from 500,000 VND | Suit: from $80"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      }
+    ]
+  },
+  "tours": {
+    "title": {
+      "ru": "Экскурсии и активности",
+      "en": "Tours & activities"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Кулинарный класс (Morning Glory / Red Bridge)",
+          "en": "Cooking class (Morning Glory / Red Bridge)"
+        },
+        "description": {
+          "ru": "Поход на рынок + 3–4-часовой урок готовки традиционных блюд центрального Вьетнама. Red Bridge: урок в деревенской кухне на берегу реки. Booking заранее обязателен.",
+          "en": "Market tour + 3–4-hour cooking class for traditional Central Vietnamese dishes. Red Bridge: lesson in a riverside village kitchen. Advance booking required."
+        },
+        "price": {
+          "ru": "700,000–1,200,000 VND",
+          "en": "700,000–1,200,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Корзиночные лодки — кокосовый лес Кам Тхань",
+          "en": "Basket boat tour — Cam Thanh coconut forest"
+        },
+        "description": {
+          "ru": "Тур на бамбуковых корзиночных лодках (thuyền thúng) по мангровым каналам. Гид раскручивает лодку, рассказывает об экосистеме. Финал — угощение морепродуктами.",
+          "en": "Tour in bamboo basket boats (thuyền thúng) through mangrove canals. Guide spins the boat, explains the ecosystem. Ends with a seafood tasting."
+        },
+        "price": {
+          "ru": "200,000–350,000 VND",
+          "en": "200,000–350,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Basket_boat_Hoi_An.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Экскурсия к храмам Мой Шон (My Son)",
+          "en": "My Son Sanctuary half-day trip"
+        },
+        "description": {
+          "ru": "Чамские храмы IV–XIV вв., 45 км от Хойана. Ранний тур в 6:00 — до жары, меньше толп и красивый свет. Рекомендуется с гидом для понимания истории.",
+          "en": "Cham temples from 4th–14th century, 45 km from Hoi An. Early 6 AM tour — before heat, fewer crowds, beautiful light. A guide is recommended to understand the history."
+        },
+        "price": {
+          "ru": "150,000 VND вход + тур от 500,000 VND",
+          "en": "150,000 VND entry + tour from 500,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/My_Son_Sanctuary_Vietnam.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Мастер-класс по изготовлению фонарей",
+          "en": "Lantern making workshop"
+        },
+        "description": {
+          "ru": "2-часовой мастер-класс у местных мастеров по созданию традиционного хойанского фонаря из бамбука и шёлка. Можно забрать готовый фонарь с собой.",
+          "en": "2-hour workshop with local artisans making a traditional Hoi An lantern from bamboo and silk. Take your finished lantern home."
+        },
+        "price": {
+          "ru": "150,000–250,000 VND",
+          "en": "150,000–250,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Велосипедная поездка в деревню Тра Куэ",
+          "en": "Cycling to Tra Que vegetable village"
+        },
+        "description": {
+          "ru": "3 км на север по плоской дороге. Утром приезжайте, когда фермеры работают. Можно поучаствовать в посеве, сборе урожая и приготовить завтрак из свежей зелени.",
+          "en": "3 km north on flat road. Come in the morning when farmers are working. Join in sowing, harvesting, and cooking breakfast from fresh herbs."
+        },
+        "price": {
+          "ru": "Велосипед: 30,000–50,000 VND/день + опыт: 200,000 VND",
+          "en": "Bicycle: 30,000–50,000 VND/day + experience: 200,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tra_Que_Village_Hoi_An.jpg?width=800"
+      }
+    ]
+  },
+  "transport": {
+    "title": {
+      "ru": "Транспорт",
+      "en": "Getting around"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Велосипед — основной транспорт",
+          "en": "Bicycle — main transport"
+        },
+        "description": {
+          "ru": "Хойан — плоский город, идеальный для велосипеда. Старый город, Ан Банг и Куа Дай соединены велодорожками. На байке проезд по Старому городу ограничен с 08:00 до 22:00 по выходным.",
+          "en": "Hoi An is a flat city perfect for cycling. Ancient Town, An Bang, and Cua Dai are connected by cycling paths. Motorbike access in Ancient Town restricted Sat–Sun 8 AM–10 PM."
+        },
+        "price": {
+          "ru": "30,000–50,000 VND/день",
+          "en": "30,000–50,000 VND/day"
+        },
+        "tips": {
+          "ru": [
+            "Велосипед берите в отеле или у прокатчиков на Trần Phú и Bạch Đằng",
+            "До Ан Банга — 15 мин, до Куа Дай — 20 мин",
+            "Замок обязателен — кражи из корзин встречаются"
+          ],
+          "en": [
+            "Rent a bicycle from your hotel or shops on Tran Phu and Bach Dang streets",
+            "15 min to An Bang, 20 min to Cua Dai",
+            "Always lock — basket theft can occur"
+          ]
+        },
+        "image": "https://images.pexels.com/photos/276506/pexels-photo-276506.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": {
+          "ru": "Grab и мото-такси (xe ôm)",
+          "en": "Grab and moto-taxi (xe ôm)"
+        },
+        "description": {
+          "ru": "Grab работает в Хойане. Внутри Старого города и ближайших кварталов — xe ôm (мото-такси). Договаривайтесь о цене ДО поездки.",
+          "en": "Grab operates in Hoi An. Within the Ancient Town and nearby areas, xe ôm (moto-taxi) is common. Always agree on price BEFORE the ride."
+        },
+        "price": {
+          "ru": "Внутри города: 20,000–50,000 VND | До аэропорта DAD: 200,000–250,000 VND",
+          "en": "Within town: 20,000–50,000 VND | To DAD airport: 200,000–250,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cycle%20rickshaw%20in%20Hanoi.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Электрический скутер (xe điện)",
+          "en": "Electric scooter (xe điện)"
+        },
+        "description": {
+          "ru": "Для поездок на пляжи и деревни. Без прав. Берите в отеле или прокатных пунктах вдоль Trần Phú.",
+          "en": "For trips to beaches and villages. No license required. Rent from hotels or shops along Tran Phu."
+        },
+        "price": {
+          "ru": "100,000–150,000 VND/день",
+          "en": "100,000–150,000 VND/day"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cycle%20rickshaw%20in%20Hanoi.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Автобус до Дананга",
+          "en": "Bus to Da Nang"
+        },
+        "description": {
+          "ru": "Жёлтый автобус №1 от центра Хойана до рынка Хан в Дананге. Каждые 20 мин с 5:30 до 18:30.",
+          "en": "Yellow bus #1 from Hoi An center to Han Market in Da Nang. Every 20 min from 5:30 AM to 6:30 PM."
+        },
+        "price": {
+          "ru": "30,000 VND",
+          "en": "30,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      }
+    ]
+  },
+  "simAndInternet": {
+    "title": {
+      "ru": "Сим-карты и интернет",
+      "en": "SIM cards & internet"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Viettel / Vinaphone / Mobifone",
+          "en": "Viettel / Vinaphone / Mobifone"
+        },
+        "description": {
+          "ru": "SIM-карты продаются в аэропорту Дананга и во многих магазинах Хойана. Viettel — лучшее покрытие. Паспорт обязателен при регистрации.",
+          "en": "SIM cards available at Da Nang Airport and many shops in Hoi An. Viettel — best coverage. Passport required at registration."
+        },
+        "price": {
+          "ru": "30 GB / 30 дней: ~150,000 VND",
+          "en": "30 GB / 30 days: ~150,000 VND"
+        },
+        "image": "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": {
+          "ru": "Wi-Fi в кафе и отелях",
+          "en": "Café and hotel Wi-Fi"
+        },
+        "description": {
+          "ru": "Бесплатный Wi-Fi в большинстве отелей и кафе Старого города. Cao Lau Thu Bon Cafe, The Espresso Station — хорошее соединение для работы.",
+          "en": "Free Wi-Fi in most hotels and cafés in the Ancient Town. Cao Lau Thu Bon Cafe, The Espresso Station — good connection for remote work."
+        },
+        "image": "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800"
+      }
+    ]
+  },
+  "money": {
+    "title": {
+      "ru": "Деньги и цены",
+      "en": "Money & prices"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Обмен валюты и банкоматы",
+          "en": "Currency exchange & ATMs"
+        },
+        "description": {
+          "ru": "Обменники на Trần Phú и Lê Lợi дают хороший курс. Банкоматы Vietcombank и BIDV рядом с Центральным рынком. Избегайте обмена в аэропорту.",
+          "en": "Exchange offices on Tran Phu and Le Loi offer good rates. Vietcombank and BIDV ATMs near Central Market. Avoid airport exchange."
+        },
+        "image": "https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": {
+          "ru": "Типичные цены в Хойане",
+          "en": "Typical prices in Hoi An"
+        },
+        "description": {
+          "ru": "Bánh mì: 30,000–45,000 VND | Cao Lau: 40,000–70,000 VND | Кулинарный класс: 700,000–1,200,000 VND | Велосипед: 30,000–50,000 VND/день | Мастер-класс фонари: 150,000–250,000 VND | Ao dai: от 500,000 VND",
+          "en": "Bánh mì: 30,000–45,000 VND | Cao Lau: 40,000–70,000 VND | Cooking class: 700,000–1,200,000 VND | Bicycle: 30,000–50,000 VND/day | Lantern workshop: 150,000–250,000 VND | Ao dai: from 500,000 VND"
+        },
+        "image": "https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=800"
+      }
+    ]
+  },
+  "safety": {
+    "title": {
+      "ru": "Безопасность",
+      "en": "Safety"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Общая безопасность",
+          "en": "General safety"
+        },
+        "description": {
+          "ru": "Хойан — один из самых безопасных городов Вьетнама. Туристическая инфраструктура развита, полицейские патрули в Старом городе. Карманных воров практически нет, но берегите вещи на пляже.",
+          "en": "Hoi An is one of Vietnam's safest cities. Strong tourist infrastructure, police patrols in Ancient Town. Pickpockets are rare, but watch your belongings on the beach."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Паводки в октябре–ноябре",
+          "en": "Flooding in October–November"
+        },
+        "description": {
+          "ru": "В сезон дождей Старый город временно затапливается на 20–50 см. Это особенная атмосфера, но готовьтесь: берите резиновые сапоги, не паркуйте байк в низинах, уточняйте у отеля уровень воды.",
+          "en": "In rainy season, Ancient Town is temporarily flooded by 20–50 cm. A unique atmosphere, but come prepared: rubber boots, don't park scooters in low spots, check water levels with your hotel."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Экстренные номера",
+          "en": "Emergency numbers"
+        },
+        "description": {
+          "ru": "Полиция: 113 | Скорая: 115 | Пожарная: 114 | Больница Хойана: +84 235 3861 364",
+          "en": "Police: 113 | Ambulance: 115 | Fire: 114 | Hoi An Hospital: +84 235 3861 364"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      }
+    ]
+  },
+  "phrases": {
+    "title": {
+      "ru": "Базовые фразы",
+      "en": "Basic phrases"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Xin chào — Здравствуйте",
+          "en": "Xin chào — Hello"
+        },
+        "description": {
+          "ru": "Sin chao",
+          "en": "Sin chao"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Cảm ơn — Спасибо",
+          "en": "Cảm ơn — Thank you"
+        },
+        "description": {
+          "ru": "Gam un",
+          "en": "Gam un"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Cho tôi xem — Покажите мне",
+          "en": "Cho tôi xem — Show me"
+        },
+        "description": {
+          "ru": "Cho toy sem (полезно у портных)",
+          "en": "Cho toy sem (useful at tailors)"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Bao nhiêu tiền? — Сколько стоит?",
+          "en": "Bao nhiêu tiền? — How much?"
+        },
+        "description": {
+          "ru": "Bao nhieu tyen?",
+          "en": "Bao nhieu tyen?"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Ngon quá! — Очень вкусно!",
+          "en": "Ngon quá! — Very delicious!"
+        },
+        "description": {
+          "ru": "Ng-on kwa",
+          "en": "Ng-on kwa"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      }
+    ]
+  },
+  "lifehacks": {
+    "title": {
+      "ru": "Лайфхаки",
+      "en": "Lifehacks"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Старый город бесплатен после ~17:30",
+          "en": "Ancient Town is free after ~5:30 PM"
+        },
+        "description": {
+          "ru": "Билеты проверяют только у heritage-объектов в дневное время. Вечерняя прогулка при зажжённых фонарях — бесплатная и самая красивая. Приходите к закату.",
+          "en": "Tickets are only checked at heritage sites during daytime. An evening walk with lit lanterns is free and the most beautiful. Come at sunset."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Ночь полнолуния — фестиваль фонарей",
+          "en": "Full moon night — lantern festival"
+        },
+        "description": {
+          "ru": "14-й день каждого лунного месяца: выключают уличное освещение, зажигают тысячи фонарей, запрещают мотоциклы. Магическая атмосфера. Очень многолюдно — приходите к 18:00.",
+          "en": "14th day of each lunar month: street lights turned off, thousands of lanterns lit, motorcycles banned. Magical atmosphere. Very crowded — arrive by 6 PM."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Советы по пошиву у портных",
+          "en": "Tailor tips"
+        },
+        "description": {
+          "ru": "Смотрите примеры работ до заказа. Платите максимум 50% аванса, остаток — после примерки готового изделия. Минимум 1–2 примерки (fitting) для костюма. Закажите на 1-й день приезда.",
+          "en": "View samples before ordering. Pay max 50% upfront, rest after trying the finished piece. At least 1–2 fittings for a suit. Place your order on your first day."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Велосипед до пляжа — лучший маршрут",
+          "en": "Cycling to the beach — best route"
+        },
+        "description": {
+          "ru": "Ан Банг: по Cua Dai Road на восток, 15 мин. Куа Дай: чуть дальше по той же дороге, 20 мин. Возьмите велосипед в отеле (30,000–50,000 VND/день) — дешевле и интереснее Grab.",
+          "en": "An Bang: east on Cua Dai Road, 15 min. Cua Dai: a bit further on the same road, 20 min. Rent from hotel (30,000–50,000 VND/day) — cheaper and more fun than Grab."
+        },
+        "image": "https://images.pexels.com/photos/276506/pexels-photo-276506.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": {
+          "ru": "Пляж Ан Банг — приходите к 8:00",
+          "en": "An Bang Beach — arrive by 8 AM"
+        },
+        "description": {
+          "ru": "До 9:00 на пляже почти никого. Шезлонги у Soul Kitchen и Coconut Home занимаются быстро. Утром лучший свет для фото.",
+          "en": "Before 9 AM, the beach is almost empty. Sunbeds at Soul Kitchen and Coconut Home fill up fast. Best morning light for photos."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/An_Bang_Beach_Hoi_An_Vietnam.jpg?width=800"
+      }
+    ]
+  },
+  "scams": {
+    "title": {
+      "ru": "Разводы и предупреждения",
+      "en": "Scams & warnings"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Мошенничество у портных",
+          "en": "Tailor scams"
+        },
+        "description": {
+          "ru": "Некоторые ателье требуют 100% предоплату, потом меняют ткань или затягивают сроки. Никогда не платите 100% вперёд, требуйте расписку с описанием материала и сроком готовности.",
+          "en": "Some tailors demand 100% upfront then switch fabric or delay. Never pay 100% in advance, get a written receipt with fabric description and delivery deadline."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Поддельные билеты в Старый город",
+          "en": "Fake Ancient Town tickets"
+        },
+        "description": {
+          "ru": "На подходах к мостам иногда стоят люди, предлагающие «скидочные» билеты. Покупайте только в официальных будках Hoi An Tourism — билет 120,000 VND на 5 объектов.",
+          "en": "At bridge approaches, some people offer 'discounted' tickets. Buy only at official Hoi An Tourism booths — ticket 120,000 VND for 5 heritage sites."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Мото-такси без фиксированной цены",
+          "en": "Unpriced moto-taxi rides"
+        },
+        "description": {
+          "ru": "Xe ôm (мото-такси) без счётчика. Обязательно договоритесь о цене до поездки. 20,000–30,000 VND за короткую поездку в центре — нормально. Используйте Grab для прозрачных цен.",
+          "en": "Xe ôm (moto-taxi) has no meter. Always agree on price before the ride. 20,000–30,000 VND for a short center trip is reasonable. Use Grab for transparent pricing."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cycle%20rickshaw%20in%20Hanoi.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Ресторанные «спецменю» у японского моста",
+          "en": "Tourist-trap 'special menus' near the Japanese Bridge"
+        },
+        "description": {
+          "ru": "Рестораны в 50 м от японского моста часто предлагают «tourist menu» с ценами в 2–3 раза выше. Уходите на одну улицу вглубь и цены нормальные.",
+          "en": "Restaurants within 50 m of the Japanese Bridge often push 'tourist menus' at 2–3x prices. Walk one street back for normal prices."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/H%E1%BB%99i_An_-_panoramio_(131).jpg?width=800"
+      }
+    ]
+  },
+  "aiKnowledgeBase": "Hoi An (Hội An), central Vietnam, 30km south of Da Nang. UNESCO Ancient Town — pedestrian/bicycle friendly, vehicle restriction Sat/Sun 8AM-10PM. Getting here: Grab from Da Nang Airport DAD 200-250k VND 40-50min; bus #1 from Han Market Da Nang 30k 45-60min; from Hue 3.5-4.5h bus 150-200k. Transport: bicycle 30-50k/day best option, e-scooter no-license 100-150k/day, Grab available, xe-ôm agree price first. Ticket: 120k VND combined 5 heritage sites, only at official booths — FREE after 5:30PM. Sights: Japanese Covered Bridge (on 20k banknote), Thu Bon River lantern boats 60-100k evening, Tan Ky ancient house, My Son Cham temples 45km UNESCO 150k entry (sunrise tour 6AM). Beaches: An Bang 4km 15min bike (best), Cua Dai 5km 20min. Cam Thanh coconut basket-boat 200-350k. Food: Banh Mi Phuong 2B Phan Chu Trinh (Bourdain's best) 30-45k queue 6:30AM; Cao Lau noodles unique-to-Hoi-An 40-70k; White Rose dumplings 40-60k; Com Ga chicken rice 35-55k; Morning Glory restaurant 106 Nguyen Thai Hoc. Tailors: 500+ shops, Yaly Couture/A Dong Silk/Bebe on Tran Phu, ao dai from 500k, suit from $80, pay max 50% upfront, allow 1-2 fittings. Markets: Central Market riverbank morning, Night Market 5-11PM. Full moon festival 14th lunar day — magical, arrive by 6PM. Cooking class 700k-1.2M, lantern workshop 150-250k. SIM: buy at Da Nang Airport, Viettel 150k/30GB. Flooding Oct-Nov is expected and unique — rubber boots. Scams: fake tickets near bridges (official booths only), tailor 100% upfront fraud, unmetered xe-ôm, tourist menu near Japanese Bridge. Emergency 113/115/114."
+}
