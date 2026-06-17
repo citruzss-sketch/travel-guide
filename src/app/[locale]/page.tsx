@@ -76,7 +76,7 @@ export default async function HomePage({
     },
     {
       text: t(messages, "home.aiPrompt3"),
-      href: `/${locale}/vietnam/nha-trang`,
+      href: `/${locale}/vietnam/ho-chi-minh`,
     },
   ];
 
