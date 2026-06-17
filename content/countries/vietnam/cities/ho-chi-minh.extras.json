@@ -1,0 +1,203 @@
+{
+  "coordinates": { "lat": 10.8231, "lng": 106.6297 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Шон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7 км от Района 1. Grab ~80–130k VND",
+        "en": "7 km from District 1. Grab ~80–130k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6520,
+      "category": "airport"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец Воссоединения", "en": "Reunification Palace" },
+      "description": {
+        "ru": "Исторический дворец, 40,000 VND",
+        "en": "Historic palace, 40,000 VND"
+      },
+      "lat": 10.7773,
+      "lng": 106.6956,
+      "category": "sight"
+    },
+    {
+      "id": "war-remnants-museum",
+      "title": { "ru": "Музей военных реликвий", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "Документация войны, 40,000 VND",
+        "en": "War documentation, 40,000 VND"
+      },
+      "lat": 10.7795,
+      "lng": 106.6925,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "description": {
+        "ru": "Французская готика 1880 года, вход снаружи бесплатен",
+        "en": "French Gothic from 1880, free outside"
+      },
+      "lat": 10.7797,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "ben-thanh-market",
+      "title": { "ru": "Рынок Бен Тан", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Главный рынок города",
+        "en": "City's main market"
+      },
+      "lat": 10.7724,
+      "lng": 106.6980,
+      "category": "food"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Пешеходная улица Бузьен", "en": "Bùi Viện Walking Street" },
+      "description": {
+        "ru": "Ночная жизнь, бары с 18:00 до 3:00",
+        "en": "Nightlife, bars 6 PM–3 AM"
+      },
+      "lat": 10.7686,
+      "lng": 106.6929,
+      "category": "district"
+    },
+    {
+      "id": "jade-emperor-pagoda",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Буддийско-таоистский храм, вход бесплатный",
+        "en": "Buddhist-Taoist temple, free entry"
+      },
+      "lat": 10.7910,
+      "lng": 106.6960,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco-tower",
+      "title": { "ru": "Башня Bitexco (Skydeck)", "en": "Bitexco Tower (Skydeck)" },
+      "description": {
+        "ru": "Смотровая площадка 49F, 250,000 VND",
+        "en": "Observation deck 49F, 250,000 VND"
+      },
+      "lat": 10.7718,
+      "lng": 106.7042,
+      "category": "sight"
+    },
+    {
+      "id": "cu-chi-tunnels",
+      "title": { "ru": "Туннели Ку Чи", "en": "Cu Chi Tunnels" },
+      "description": {
+        "ru": "40 км от центра, тур от $10",
+        "en": "40 km from center, tour from $10"
+      },
+      "lat": 11.1407,
+      "lng": 106.4614,
+      "category": "sight"
+    },
+    {
+      "id": "pho-hoa-pasteur",
+      "title": { "ru": "Phở Hòa Pasteur", "en": "Phở Hòa Pasteur" },
+      "description": {
+        "ru": "Легендарный ресторан фо, 80–120k VND",
+        "en": "Legendary pho restaurant, 80–120k VND"
+      },
+      "lat": 10.7815,
+      "lng": 106.6943,
+      "category": "food"
+    },
+    {
+      "id": "saigon-railway-station",
+      "title": { "ru": "Ж/д вокзал Сайгон", "en": "Saigon Railway Station" },
+      "description": {
+        "ru": "Поезда в Нячанг (7–9ч), Ханой (33–36ч)",
+        "en": "Trains to Nha Trang (7–9h), Hanoi (33–36h)"
+      },
+      "lat": 10.7837,
+      "lng": 106.6779,
+      "category": "transport"
+    },
+    {
+      "id": "binh-tay-market",
+      "title": { "ru": "Рынок Бинь Тэй (Чолон)", "en": "Binh Tay Market (Cholon)" },
+      "description": {
+        "ru": "Чайна-таун, исторический рынок, вход свободный",
+        "en": "Chinatown, historic market, free entry"
+      },
+      "lat": 10.7475,
+      "lng": 106.6495,
+      "category": "food"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "grab-app",
+      "label": {
+        "ru": "Установить Grab и привязать карту",
+        "en": "Install Grab and link a payment card"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel в аэропорту (T2)",
+        "en": "Buy Viettel SIM at airport (T2)"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять VND в банкомате Vietcombank",
+        "en": "Withdraw VND at a Vietcombank ATM"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур в Ку Чи или Меконг",
+        "en": "Book Cu Chi Tunnels or Mekong Delta tour"
+      }
+    },
+    {
+      "id": "banh-mi",
+      "label": {
+        "ru": "Попробовать банх ми у Huỳnh Hoa (до 22:00)",
+        "en": "Try banh mi at Huỳnh Hoa (until 10 PM)"
+      }
+    },
+    {
+      "id": "sunscreen",
+      "label": {
+        "ru": "Солнцезащитный крем SPF 50+ — жарко круглый год",
+        "en": "SPF 50+ sunscreen — hot all year round"
+      }
+    },
+    {
+      "id": "bag-safety",
+      "label": {
+        "ru": "Носить сумку с левой стороны (от дороги)",
+        "en": "Carry bag on the left side, away from traffic"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Оформить тревел-страховку",
+        "en": "Get travel insurance"
+      }
+    }
+  ]
+}
