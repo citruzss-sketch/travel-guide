@@ -208,6 +208,7 @@
   "map": {
     "hint": "Tap markers for details. Colors show category.",
     "noMarkers": "No map markers for this city yet.",
+    "loading": "Loading map…",
     "category": {
       "airport": "Airport",
       "beach": "Beach",
