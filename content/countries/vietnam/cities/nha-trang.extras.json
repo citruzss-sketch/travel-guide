@@ -102,6 +102,50 @@
       "lat": 12.2345,
       "lng": 109.1988,
       "category": "food"
+    },
+    {
+      "id": "yen-garden",
+      "title": { "ru": "Yen Garden Bistro", "en": "Yen Garden Bistro" },
+      "description": {
+        "ru": "Сад-ресторан, вегетарианское меню, 120–250k",
+        "en": "Garden bistro, vegetarian-friendly, 120–250k"
+      },
+      "lat": 12.2445,
+      "lng": 109.1935,
+      "category": "food"
+    },
+    {
+      "id": "bun-cha-ca-street",
+      "title": { "ru": "Улица Bún Chả Cá", "en": "Bún Chả Cá street" },
+      "description": {
+        "ru": "Рыбная лапша — местная специальность, 40–60k",
+        "en": "Fish cake noodle soup — local specialty, 40–60k"
+      },
+      "lat": 12.2479,
+      "lng": 109.1875,
+      "category": "food"
+    },
+    {
+      "id": "yang-bay",
+      "title": { "ru": "Yang Bay Eco Park", "en": "Yang Bay Eco Park" },
+      "description": {
+        "ru": "Водопад, горячие источники, животные — 45 км от Нячанга",
+        "en": "Waterfall, hot springs, animals — 45 km from Nha Trang"
+      },
+      "lat": 12.083,
+      "lng": 108.933,
+      "category": "sight"
+    },
+    {
+      "id": "rainbow-divers",
+      "title": { "ru": "Rainbow Divers", "en": "Rainbow Divers" },
+      "description": {
+        "ru": "PADI дайвинг-оператор, 2 погружения от 1,100k",
+        "en": "PADI dive operator, 2-tank dive from 1,100k"
+      },
+      "lat": 12.2353,
+      "lng": 109.1973,
+      "category": "sight"
     }
   ],
   "checklist": [

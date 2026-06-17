@@ -242,6 +242,21 @@
           "en": "Scooter rental: 150,000 VND/day"
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hai_Van_Pass%2C_Vietnam.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Музей скульптуры чамов",
+          "en": "Museum of Cham Sculpture"
+        },
+        "description": {
+          "ru": "Крупнейшее в мире собрание скульптуры чамов — более 300 шедевров IX–XV вв. Построен французами в 1919 году. Обязателен для понимания истории Центрального Вьетнама. Находится в центре города у реки Хан.",
+          "en": "World's largest collection of Cham sculptures — over 300 masterpieces from the 9th–15th century. Built by the French in 1919. Essential for understanding Central Vietnam's history. Located downtown by the Han River."
+        },
+        "price": {
+          "ru": "60,000 VND",
+          "en": "60,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Non%20Nuoc%20Pagoda%20Da%20Nang%203.jpg?width=800"
       }
     ]
   },
@@ -366,6 +381,36 @@
           "en": "$3–6 per person"
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Bánh Tráng Cuốn Thịt Heo",
+          "en": "Bánh Tráng Cuốn Thịt Heo"
+        },
+        "description": {
+          "ru": "Исключительно данангская специальность: тонкий рисовый блин bánh tráng сворачивают с варёной свининой, свежими травами, зелёным манго и чесноком, макают в остро-сладкую ферментированную рыбную пасту mắm nêm. Найдите стойку на улице Trần Quốc Toản или в Con Market.",
+          "en": "Uniquely Da Nang specialty: thin rice cracker bánh tráng rolled with boiled pork, fresh herbs, green mango, and garlic, dipped in sweet-spicy fermented fish paste mắm nêm. Find stalls on Tran Quoc Toan St or inside Con Market."
+        },
+        "price": {
+          "ru": "60,000–80,000 VND на человека",
+          "en": "60,000–80,000 VND per person"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%AC%20Qu%E1%BA%A3ng.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Rainbowl & Co. (An Thuong)",
+          "en": "Rainbowl & Co. (An Thuong)"
+        },
+        "description": {
+          "ru": "Smoothie bowls, açaí и poké в стиле Бали — любимое место цифровых кочевников An Thuong. Открыто с 07:30; быстрый Wi-Fi, хорошо работать за ноутбуком.",
+          "en": "Smoothie bowls, açaí, and poké in Bali style — a favourite of An Thuong digital nomads. Open from 07:30; fast Wi-Fi, great for laptop work."
+        },
+        "price": {
+          "ru": "80,000–160,000 VND",
+          "en": "80,000–160,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Palm%20trees%20beach%20Da%20Nang.jpg?width=800"
       }
     ]
   },
@@ -464,6 +509,21 @@
           "en": "40,000 VND + transport"
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Marble_Mountains.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Son Tra — обезьяны-лангуры и джунгли",
+          "en": "Son Tra Wildlife — langurs & jungle"
+        },
+        "description": {
+          "ru": "Трекинг по полуострову Шон Тра — местообитание редчайших красношапочных лангуров (voọc chân đỏ). Рано утром обезьяны выходят к дороге сами. Скала Bãi Bắc — лучшая точка наблюдения. Путь к Lady Buddha открыт бесплатно.",
+          "en": "Trek on Son Tra Peninsula — home of the rare red-shanked douc langur (voọc chân đỏ). Early morning monkeys come down to the road themselves. Bãi Bắc rocky cove is the best viewing spot. Road to Lady Buddha is free to access."
+        },
+        "price": {
+          "ru": "С гидом: 400,000–600,000 VND; самостоятельно — бесплатно",
+          "en": "With guide: 400,000–600,000 VND; self-guided — free"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Son_Tra_Peninsula.jpg?width=800"
       }
     ]
   },
@@ -773,6 +833,17 @@
           "en": "Suit in 24–48h from $100. Yaly Couture, Bebe — trusted tailors. Negotiate."
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Хойан: жёлтый автобус vs Grab",
+          "en": "Hoi An: yellow bus vs Grab"
+        },
+        "description": {
+          "ru": "Жёлтый автобус №1 от рынка Хан — 30,000 VND, 45–60 мин, каждые 20 мин с 05:30 до 18:00. Grab до Хойана — ~200,000 VND, 35 мин без пробок. Оптимально: Grab туда (приедете свежими), автобус №1 обратно.",
+          "en": "Yellow bus #1 from Han Market — 30,000 VND, 45–60 min, every 20 min 05:30–18:00. Grab to Hoi An — ~200,000 VND, 35 min without traffic. Best combo: Grab there (arrive fresh), bus #1 back."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
       }
     ]
   },
@@ -817,5 +888,5 @@
       }
     ]
   },
-  "aiKnowledgeBase": "Da Nang, central Vietnam. Airport DAD ~3km from center — Grab 50-80k, taxi 100-150k. Transport: GrabCar/GrabBike from 10k. E-BIKES (xe điện) 70-120k/day — NO license, good for My Khe, Han River, An Thuong; NOT for Hai Van Pass. Petrol scooters 120-200k/day — for Hai Van, Marble Mountains, Hoi An; legally IDP category A, many shops rent on passport; full tank before pass, avoid fog. Bus #1 Han Market to Hoi An 30k, 45-60min. Bicycle 50-80k flat city. Sights: Golden Bridge Ba Na 900k book online, Marble Mountains 40k, Dragon Bridge fire Sat/Sun 9PM arrive 20:30, Lady Buddha Son Tra, Hoi An 30km 120k ticket free after 5PM. Food: Madame Lan, Be Man, Mi Quang 1A, Banh Mi Ba Lan, Helio market; Rainbowl Poke, Frumi An Thuong. Districts: My Khe beach, Han River center, An Thuong nomads, Son Tra luxury. SIM Viettel ~150k/30GB. Scams: Marble Mtn pushy guides, fake Ba Na tickets (official banahills.sunworld.vn), unmetered taxis. Emergency 113/115/114."
+  "aiKnowledgeBase": "Da Nang, central Vietnam. Airport DAD ~3km from center — Grab 50-80k, taxi 100-150k. Transport: GrabCar/GrabBike from 10k. E-BIKES (xe điện) 70-120k/day — NO license, good for My Khe, Han River, An Thuong; NOT for Hai Van Pass. Petrol scooters 120-200k/day — for Hai Van, Marble Mountains, Hoi An; legally IDP category A, many shops rent on passport; full tank before pass, avoid fog. Bus #1 Han Market to Hoi An 30k, 45-60min every 20min 05:30-18:00. Bicycle 50-80k flat city. SIGHTS: Golden Bridge Ba Na 900k book online, Marble Mountains 40k, Dragon Bridge fire Sat/Sun 9PM arrive 20:30, Lady Buddha Son Tra free, Hoi An 30km 120k ticket free after 5PM, Museum of Cham Sculpture downtown Han River 60k (300+ sculptures 9th-15th c), Son Tra Wildlife red-shanked douc langurs (vooc chan do) free early morning best Bai Bac cove. FOOD: Madame Lan, Be Man, Mi Quang 1A 40-50k, Banh Mi Ba Lan 25-35k, Helio market 3-6$/person; Bánh Tráng Cuốn Thịt Heo (rice cracker+pork+mam nem 60-80k, Tran Quoc Toan/Con Market); Rainbowl & Co An Thuong 80-160k (smoothie bowls, open 07:30, fast wifi). LIFEHACKS: Hoi An combo Grab there 200k + bus#1 back 30k; Ba Na arrive before 8am to beat queues; Hoi An free evening after 5PM. Districts: My Khe beach, Han River center, An Thuong nomads, Son Tra luxury. SIM Viettel ~150k/30GB. Scams: Marble Mtn pushy guides, fake Ba Na tickets (official banahills.sunworld.vn), unmetered taxis. Emergency 113/115/114."
 }
