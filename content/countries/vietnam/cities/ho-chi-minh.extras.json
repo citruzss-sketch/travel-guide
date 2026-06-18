@@ -1,0 +1,203 @@
+{
+  "coordinates": { "lat": 10.8231, "lng": 106.6297 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Шон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7 км от центра D1. Grab ~80–130k VND",
+        "en": "7 km from D1 center. Grab ~80–130k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6519,
+      "category": "airport"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец Воссоединения", "en": "Reunification Palace" },
+      "description": {
+        "ru": "Символ окончания войны, 40,000 VND",
+        "en": "Symbol of war's end, 40,000 VND entry"
+      },
+      "lat": 10.7769,
+      "lng": 106.6953,
+      "category": "sight"
+    },
+    {
+      "id": "war-museum",
+      "title": { "ru": "Музей войны", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "История Войны во Вьетнаме, 40,000 VND",
+        "en": "Vietnam War history, 40,000 VND"
+      },
+      "lat": 10.7795,
+      "lng": 106.6918,
+      "category": "sight"
+    },
+    {
+      "id": "ben-thanh-market",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Главный туристический рынок Сайгона",
+        "en": "Main tourist market of Saigon"
+      },
+      "lat": 10.7725,
+      "lng": 106.6980,
+      "category": "food"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "description": {
+        "ru": "Французский собор 1880 г., реставрация 2024–2026",
+        "en": "French cathedral 1880, renovation 2024–2026"
+      },
+      "lat": 10.7797,
+      "lng": 106.6993,
+      "category": "sight"
+    },
+    {
+      "id": "jade-emperor-pagoda",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Даосская пагода 1909 г., вход свободный",
+        "en": "Taoist pagoda 1909, free entry"
+      },
+      "lat": 10.7893,
+      "lng": 106.6952,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco-tower",
+      "title": { "ru": "Башня Bitexco", "en": "Bitexco Financial Tower" },
+      "description": {
+        "ru": "Смотровая 49 этаж, 250,000 VND",
+        "en": "Skydeck floor 49, 250,000 VND"
+      },
+      "lat": 10.7717,
+      "lng": 106.7041,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Улица Буй Вьен", "en": "Bui Vien Walking Street" },
+      "description": {
+        "ru": "Пешеходная зона, бары и уличная еда",
+        "en": "Pedestrian zone, bars and street food"
+      },
+      "lat": 10.7670,
+      "lng": 106.6934,
+      "category": "district"
+    },
+    {
+      "id": "thao-dien",
+      "title": { "ru": "Тхао Дьен (Thảo Điền)", "en": "Thao Dien District" },
+      "description": {
+        "ru": "Экспатский квартал, рестораны, коворкинги",
+        "en": "Expat area, restaurants, coworking"
+      },
+      "lat": 10.8022,
+      "lng": 106.7348,
+      "category": "district"
+    },
+    {
+      "id": "cholon-binh-tay",
+      "title": { "ru": "Чолон — Рынок Бинь Тэй", "en": "Cholon — Binh Tay Market" },
+      "description": {
+        "ru": "Китайский квартал, аутентичный рынок",
+        "en": "Chinatown, authentic market"
+      },
+      "lat": 10.7482,
+      "lng": 106.6532,
+      "category": "food"
+    },
+    {
+      "id": "metro-ben-thanh",
+      "title": { "ru": "Метро — Бен Тхань (Line 1)", "en": "Metro — Ben Thanh Station (Line 1)" },
+      "description": {
+        "ru": "Линия 1, открыта декабрь 2024",
+        "en": "Line 1, opened December 2024"
+      },
+      "lat": 10.7726,
+      "lng": 106.6982,
+      "category": "transport"
+    },
+    {
+      "id": "saigon-station",
+      "title": { "ru": "Ж/д вокзал Сайгон", "en": "Saigon Railway Station" },
+      "description": {
+        "ru": "Поезда в Нячанг, Дананг, Ханой",
+        "en": "Trains to Nha Trang, Da Nang, Hanoi"
+      },
+      "lat": 10.7910,
+      "lng": 106.6697,
+      "category": "transport"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam e-visa status"
+      }
+    },
+    {
+      "id": "grab-install",
+      "label": {
+        "ru": "Установить Grab до прилёта",
+        "en": "Install Grab before arrival"
+      }
+    },
+    {
+      "id": "sim-airport",
+      "label": {
+        "ru": "Купить SIM Viettel в зоне прилёта SGN",
+        "en": "Buy Viettel SIM at SGN arrivals"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять VND в Techcombank/BIDV без комиссии",
+        "en": "Withdraw VND at Techcombank/BIDV (no fee)"
+      }
+    },
+    {
+      "id": "cu-chi-tour",
+      "label": {
+        "ru": "Забронировать тур в туннели Ку Чи",
+        "en": "Book Cu Chi Tunnels tour (Klook/GetYourGuide)"
+      }
+    },
+    {
+      "id": "sunscreen",
+      "label": {
+        "ru": "Крем SPF 50+ и дождевик",
+        "en": "SPF 50+ sunscreen and rain poncho"
+      }
+    },
+    {
+      "id": "bag-safety",
+      "label": {
+        "ru": "Сумку держать ближе к стене, не к дороге",
+        "en": "Keep bag on wall side — away from traffic"
+      }
+    },
+    {
+      "id": "hotel",
+      "label": {
+        "ru": "Подтвердить бронь отеля в D1 или D3",
+        "en": "Confirm hotel booking in D1 or D3"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Тревел-страховка с медицинским покрытием",
+        "en": "Travel insurance with medical cover"
+      }
+    }
+  ]
+}
