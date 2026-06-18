@@ -1,0 +1,203 @@
+{
+  "coordinates": { "lat": 16.4637, "lng": 107.5909 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "hui-airport",
+      "title": { "ru": "Аэропорт Фу Бай (HUI)", "en": "Phu Bai Airport (HUI)" },
+      "description": {
+        "ru": "15 км от центра. Grab ~120–180k VND",
+        "en": "15 km from center. Grab ~120–180k VND"
+      },
+      "lat": 16.4015,
+      "lng": 107.7026,
+      "category": "airport"
+    },
+    {
+      "id": "imperial-citadel",
+      "title": { "ru": "Имперская цитадель (Дай Ной)", "en": "Imperial Citadel (Dai Noi)" },
+      "description": {
+        "ru": "UNESCO, 200k VND. Открыто 8:00–17:30",
+        "en": "UNESCO, 200k VND. Open 8:00–17:30"
+      },
+      "lat": 16.4700,
+      "lng": 107.5776,
+      "category": "sight"
+    },
+    {
+      "id": "thien-mu-pagoda",
+      "title": { "ru": "Пагода Тхиен Му", "en": "Thien Mu Pagoda" },
+      "description": {
+        "ru": "Символ Хюэ. Вход бесплатный",
+        "en": "Symbol of Hue. Free entry"
+      },
+      "lat": 16.4529,
+      "lng": 107.5485,
+      "category": "sight"
+    },
+    {
+      "id": "khai-dinh-tomb",
+      "title": { "ru": "Гробница Кхай Динь", "en": "Tomb of Khai Dinh" },
+      "description": {
+        "ru": "150k VND. Уникальная архитектура",
+        "en": "150k VND. Unique architecture"
+      },
+      "lat": 16.3891,
+      "lng": 107.5809,
+      "category": "sight"
+    },
+    {
+      "id": "tu-duc-tomb",
+      "title": { "ru": "Гробница Ту Дыка", "en": "Tomb of Tu Duc" },
+      "description": {
+        "ru": "150k VND. Пруды и бамбук",
+        "en": "150k VND. Ponds and bamboo"
+      },
+      "lat": 16.4536,
+      "lng": 107.5526,
+      "category": "sight"
+    },
+    {
+      "id": "minh-mang-tomb",
+      "title": { "ru": "Гробница Минь Манга", "en": "Tomb of Minh Mang" },
+      "description": {
+        "ru": "150k VND. Классическая архитектура",
+        "en": "150k VND. Classical architecture"
+      },
+      "lat": 16.3935,
+      "lng": 107.5568,
+      "category": "sight"
+    },
+    {
+      "id": "dong-ba-market",
+      "title": { "ru": "Рынок Донг Ба", "en": "Dong Ba Market" },
+      "description": {
+        "ru": "Еда, специи, сувениры, торгуйтесь",
+        "en": "Food, spices, souvenirs, bargain"
+      },
+      "lat": 16.4700,
+      "lng": 107.5970,
+      "category": "food"
+    },
+    {
+      "id": "truong-tien-bridge",
+      "title": { "ru": "Мост Чыонг Тиен", "en": "Truong Tien Bridge" },
+      "description": {
+        "ru": "Иконический мост над рекой Хыонг",
+        "en": "Iconic bridge over the Perfume River"
+      },
+      "lat": 16.4671,
+      "lng": 107.5979,
+      "category": "sight"
+    },
+    {
+      "id": "hue-train-station",
+      "title": { "ru": "Ж/д вокзал Хюэ", "en": "Hue Railway Station" },
+      "description": {
+        "ru": "Поезда в Дананг (2.5–3.5 ч) и Ханой",
+        "en": "Trains to Da Nang (2.5–3.5h) and Hanoi"
+      },
+      "lat": 16.4636,
+      "lng": 107.6019,
+      "category": "transport"
+    },
+    {
+      "id": "bun-bo-ba-buoi",
+      "title": { "ru": "Bà Buổi — лучший бун бо", "en": "Bà Buổi — best bun bo" },
+      "description": {
+        "ru": "65 Bùi Thị Xuân. Фирменный бун бо Хюэ",
+        "en": "65 Bùi Thị Xuân. Signature bun bo Hue"
+      },
+      "lat": 16.4628,
+      "lng": 107.5962,
+      "category": "food"
+    },
+    {
+      "id": "thuan-an-beach",
+      "title": { "ru": "Пляж Тхуан Ан", "en": "Thuan An Beach" },
+      "description": {
+        "ru": "13 км от центра. Тихий пляж у лагуны",
+        "en": "13 km from center. Quiet lagoon beach"
+      },
+      "lat": 16.5268,
+      "lng": 107.6927,
+      "category": "beach"
+    },
+    {
+      "id": "lac-thien-restaurant",
+      "title": { "ru": "Lạc Thiện — bánh khoái с 1965", "en": "Lạc Thiện — bánh khoái since 1965" },
+      "description": {
+        "ru": "6 Đinh Tiên Hoàng. Знаменитые хюэские блинчики",
+        "en": "6 Dinh Tien Hoang. Famous Hue sizzling pancakes"
+      },
+      "lat": 16.4683,
+      "lng": 107.5915,
+      "category": "food"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "combo-ticket",
+      "label": {
+        "ru": "Купить комбо-билет UNESCO (530k VND на 5 объектов)",
+        "en": "Buy UNESCO combo ticket (530k VND for 5 sites)"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel/Mobifone в аэропорту",
+        "en": "Buy Viettel/Mobifone SIM at airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab и привязать карту",
+        "en": "Install Grab and link card"
+      }
+    },
+    {
+      "id": "bicycle",
+      "label": {
+        "ru": "Арендовать велосипед или скутер у хостела",
+        "en": "Rent bicycle or scooter from hostel"
+      }
+    },
+    {
+      "id": "bun-bo",
+      "label": {
+        "ru": "Попробовать бун бо Хюэ на завтрак у Bà Buổi",
+        "en": "Try bun bo Hue for breakfast at Bà Buổi"
+      }
+    },
+    {
+      "id": "boat",
+      "label": {
+        "ru": "Закат на лодке по реке Хыонг",
+        "en": "Sunset boat ride on the Perfume River"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять VND наличными (для входных билетов и рынков)",
+        "en": "Withdraw VND cash (for entry tickets and markets)"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Тревел-страховка с мотоциклетным покрытием",
+        "en": "Travel insurance with motorbike cover"
+      }
+    }
+  ]
+}
