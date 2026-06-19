@@ -1,0 +1,203 @@
+{
+  "coordinates": { "lat": 10.8231, "lng": 106.6297 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Шон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7 км от центра. Grab ~80–130k VND",
+        "en": "7 km from center. Grab ~80–130k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6519,
+      "category": "airport"
+    },
+    {
+      "id": "ben-thanh",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Иконический рынок 1914 г., символ Сайгона",
+        "en": "Iconic market from 1914, symbol of Saigon"
+      },
+      "lat": 10.7725,
+      "lng": 106.6980,
+      "category": "food"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец Воссоединения", "en": "Reunification Palace" },
+      "description": {
+        "ru": "Символ окончания Вьетнамской войны",
+        "en": "Symbol of the Vietnam War's end"
+      },
+      "lat": 10.7769,
+      "lng": 106.6956,
+      "category": "sight"
+    },
+    {
+      "id": "war-remnants",
+      "title": { "ru": "Музей военных преступлений", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "Документальный музей о Вьетнамской войне",
+        "en": "Documentary museum about the Vietnam War"
+      },
+      "lat": 10.7794,
+      "lng": 106.6924,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "description": {
+        "ru": "Красно-кирпичная базилика 1880 г.",
+        "en": "Red-brick basilica from 1880"
+      },
+      "lat": 10.7797,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "jade-emperor",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Самая атмосферная пагода Сайгона, 1909 г.",
+        "en": "Most atmospheric pagoda in Saigon, 1909"
+      },
+      "lat": 10.7882,
+      "lng": 106.6955,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco",
+      "title": { "ru": "Башня Bitexco", "en": "Bitexco Financial Tower" },
+      "description": {
+        "ru": "Смотровая площадка 49 этаж, вид 360°",
+        "en": "Observation deck floor 49, 360° views"
+      },
+      "lat": 10.7716,
+      "lng": 106.7038,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Улица Буй Виен", "en": "Bui Vien Street" },
+      "description": {
+        "ru": "Пешеходная улица, бары, еда, ночная жизнь",
+        "en": "Pedestrian street, bars, food, nightlife"
+      },
+      "lat": 10.7679,
+      "lng": 106.6936,
+      "category": "food"
+    },
+    {
+      "id": "cholon",
+      "title": { "ru": "Чолон — Китайский квартал", "en": "Cholon — Chinatown" },
+      "description": {
+        "ru": "Крупнейший Китайский квартал ЮВА, Район 5",
+        "en": "Largest Chinatown in SEA, District 5"
+      },
+      "lat": 10.7538,
+      "lng": 106.6567,
+      "category": "district"
+    },
+    {
+      "id": "metro-ben-thanh",
+      "title": { "ru": "Метро Бен Тхань (Линия 1)", "en": "Ben Thanh Metro Station (Line 1)" },
+      "description": {
+        "ru": "Открыта дек. 2024, до Суой Тьен 6-20k VND",
+        "en": "Opened Dec 2024, to Suoi Tien 6-20k VND"
+      },
+      "lat": 10.7727,
+      "lng": 106.6983,
+      "category": "transport"
+    },
+    {
+      "id": "saigon-station",
+      "title": { "ru": "Ж/д вокзал Сайгон", "en": "Saigon Railway Station" },
+      "description": {
+        "ru": "Поезда в Ханой, Нячанг, Дананг",
+        "en": "Trains to Hanoi, Nha Trang, Da Nang"
+      },
+      "lat": 10.7840,
+      "lng": 106.6819,
+      "category": "transport"
+    },
+    {
+      "id": "vung-tau-ferry",
+      "title": { "ru": "Паромный терминал Вунг Тау", "en": "Vung Tau Ferry Terminal" },
+      "description": {
+        "ru": "Паром до Вунг Тау 250-300k VND, 80 мин",
+        "en": "Ferry to Vung Tau 250-300k VND, 80 min"
+      },
+      "lat": 10.7756,
+      "lng": 106.7063,
+      "category": "transport"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel/Mobifone в аэропорту (T2)",
+        "en": "Buy Viettel/Mobifone SIM at airport (T2)"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab и Gojek",
+        "en": "Install Grab and Gojek apps"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять VND в банкомате (Vietcombank/BIDV)",
+        "en": "Withdraw VND from ATM (Vietcombank/BIDV)"
+      }
+    },
+    {
+      "id": "metro",
+      "label": {
+        "ru": "Попробовать метро Линия 1 (Бен Тхань)",
+        "en": "Try Metro Line 1 from Ben Thanh station"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур в Туннели Ку Чи",
+        "en": "Book Cu Chi Tunnels tour"
+      }
+    },
+    {
+      "id": "mekong",
+      "label": {
+        "ru": "Забронировать тур в дельту Меконга",
+        "en": "Book Mekong Delta day tour"
+      }
+    },
+    {
+      "id": "bag-safety",
+      "label": {
+        "ru": "Убрать ценности — защита от bag snatching",
+        "en": "Secure valuables — protect against bag snatching"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Тревел-страховка активна",
+        "en": "Travel insurance is active"
+      }
+    }
+  ]
+}

@@ -59,6 +59,15 @@ export const WIKI = {
   banhMi: wiki("Vietnamese Bánh mì (Banh Mi) Sandwich.jpg"),
   banhMiThit: wiki("Banh_mi_thit_Nhu_Lan.jpg"),
   benThanhMarket: wiki("Ben Thanh Market Ho Chi Minh City.jpg"),
+
+  // Ho Chi Minh City
+  hcmcSkyline: wiki("Ho_Chi_Minh_City_skyline_from_Bitexco_Tower.jpg", 1920),
+  tanSonNhatAirport: wiki("Tan_Son_Nhat_International_Airport.jpg"),
+  reunificationPalace: wiki("Reunification_Palace_in_Ho_Chi_Minh_City.jpg"),
+  bitexcoTower: wiki("Bitexco_Financial_Tower_2012.jpg"),
+  notreDameSaigon: wiki("Notre_Dame_Cathedral,_Ho_Chi_Minh_City.jpg"),
+  vungTauBeach: wiki("Vung_tau_beach.jpg"),
+  cuChiTunnels: wiki("Cu_Chi_Tunnels.jpg"),
 } as const;
 
 export function getCityHeroImage(citySlug: string): string {
@@ -67,6 +76,8 @@ export function getCityHeroImage(citySlug: string): string {
       return WIKI.nhaTrangSkyline;
     case "da-nang":
       return WIKI.goldenBridge;
+    case "ho-chi-minh":
+      return WIKI.hcmcSkyline;
     default:
       return WIKI.haLongBay;
   }
@@ -159,6 +170,47 @@ export const PLACE_IMAGES: Record<string, Record<string, string>> = {
     "fake ba na hills tickets": WIKI.goldenBridge,
     "general safety": WIKI.myKhe,
     "emergency numbers": WIKI.daNangAirport,
+  },
+  "ho-chi-minh": {
+    "tan son nhat international airport sgn": WIKI.tanSonNhatAirport,
+    "train to ho chi minh city": WIKI.gaNhaTrang,
+    "district 1 ben thanh tourist center": WIKI.hcmcSkyline,
+    "district 3 vo thi sau quiet residential": WIKI.hcmcSkyline,
+    "trao dien district 2 expat hub": WIKI.hcmcSkyline,
+    "reunification palace": WIKI.reunificationPalace,
+    "war remnants museum": WIKI.benThanhMarket,
+    "saigon notre dame cathedral": WIKI.notreDameSaigon,
+    "jade emperor pagoda": WIKI.benThanhMarket,
+    "bitexco financial tower skydeck": WIKI.bitexcoTower,
+    "cholon chinatown district 5": WIKI.benThanhMarket,
+    "vung tau nearest beach resort": WIKI.vungTauBeach,
+    "mui ne dunes and kitesurfing": WIKI.vungTauBeach,
+    "con dao island untouched nature": WIKI.cuChiTunnels,
+    "banh mi huynh hoa best banh mi in the city": WIKI.banhMi,
+    "pho hoa pasteur famous pho": WIKI.miQuang,
+    "com tam ba ghien broken rice": WIKI.miQuang,
+    "bui vien party street": WIKI.benThanhMarket,
+    "the workshop coffee best specialty coffee": WIKI.banhMi,
+    "ben thanh market": WIKI.benThanhMarket,
+    "saigon square fashion and replicas": WIKI.benThanhMarket,
+    "vincom center takashimaya premium malls": WIKI.hcmcSkyline,
+    "cu chi tunnels": WIKI.cuChiTunnels,
+    "mekong delta": WIKI.vungTauBeach,
+    "street food motorbike tour": WIKI.miQuang,
+    "night motorbike tour": WIKI.hcmcSkyline,
+    "grab primary transport": WIKI.haiVanMotorbike,
+    "metro line 1 opened december 2024": WIKI.hcmcSkyline,
+    "motorbike rental": WIKI.haiVanMotorbike,
+    "vinbus electric buses": WIKI.hcmcSkyline,
+    "sim at tan son nhat airport": WIKI.tanSonNhatAirport,
+    "currency exchange and atms in hcmc": WIKI.benThanhMarket,
+    "general safety in ho chi minh city": WIKI.hcmcSkyline,
+    "basic phrases for saigon": WIKI.hoiAnLanterns,
+    "taxi scams rigged meters": WIKI.tanSonNhatAirport,
+    "tourist restaurants with double prices": WIKI.benThanhMarket,
+    "bag snatching": WIKI.hcmcSkyline,
+    "general safety": WIKI.hcmcSkyline,
+    "emergency numbers": WIKI.tanSonNhatAirport,
   },
 };
 
