@@ -1,0 +1,772 @@
+{
+  "id": "hue",
+  "slug": "hue",
+  "countryId": "vietnam",
+  "name": {
+    "ru": "Хюэ",
+    "en": "Hue"
+  },
+  "tagline": {
+    "ru": "Имперская столица Вьетнама — цитадель, королевские гробницы и лучшая кухня страны",
+    "en": "Vietnam's imperial capital — citadel, royal tombs, and the country's finest cuisine"
+  },
+  "heroImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Citadel_of_Hue.jpg?width=1920",
+  "overview": {
+    "ru": "Хюэ — бывшая имперская столица Вьетнама (1802–1945) и ЮНЕСКО-заповедник. Величественная цитадель, семь королевских гробниц, пагода Тхиен Му и река Хыонг (Парфюмерная) создают атмосферу, которой нет больше нигде во Вьетнаме. Город медленнее Дананга, с непередаваемой архитектурой и лучшей едой в стране — bún bò Huế здесь совсем другой.",
+    "en": "Hue is Vietnam's former imperial capital (1802–1945) and a UNESCO World Heritage site. The majestic citadel, seven royal tombs, Thien Mu Pagoda, and the Perfume River create an atmosphere found nowhere else in Vietnam. The city moves slower than Da Nang, with unmatched architecture and Vietnam's finest cuisine — bún bò Huế tastes completely different here."
+  },
+  "bestTime": {
+    "ru": "Февраль–апрель (сухо, 20–28°C) и сентябрь–октябрь. Май–август — жара до 38°C. Ноябрь–январь — сезон дождей (Хюэ получает 70% осадков в год).",
+    "en": "February–April (dry, 20–28°C) and September–October. May–August — heat up to 38°C. November–January — rainy season (Hue receives 70% of rain in these months)."
+  },
+  "currency": {
+    "ru": "Вьетнамский донг (VND). 1 USD ≈ 25,000 VND.",
+    "en": "Vietnamese Dong (VND). 1 USD ≈ 25,000 VND."
+  },
+  "language": {
+    "ru": "Вьетнамский. Центральный диалект заметно отличается от южного. Английский в туристических зонах.",
+    "en": "Vietnamese. Central dialect noticeably different from southern. English in tourist areas."
+  },
+  "timezone": {
+    "ru": "UTC+7",
+    "en": "UTC+7"
+  },
+  "airport": {
+    "title": {
+      "ru": "Как добраться",
+      "en": "Getting there"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Аэропорт Фу Бай (HUI)",
+          "en": "Phu Bai International Airport (HUI)"
+        },
+        "description": {
+          "ru": "В 14 км к югу от центра. Рейсы из Ханоя, Хошимина, Дананга. Международные рейсы из Сеула и Бангкока.",
+          "en": "14 km south of city center. Flights from Hanoi, Ho Chi Minh City, Da Nang. International flights from Seoul and Bangkok."
+        },
+        "tips": {
+          "ru": [
+            "Grab до центра: 100,000–140,000 VND (~$4–6), 20–25 мин",
+            "Такси Mai Linh: ~150,000–180,000 VND со счётчиком",
+            "Автобус №17: 15,000 VND, ходит редко — только для бюджетных путешественников"
+          ],
+          "en": [
+            "Grab to center: 100,000–140,000 VND (~$4–6), 20–25 min",
+            "Mai Linh taxi: ~150,000–180,000 VND metered",
+            "Bus #17: 15,000 VND, infrequent — budget travelers only"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Phu_Bai_International_Airport.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Поезд — Железнодорожная станция Хюэ",
+          "en": "Train — Hue Railway Station"
+        },
+        "description": {
+          "ru": "Вокзал в центре города. Живописная дорога через перевал Хай Ван из Дананга (2,5 ч). Из Ханоя — 13–14 ч, из Хошимина — 20 ч.",
+          "en": "Station in city center. Scenic ride through Hai Van Pass from Da Nang (2.5h). From Hanoi — 13–14h, from Ho Chi Minh City — 20h."
+        },
+        "price": {
+          "ru": "Дананг → Хюэ: от 120,000 VND soft seat",
+          "en": "Da Nang → Hue: from 120,000 VND soft seat"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ga%20Nha%20Trang.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Автобус и шаттл из Дананга / Хойана",
+          "en": "Bus & shuttle from Da Nang / Hoi An"
+        },
+        "description": {
+          "ru": "Туристические шаттлы из Дананга (2,5–3 ч) и Хойана (3–3,5 ч). Удобнее поезда, забирают из отеля.",
+          "en": "Tourist shuttles from Da Nang (2.5–3h) and Hoi An (3–3.5h). More convenient than train, hotel pickup included."
+        },
+        "price": {
+          "ru": "$5–9 из Дананга, $8–12 из Хойана",
+          "en": "$5–9 from Da Nang, $8–12 from Hoi An"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hai_Van_Pass%2C_Vietnam.jpg?width=800"
+      }
+    ]
+  },
+  "districts": {
+    "title": {
+      "ru": "Где жить",
+      "en": "Where to stay"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Старый город (к северу от реки)",
+          "en": "Old Quarter (north of river)"
+        },
+        "description": {
+          "ru": "Туристический центр вокруг цитадели. Отели, рестораны, велоаренда — всё рядом. Идеально для первого визита.",
+          "en": "Tourist hub around the citadel. Hotels, restaurants, bike rentals — all nearby. Perfect for first-time visitors."
+        },
+        "price": {
+          "ru": "Хостел: $8–15 | 3* отель: $25–50/ночь",
+          "en": "Hostel: $8–15 | 3* hotel: $25–50/night"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Citadel_of_Hue.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Улица Фам Нгу Лао (Phạm Ngũ Lão)",
+          "en": "Pham Ngu Lao Street"
+        },
+        "description": {
+          "ru": "Главная бэкпекерская улица к югу от реки. Много бюджетных отелей, баров и турагентств. 10 мин на велосипеде до цитадели.",
+          "en": "Main backpacker street south of the river. Many budget hotels, bars, and tour agencies. 10 min by bike to citadel."
+        },
+        "price": {
+          "ru": "Гестхаус: $10–25/ночь",
+          "en": "Guesthouse: $10–25/night"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Perfume_River_Hue.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Виладжи Ви Да (Vỹ Dạ)",
+          "en": "Vy Da District"
+        },
+        "description": {
+          "ru": "Тихий жилой район вдоль реки к востоку от центра. Бутик-отели, меньше туристов. Хорош для второго визита.",
+          "en": "Quiet residential area along the river east of center. Boutique hotels, fewer tourists. Great for a second visit."
+        },
+        "price": {
+          "ru": "Бутик-отель: $40–80/ночь",
+          "en": "Boutique hotel: $40–80/night"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Thien_Mu_pagoda,_Hue,_Vietnam.jpg?width=800"
+      }
+    ]
+  },
+  "sights": {
+    "title": {
+      "ru": "Что посмотреть",
+      "en": "Must-see sights"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Имперская цитадель Хюэ",
+          "en": "Hue Imperial Citadel"
+        },
+        "description": {
+          "ru": "ЮНЕСКО. Грандиозная крепость с тройными стенами, 10 воротами, Запретным городом и дворцами. Строилась с 1804 года. Основная достопримечательность города — выделите минимум 2–3 часа.",
+          "en": "UNESCO. Massive fortress with triple walls, 10 gates, Forbidden City, and palaces. Built from 1804. The city's main attraction — allow at least 2–3 hours."
+        },
+        "price": {
+          "ru": "200,000 VND",
+          "en": "200,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Citadel_of_Hue.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Гробница Ту Дыка (Tự Đức)",
+          "en": "Tomb of Tu Duc"
+        },
+        "description": {
+          "ru": "Самая большая и красивая из гробниц, 1864–1867. Озёра с лотосами, павильоны, деревья — поэтическая атмосфера. Правил 35 лет, сам написал эпитафию на монументе.",
+          "en": "Largest and most beautiful tomb, 1864–1867. Lotus lakes, pavilions, trees — poetic atmosphere. Reigned 35 years, wrote his own epitaph on the monument."
+        },
+        "price": {
+          "ru": "150,000 VND (или комбо с цитаделью)",
+          "en": "150,000 VND (or combo with citadel)"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tu_Duc_Tomb.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Гробница Кхай Диня (Khải Định)",
+          "en": "Tomb of Khai Dinh"
+        },
+        "description": {
+          "ru": "Самая драматичная гробница на горе (1920–1931). Смесь вьетнамского, китайского и европейского барокко. Интерьер украшен миллионами осколков фарфора. 5 км от центра.",
+          "en": "Most dramatic tomb on a hill (1920–1931). Mix of Vietnamese, Chinese, and European Baroque. Interior adorned with millions of porcelain shards. 5 km from center."
+        },
+        "price": {
+          "ru": "150,000 VND",
+          "en": "150,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Khai_Dinh_tomb.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Пагода Тхиен Му (Thiên Mụ)",
+          "en": "Thien Mu Pagoda"
+        },
+        "description": {
+          "ru": "Семиярусная пагода 1601 года на берегу реки — символ Хюэ. Здесь хранится Austin 1963, на котором монах Тхить Куанг Дык уехал в Сайгон на самосожжение против режима Дьема. Бесплатно.",
+          "en": "Seven-tiered pagoda from 1601 on the riverbank — symbol of Hue. Here is the Austin 1963 car that took monk Thich Quang Duc to Saigon for self-immolation against the Diem regime. Free."
+        },
+        "price": {
+          "ru": "Бесплатно",
+          "en": "Free"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Thien_Mu_pagoda,_Hue,_Vietnam.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Парфюмерная река (Sông Hương)",
+          "en": "Perfume River (Song Huong)"
+        },
+        "description": {
+          "ru": "Прогулка на деревянной лодке дракона мимо пагоды Тхиен Му, гробниц и заката. Один из лучших способов увидеть Хюэ. Торгуйтесь: цены часто завышают для туристов.",
+          "en": "Ride a dragon boat past Thien Mu Pagoda, tombs, and at sunset. One of the best ways to see Hue. Negotiate: prices are often inflated for tourists."
+        },
+        "price": {
+          "ru": "150,000–250,000 VND за лодку (2–3 ч)",
+          "en": "150,000–250,000 VND per boat (2–3h)"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Perfume_River_Hue.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Гробница Минь Манга (Minh Mạng)",
+          "en": "Tomb of Minh Mang"
+        },
+        "description": {
+          "ru": "Симметричный ансамбль 1843 года в 12 км от центра. Три озера, 40 строений, идеальные сады. Наиболее «императорская» атмосфера из всех гробниц.",
+          "en": "Symmetrical complex from 1843, 12 km from center. Three lakes, 40 buildings, perfect gardens. Most 'imperial' atmosphere of all the tombs."
+        },
+        "price": {
+          "ru": "150,000 VND",
+          "en": "150,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Citadel_of_Hue.jpg?width=800"
+      }
+    ]
+  },
+  "beaches": {
+    "title": {
+      "ru": "Пляжи рядом",
+      "en": "Nearby beaches"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Пляж Тхуан Ан (Thuận An)",
+          "en": "Thuan An Beach"
+        },
+        "description": {
+          "ru": "Ближайший пляж в 10 км к востоку. Длинная полоса песка на косе между морем и лагуной. Тихо, мало туристов. Хорош для однодневной поездки.",
+          "en": "Nearest beach 10 km east. Long strip of sand on a spit between sea and lagoon. Quiet, few tourists. Good for a day trip."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Thuan_An_beach,_Hue.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Лэнг Ко (Lăng Cô)",
+          "en": "Lang Co Beach"
+        },
+        "description": {
+          "ru": "Курортный посёлок в 65 км к югу (через перевал Хай Ван). Кристальная вода, горы, тишина. Остановка по дороге из Дананга на байке — фантастические виды.",
+          "en": "Resort village 65 km south (through Hai Van Pass). Crystal water, mountains, silence. Stop en route from Da Nang by scooter — fantastic views."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hai_Van_Pass%2C_Vietnam.jpg?width=800"
+      }
+    ]
+  },
+  "food": {
+    "title": {
+      "ru": "Где поесть",
+      "en": "Where to eat"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Quán Bún Bò Mụ Rớt — Bún bò Huế",
+          "en": "Quan Bun Bo Mu Rot — Bún bò Huế"
+        },
+        "description": {
+          "ru": "Легендарный суп с говядиной — острее и богаче фо. 9 Lý Thường Kiệt. Очередь с 6:00, к 9:00 заканчивается. Едят на пластиковых стульях, заказывают руками.",
+          "en": "Legendary beef noodle soup — spicier and richer than pho. 9 Ly Thuong Kiet St. Queue from 6 AM, sold out by 9 AM. Eaten on plastic stools, order by pointing."
+        },
+        "price": {
+          "ru": "50,000–70,000 VND",
+          "en": "50,000–70,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bun_bo_Hue.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Bánh Khoái Lạc Thiện",
+          "en": "Banh Khoai Lac Thien"
+        },
+        "description": {
+          "ru": "Хрустящий рисовый блин с креветками, свининой и грибами + арахисово-кунжутный соус. 6 Đinh Tiên Hoàng. Культовое место с 1965 года.",
+          "en": "Crispy rice crepe with shrimp, pork, and mushrooms + peanut-sesame dipping sauce. 6 Dinh Tien Hoang St. Iconic spot since 1965."
+        },
+        "price": {
+          "ru": "25,000–35,000 VND за блин",
+          "en": "25,000–35,000 VND per pancake"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%AC%20Qu%E1%BA%A3ng.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Cơm Hến — рис с моллюсками",
+          "en": "Com Hen — clam rice"
+        },
+        "description": {
+          "ru": "Завтрак Хюэ: холодный рис с крошечными моллюсками, жареными шкварками, арахисом и 10+ приправами. Cồn Hến (остров на реке) — лучшее место. 15,000–25,000 VND.",
+          "en": "Hue breakfast: cold rice with tiny river clams, fried lard, peanuts, and 10+ condiments. Con Hen Island on the river — best place. 15,000–25,000 VND."
+        },
+        "price": {
+          "ru": "15,000–25,000 VND",
+          "en": "15,000–25,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ben%20Thanh%20Market%20Ho%20Chi%20Minh%20City.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Bánh Bèo — миниатюрные рисовые пирожки",
+          "en": "Banh Beo — steamed rice cakes"
+        },
+        "description": {
+          "ru": "Царская закуска: маленькие блюдечки из рисового теста с креветочной стружкой и жареным луком. Баnh Bèo Ngọc Liên, 11 Tống Duy Tân — cult-место.",
+          "en": "Royal court snack: tiny saucers of rice flour topped with dried shrimp and scallions. Banh Beo Ngoc Lien, 11 Tong Duy Tan — a cult spot."
+        },
+        "price": {
+          "ru": "5,000–8,000 VND за штуку",
+          "en": "5,000–8,000 VND each"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vietnamese%20Bánh%20mì%20(Banh%20Mi)%20Sandwich.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Ресторан Tịnh Tâm — придворная кухня",
+          "en": "Tinh Tam Restaurant — royal cuisine"
+        },
+        "description": {
+          "ru": "Воссоздание придворной вьетнамской кухни в аутентичном доме. Сет из 8–12 блюд с историей каждого. Резервируйте за день. Лучший кулинарный опыт в Хюэ.",
+          "en": "Recreation of Vietnamese royal court cuisine in an authentic house. Set of 8–12 dishes with the history of each. Reserve one day ahead. Best culinary experience in Hue."
+        },
+        "price": {
+          "ru": "$15–25 на человека",
+          "en": "$15–25 per person"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Citadel_of_Hue.jpg?width=800"
+      }
+    ]
+  },
+  "markets": {
+    "title": {
+      "ru": "Рынки",
+      "en": "Markets"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Рынок Донг Ба (Chợ Đông Ba)",
+          "en": "Dong Ba Market"
+        },
+        "description": {
+          "ru": "Крупнейший рынок Хюэ у северного берега реки с 1899 года. Еда, специи, ткани, сувениры. Утром — лучший уличный завтрак города.",
+          "en": "Hue's largest market on the north riverbank since 1899. Food, spices, fabrics, souvenirs. Morning — best street breakfast in the city."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ben%20Thanh%20Market%20Ho%20Chi%20Minh%20City.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Ночной рынок Тхыонг Ту (Thượng Tứ)",
+          "en": "Thuong Tu Night Market"
+        },
+        "description": {
+          "ru": "Пешеходная зона у ворот цитадели по вечерам. Уличная еда, сувениры, местная атмосфера. Работает с 18:00.",
+          "en": "Pedestrian zone near the citadel gate in the evenings. Street food, souvenirs, local atmosphere. Open from 6 PM."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      }
+    ]
+  },
+  "tours": {
+    "title": {
+      "ru": "Экскурсии",
+      "en": "Tours"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Тур по королевским гробницам",
+          "en": "Royal Tombs Tour"
+        },
+        "description": {
+          "ru": "Полдня объезд 2–3 гробниц на мотобайке или в туристическом минибасе. Гид объясняет историю каждого императора.",
+          "en": "Half-day tour of 2–3 tombs by motorbike or tourist minibus. Guide explains the history of each emperor."
+        },
+        "price": {
+          "ru": "$10–20 в группе, $25–35 частный",
+          "en": "$10–20 group, $25–35 private"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tu_Duc_Tomb.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Лодка по Парфюмерной реке (закат)",
+          "en": "Perfume River Sunset Boat"
+        },
+        "description": {
+          "ru": "2–3 часа по реке: пагода Тхиен Му, деревня гончаров, закат. Организуется у набережной Ле Лой — торгуйтесь.",
+          "en": "2–3 hours on the river: Thien Mu Pagoda, pottery village, sunset. Arranged at Le Loi waterfront — negotiate."
+        },
+        "price": {
+          "ru": "150,000–250,000 VND на лодку",
+          "en": "150,000–250,000 VND per boat"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Perfume_River_Hue.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Кулинарный тур с рынка",
+          "en": "Cooking Class with Market Tour"
+        },
+        "description": {
+          "ru": "Утром — рынок Донг Ба с шеф-поваром, затем готовите bánh khoái, bún bò и bánh bèo. 4–5 часов. Лучший способ понять кухню Хюэ.",
+          "en": "Morning — Dong Ba market with a chef, then cook bánh khoái, bún bò, and bánh bèo. 4–5 hours. Best way to understand Hue cuisine."
+        },
+        "price": {
+          "ru": "$25–40 на человека",
+          "en": "$25–40 per person"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%AC%20Qu%E1%BA%A3ng.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Мотобайк-тур по деревням",
+          "en": "Motorbike Village Tour"
+        },
+        "description": {
+          "ru": "На байке или с водителем по деревням вокруг Хюэ: деревня конических шляп Tây Hồ, деревня благовоний Thủy Xuân, рыбацкая деревня.",
+          "en": "By scooter or with driver through villages around Hue: conical hat village Tay Ho, incense village Thuy Xuan, fishing village."
+        },
+        "price": {
+          "ru": "$15–30 на человека",
+          "en": "$15–30 per person"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hai_Van_Pass%2C_Vietnam.jpg?width=800"
+      }
+    ]
+  },
+  "transport": {
+    "title": {
+      "ru": "Транспорт по городу",
+      "en": "Getting around"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Grab (байк и автомобиль)",
+          "en": "Grab (bike & car)"
+        },
+        "description": {
+          "ru": "Лучший способ передвижения. GrabBike: 15,000–30,000 VND по центру, до аэропорта 80,000–120,000 VND. GrabCar до гробниц: 60,000–100,000 VND.",
+          "en": "Best way to get around. GrabBike: 15,000–30,000 VND in center, to airport 80,000–120,000 VND. GrabCar to tombs: 60,000–100,000 VND."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hai%20Van%20Pass%2C%20Vietnam%2C%20Vietnamese%20motorbike%20rider%20near%20US%20military%20bunker.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Велосипед (xe đạp)",
+          "en": "Bicycle (xe dap)"
+        },
+        "description": {
+          "ru": "Хюэ относительно плоский, центр компактный. Лучший способ исследовать берег реки и старый город. В отелях часто бесплатно.",
+          "en": "Hue is relatively flat and compact. Best way to explore the riverside and old quarter. Often free at hotels."
+        },
+        "price": {
+          "ru": "Аренда: 30,000–50,000 VND/день",
+          "en": "Rental: 30,000–50,000 VND/day"
+        },
+        "image": "https://images.pexels.com/photos/276506/pexels-photo-276506.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": {
+          "ru": "Электроскутер (xe điện)",
+          "en": "Electric scooter (xe dien)"
+        },
+        "description": {
+          "ru": "Аренда без прав — популярно среди туристов для гробниц. Хватает заряда на весь день по городу. Шлем в комплекте.",
+          "en": "Rental without license — popular among tourists for tombs. Charge lasts all day around the city. Helmet included."
+        },
+        "price": {
+          "ru": "80,000–120,000 VND/день",
+          "en": "80,000–120,000 VND/day"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cycle%20rickshaw%20in%20Hanoi.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Сикло (xích lô)",
+          "en": "Cyclo (xich lo)"
+        },
+        "description": {
+          "ru": "Рикша-велотрёхколёска — туристическая классика для неспешной прогулки по старому кварталу. Торгуйтесь на цену заранее.",
+          "en": "Pedal rickshaw — tourist classic for a leisurely ride through the old quarter. Agree on price before you get in."
+        },
+        "price": {
+          "ru": "50,000–100,000 VND за маршрут",
+          "en": "50,000–100,000 VND per route"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cycle%20rickshaw%20in%20Hanoi.jpg?width=800"
+      }
+    ]
+  },
+  "simAndInternet": {
+    "title": {
+      "ru": "Сим-карты и интернет",
+      "en": "SIM cards & internet"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Viettel / Vinaphone",
+          "en": "Viettel / Vinaphone"
+        },
+        "description": {
+          "ru": "Продаются в аэропорту HUI и магазинах по городу. Viettel — лучший охват в центральном регионе. Паспорт обязателен.",
+          "en": "Available at HUI airport and city shops. Viettel — best coverage in the central region. Passport required."
+        },
+        "price": {
+          "ru": "30 GB / 30 дней: ~150,000 VND",
+          "en": "30 GB / 30 days: ~150,000 VND"
+        },
+        "image": "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800"
+      }
+    ]
+  },
+  "money": {
+    "title": {
+      "ru": "Деньги и цены",
+      "en": "Money & prices"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Банкоматы и обмен",
+          "en": "ATMs & exchange"
+        },
+        "description": {
+          "ru": "Банкоматы Vietcombank и Techcombank на Hùng Vương и Lê Lợi — без скрытых комиссий. Лучший обмен в ювелирных магазинах на Trần Hưng Đạo.",
+          "en": "Vietcombank and Techcombank ATMs on Hung Vuong and Le Loi — no hidden fees. Best exchange at jewelry shops on Tran Hung Dao."
+        },
+        "image": "https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": {
+          "ru": "Примерные цены",
+          "en": "Sample prices"
+        },
+        "description": {
+          "ru": "Bún bò Huế: 50–70k VND | Bánh khoái: 30–35k VND | Обед: 80–120k VND | Grab по центру: 15–30k | Велосипед: 30–50k VND/день | Цитадель: 200k VND",
+          "en": "Bún bò Huế: 50–70k VND | Bánh khoái: 30–35k VND | Lunch: 80–120k VND | Grab in center: 15–30k | Bike: 30–50k VND/day | Citadel: 200k VND"
+        },
+        "image": "https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=800"
+      }
+    ]
+  },
+  "safety": {
+    "title": {
+      "ru": "Безопасность",
+      "en": "Safety"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Общая безопасность",
+          "en": "General safety"
+        },
+        "description": {
+          "ru": "Хюэ — один из самых безопасных городов Вьетнама. Туристической преступности практически нет. Будьте внимательны с мотоциклами на перекрёстках старого города.",
+          "en": "Hue is one of Vietnam's safest cities. Tourist crime is almost non-existent. Watch for motorbikes at old-quarter intersections."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Citadel_of_Hue.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Жара и дождь",
+          "en": "Heat & rain"
+        },
+        "description": {
+          "ru": "Май–август: жара до 38°C, берите солнцезащитный крем и воду. Ноябрь–декабрь: ливни, берите зонт. Гробницы не имеют укрытий от дождя.",
+          "en": "May–August: heat up to 38°C, bring sunscreen and water. November–December: heavy rain, bring umbrella. Tombs have no rain shelter."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Citadel_of_Hue.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Экстренные номера",
+          "en": "Emergency numbers"
+        },
+        "description": {
+          "ru": "Полиция: 113 | Скорая: 115 | Пожарная: 114 | Турполиция Хюэ: 054-382-3712",
+          "en": "Police: 113 | Ambulance: 115 | Fire: 114 | Hue Tourist Police: 054-382-3712"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Phu_Bai_International_Airport.jpg?width=800"
+      }
+    ]
+  },
+  "phrases": {
+    "title": {
+      "ru": "Базовые фразы",
+      "en": "Basic phrases"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Xin chào — Здравствуйте",
+          "en": "Xin chào — Hello"
+        },
+        "description": {
+          "ru": "Sin chao",
+          "en": "Sin chao"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Cảm ơn — Спасибо",
+          "en": "Cảm ơn — Thank you"
+        },
+        "description": {
+          "ru": "Gam un",
+          "en": "Gam un"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Bún bò Huế ở đâu? — Где bún bò?",
+          "en": "Bún bò Huế ở đâu? — Where is bún bò?"
+        },
+        "description": {
+          "ru": "Bun bo hue oh dou?",
+          "en": "Bun bo hue oh dou?"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bun_bo_Hue.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Cho tôi... — Дайте мне...",
+          "en": "Cho tôi... — Give me..."
+        },
+        "description": {
+          "ru": "Cho toy",
+          "en": "Cho toy"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Bao nhiêu tiền? — Сколько стоит?",
+          "en": "Bao nhiêu tiền? — How much?"
+        },
+        "description": {
+          "ru": "Bao nyew tyen?",
+          "en": "Bao nyew tyen?"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ben%20Thanh%20Market%20Ho%20Chi%20Minh%20City.jpg?width=800"
+      }
+    ]
+  },
+  "lifehacks": {
+    "title": {
+      "ru": "Лайфхаки",
+      "en": "Lifehacks"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Комбо-билет на гробницы",
+          "en": "Combo ticket for tombs"
+        },
+        "description": {
+          "ru": "Комбо «цитадель + 3 гробницы» = 520,000 VND против 650,000 VND по отдельности. Если идёте в 2+ гробницы — берите комбо.",
+          "en": "Combo 'citadel + 3 tombs' = 520,000 VND vs 650,000 VND separately. If visiting 2+ tombs — get the combo."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Citadel_of_Hue.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Bún bò рано утром",
+          "en": "Bún bò in the early morning"
+        },
+        "description": {
+          "ru": "Лучшие заведения открываются в 6:00–6:30 и закрываются к 9:00–10:00 — суп заканчивается. Не откладывайте на потом.",
+          "en": "Best spots open at 6–6:30 AM and close by 9–10 AM — the soup runs out. Don't leave it for later."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bun_bo_Hue.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Велосипед — лучший транспорт",
+          "en": "Bicycle — best transport"
+        },
+        "description": {
+          "ru": "Цитадель, пагода Тхиен Му, берег реки и ночной рынок — всё в радиусе 5 км. На велосипеде быстрее и дешевле, чем брать Grab на каждую точку.",
+          "en": "Citadel, Thien Mu Pagoda, riverside, and night market — all within 5 km. Bicycle is faster and cheaper than calling Grab to each spot."
+        },
+        "image": "https://images.pexels.com/photos/276506/pexels-photo-276506.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": {
+          "ru": "Деревня благовоний Тхюй Суан",
+          "en": "Thuy Xuan Incense Village"
+        },
+        "description": {
+          "ru": "В 7 км от центра — мастера делают вьетнамские благовонные палочки вручную. Утром идеальный свет для фото. Вход бесплатный, купить пучок от 20,000 VND.",
+          "en": "7 km from center — artisans make Vietnamese incense sticks by hand. Morning light is perfect for photos. Free entry, buy a bundle from 20,000 VND."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Thien_Mu_pagoda,_Hue,_Vietnam.jpg?width=800"
+      }
+    ]
+  },
+  "scams": {
+    "title": {
+      "ru": "Разводы и предупреждения",
+      "en": "Scams & warnings"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Сикло без фиксированной цены",
+          "en": "Cyclo without agreed price"
+        },
+        "description": {
+          "ru": "Водители сикло договариваются на «$1» и имеют в виду $1 за минуту или за человека. Фиксируйте итоговую цену маршрута до посадки.",
+          "en": "'$1' means $1 per minute or per person. Fix the total route price before you get on."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cycle%20rickshaw%20in%20Hanoi.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Гиды у входа в цитадель",
+          "en": "Touts at citadel entrance"
+        },
+        "description": {
+          "ru": "Люди у ворот предлагают «бесплатный» тур, а затем требуют $20–30. Официальный аудиогид в приложении — 50,000 VND, бумажная карта — бесплатно у кассы.",
+          "en": "People at the gate offer a 'free' tour then demand $20–30. Official audio guide app — 50,000 VND, paper map — free at ticket booth."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Citadel_of_Hue.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Лодки по реке по завышенным ценам",
+          "en": "Overpriced river boat rides"
+        },
+        "description": {
+          "ru": "Первая цена от лодочника — 400,000–600,000 VND. Реальная рыночная цена — 150,000–200,000 VND. Торгуйтесь или бронируйте через отель.",
+          "en": "Initial boatman price: 400,000–600,000 VND. Real market price: 150,000–200,000 VND. Negotiate or book through your hotel."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Perfume_River_Hue.jpg?width=800"
+      }
+    ]
+  },
+  "aiKnowledgeBase": "Hue, central Vietnam. Former imperial capital 1802–1945, UNESCO Heritage site. Airport HUI (Phu Bai) 14km south — Grab 100-140k, 20-25 min; bus #17 15k very slow. Train: Da Nang 2.5h 120k+, Hanoi 13-14h, HCMC 20h. Transport: Grab bike 15-30k center, car 60-100k; bicycle 30-50k/day best option; e-scooter 80-120k no license; cyclo 50-100k per route negotiate first. Sights: Imperial Citadel 200k VND (2-3 hours minimum), Tu Duc Tomb 150k (most visited), Khai Dinh Tomb 150k (most dramatic), Minh Mang Tomb 150k, Thien Mu Pagoda FREE, Perfume River boat 150-200k negotiate. COMBO ticket citadel+3 tombs=520k vs 650k separately. Food: Bun bo Hue (spicy beef noodle soup) open 6-9AM only 50-70k; Banh Khoai Lac Thien 6 Dinh Tien Hoang 25-35k; Com Hen clam rice Con Hen island 15-25k; Banh Beo steamed rice cakes 5-8k each; royal cuisine restaurant $15-25. Markets: Dong Ba Market north riverbank, Thuong Tu Night Market from 6PM near citadel. Scams: cyclo price fix before getting in; citadel fake guides demand $20-30; boat rides first price 400-600k real price 150-200k. Safety: very safe city, watch motorbikes at intersections; heat May-Aug 38C bring water; Nov-Dec heavy rain. Best time Feb-Apr and Sep-Oct. Emergency 113/115/114, tourist police 054-382-3712."
+}

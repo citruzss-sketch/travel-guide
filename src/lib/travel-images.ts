@@ -54,6 +54,7 @@ export const IMAGES = {
     vietnam: getCountryHeroImage(),
     nhaTrang: getCityHeroImage("nha-trang"),
     daNang: getCityHeroImage("da-nang"),
+    hue: getCityHeroImage("hue"),
   },
 } as const;
 
@@ -98,9 +99,20 @@ export function resolveItemImage(
     t.includes("cham") ||
     t.includes("lady buddha") ||
     t.includes("lin ung")
-  )
+  ) {
+    if (t.includes("thien mu")) return WIKI.thienMuPagoda;
     return t.includes("long son") ? WIKI.longSonBuddha : WIKI.poNagar;
+  }
   if (t.includes("hoi an") || t.includes("ancient town")) return WIKI.hoiAn;
+  if (t.includes("citadel") || t.includes("imperial city") || t.includes("forbidden city"))
+    return WIKI.citadelHue;
+  if (t.includes("perfume river") || t.includes("song huong")) return WIKI.perfumeRiver;
+  if (t.includes("tu duc") || t.includes("khai dinh") || t.includes("minh mang") || t.includes("royal tomb"))
+    return WIKI.tuDucTomb;
+  if (t.includes("bun bo") || t.includes("banh khoai") || t.includes("banh beo") || t.includes("com hen"))
+    return WIKI.bunBoHue;
+  if (t.includes("thuy xuan") || t.includes("incense"))
+    return WIKI.thienMuPagoda;
   if (t.includes("hue") || t.includes("imperial") || t.includes("hai van"))
     return t.includes("hue") ? WIKI.citadelHue : WIKI.haiVan;
   if (t.includes("dalat")) return WIKI.dalat;
@@ -110,10 +122,13 @@ export function resolveItemImage(
     t.includes("beach") ||
     t.includes("tran phu") ||
     t.includes("my khe") ||
-    t.includes("doc let")
+    t.includes("doc let") ||
+    t.includes("thuan an") ||
+    t.includes("lang co")
   ) {
     if (t.includes("doc let")) return WIKI.docLet;
     if (t.includes("my khe") || citySlug === "da-nang") return WIKI.myKhe;
+    if (t.includes("thuan an") || t.includes("lang co")) return WIKI.thuanAnBeach;
     return WIKI.nhaTrangSkyline;
   }
   if (t.includes("bay") || t.includes("resort") || t.includes("six senses") || t.includes("ninh van"))
@@ -152,25 +167,32 @@ export function resolveItemImage(
   if (t.includes("exchange") || t.includes("atm") || t.includes("money") || t.includes("sample price"))
     return IMAGES.money;
   if (t.includes("emergency") || t.includes("safety") || t.includes("sea &") || t.includes("general"))
-    return citySlug === "da-nang" ? WIKI.myKhe : WIKI.nhaTrangSkyline;
+    return citySlug === "da-nang" ? WIKI.myKhe : citySlug === "hue" ? WIKI.citadelHue : WIKI.nhaTrangSkyline;
   if (t.includes("scam") || t.includes("warning") || t.includes("fake"))
     return WIKI.benThanhMarket;
 
   switch (sectionKey) {
     case "districts":
-      return citySlug === "da-nang" ? WIKI.myKhe : WIKI.nhaTrangSkyline;
+      if (citySlug === "da-nang") return WIKI.myKhe;
+      if (citySlug === "hue") return WIKI.citadelHue;
+      return WIKI.nhaTrangSkyline;
     case "airport":
-      return citySlug === "da-nang" ? WIKI.daNangAirport : WIKI.camRanhAirport;
+      if (citySlug === "da-nang") return WIKI.daNangAirport;
+      return WIKI.camRanhAirport;
     case "sights":
-      return citySlug === "da-nang" ? WIKI.goldenBridge : WIKI.poNagar;
+      if (citySlug === "da-nang") return WIKI.goldenBridge;
+      if (citySlug === "hue") return WIKI.citadelHue;
+      return WIKI.poNagar;
     case "beaches":
-      return citySlug === "da-nang" ? WIKI.myKhe : WIKI.docLet;
+      if (citySlug === "da-nang") return WIKI.myKhe;
+      if (citySlug === "hue") return WIKI.thuanAnBeach;
+      return WIKI.docLet;
     case "food":
-      return WIKI.miQuang;
+      return citySlug === "hue" ? WIKI.bunBoHue : WIKI.miQuang;
     case "markets":
       return WIKI.benThanhMarket;
     case "tours":
-      return WIKI.goldenBridge;
+      return citySlug === "hue" ? WIKI.tuDucTomb : WIKI.goldenBridge;
     case "transport":
       return WIKI.haiVanMotorbike;
     case "simAndInternet":
@@ -178,15 +200,19 @@ export function resolveItemImage(
     case "money":
       return IMAGES.money;
     case "safety":
-      return WIKI.myKhe;
+      if (citySlug === "hue") return WIKI.citadelHue;
+      if (citySlug === "da-nang") return WIKI.myKhe;
+      return WIKI.nhaTrangSkyline;
     case "phrases":
       return WIKI.hoiAnLanterns;
     case "lifehacks":
-      return WIKI.docLet;
+      return citySlug === "hue" ? WIKI.citadelHue : WIKI.docLet;
     case "scams":
       return WIKI.benThanhMarket;
     default:
-      return citySlug === "da-nang" ? WIKI.myKhe : WIKI.nhaTrangSkyline;
+      if (citySlug === "da-nang") return WIKI.myKhe;
+      if (citySlug === "hue") return WIKI.citadelHue;
+      return WIKI.nhaTrangSkyline;
   }
 }
 

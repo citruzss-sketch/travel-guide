@@ -1,0 +1,203 @@
+{
+  "coordinates": { "lat": 16.4637, "lng": 107.5909 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "hui-airport",
+      "title": { "ru": "Аэропорт Фу Бай (HUI)", "en": "Phu Bai Airport (HUI)" },
+      "description": {
+        "ru": "14 км к югу от центра, Grab ~100–140k VND",
+        "en": "14 km south of center, Grab ~100–140k VND"
+      },
+      "lat": 16.4015,
+      "lng": 107.7026,
+      "category": "airport"
+    },
+    {
+      "id": "imperial-citadel",
+      "title": { "ru": "Имперская цитадель", "en": "Imperial Citadel" },
+      "description": {
+        "ru": "ЮНЕСКО. Билет 200,000 VND",
+        "en": "UNESCO. Ticket 200,000 VND"
+      },
+      "lat": 16.4698,
+      "lng": 107.5774,
+      "category": "sight"
+    },
+    {
+      "id": "thien-mu",
+      "title": { "ru": "Пагода Тхиен Му", "en": "Thien Mu Pagoda" },
+      "description": {
+        "ru": "Символ Хюэ, бесплатно, на берегу реки",
+        "en": "Symbol of Hue, free, on the riverbank"
+      },
+      "lat": 16.4519,
+      "lng": 107.5487,
+      "category": "sight"
+    },
+    {
+      "id": "tu-duc-tomb",
+      "title": { "ru": "Гробница Ту Дыка", "en": "Tomb of Tu Duc" },
+      "description": {
+        "ru": "Самая живописная гробница, 150,000 VND",
+        "en": "Most picturesque tomb, 150,000 VND"
+      },
+      "lat": 16.4523,
+      "lng": 107.5530,
+      "category": "sight"
+    },
+    {
+      "id": "khai-dinh-tomb",
+      "title": { "ru": "Гробница Кхай Диня", "en": "Tomb of Khai Dinh" },
+      "description": {
+        "ru": "Драматичная на горе, 150,000 VND",
+        "en": "Dramatic hilltop tomb, 150,000 VND"
+      },
+      "lat": 16.4398,
+      "lng": 107.5805,
+      "category": "sight"
+    },
+    {
+      "id": "minh-mang-tomb",
+      "title": { "ru": "Гробница Минь Манга", "en": "Tomb of Minh Mang" },
+      "description": {
+        "ru": "Симметричные сады, 150,000 VND",
+        "en": "Symmetrical gardens, 150,000 VND"
+      },
+      "lat": 16.4297,
+      "lng": 107.5533,
+      "category": "sight"
+    },
+    {
+      "id": "dong-ba-market",
+      "title": { "ru": "Рынок Донг Ба", "en": "Dong Ba Market" },
+      "description": {
+        "ru": "Главный рынок у реки с 1899 года",
+        "en": "Main market by the river since 1899"
+      },
+      "lat": 16.4701,
+      "lng": 107.5843,
+      "category": "food"
+    },
+    {
+      "id": "perfume-river",
+      "title": { "ru": "Парфюмерная река (набережная)", "en": "Perfume River (Le Loi waterfront)" },
+      "description": {
+        "ru": "Лодочные туры на закат, торгуйтесь",
+        "en": "Sunset boat tours, negotiate the price"
+      },
+      "lat": 16.4623,
+      "lng": 107.5948,
+      "category": "sight"
+    },
+    {
+      "id": "hue-train-station",
+      "title": { "ru": "Ж/д вокзал Хюэ", "en": "Hue Railway Station" },
+      "description": {
+        "ru": "Центральное расположение, поезда в Дананг и Ханой",
+        "en": "Central location, trains to Da Nang and Hanoi"
+      },
+      "lat": 16.4603,
+      "lng": 107.5960,
+      "category": "transport"
+    },
+    {
+      "id": "thuan-an-beach",
+      "title": { "ru": "Пляж Тхуан Ан", "en": "Thuan An Beach" },
+      "description": {
+        "ru": "Ближайший пляж, 10 км, тихо",
+        "en": "Nearest beach, 10 km, quiet"
+      },
+      "lat": 16.5299,
+      "lng": 107.6945,
+      "category": "beach"
+    },
+    {
+      "id": "thuy-xuan",
+      "title": { "ru": "Деревня благовоний Тхюй Суан", "en": "Thuy Xuan Incense Village" },
+      "description": {
+        "ru": "7 км от центра, утром лучший свет",
+        "en": "7 km from center, best light in morning"
+      },
+      "lat": 16.4322,
+      "lng": 107.5644,
+      "category": "sight"
+    },
+    {
+      "id": "pham-ngu-lao",
+      "title": { "ru": "Улица Фам Нгу Лао", "en": "Pham Ngu Lao Street" },
+      "description": {
+        "ru": "Бэкпекерский квартал, отели, бары",
+        "en": "Backpacker quarter, hotels, bars"
+      },
+      "lat": 16.4645,
+      "lng": 107.5965,
+      "category": "district"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM в аэропорту HUI",
+        "en": "Buy SIM at HUI airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab до прилёта",
+        "en": "Install Grab before arrival"
+      }
+    },
+    {
+      "id": "citadel",
+      "label": {
+        "ru": "Запланировать 2–3 часа на цитадель",
+        "en": "Plan 2–3 hours for the citadel"
+      }
+    },
+    {
+      "id": "combo-ticket",
+      "label": {
+        "ru": "Взять комбо-билет на гробницы (520k VND)",
+        "en": "Get combo ticket for tombs (520k VND)"
+      }
+    },
+    {
+      "id": "bun-bo",
+      "label": {
+        "ru": "Bún bò Huế рано утром (до 9:00)",
+        "en": "Bún bò Huế early morning (before 9 AM)"
+      }
+    },
+    {
+      "id": "bike",
+      "label": {
+        "ru": "Взять велосипед / электроскутер",
+        "en": "Rent a bicycle / e-scooter"
+      }
+    },
+    {
+      "id": "boat",
+      "label": {
+        "ru": "Лодка по Парфюмерной реке на закате",
+        "en": "Sunset boat on the Perfume River"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Наличные VND для рынка и уличной еды",
+        "en": "VND cash for market and street food"
+      }
+    }
+  ]
+}
