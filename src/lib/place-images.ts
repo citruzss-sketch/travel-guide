@@ -52,6 +52,12 @@ export const WIKI = {
   palmBeachDaNang: wiki("Palm trees beach Da Nang.jpg"),
   beachDaNangGulf: wiki("Beach of Da Nang, inner-gulf.jpg"),
   citadelHue: wiki("Citadel_of_Hue.jpg"),
+  thienMuPagoda: wiki("Thien_Mu_pagoda,_Hue,_Vietnam.jpg"),
+  perfumeRiver: wiki("Perfume_River_Hue.jpg"),
+  tuDucTomb: wiki("Tu_Duc_Tomb.jpg"),
+  khaiDinhTomb: wiki("Khai_Dinh_tomb.jpg"),
+  bunBoHue: wiki("Bun_bo_Hue.jpg"),
+  thuanAnBeach: wiki("Thuan_An_beach,_Hue.jpg"),
 
   // Transport & food (Vietnam)
   cyclo: wiki("Cycle rickshaw in Hanoi.jpg"),
@@ -67,6 +73,8 @@ export function getCityHeroImage(citySlug: string): string {
       return WIKI.nhaTrangSkyline;
     case "da-nang":
       return WIKI.goldenBridge;
+    case "hue":
+      return WIKI.citadelHue;
     default:
       return WIKI.haLongBay;
   }
@@ -159,6 +167,47 @@ export const PLACE_IMAGES: Record<string, Record<string, string>> = {
     "fake ba na hills tickets": WIKI.goldenBridge,
     "general safety": WIKI.myKhe,
     "emergency numbers": WIKI.daNangAirport,
+  },
+  "hue": {
+    "phu bai international airport hui": WIKI.camRanhAirport,
+    "hue railway station": WIKI.gaNhaTrang,
+    "bus shuttle from da nang hoi an": WIKI.haiVan,
+    "old quarter north of river": WIKI.citadelHue,
+    "pham ngu lao street": WIKI.perfumeRiver,
+    "vy da district": WIKI.thienMuPagoda,
+    "hue imperial citadel": WIKI.citadelHue,
+    "tomb of tu duc": WIKI.tuDucTomb,
+    "tomb of khai dinh": WIKI.khaiDinhTomb,
+    "tomb of minh mang": WIKI.citadelHue,
+    "thien mu pagoda": WIKI.thienMuPagoda,
+    "perfume river song huong": WIKI.perfumeRiver,
+    "thuan an beach": WIKI.thuanAnBeach,
+    "lang co beach": WIKI.haiVan,
+    "quan bun bo mu rot bun bo hue": WIKI.bunBoHue,
+    "banh khoai lac thien": WIKI.miQuang,
+    "com hen clam rice": WIKI.benThanhMarket,
+    "banh beo steamed rice cakes": WIKI.banhMi,
+    "tinh tam restaurant royal cuisine": WIKI.citadelHue,
+    "dong ba market": WIKI.benThanhMarket,
+    "thuong tu night market": WIKI.hoiAnLanterns,
+    "royal tombs tour": WIKI.tuDucTomb,
+    "perfume river sunset boat": WIKI.perfumeRiver,
+    "cooking class with market tour": WIKI.miQuang,
+    "motorbike village tour": WIKI.haiVanMotorbike,
+    "grab bike car": WIKI.haiVanMotorbike,
+    "bicycle xe dap": pexels(276506),
+    "electric scooter xe dien": WIKI.cyclo,
+    "cyclo xich lo": WIKI.cyclo,
+    "combo ticket for tombs": WIKI.citadelHue,
+    "bun bo in the early morning": WIKI.bunBoHue,
+    "bicycle best transport": pexels(276506),
+    "thuy xuan incense village": WIKI.thienMuPagoda,
+    "cyclo without agreed price": WIKI.cyclo,
+    "touts at citadel entrance": WIKI.citadelHue,
+    "overpriced river boat rides": WIKI.perfumeRiver,
+    "general safety": WIKI.citadelHue,
+    "heat rain": WIKI.citadelHue,
+    "emergency numbers": WIKI.camRanhAirport,
   },
 };
 
