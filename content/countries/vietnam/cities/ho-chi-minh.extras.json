@@ -1,0 +1,203 @@
+{
+  "coordinates": { "lat": 10.8231, "lng": 106.6297 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Сон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7 км от центра D1, Grab ~80–130k VND",
+        "en": "7 km from D1 center, Grab ~80–130k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6519,
+      "category": "airport"
+    },
+    {
+      "id": "ben-thanh",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Иконический рынок 1914 г., сувениры и еда",
+        "en": "Iconic 1914 market, souvenirs and food"
+      },
+      "lat": 10.7724,
+      "lng": 106.6985,
+      "category": "food"
+    },
+    {
+      "id": "war-museum",
+      "title": { "ru": "Музей войны", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "Самый посещаемый музей Вьетнама, 40k VND",
+        "en": "Vietnam's most visited museum, 40k VND"
+      },
+      "lat": 10.7795,
+      "lng": 106.6926,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco",
+      "title": { "ru": "Башня Bitexco", "en": "Bitexco Financial Tower" },
+      "description": {
+        "ru": "SkyDeck на 49 этаже, вид 360°, 200k VND",
+        "en": "SkyDeck on 49th floor, 360° view, 200k VND"
+      },
+      "lat": 10.7717,
+      "lng": 106.7039,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "description": {
+        "ru": "Французский собор 1880 г., бесплатно",
+        "en": "French 1880 cathedral, free entry"
+      },
+      "lat": 10.7798,
+      "lng": 106.6992,
+      "category": "sight"
+    },
+    {
+      "id": "jade-pagoda",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Красивейший даосский храм, бесплатно",
+        "en": "Beautiful Taoist temple, free"
+      },
+      "lat": 10.7885,
+      "lng": 106.6896,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Улица Буй Виен", "en": "Bui Vien Street" },
+      "description": {
+        "ru": "Пешеходная зона, ночная жизнь с 18:00",
+        "en": "Pedestrian zone, nightlife from 6 PM"
+      },
+      "lat": 10.7683,
+      "lng": 106.6934,
+      "category": "district"
+    },
+    {
+      "id": "cu-chi",
+      "title": { "ru": "Тоннели Ку Чи", "en": "Cu Chi Tunnels" },
+      "description": {
+        "ru": "70 км от центра, полдня, 110k VND",
+        "en": "70 km from center, half-day, 110k VND"
+      },
+      "lat": 11.1458,
+      "lng": 106.4618,
+      "category": "sight"
+    },
+    {
+      "id": "ben-thanh-metro",
+      "title": { "ru": "Метро Бен Тхань", "en": "Ben Thanh Metro Station" },
+      "description": {
+        "ru": "Линия 1, открыта дек.2024, 6k–20k VND",
+        "en": "Line 1, opened Dec 2024, 6k–20k VND"
+      },
+      "lat": 10.7731,
+      "lng": 106.6983,
+      "category": "transport"
+    },
+    {
+      "id": "binh-tay",
+      "title": { "ru": "Рынок Бинь Тай (Шолон)", "en": "Binh Tay Market (Cholon)" },
+      "description": {
+        "ru": "Китайский квартал D5, аутентичный рынок",
+        "en": "Chinatown D5, authentic wholesale market"
+      },
+      "lat": 10.7504,
+      "lng": 106.6490,
+      "category": "food"
+    },
+    {
+      "id": "water-bus",
+      "title": { "ru": "Водный автобус D1→D2", "en": "Water Bus D1→D2" },
+      "description": {
+        "ru": "15 мин, 15,000 VND — секрет горожан",
+        "en": "15 min, 15,000 VND — locals' secret"
+      },
+      "lat": 10.7756,
+      "lng": 106.7073,
+      "category": "transport"
+    },
+    {
+      "id": "thao-dien",
+      "title": { "ru": "Тхао Диен (D2)", "en": "Thao Dien (D2)" },
+      "description": {
+        "ru": "Экспат-район, кафе, виллы, рестораны",
+        "en": "Expat area, cafes, villas, restaurants"
+      },
+      "lat": 10.8008,
+      "lng": 106.7418,
+      "category": "district"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM в аэропорту SGN",
+        "en": "Buy SIM at SGN airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab — только так в аэропорт",
+        "en": "Install Grab — essential for airport"
+      }
+    },
+    {
+      "id": "war-museum",
+      "label": {
+        "ru": "Забронировать время для Музея войны",
+        "en": "Plan visit to War Remnants Museum"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Записаться на экскурсию в тоннели Ку Чи",
+        "en": "Book Cu Chi Tunnels tour"
+      }
+    },
+    {
+      "id": "pho",
+      "label": {
+        "ru": "Поесть фо на завтрак до 8 утра",
+        "en": "Eat pho for breakfast before 8 AM"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Наличные VND для уличной еды и рынков",
+        "en": "VND cash for street food and markets"
+      }
+    },
+    {
+      "id": "metro",
+      "label": {
+        "ru": "Попробовать метро Line 1 (открыто дек.2024)",
+        "en": "Try Metro Line 1 (opened Dec 2024)"
+      }
+    },
+    {
+      "id": "sunset",
+      "label": {
+        "ru": "Закат с rooftop bar (Bitexco / Broma)",
+        "en": "Sunset from rooftop bar (Bitexco / Broma)"
+      }
+    }
+  ]
+}
