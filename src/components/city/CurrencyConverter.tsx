@@ -7,11 +7,13 @@ import { formatNumber } from "@/lib/format-number";
 
 interface CurrencyConverterProps {
   usdToVnd: number | null;
+  loading?: boolean;
 }
 
-export function CurrencyConverter({ usdToVnd }: CurrencyConverterProps) {
+export function CurrencyConverter({ usdToVnd, loading }: CurrencyConverterProps) {
   const t = useT();
   const { locale } = useLocale();
+  const isLoading = loading && !usdToVnd;
   const rate = usdToVnd ?? 25_000;
   const [amount, setAmount] = useState("100");
   const [direction, setDirection] = useState<"usd-vnd" | "vnd-usd">("usd-vnd");
@@ -29,6 +31,38 @@ export function CurrencyConverter({ usdToVnd }: CurrencyConverterProps) {
     setDirection((d) => (d === "usd-vnd" ? "vnd-usd" : "usd-vnd"));
     setAmount("");
   };
+
+  if (isLoading) {
+    return (
+      <div
+        className="mt-4 rounded-xl border border-border/60 bg-background/60 p-3"
+        aria-busy="true"
+        aria-label={t("live.converterTitle")}
+      >
+        <p className="mb-2 text-xs font-bold uppercase tracking-wider text-accent">
+          {t("live.converterTitle")}
+        </p>
+        <div className="flex flex-wrap items-center gap-2">
+          <span
+            aria-hidden="true"
+            className="inline-block h-9 w-28 animate-pulse rounded-lg bg-foreground/10"
+          />
+          <span
+            aria-hidden="true"
+            className="inline-block h-4 w-8 animate-pulse rounded bg-foreground/10"
+          />
+          <span
+            aria-hidden="true"
+            className="inline-block h-9 w-9 animate-pulse rounded-lg bg-foreground/10"
+          />
+          <span
+            aria-hidden="true"
+            className="inline-block h-4 w-24 animate-pulse rounded bg-foreground/10"
+          />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="mt-4 rounded-xl border border-border/60 bg-background/60 p-3">

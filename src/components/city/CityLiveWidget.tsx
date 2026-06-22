@@ -13,6 +13,15 @@ interface CityLiveWidgetProps {
   locale: Locale;
 }
 
+function Skeleton({ className }: { className?: string }) {
+  return (
+    <span
+      aria-hidden="true"
+      className={`inline-block animate-pulse rounded bg-foreground/10 ${className ?? "h-4 w-24"}`}
+    />
+  );
+}
+
 export function CityLiveWidget({ city, locale }: CityLiveWidgetProps) {
   const t = useT();
   const offset = city.timezoneOffset ?? 7;
@@ -35,39 +44,44 @@ export function CityLiveWidget({ city, locale }: CityLiveWidgetProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.15 }}
       className="mt-6 rounded-2xl border border-accent/20 bg-surface/80 p-4 shadow-sm shadow-accent/5 backdrop-blur-md sm:p-5"
+      aria-label={t("live.title")}
     >
       <p className="mb-3 text-xs font-bold uppercase tracking-wider text-accent">
         {t("live.title")}
       </p>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex items-start gap-3 rounded-xl bg-background/60 p-3">
-          <CloudSun className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+          <CloudSun className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
           <div>
             <p className="text-xs font-semibold text-muted">{t("live.weather")}</p>
             <p className="mt-0.5 text-sm font-bold text-foreground">
-              {loading && !weather
-                ? "…"
-                : weather
-                  ? `${weather.temperature}°C · ${weatherLabel(weather.weatherCode)}`
-                  : t("live.unavailable")}
+              {loading && !weather ? (
+                <Skeleton className="h-4 w-28" />
+              ) : weather ? (
+                `${weather.temperature}°C · ${weatherLabel(weather.weatherCode)}`
+              ) : (
+                t("live.unavailable")
+              )}
             </p>
           </div>
         </div>
         <div className="flex items-start gap-3 rounded-xl bg-background/60 p-3">
-          <DollarSign className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+          <DollarSign className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
           <div>
             <p className="text-xs font-semibold text-muted">{t("live.exchange")}</p>
             <p className="mt-0.5 text-sm font-bold text-foreground">
-              {usdToVnd
-                ? `1 USD = ${formatNumber(usdToVnd, locale)} VND`
-                : loading
-                  ? "…"
-                  : t("live.unavailable")}
+              {usdToVnd ? (
+                `1 USD = ${formatNumber(usdToVnd, locale)} VND`
+              ) : loading ? (
+                <Skeleton className="h-4 w-36" />
+              ) : (
+                t("live.unavailable")
+              )}
             </p>
           </div>
         </div>
         <div className="flex items-start gap-3 rounded-xl bg-background/60 p-3">
-          <Clock className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+          <Clock className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
           <div>
             <p className="text-xs font-semibold text-muted">{t("live.localTime")}</p>
             <p className="mt-0.5 text-sm font-bold text-foreground">
@@ -76,14 +90,14 @@ export function CityLiveWidget({ city, locale }: CityLiveWidgetProps) {
           </div>
         </div>
         <div className="flex items-start gap-3 rounded-xl bg-accent/10 p-3 sm:col-span-2 lg:col-span-1">
-          <Sparkles className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+          <Sparkles className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
           <div>
             <p className="text-xs font-semibold text-muted">{t("live.tip")}</p>
             <p className="mt-0.5 text-sm leading-snug text-foreground">{tip}</p>
           </div>
         </div>
       </div>
-      <CurrencyConverter usdToVnd={usdToVnd} />
+      <CurrencyConverter usdToVnd={usdToVnd} loading={loading} />
     </motion.div>
   );
 }
