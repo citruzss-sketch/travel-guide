@@ -30,20 +30,29 @@ export function MobileCityNav({ activeTab, onChange, hidden }: MobileCityNavProp
   if (hidden) return null;
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/95 px-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] pt-2 backdrop-blur-xl md:hidden">
-      <div className="mx-auto flex max-w-lg items-stretch justify-around gap-1">
+    <nav
+      aria-label="City navigation"
+      className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/95 px-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] pt-2 backdrop-blur-xl md:hidden"
+    >
+      <div role="tablist" className="mx-auto flex max-w-lg items-stretch justify-around gap-1">
         {MOBILE_TABS.map(({ id, icon: Icon }) => {
           const active = activeTab === id;
           return (
             <button
               key={id}
+              id={`tab-mobile-${id}`}
               type="button"
+              role="tab"
+              aria-selected={active}
+              aria-controls={`tabpanel-${id}`}
+              tabIndex={active ? 0 : -1}
               onClick={() => onChange(id)}
               className={`flex min-w-0 flex-1 flex-col items-center gap-0.5 rounded-xl px-1 py-1.5 text-[10px] font-bold transition-colors ${
                 active ? "text-accent" : "text-muted"
               }`}
             >
               <span
+                aria-hidden="true"
                 className={`flex h-8 w-8 items-center justify-center rounded-xl transition-colors ${
                   active ? "bg-accent/15" : ""
                 }`}

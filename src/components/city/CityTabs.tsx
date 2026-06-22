@@ -114,14 +114,22 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
 
   return (
     <div className="mx-auto max-w-6xl px-3 pb-24 sm:px-6 md:pb-16">
-      <nav className="tab-scroll sticky top-[72px] z-40 -mx-4 hidden overflow-x-auto border-b border-border/60 bg-background/75 px-4 backdrop-blur-xl sm:top-[65px] md:block">
-        <div className="flex min-w-max gap-1 py-3">
+      <nav
+        aria-label={cityName}
+        className="tab-scroll sticky top-[72px] z-40 -mx-4 hidden overflow-x-auto border-b border-border/60 bg-background/75 px-4 backdrop-blur-xl sm:top-[65px] md:block"
+      >
+        <div role="tablist" className="flex min-w-max gap-1 py-3">
           {TABS.map(({ id, icon: Icon }) => {
             const isActive = activeTab === id;
             return (
               <button
                 key={id}
+                id={`tab-desktop-${id}`}
                 type="button"
+                role="tab"
+                aria-selected={isActive}
+                aria-controls={`tabpanel-${id}`}
+                tabIndex={isActive ? 0 : -1}
                 onClick={() => setActiveTab(id)}
                 className={`relative flex items-center gap-2 whitespace-nowrap rounded-full px-4 py-2 text-sm font-semibold transition-colors ${
                   isActive
@@ -136,7 +144,7 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
                     transition={{ type: "spring", stiffness: 400, damping: 30 }}
                   />
                 )}
-                <Icon className="relative z-10 h-4 w-4" />
+                <Icon className="relative z-10 h-4 w-4" aria-hidden="true" />
                 <span className="relative z-10">{tabLabel(id)}</span>
               </button>
             );
@@ -147,19 +155,31 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
       <div className={activeTab === "chat" ? "mt-3 md:mt-8" : "mt-8"}>
         <AnimatePresence mode="wait">
           {activeTab === "overview" && (
-            <OverviewPanel
+            <motion.div
               key="overview"
-              city={city}
-              locale={locale}
-              countrySlug={countrySlug}
-              onNavigate={handleNavigate}
-              onAskAI={handleAskAI}
-              onBuildDay={handleBuildDay}
-            />
+              id="tabpanel-overview"
+              role="tabpanel"
+              aria-labelledby="tab-desktop-overview"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+            >
+              <OverviewPanel
+                city={city}
+                locale={locale}
+                countrySlug={countrySlug}
+                onNavigate={handleNavigate}
+                onAskAI={handleAskAI}
+                onBuildDay={handleBuildDay}
+              />
+            </motion.div>
           )}
           {activeTab === "sights" && (
             <motion.div
               key="sights"
+              id="tabpanel-sights"
+              role="tabpanel"
+              aria-labelledby="tab-desktop-sights"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
@@ -199,6 +219,9 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
           {activeTab === "food" && (
             <motion.div
               key="food"
+              id="tabpanel-food"
+              role="tabpanel"
+              aria-labelledby="tab-desktop-food"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
@@ -228,6 +251,9 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
           {activeTab === "transport" && (
             <motion.div
               key="transport"
+              id="tabpanel-transport"
+              role="tabpanel"
+              aria-labelledby="tab-desktop-transport"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
@@ -255,18 +281,31 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
             </motion.div>
           )}
           {activeTab === "lifehacks" && (
-            <LifehacksPanel
-              city={city}
-              locale={locale}
-              countrySlug={countrySlug}
-              cityName={cityName}
-              onAskAI={handleAskAI}
-              onSOS={handleSOS}
-            />
+            <motion.div
+              key="lifehacks"
+              id="tabpanel-lifehacks"
+              role="tabpanel"
+              aria-labelledby="tab-desktop-lifehacks"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+            >
+              <LifehacksPanel
+                city={city}
+                locale={locale}
+                countrySlug={countrySlug}
+                cityName={cityName}
+                onAskAI={handleAskAI}
+                onSOS={handleSOS}
+              />
+            </motion.div>
           )}
           {activeTab === "map" && (
             <motion.div
               key="map"
+              id="tabpanel-map"
+              role="tabpanel"
+              aria-labelledby="tab-desktop-map"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
@@ -279,6 +318,9 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
           {activeTab === "chat" && (
             <motion.div
               key="chat"
+              id="tabpanel-chat"
+              role="tabpanel"
+              aria-labelledby="tab-desktop-chat"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
@@ -297,6 +339,9 @@ export function CityTabs({ city, locale, countrySlug }: CityTabsProps) {
           {activeTab === "download" && (
             <motion.div
               key="download"
+              id="tabpanel-download"
+              role="tabpanel"
+              aria-labelledby="tab-desktop-download"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
