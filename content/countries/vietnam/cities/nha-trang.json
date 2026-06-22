@@ -325,6 +325,52 @@
           "en": "30,000–50,000 VND"
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%AC%20Qu%E1%BA%A3ng.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Skylight Rooftop Bar (Havana Hotel)",
+          "en": "Skylight Rooftop Bar (Havana Hotel)"
+        },
+        "description": {
+          "ru": "Коктейльный бар на 24–25 этажах отеля Havana с панорамным видом на залив Нячанга. Отличное место для заката — море, горы и огни набережной открываются на 360°.",
+          "en": "Cocktail bar on floors 24–25 of Havana Hotel with 360° panoramic bay views. Perfect for sunset — sea, mountains, and promenade lights all visible."
+        },
+        "price": {
+          "ru": "Коктейли: 150,000–250,000 VND",
+          "en": "Cocktails: 150,000–250,000 VND"
+        },
+        "tips": {
+          "ru": [
+            "Happy hour 17:00–19:00 — скидки до 30%",
+            "Дресс-код: без шлёпанцев и спортивных шорт",
+            "На выходных лучше бронировать столик заранее через отель"
+          ],
+          "en": [
+            "Happy hour 5–7 PM — up to 30% off",
+            "Dress code: no flip-flops or sports shorts",
+            "Book a table in advance on weekends via the hotel"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nha_Trang_skyline.jpg?width=800",
+        "coordinates": { "lat": 12.2397, "lng": 109.1949 },
+        "grabQuery": "Havana Hotel Nha Trang"
+      },
+      {
+        "title": {
+          "ru": "Bún Bò Huế Bà Đệ",
+          "en": "Bún Bò Huế Bà Đệ"
+        },
+        "description": {
+          "ru": "Аутентичный суп Bún Bò Huế — острая говяжья лапша с лемонграссом и кусочками свиной рульки. Популярный завтрак у местных. Угол Yersin / Nguyen Thi Minh Khai, открыто с 06:00.",
+          "en": "Authentic Bún Bò Huế — spicy beef noodle soup with lemongrass and pork knuckle pieces. Popular local breakfast. Yersin / Nguyen Thi Minh Khai corner, open from 6 AM."
+        },
+        "price": {
+          "ru": "40,000–55,000 VND",
+          "en": "40,000–55,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%BAn_b%C3%B2_Hu%E1%BA%BF.jpg?width=800",
+        "coordinates": { "lat": 12.2421, "lng": 109.1921 },
+        "grabQuery": "Bún Bò Huế Nha Trang"
       }
     ]
   },
@@ -408,6 +454,33 @@
           "en": "800,000–1,200,000 VND"
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_city.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Rainbow Divers (PADI дайвинг)",
+          "en": "Rainbow Divers (PADI diving)"
+        },
+        "description": {
+          "ru": "Старейшая и наиболее уважаемая PADI-школа дайвинга в Нячанге. Погружения у рифов Хон Мун — лучшее место для дайвинга в регионе. Снаряжение включено, двуязычные инструкторы. Офис на 90A Hung Vuong.",
+          "en": "Oldest and most respected PADI dive school in Nha Trang. Dives at Hon Mun reef — best dive site in the region. Equipment included, bilingual instructors. Office at 90A Hung Vuong."
+        },
+        "price": {
+          "ru": "Intro dive: 1,750,000 VND | Open Water курс: от 7,500,000 VND",
+          "en": "Intro dive: 1,750,000 VND | Open Water course: from 7,500,000 VND"
+        },
+        "tips": {
+          "ru": [
+            "Бронируйте за 1–2 дня — группы ограничены 4–8 чел.",
+            "Intro dive не требует опыта — подходит для любого возраста от 10 лет",
+            "Avoid погружений в дни после шторма — видимость падает до 2–3 м"
+          ],
+          "en": [
+            "Book 1–2 days ahead — groups limited to 4–8 people",
+            "Intro dive needs no experience — suitable from age 10",
+            "Avoid diving the day after a storm — visibility drops to 2–3 m"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vinpearl%20Cable%20Car%20to%20Hon%20Tre%2C%20Nha%20Trang%2C%20Khanh%20Hoa.jpg?width=800"
       }
     ]
   },
@@ -768,6 +841,28 @@
           "en": "Don't drink tap water. Bottled water costs 10,000 VND — buy at stores, not at the beach."
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nhatrang%20Oceanographic%20Institute.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Beer Street — bia hoi за 10,000 VND",
+          "en": "Beer Street — bia hoi from 10,000 VND"
+        },
+        "description": {
+          "ru": "Улица Nguyen Thien Thuat (у туристического центра) — десятки открытых кафе с разливным bia hoi (свежим пивом) от 10,000–15,000 VND за стакан. Самая живая после 18:00, атмосфера очень местная.",
+          "en": "Nguyen Thien Thuat street (near the tourist center) has dozens of open-air spots serving fresh bia hoi (draft beer) from 10,000–15,000 VND a glass. Most lively after 6 PM with an authentic local vibe."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nha_Trang_skyline.jpg?width=1920"
+      },
+      {
+        "title": {
+          "ru": "Маска и трубка — возьмите свою",
+          "en": "Snorkel mask — bring your own"
+        },
+        "description": {
+          "ru": "Маски в турах часто плохо сидят и запотевают. Хорошая маска с диоптриями стоит от 250,000 VND в спортивных магазинах Nha Trang (пр. Yersin). Альтернатива — аренда у дайв-центра за 50,000 VND/день.",
+          "en": "Rental masks on island tours often leak or fog up. A decent prescription mask costs from 250,000 VND at sports shops on Yersin. Alternative: rent from a dive center for 50,000 VND/day."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vinpearl%20Cable%20Car%20to%20Hon%20Tre%2C%20Nha%20Trang%2C%20Khanh%20Hoa.jpg?width=800"
       }
     ]
   },
@@ -823,5 +918,5 @@
       }
     ]
   },
-  "aiKnowledgeBase": "Nha Trang — Khanh Hoa, Vietnam. Airport CXR 35km south: Grab 350-450k to center 40-50min, bus Dat Moi 65k slow, pre-book hotel transfer from $12. Train station in center. Transport micro-details: GrabCar/GrabBike main app (cash or card); GrabBike 15-30k short hops. ELECTRIC BIKES (xe điện): 80-130k/day, NO license required, ~25-50 km/h, range ~40-70km — best for tourists on Tran Phu/Loc Tho; rent from shops with «Thuê xe điện» signs; deposit passport copy + 500k-2M VND safer than passport alone; photo bike condition, check brakes/battery; helmet mandatory (~100-150k to buy decent one). PETROL scooters 110-125cc: 150-220k/day, legally need IDP category A but many shops rent on passport only — police checks rare but possible fine; fuel 30-50k/day. Car with driver from 700k/day. Cyclo promenade 100-150k — negotiate first. SIM: Viettel best, airport or official store, passport, ~150k/30GB/30d. Money: jewelry shops on Nguyen Hue/Tran Phu better rate than hotels. Sights/food: Po Nagar, Long Son, VinWonders Hon Tre, Oceanographic Museum, Ba Ho falls; Lanterns, Sailing Club, seafood Nguyen Thi Minh Khai, banh can Yersin/Le Hong Phong; Yen Garden Bistro, Sweet Secret, iVegan Loc Tho. Scams: unmetered taxis, free island tours with pearl/silk shops, bill padding. Emergency 113/115/114. Best Feb-May dry. Districts: Tran Phu tourist strip, Ninh Van luxury boat access, Loc Tho budget/cafes."
+  "aiKnowledgeBase": "Nha Trang — Khanh Hoa, Vietnam. Airport CXR 35km south: Grab 350-450k to center 40-50min, bus Dat Moi 65k slow, pre-book hotel transfer from $12. Train station in center. Transport micro-details: GrabCar/GrabBike main app (cash or card); GrabBike 15-30k short hops. ELECTRIC BIKES (xe điện): 80-130k/day, NO license required, ~25-50 km/h, range ~40-70km — best for tourists on Tran Phu/Loc Tho; rent from shops with «Thuê xe điện» signs; deposit passport copy + 500k-2M VND safer than passport alone; photo bike condition, check brakes/battery; helmet mandatory (~100-150k to buy decent one). PETROL scooters 110-125cc: 150-220k/day, legally need IDP category A but many shops rent on passport only — police checks rare but possible fine; fuel 30-50k/day. Car with driver from 700k/day. Cyclo promenade 100-150k — negotiate first. SIM: Viettel best, airport or official store, passport, ~150k/30GB/30d. Money: jewelry shops on Nguyen Hue/Tran Phu better rate than hotels. Sights/food: Po Nagar, Long Son, VinWonders Hon Tre, Oceanographic Museum, Ba Ho falls; Lanterns, Sailing Club, seafood Nguyen Thi Minh Khai, banh can Yersin/Le Hong Phong; Skylight Rooftop Bar 24F Havana Hotel (cocktails 150-250k happy hour 17-19), Bún Bò Huế Bà Đệ (spicy beef noodles 40-55k at Yersin corner). DIVING: Rainbow Divers 90A Hung Vuong — PADI school, intro dive 1,750k, OW course 7,500k+, Hon Mun reef. NIGHTLIFE: Nguyen Thien Thuat Beer Street bia hoi 10-15k/glass after 18:00. SNORKEL TIP: bring own mask or rent from dive center 50k/day. Scams: unmetered taxis, free island tours with pearl/silk shops, bill padding. Emergency 113/115/114. Best Feb-May dry. Districts: Tran Phu tourist strip, Ninh Van luxury boat access, Loc Tho budget/cafes."
 }

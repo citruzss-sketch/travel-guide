@@ -105,6 +105,39 @@
       "lat": 16.2003,
       "lng": 108.1122,
       "category": "transport"
+    },
+    {
+      "id": "asia-park",
+      "title": { "ru": "Asia Park & Sun Wheel", "en": "Asia Park & Sun Wheel" },
+      "description": {
+        "ru": "Колесо обозрения 115 м — лучший вид на Дананг ночью",
+        "en": "115 m Ferris wheel — best night view over Da Nang"
+      },
+      "lat": 16.0493,
+      "lng": 108.2136,
+      "category": "sight"
+    },
+    {
+      "id": "bun-cha-ca-109",
+      "title": { "ru": "Bún Chả Cá 109", "en": "Bún Chả Cá 109" },
+      "description": {
+        "ru": "Рыбные котлеты в лемонграссовом бульоне. 40–55k VND. Открыто 6–11 ч",
+        "en": "Fish cakes in lemongrass broth. 40–55k VND. Open 6–11 AM"
+      },
+      "lat": 16.0698,
+      "lng": 108.2146,
+      "category": "food"
+    },
+    {
+      "id": "non-nuoc-surf",
+      "title": { "ru": "Non Nuoc — серф-спот", "en": "Non Nuoc Surf Spot" },
+      "description": {
+        "ru": "Серфинг сент–ноябрь. Уроки 550–800k VND",
+        "en": "Surfing Sep–Nov. Lessons 550–800k VND"
+      },
+      "lat": 15.9895,
+      "lng": 108.2635,
+      "category": "beach"
     }
   ],
   "checklist": [

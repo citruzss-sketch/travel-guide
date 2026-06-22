@@ -102,6 +102,39 @@
       "lat": 12.2345,
       "lng": 109.1988,
       "category": "food"
+    },
+    {
+      "id": "skylight-bar",
+      "title": { "ru": "Skylight Rooftop Bar", "en": "Skylight Rooftop Bar" },
+      "description": {
+        "ru": "24-й этаж отеля Havana. Панорамный вид 360°. Коктейли 150–250k",
+        "en": "24th floor Havana Hotel. 360° panoramic views. Cocktails 150–250k"
+      },
+      "lat": 12.2397,
+      "lng": 109.1949,
+      "category": "food"
+    },
+    {
+      "id": "i-resort",
+      "title": { "ru": "I-Resort горячие источники", "en": "I-Resort Hot Springs" },
+      "description": {
+        "ru": "Грязевые ванны, минеральные бассейны. 350–500k VND",
+        "en": "Mud baths, mineral pools. 350–500k VND"
+      },
+      "lat": 12.2851,
+      "lng": 109.1712,
+      "category": "sight"
+    },
+    {
+      "id": "rainbow-divers",
+      "title": { "ru": "Rainbow Divers (дайвинг)", "en": "Rainbow Divers (diving)" },
+      "description": {
+        "ru": "PADI школа дайвинга. Intro dive 1,750k. 90A Hung Vuong",
+        "en": "PADI dive school. Intro dive 1,750k. 90A Hung Vuong"
+      },
+      "lat": 12.2435,
+      "lng": 109.1905,
+      "category": "sight"
     }
   ],
   "checklist": [

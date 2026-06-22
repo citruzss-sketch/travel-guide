@@ -242,6 +242,35 @@
           "en": "Scooter rental: 150,000 VND/day"
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hai_Van_Pass%2C_Vietnam.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Asia Park & Sun Wheel",
+          "en": "Asia Park & Sun Wheel"
+        },
+        "description": {
+          "ru": "Тематический парк с самым высоким колесом обозрения Вьетнама — 115 м. Ночью иллюминация открывает вид на весь залив Дананга. Кабинки с кондиционером. Парк включает азиатские мини-деревни и аттракционы.",
+          "en": "Theme park with Vietnam's tallest Ferris wheel — 115 m. Illuminated at night with views over all of Da Nang bay. Air-conditioned cabins. Park includes Asian mini-villages and rides."
+        },
+        "price": {
+          "ru": "Sun Wheel: 100,000 VND | Полный билет: 200,000–300,000 VND",
+          "en": "Sun Wheel: 100,000 VND | Full ticket: 200,000–300,000 VND"
+        },
+        "tips": {
+          "ru": [
+            "Лучшее время — после 18:00, когда колесо подсвечивается",
+            "Колесо работает в любую погоду, кроме шторма",
+            "Рядом — ресторанная зона у реки Han, удобно совместить с ужином"
+          ],
+          "en": [
+            "Best time — after 6 PM when the wheel is illuminated",
+            "Wheel operates in all weather except storms",
+            "Nearby Han River dining strip makes it easy to combine with dinner"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da%20Nang%20Dragon%20Bridge.jpg?width=800",
+        "coordinates": { "lat": 16.0493, "lng": 108.2136 },
+        "grabQuery": "Asia Park Da Nang Sun Wheel"
       }
     ]
   },
@@ -366,6 +395,39 @@
           "en": "$3–6 per person"
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Bún Chả Cá 109",
+          "en": "Bún Chả Cá 109"
+        },
+        "description": {
+          "ru": "Фирменное блюдо Дананга — суп с рыбными котлетами из тунца в ароматном лемонграссовом бульоне с тонкой рисовой лапшой. Адрес: 109 Nguyen Chi Thanh. Лучший завтрак в городе — открыто с 06:00 до 11:00.",
+          "en": "Da Nang's signature dish — soup with tuna fish cakes in aromatic lemongrass broth with thin rice noodles. Address: 109 Nguyen Chi Thanh. Best breakfast in the city — open 6 AM to 11 AM."
+        },
+        "price": {
+          "ru": "40,000–55,000 VND",
+          "en": "40,000–55,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%AC%20Qu%E1%BA%A3ng.jpg?width=800",
+        "coordinates": { "lat": 16.0698, "lng": 108.2146 },
+        "grabQuery": "Bún Chả Cá 109 Đà Nẵng"
+      },
+      {
+        "title": {
+          "ru": "Cơm Hến (Рис с мидиями)",
+          "en": "Cơm Hến (Mussel rice)"
+        },
+        "description": {
+          "ru": "Уникальное блюдо Центрального Вьетнама — холодный рис с крошечными речными мидиями, арахисом, жареным луком, зеленью и чипсами из свиной кожи. Подаётся с острым бульоном отдельно. Найдите на рынке Con Market или в кафе Con Market.",
+          "en": "Unique Central Vietnamese dish — cold rice with tiny river mussels, peanuts, fried shallots, herbs, and pork skin crisps. Served with spicy broth on the side. Find at Con Market or nearby food stalls."
+        },
+        "price": {
+          "ru": "30,000–45,000 VND",
+          "en": "30,000–45,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%AC%20Qu%E1%BA%A3ng.jpg?width=800",
+        "coordinates": { "lat": 16.0668, "lng": 108.2138 }
       }
     ]
   },
@@ -773,6 +835,40 @@
           "en": "Suit in 24–48h from $100. Yaly Couture, Bebe — trusted tailors. Negotiate."
         },
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_Ancient_Town.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Серфинг в Non Nuoc (сент–ноябрь)",
+          "en": "Surfing at Non Nuoc (Sep–Nov)"
+        },
+        "description": {
+          "ru": "В начале дождливого сезона пляж Non Nuoc у подножия Мраморных гор превращается в серф-спот. Fusion Surf School и Da Nang Surf School предлагают уроки. Доски напрокат прямо на пляже.",
+          "en": "At the start of the rainy season Non Nuoc beach at the base of Marble Mountains turns into a surf spot. Fusion Surf School and Da Nang Surf School offer lessons. Board rental right on the beach."
+        },
+        "tips": {
+          "ru": [
+            "Уроки 2–3 ч: 550,000–800,000 VND (снаряжение включено)",
+            "Доски в аренду без инструктора: 100,000–150,000 VND/ч",
+            "Лучшие волны утром с 7:00 до 10:00"
+          ],
+          "en": [
+            "Lessons 2–3h: 550,000–800,000 VND (equipment included)",
+            "Board rental without instructor: 100,000–150,000 VND/h",
+            "Best waves in the morning 7–10 AM"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Beach%20of%20Da%20Nang%2C%20inner-gulf.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Вечерняя набережная Bach Dang",
+          "en": "Bach Dang evening waterfront"
+        },
+        "description": {
+          "ru": "После 18:00 набережная Bach Dang у реки Han заполняется местными: велосипедисты, уличная еда, уличные музыканты, вид на светящиеся мосты. Полностью бесплатно — один из лучших бесплатных вечерних маршрутов в Дананге.",
+          "en": "After 6 PM Bach Dang waterfront on the Han River fills with locals: cyclists, street food, buskers, glowing bridge views. Completely free — one of the best free evening walks in Da Nang."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da%20Nang%20Dragon%20Bridge.jpg?width=800"
       }
     ]
   },
@@ -817,5 +913,5 @@
       }
     ]
   },
-  "aiKnowledgeBase": "Da Nang, central Vietnam. Airport DAD ~3km from center — Grab 50-80k, taxi 100-150k. Transport: GrabCar/GrabBike from 10k. E-BIKES (xe điện) 70-120k/day — NO license, good for My Khe, Han River, An Thuong; NOT for Hai Van Pass. Petrol scooters 120-200k/day — for Hai Van, Marble Mountains, Hoi An; legally IDP category A, many shops rent on passport; full tank before pass, avoid fog. Bus #1 Han Market to Hoi An 30k, 45-60min. Bicycle 50-80k flat city. Sights: Golden Bridge Ba Na 900k book online, Marble Mountains 40k, Dragon Bridge fire Sat/Sun 9PM arrive 20:30, Lady Buddha Son Tra, Hoi An 30km 120k ticket free after 5PM. Food: Madame Lan, Be Man, Mi Quang 1A, Banh Mi Ba Lan, Helio market; Rainbowl Poke, Frumi An Thuong. Districts: My Khe beach, Han River center, An Thuong nomads, Son Tra luxury. SIM Viettel ~150k/30GB. Scams: Marble Mtn pushy guides, fake Ba Na tickets (official banahills.sunworld.vn), unmetered taxis. Emergency 113/115/114."
+  "aiKnowledgeBase": "Da Nang, central Vietnam. Airport DAD ~3km from center — Grab 50-80k, taxi 100-150k. Transport: GrabCar/GrabBike from 10k. E-BIKES (xe điện) 70-120k/day — NO license, good for My Khe, Han River, An Thuong; NOT for Hai Van Pass. Petrol scooters 120-200k/day — for Hai Van, Marble Mountains, Hoi An; legally IDP category A, many shops rent on passport; full tank before pass, avoid fog. Bus #1 Han Market to Hoi An 30k, 45-60min. Bicycle 50-80k flat city. Sights: Golden Bridge Ba Na 900k book online, Marble Mountains 40k, Dragon Bridge fire Sat/Sun 9PM arrive 20:30, Lady Buddha Son Tra, Hoi An 30km 120k ticket free after 5PM, Asia Park Sun Wheel 115m best after 18:00 (100k wheel / 200-300k full). Food: Madame Lan, Be Man seafood, Mi Quang 1A (40-50k), Banh Mi Ba Lan (25-35k), Helio market ($3-6); BUN CHA CA 109 at 109 Nguyen Chi Thanh — Da Nang fish cake soup 40-55k open 6-11AM; COM HEN (mussel rice) 30-45k at Con Market area. SURF: Non Nuoc Sep-Nov — Fusion Surf School lessons 550-800k, board rental 100-150k/h, best waves 7-10AM. EVENING: Bach Dang waterfront after 18:00 free walk, cyclists, street music, bridge lights. Districts: My Khe beach, Han River center, An Thuong nomads, Son Tra luxury. SIM Viettel ~150k/30GB. Scams: Marble Mtn pushy guides, fake Ba Na tickets (official banahills.sunworld.vn), unmetered taxis. Emergency 113/115/114."
 }
