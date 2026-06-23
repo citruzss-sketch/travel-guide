@@ -1,0 +1,192 @@
+{
+  "coordinates": { "lat": 10.8231, "lng": 106.6297 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Сон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7 км от центра. Grab ~80–130k VND",
+        "en": "7 km from center. Grab ~80–130k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6520,
+      "category": "airport"
+    },
+    {
+      "id": "ben-thanh",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Главный символ Хошимина, District 1",
+        "en": "Main landmark, District 1"
+      },
+      "lat": 10.7721,
+      "lng": 106.6981,
+      "category": "food"
+    },
+    {
+      "id": "war-museum",
+      "title": { "ru": "Музей войны", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "28 Vo Van Tan, District 3",
+        "en": "28 Vo Van Tan, District 3"
+      },
+      "lat": 10.7796,
+      "lng": 106.6925,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco",
+      "title": { "ru": "Башня Биттексо", "en": "Bitexco Financial Tower" },
+      "description": {
+        "ru": "Обзорная площадка Saigon Skydeck, 49 этаж",
+        "en": "Saigon Skydeck observation deck, floor 49"
+      },
+      "lat": 10.7717,
+      "lng": 106.7039,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "description": {
+        "ru": "Французская колониальная архитектура 1880 года",
+        "en": "French colonial architecture, 1880"
+      },
+      "lat": 10.7797,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "jade-pagoda",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "73 Mai Thi Luu, District 1",
+        "en": "73 Mai Thi Luu St, District 1"
+      },
+      "lat": 10.7896,
+      "lng": 106.6967,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Улица Буй Вьен", "en": "Bui Vien Walking Street" },
+      "description": {
+        "ru": "Ночная жизнь бэкпэкеров, активна с 20:00",
+        "en": "Backpacker nightlife, peak from 20:00"
+      },
+      "lat": 10.7673,
+      "lng": 106.6928,
+      "category": "district"
+    },
+    {
+      "id": "cholon",
+      "title": { "ru": "Китайский квартал Чолон", "en": "Cholon Chinatown" },
+      "description": {
+        "ru": "District 5, храмы и рынок Бинь Тай",
+        "en": "District 5, temples and Binh Tay Market"
+      },
+      "lat": 10.7534,
+      "lng": 106.6626,
+      "category": "district"
+    },
+    {
+      "id": "cu-chi",
+      "title": { "ru": "Тоннели Кучи", "en": "Cu Chi Tunnels" },
+      "description": {
+        "ru": "70 км от центра, день-тур $10–15",
+        "en": "70 km from center, day tour $10–15"
+      },
+      "lat": 11.1361,
+      "lng": 106.4663,
+      "category": "sight"
+    },
+    {
+      "id": "metro-ben-thanh",
+      "title": { "ru": "Метро Ben Thanh (Line 1)", "en": "Ben Thanh Metro (Line 1)" },
+      "description": {
+        "ru": "Конечная станция, District 1",
+        "en": "Terminal station, District 1"
+      },
+      "lat": 10.7721,
+      "lng": 106.6982,
+      "category": "transport"
+    },
+    {
+      "id": "bach-dang-pier",
+      "title": { "ru": "Пирс Бах Данг", "en": "Bach Dang Pier" },
+      "description": {
+        "ru": "Лодочные туры по р. Сайгон и паром на Вунгтау",
+        "en": "Saigon River boat tours and Vung Tau speedboat"
+      },
+      "lat": 10.7793,
+      "lng": 106.7055,
+      "category": "transport"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам (до 90 дней)",
+        "en": "Check Vietnam e-visa (up to 90 days)"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel/Mobifone в аэропорту",
+        "en": "Buy Viettel/Mobifone SIM at airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab и привязать карту",
+        "en": "Install Grab and link a card"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять VND — банкомат Vietcombank без комиссии",
+        "en": "Withdraw VND — Vietcombank ATM fee-free"
+      }
+    },
+    {
+      "id": "war-museum-ticket",
+      "label": {
+        "ru": "Музей войны: прийти до 09:00 (меньше туристов)",
+        "en": "War Remnants Museum: arrive before 09:00 (fewer crowds)"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур в тоннели Кучи заранее",
+        "en": "Pre-book Cu Chi Tunnels day tour"
+      }
+    },
+    {
+      "id": "bag-safety",
+      "label": {
+        "ru": "Носить ценности во внутреннем кармане (воришки на мото)",
+        "en": "Keep valuables in inner pocket (motorbike snatchers)"
+      }
+    },
+    {
+      "id": "poncho",
+      "label": {
+        "ru": "Купить дождевик (май–ноябрь): ливни каждый день",
+        "en": "Buy rain poncho (May–November): daily downpours"
+      }
+    },
+    {
+      "id": "metro-card",
+      "label": {
+        "ru": "Зарядить карту метро Line 1 (Ben Thanh)",
+        "en": "Top up Metro Line 1 card at Ben Thanh station"
+      }
+    }
+  ]
+}
