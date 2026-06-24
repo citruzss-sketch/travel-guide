@@ -1,0 +1,192 @@
+{
+  "coordinates": { "lat": 10.8231, "lng": 106.6297 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Шон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7 км от центра. Grab ~80–130k VND",
+        "en": "7 km from center. Grab ~80–130k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6520,
+      "category": "airport"
+    },
+    {
+      "id": "ben-thanh",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Иконический рынок 1914 года, сердце Района 1",
+        "en": "Iconic 1914 market, heart of District 1"
+      },
+      "lat": 10.7724,
+      "lng": 106.6981,
+      "category": "food"
+    },
+    {
+      "id": "war-museum",
+      "title": { "ru": "Музей Военных Преступлений", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "40,000 VND. Ежедневно 7:30–17:00",
+        "en": "40,000 VND. Daily 07:30–17:00"
+      },
+      "lat": 10.7797,
+      "lng": 106.6926,
+      "category": "sight"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец Воссоединения", "en": "Reunification Palace" },
+      "description": {
+        "ru": "40,000 VND. 8:00–17:00 ежедневно",
+        "en": "40,000 VND. 08:00–17:00 daily"
+      },
+      "lat": 10.7769,
+      "lng": 106.6955,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам де Сайгон", "en": "Notre-Dame Cathedral of Saigon" },
+      "description": {
+        "ru": "Французская кирпичная церковь 1880 года",
+        "en": "French brick church from 1880"
+      },
+      "lat": 10.7798,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco",
+      "title": { "ru": "Башня Битексо", "en": "Bitexco Financial Tower" },
+      "description": {
+        "ru": "Skydeck на 49-м этаже: 200,000 VND",
+        "en": "Skydeck on 49th floor: 200,000 VND"
+      },
+      "lat": 10.7715,
+      "lng": 106.7038,
+      "category": "sight"
+    },
+    {
+      "id": "jade-pagoda",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Даосская пагода 1909 года. Вход свободный.",
+        "en": "Taoist pagoda from 1909. Free entry."
+      },
+      "lat": 10.7862,
+      "lng": 106.6942,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Улица Буй Вьен (бары)", "en": "Bui Vien Walking Street (bars)" },
+      "description": {
+        "ru": "Бэкпэкерская зона, бары, стрит-фуд, ночная жизнь",
+        "en": "Backpacker zone, bars, street food, nightlife"
+      },
+      "lat": 10.7672,
+      "lng": 106.6937,
+      "category": "district"
+    },
+    {
+      "id": "binh-tay-market",
+      "title": { "ru": "Рынок Бинь Тай (Чайнатаун)", "en": "Binh Tay Market (Chinatown)" },
+      "description": {
+        "ru": "Оптовый рынок, специи, сухофрукты. Без туристов.",
+        "en": "Wholesale market, spices, dried goods. No tourists."
+      },
+      "lat": 10.7503,
+      "lng": 106.6481,
+      "category": "food"
+    },
+    {
+      "id": "ben-thanh-metro",
+      "title": { "ru": "Ст. метро Бен Тхань (Линия 1)", "en": "Ben Thanh Metro Station (Line 1)" },
+      "description": {
+        "ru": "Первая линия метро Вьетнама. С декабря 2024.",
+        "en": "Vietnam's first metro line. Open since December 2024."
+      },
+      "lat": 10.7718,
+      "lng": 106.6985,
+      "category": "transport"
+    },
+    {
+      "id": "district-4-seafood",
+      "title": { "ru": "Морепродукты Района 4", "en": "District 4 Seafood Street" },
+      "description": {
+        "ru": "Лучшая уличная еда города. Вечером с 19:00.",
+        "en": "City's best street food. Evenings from 19:00."
+      },
+      "lat": 10.7612,
+      "lng": 106.7001,
+      "category": "food"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Оформить e-visa Вьетнам (до 90 дней)",
+        "en": "Apply for Vietnam e-visa (up to 90 days)"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel/Mobifone в аэропорту SGN",
+        "en": "Buy Viettel/Mobifone SIM at SGN airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab и привязать карту",
+        "en": "Install Grab and link payment card"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять наличные VND в банкомате BIDV/VietinBank",
+        "en": "Withdraw VND cash at BIDV/VietinBank ATM"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур в тоннели Ку Чи",
+        "en": "Book Cu Chi Tunnels guided tour"
+      }
+    },
+    {
+      "id": "mekong",
+      "label": {
+        "ru": "Выбрать тур в Дельту Меконга (Cần Thơ или Mỹ Tho)",
+        "en": "Choose Mekong Delta day trip (Cần Thơ or Mỹ Tho)"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Тревел-страховка с медицинским покрытием",
+        "en": "Travel insurance with medical coverage"
+      }
+    },
+    {
+      "id": "sunscreen",
+      "label": {
+        "ru": "Крем SPF 50+ и лёгкая одежда (жара +35°C)",
+        "en": "SPF 50+ sunscreen and light clothing (heat +35°C)"
+      }
+    },
+    {
+      "id": "offline-map",
+      "label": {
+        "ru": "Скачать офлайн-карту Хошимина в Google Maps",
+        "en": "Download Ho Chi Minh City offline map in Google Maps"
+      }
+    }
+  ]
+}
