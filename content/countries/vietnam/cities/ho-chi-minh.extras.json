@@ -1,0 +1,192 @@
+{
+  "coordinates": { "lat": 10.8231, "lng": 106.6297 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Сон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7 км от центра. Grab ~80–130k VND, 20–40 мин",
+        "en": "7 km from center. Grab ~80–130k VND, 20–40 min"
+      },
+      "lat": 10.8188,
+      "lng": 106.6520,
+      "category": "airport"
+    },
+    {
+      "id": "ben-thanh-market",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Главный рынок HCMC, 1914 г.",
+        "en": "Main market of HCMC, since 1914"
+      },
+      "lat": 10.7724,
+      "lng": 106.6982,
+      "category": "food"
+    },
+    {
+      "id": "war-museum",
+      "title": { "ru": "Музей войны", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "Вт–вс 7:30–17:00, вход 40k VND",
+        "en": "Tue–Sun 7:30–17:00, entry 40k VND"
+      },
+      "lat": 10.7793,
+      "lng": 106.6926,
+      "category": "sight"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец Воссоединения", "en": "Reunification Palace" },
+      "description": {
+        "ru": "Ежедн. 8:00–17:00, вход 40k VND",
+        "en": "Daily 8:00–17:00, entry 40k VND"
+      },
+      "lat": 10.7769,
+      "lng": 106.6956,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "description": {
+        "ru": "Площадь Парижская, D1. Вход свободный",
+        "en": "Paris Square, D1. Free entry"
+      },
+      "lat": 10.7798,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "jade-pagoda",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Ежедн. 7:00–18:00, вход свободный",
+        "en": "Daily 7:00–18:00, free entry"
+      },
+      "lat": 10.7896,
+      "lng": 106.6956,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco",
+      "title": { "ru": "Башня Bitexco", "en": "Bitexco Financial Tower" },
+      "description": {
+        "ru": "Смотровая на 49 этаже, 200k VND",
+        "en": "Skydeck on 49th floor, 200k VND"
+      },
+      "lat": 10.7715,
+      "lng": 106.7038,
+      "category": "sight"
+    },
+    {
+      "id": "binh-tay-market",
+      "title": { "ru": "Рынок Бинь Тэй (Чолон)", "en": "Binh Tay Market (Cholon)" },
+      "description": {
+        "ru": "Оптовый рынок в Чайнатауне, с 6:00",
+        "en": "Wholesale market in Chinatown, from 6:00"
+      },
+      "lat": 10.7466,
+      "lng": 106.6529,
+      "category": "food"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Улица Буй Виен (ночная жизнь)", "en": "Bui Vien Walking Street" },
+      "description": {
+        "ru": "Бары и уличная еда, активна с 21:00",
+        "en": "Bars and street food, buzzing from 21:00"
+      },
+      "lat": 10.7675,
+      "lng": 106.6924,
+      "category": "district"
+    },
+    {
+      "id": "ga-sai-gon",
+      "title": { "ru": "Ж/д вокзал Га Сайгон", "en": "Ga Sai Gon Railway Station" },
+      "description": {
+        "ru": "Поезда из Нячанга, Дананга, Ханоя",
+        "en": "Trains from Nha Trang, Da Nang, Hanoi"
+      },
+      "lat": 10.7855,
+      "lng": 106.6731,
+      "category": "transport"
+    },
+    {
+      "id": "metro-ben-thanh",
+      "title": { "ru": "Метро Бен Тхань (Line 1)", "en": "Ben Thanh Metro Station (Line 1)" },
+      "description": {
+        "ru": "Центральная станция метро, 5:30–22:30",
+        "en": "Central metro station, 5:30–22:30"
+      },
+      "lat": 10.7724,
+      "lng": 106.6984,
+      "category": "transport"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Оформить e-visa Вьетнама ($25, evisa.gov.vn)",
+        "en": "Apply for Vietnam e-visa ($25, evisa.gov.vn)"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab и привязать карту",
+        "en": "Install Grab and link payment card"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel в аэропорту SGN",
+        "en": "Buy Viettel SIM at SGN airport"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять VND в банкомате (лимит 5–10 млн)",
+        "en": "Withdraw VND from ATM (5–10M VND limit)"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур в туннели Кути",
+        "en": "Book Cu Chi Tunnels tour"
+      }
+    },
+    {
+      "id": "mekong",
+      "label": {
+        "ru": "Запланировать поездку на Меконг",
+        "en": "Plan Mekong Delta day trip"
+      }
+    },
+    {
+      "id": "sunscreen",
+      "label": {
+        "ru": "Взять крем SPF 50+ (жара +35°C)",
+        "en": "Pack SPF 50+ sunscreen (heat +35°C)"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Оформить тревел-страховку",
+        "en": "Get travel insurance"
+      }
+    },
+    {
+      "id": "hotel",
+      "label": {
+        "ru": "Подтвердить бронь в Районе 1 или 3",
+        "en": "Confirm hotel booking in District 1 or 3"
+      }
+    }
+  ]
+}
