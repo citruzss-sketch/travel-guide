@@ -1,0 +1,192 @@
+{
+  "coordinates": { "lat": 10.8231, "lng": 106.6297 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Шон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7 км от центра D1. Grab ~80–130k VND, 20–40 мин",
+        "en": "7 km from D1 center. Grab ~80–130k VND, 20–40 min"
+      },
+      "lat": 10.8188,
+      "lng": 106.6519,
+      "category": "airport"
+    },
+    {
+      "id": "ben-thanh-market",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Символ Хошимина, крытый рынок в D1",
+        "en": "Symbol of HCMC, covered market in D1"
+      },
+      "lat": 10.7723,
+      "lng": 106.6985,
+      "category": "food"
+    },
+    {
+      "id": "war-museum",
+      "title": { "ru": "Музей военных преступлений", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "Самый посещаемый музей Вьетнама, 40k VND",
+        "en": "Vietnam's most visited museum, 40k VND"
+      },
+      "lat": 10.7793,
+      "lng": 106.6925,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco",
+      "title": { "ru": "Башня Bitexco", "en": "Bitexco Financial Tower" },
+      "description": {
+        "ru": "Смотровая SaigonSky Deck, 200k VND",
+        "en": "SaigonSky Deck observation, 200k VND"
+      },
+      "lat": 10.7716,
+      "lng": 106.7043,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "description": {
+        "ru": "Французская колониальная архитектура, 1880 г.",
+        "en": "French colonial architecture, built 1880"
+      },
+      "lat": 10.7796,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "jade-pagoda",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Даосский храм 1909 г., бесплатно",
+        "en": "Taoist temple 1909, free entry"
+      },
+      "lat": 10.7876,
+      "lng": 106.6882,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Улица Буй Вьен", "en": "Bui Vien Walking Street" },
+      "description": {
+        "ru": "Ночная пешеходная улица, бары и еда 18:00–02:00",
+        "en": "Night pedestrian street, bars and food 6 PM–2 AM"
+      },
+      "lat": 10.7679,
+      "lng": 106.6937,
+      "category": "district"
+    },
+    {
+      "id": "binh-tay-market",
+      "title": { "ru": "Рынок Бинь Тай (Чолон)", "en": "Binh Tay Market (Cholon)" },
+      "description": {
+        "ru": "Оптовый рынок в китайском квартале",
+        "en": "Wholesale market in Chinatown"
+      },
+      "lat": 10.7531,
+      "lng": 106.6492,
+      "category": "food"
+    },
+    {
+      "id": "metro-ben-thanh",
+      "title": { "ru": "Метро: Станция Бен Тхань", "en": "Metro: Ben Thanh Station" },
+      "description": {
+        "ru": "Линия 1, открыта декабрь 2024, 6k–20k VND",
+        "en": "Line 1, opened Dec 2024, 6k–20k VND"
+      },
+      "lat": 10.7725,
+      "lng": 106.6983,
+      "category": "transport"
+    },
+    {
+      "id": "cu-chi",
+      "title": { "ru": "Тоннели Ку Чи", "en": "Cu Chi Tunnels" },
+      "description": {
+        "ru": "70 км от города, тур весь день",
+        "en": "70 km from city, full-day tour"
+      },
+      "lat": 11.0653,
+      "lng": 106.4943,
+      "category": "sight"
+    },
+    {
+      "id": "water-bus",
+      "title": { "ru": "Речной автобус Бах Данг", "en": "Bach Dang Water Bus Terminal" },
+      "description": {
+        "ru": "Речной автобус по Сайгонской реке, 15k VND",
+        "en": "River ferry along Saigon River, 15k VND"
+      },
+      "lat": 10.7846,
+      "lng": 106.7046,
+      "category": "transport"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам (90 дней)",
+        "en": "Check Vietnam visa / e-visa (90 days)"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel сразу в аэропорту T2",
+        "en": "Buy Viettel SIM right at airport T2"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab — вызывать только из приложения",
+        "en": "Install Grab — only call from the app (avoid fakes)"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять VND в банкомате Vietcombank/BIDV",
+        "en": "Withdraw VND from Vietcombank/BIDV ATM"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур на тоннели Ку Чи заранее",
+        "en": "Book Cu Chi Tunnels tour in advance"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Тревел-страховка с медицинским покрытием",
+        "en": "Travel insurance with medical coverage"
+      }
+    },
+    {
+      "id": "hotel",
+      "label": {
+        "ru": "Подтвердить бронь отеля в D1 или D3",
+        "en": "Confirm hotel booking in D1 or D3"
+      }
+    },
+    {
+      "id": "photos",
+      "label": {
+        "ru": "Посетить Музей военных преступлений (утро)",
+        "en": "Visit War Remnants Museum (morning)"
+      }
+    },
+    {
+      "id": "food-tour",
+      "label": {
+        "ru": "Попробовать ком там (com tam) на завтрак",
+        "en": "Try com tam (broken rice) for breakfast"
+      }
+    }
+  ]
+}
