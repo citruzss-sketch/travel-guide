@@ -1,0 +1,192 @@
+{
+  "coordinates": { "lat": 10.8231, "lng": 106.6297 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Сон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7 км от D1, Grab ~80–130k VND",
+        "en": "7 km from D1, Grab ~80–130k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6519,
+      "category": "airport"
+    },
+    {
+      "id": "ben-thanh",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Символ Хошимина с 1914 года",
+        "en": "Ho Chi Minh City icon since 1914"
+      },
+      "lat": 10.7724,
+      "lng": 106.6982,
+      "category": "food"
+    },
+    {
+      "id": "war-museum",
+      "title": { "ru": "Музей Военных Реликвий", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "Пронзительный музей о Вьетнамской войне",
+        "en": "Powerful Vietnam War museum"
+      },
+      "lat": 10.7797,
+      "lng": 106.6928,
+      "category": "sight"
+    },
+    {
+      "id": "jade-pagoda",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Даосская пагода 1909 года с черепашьим прудом",
+        "en": "1909 Taoist pagoda with turtle pond"
+      },
+      "lat": 10.7882,
+      "lng": 106.6917,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "description": {
+        "ru": "Французский собор 1880 года в центре D1",
+        "en": "1880 French cathedral in District 1 center"
+      },
+      "lat": 10.7798,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco",
+      "title": { "ru": "Башня Bitexco (Skydeck)", "en": "Bitexco Tower (Skydeck)" },
+      "description": {
+        "ru": "262 м, смотровая на 49 этаже, 200k VND",
+        "en": "262m, observation deck on 49th floor, 200k VND"
+      },
+      "lat": 10.7717,
+      "lng": 106.7038,
+      "category": "sight"
+    },
+    {
+      "id": "pham-ngu-lao",
+      "title": { "ru": "Фам Нгу Лао (Backpacker area)", "en": "Pham Ngu Lao (Backpacker area)" },
+      "description": {
+        "ru": "Хостелы, бары, турагентства, уличная еда",
+        "en": "Hostels, bars, travel agencies, street food"
+      },
+      "lat": 10.7706,
+      "lng": 106.6938,
+      "category": "district"
+    },
+    {
+      "id": "cu-chi",
+      "title": { "ru": "Тоннели Ку Чи", "en": "Cu Chi Tunnels" },
+      "description": {
+        "ru": "70 км от D1, тур полдня",
+        "en": "70 km from D1, half-day tour"
+      },
+      "lat": 11.1543,
+      "lng": 106.4619,
+      "category": "sight"
+    },
+    {
+      "id": "binh-tay",
+      "title": { "ru": "Рынок Бинь Тай (Чолон)", "en": "Binh Tay Market (Cholon)" },
+      "description": {
+        "ru": "Оптовый рынок в Чайнатауне D5",
+        "en": "Wholesale market in Chinatown D5"
+      },
+      "lat": 10.7525,
+      "lng": 106.6549,
+      "category": "food"
+    },
+    {
+      "id": "bach-dang-pier",
+      "title": { "ru": "Пирс Bach Dang (Water Bus)", "en": "Bach Dang Pier (Water Bus)" },
+      "description": {
+        "ru": "Речной автобус → Linh Dong, 15k VND",
+        "en": "River bus → Linh Dong, 15k VND"
+      },
+      "lat": 10.7773,
+      "lng": 106.7058,
+      "category": "transport"
+    },
+    {
+      "id": "metro-ben-thanh",
+      "title": { "ru": "Метро Ben Thanh (Line 1)", "en": "Ben Thanh Metro Station (Line 1)" },
+      "description": {
+        "ru": "Первая станция Line 1, открыта дек. 2024",
+        "en": "First station of Line 1, opened Dec 2024"
+      },
+      "lat": 10.7724,
+      "lng": 106.6978,
+      "category": "transport"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "grab-app",
+      "label": {
+        "ru": "Установить Grab перед прилётом",
+        "en": "Install Grab app before arrival"
+      }
+    },
+    {
+      "id": "sim-sgn",
+      "label": {
+        "ru": "Купить SIM у стойки Viettel в аэропорту SGN",
+        "en": "Buy SIM at Viettel counter in SGN arrivals"
+      }
+    },
+    {
+      "id": "cu-chi-tour",
+      "label": {
+        "ru": "Забронировать тур на Тоннели Ку Чи",
+        "en": "Book Cu Chi Tunnels tour"
+      }
+    },
+    {
+      "id": "war-museum",
+      "label": {
+        "ru": "Посетить Музей Военных Реликвий",
+        "en": "Visit War Remnants Museum"
+      }
+    },
+    {
+      "id": "mekong-tour",
+      "label": {
+        "ru": "Тур на Дельту Меконга (если есть время)",
+        "en": "Mekong Delta tour (if time allows)"
+      }
+    },
+    {
+      "id": "banh-mi-huynh-hoa",
+      "label": {
+        "ru": "Попробовать bánh mì у Huynh Hoa (очередь с утра)",
+        "en": "Try bánh mì at Huynh Hoa (queue early morning)"
+      }
+    },
+    {
+      "id": "cash-vnd",
+      "label": {
+        "ru": "Снять наличные VND для рынков и уличной еды",
+        "en": "Withdraw VND cash for markets and street food"
+      }
+    },
+    {
+      "id": "phone-security",
+      "label": {
+        "ru": "Убирать телефон в карман при ходьбе (кражи с байков)",
+        "en": "Pocket phone while walking (motorbike snatching)"
+      }
+    }
+  ]
+}
