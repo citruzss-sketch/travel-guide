@@ -1,0 +1,192 @@
+{
+  "coordinates": { "lat": 16.4637, "lng": 107.5909 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "hui-airport",
+      "title": { "ru": "Аэропорт Фу Бай (HUI)", "en": "Phu Bai Airport (HUI)" },
+      "description": {
+        "ru": "14 км от центра. Grab ~100–140k VND",
+        "en": "14 km from center. Grab ~100–140k VND"
+      },
+      "lat": 16.4015,
+      "lng": 107.7027,
+      "category": "airport"
+    },
+    {
+      "id": "imperial-citadel",
+      "title": { "ru": "Императорская Цитадель", "en": "Imperial Citadel" },
+      "description": {
+        "ru": "Дворцовый комплекс ЮНЕСКО, 1804 г.",
+        "en": "UNESCO palace complex, built 1804"
+      },
+      "lat": 16.4698,
+      "lng": 107.5776,
+      "category": "sight"
+    },
+    {
+      "id": "thien-mu-pagoda",
+      "title": { "ru": "Пагода Тхиен Му", "en": "Thien Mu Pagoda" },
+      "description": {
+        "ru": "7-ярусная пагода 1601 г. — символ Хюэ",
+        "en": "7-storey pagoda built 1601, symbol of Hue"
+      },
+      "lat": 16.4527,
+      "lng": 107.5522,
+      "category": "sight"
+    },
+    {
+      "id": "tu-duc-tomb",
+      "title": { "ru": "Гробница Ты Дыка", "en": "Tu Duc Royal Tomb" },
+      "description": {
+        "ru": "Романтичная гробница с лотосовыми прудами, 1867",
+        "en": "Romantic tomb with lotus ponds, 1867"
+      },
+      "lat": 16.4536,
+      "lng": 107.5525,
+      "category": "sight"
+    },
+    {
+      "id": "khai-dinh-tomb",
+      "title": { "ru": "Гробница Кхай Дина", "en": "Khai Dinh Royal Tomb" },
+      "description": {
+        "ru": "Эклектичная мозаичная гробница, 1931",
+        "en": "Eclectic mosaic-covered tomb, 1931"
+      },
+      "lat": 16.4337,
+      "lng": 107.5835,
+      "category": "sight"
+    },
+    {
+      "id": "minh-mang-tomb",
+      "title": { "ru": "Гробница Минь Манга", "en": "Minh Mang Royal Tomb" },
+      "description": {
+        "ru": "Величественная симметричная гробница, 1843",
+        "en": "Majestic symmetrical tomb, 1843"
+      },
+      "lat": 16.4285,
+      "lng": 107.5557,
+      "category": "sight"
+    },
+    {
+      "id": "dong-ba-market",
+      "title": { "ru": "Рынок Донг Ба", "en": "Dong Ba Market" },
+      "description": {
+        "ru": "Главный рынок Хюэ с 1899 г.",
+        "en": "Hue's main market since 1899"
+      },
+      "lat": 16.4701,
+      "lng": 107.5817,
+      "category": "food"
+    },
+    {
+      "id": "thuan-an-beach",
+      "title": { "ru": "Пляж Тхуан Ан", "en": "Thuan An Beach" },
+      "description": {
+        "ru": "Городской пляж у лагуны, 12 км от центра",
+        "en": "City beach by the lagoon, 12 km from center"
+      },
+      "lat": 16.5317,
+      "lng": 107.6215,
+      "category": "beach"
+    },
+    {
+      "id": "perfume-river",
+      "title": { "ru": "Парфюмерная река (Sông Hương)", "en": "Perfume River (Song Huong)" },
+      "description": {
+        "ru": "Символ Хюэ — лодочные туры на закате",
+        "en": "Hue's symbol — sunset boat tours"
+      },
+      "lat": 16.4646,
+      "lng": 107.5909,
+      "category": "sight"
+    },
+    {
+      "id": "hue-train-station",
+      "title": { "ru": "Ж/д вокзал Хюэ", "en": "Hue Railway Station" },
+      "description": {
+        "ru": "В центре. Поезд Da Nang–Hue: 2.5 ч",
+        "en": "Downtown. Train Da Nang–Hue: 2.5 h"
+      },
+      "lat": 16.4610,
+      "lng": 107.5975,
+      "category": "transport"
+    },
+    {
+      "id": "bun-bo-hue-street",
+      "title": { "ru": "Улица Bún Bò Huế", "en": "Bun Bo Hue Street" },
+      "description": {
+        "ru": "Лучшие заведения с Bun Bo — ул. Nguyễn Du",
+        "en": "Best Bun Bo spots — Nguyen Du St"
+      },
+      "lat": 16.4651,
+      "lng": 107.5864,
+      "category": "food"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "combo-ticket",
+      "label": {
+        "ru": "Купить комбо-билет (Цитадель + 3 гробницы, 520k VND)",
+        "en": "Buy combo ticket (Citadel + 3 tombs, 520k VND)"
+      }
+    },
+    {
+      "id": "bun-bo-morning",
+      "label": {
+        "ru": "Запланировать завтрак — Bún Bò Huế до 9:00",
+        "en": "Plan breakfast — Bún Bò Huế before 9:00 AM"
+      }
+    },
+    {
+      "id": "boat-tour",
+      "label": {
+        "ru": "Забронировать лодочный тур по Парфюмерной реке",
+        "en": "Book Perfume River boat tour"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel/Mobifone в аэропорту",
+        "en": "Buy Viettel/Mobifone SIM at airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab для поездок по городу",
+        "en": "Install Grab for getting around"
+      }
+    },
+    {
+      "id": "dress-code",
+      "label": {
+        "ru": "Взять одежду с закрытыми плечами и коленями (для храмов)",
+        "en": "Pack clothing covering shoulders and knees (for temples)"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять VND наличными (рынки и гробницы — кэш only)",
+        "en": "Withdraw VND cash (markets and tombs — cash only)"
+      }
+    },
+    {
+      "id": "rain-gear",
+      "label": {
+        "ru": "Взять дождевик (если едете в ноябре–январе)",
+        "en": "Pack rain jacket (if traveling November–January)"
+      }
+    }
+  ]
+}
