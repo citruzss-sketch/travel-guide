@@ -1,0 +1,991 @@
+{
+  "id": "ho-chi-minh-city",
+  "slug": "ho-chi-minh-city",
+  "countryId": "vietnam",
+  "name": {
+    "ru": "Хошимин",
+    "en": "Ho Chi Minh City"
+  },
+  "tagline": {
+    "ru": "Крупнейший мегаполис Вьетнама — энергия, история и уличная еда",
+    "en": "Vietnam's largest metropolis — energy, history and street food"
+  },
+  "heroImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ho_Chi_Minh_City_Center.jpg?width=1920",
+  "overview": {
+    "ru": "Хошимин (бывший Сайгон) — экономическая столица Вьетнама и самый населённый город страны (9+ млн человек). Небоскрёбы делового квартала района 1 соседствуют с французскими колониальными особняками, пагодами и оживлёнными рынками. Метро открылось в декабре 2024 года. Город идеален для тех, кто хочет почувствовать пульс современного Вьетнама — отличная еда, музеи мирового уровня и близость к дельте Меконга.",
+    "en": "Ho Chi Minh City (former Saigon) is Vietnam's economic capital and most populous city (9+ million people). Skyscrapers of District 1 stand alongside French colonial mansions, pagodas and bustling markets. The metro opened in December 2024. The city is ideal for those who want to feel the pulse of modern Vietnam — excellent food, world-class museums and proximity to the Mekong Delta."
+  },
+  "bestTime": {
+    "ru": "Декабрь–апрель (сухой сезон, +28–35°C). Май–ноябрь — сезон дождей: короткие дождевые ливни во второй половине дня, но цены ниже.",
+    "en": "December–April (dry season, 28–35°C). May–November — rainy season: short afternoon downpours, but lower prices."
+  },
+  "currency": {
+    "ru": "Вьетнамский донг (VND). 1 USD ≈ 25,000 VND. Банкоматы Vietcombank и BIDV без комиссии.",
+    "en": "Vietnamese Dong (VND). 1 USD ≈ 25,000 VND. Vietcombank and BIDV ATMs charge no fee."
+  },
+  "language": {
+    "ru": "Вьетнамский. Английский понимают в гостиницах и ресторанах туристических районов.",
+    "en": "Vietnamese. English understood in hotels and restaurants of tourist districts."
+  },
+  "timezone": {
+    "ru": "UTC+7",
+    "en": "UTC+7"
+  },
+  "airport": {
+    "title": {
+      "ru": "Как добраться из аэропорта",
+      "en": "Getting from the airport"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Международный аэропорт Тан Сон Нят (SGN)",
+          "en": "Tan Son Nhat International Airport (SGN)"
+        },
+        "description": {
+          "ru": "Аэропорт в 7 км от центра района 1. Крупнейший аэропорт Вьетнама, 2 терминала: T1 (внутренние рейсы), T2 (международные). Загрузка высокая — закладывайте 2–3 ч на регистрацию при вылете.",
+          "en": "Airport 7 km from District 1 center. Vietnam's largest airport, 2 terminals: T1 (domestic), T2 (international). Very busy — allow 2–3 hours for departure check-in."
+        },
+        "tips": {
+          "ru": [
+            "Grab до района 1: 80,000–130,000 VND (~$3–5), 20–40 мин",
+            "Такси Vinasun/Mai Linh: ~130,000–200,000 VND со счётчиком",
+            "Автобус №109: 20,000 VND до Ben Thanh, ~45 мин",
+            "Маршрутка №152: 5,000 VND, идёт через De Tham backpacker area"
+          ],
+          "en": [
+            "Grab to District 1: 80,000–130,000 VND (~$3–5), 20–40 min",
+            "Vinasun/Mai Linh taxi: ~130,000–200,000 VND with meter",
+            "Bus #109: 20,000 VND to Ben Thanh, ~45 min",
+            "Minibus #152: 5,000 VND, goes through De Tham backpacker area"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tan_Son_Nhat_International_Airport.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Метро — Линия 1 (Ben Thanh — Suoi Tien)",
+          "en": "Metro — Line 1 (Ben Thanh – Suoi Tien)"
+        },
+        "description": {
+          "ru": "Открылась в декабре 2024 года. 14 станций, 19 км. От Ben Thanh до аэропорта пока нет прямой связи — нужно ехать до An Phu и пересаживаться на автобус или Grab.",
+          "en": "Opened December 2024. 14 stations, 19 km. No direct metro to airport yet — ride to An Phu then take bus or Grab."
+        },
+        "price": {
+          "ru": "6,000–20,000 VND в зависимости от дистанции",
+          "en": "6,000–20,000 VND depending on distance"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ho_Chi_Minh_City_Metro_Line_1.jpg?width=800"
+      }
+    ]
+  },
+  "districts": {
+    "title": {
+      "ru": "Где жить",
+      "en": "Where to stay"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Район 1 (Quận 1) — центр",
+          "en": "District 1 (Quận 1) — City Centre"
+        },
+        "description": {
+          "ru": "Сердце Хошимина: Nguyen Hue Walking Street, Notre Dame Cathedral, War Remnants Museum, Bitexco Tower. Лучшее расположение, но шумно.",
+          "en": "Heart of HCMC: Nguyen Hue Walking Street, Notre Dame Cathedral, War Remnants Museum, Bitexco Tower. Best location but noisy."
+        },
+        "price": {
+          "ru": "Бюджет: $15–30, Midrange: $40–80, Luxury: $100–300/ночь",
+          "en": "Budget: $15–30, Midrange: $40–80, Luxury: $100–300/night"
+        }
+      },
+      {
+        "title": {
+          "ru": "Район 3 (Quận 3) — спокойный и стильный",
+          "en": "District 3 (Quận 3) — Calm & Stylish"
+        },
+        "description": {
+          "ru": "Французские виллы, кафе, бары. Более тихий, чем район 1, но рядом с достопримечательностями. Популярен у экспатов и цифровых кочевников.",
+          "en": "French villas, cafes, bars. Quieter than District 1, but close to attractions. Popular with expats and digital nomads."
+        },
+        "price": {
+          "ru": "Midrange: $30–60/ночь",
+          "en": "Midrange: $30–60/night"
+        }
+      },
+      {
+        "title": {
+          "ru": "Район 7 — Phú Mỹ Hưng (корейский квартал)",
+          "en": "District 7 — Phú Mỹ Hưng (Korean Quarter)"
+        },
+        "description": {
+          "ru": "Современный плановый квартал, популярный у корейских экспатов. Торговые центры, парки, чисто и безопасно. Хорошо для семей с детьми.",
+          "en": "Modern planned district popular with Korean expats. Malls, parks, clean and safe. Good for families with children."
+        },
+        "price": {
+          "ru": "Midrange: $40–80/ночь, апартаменты от $800/месяц",
+          "en": "Midrange: $40–80/night, apartments from $800/month"
+        }
+      },
+      {
+        "title": {
+          "ru": "Bình Thạnh — хипстерский и доступный",
+          "en": "Bình Thạnh — Hipster & Affordable"
+        },
+        "description": {
+          "ru": "Набережная Saigon River, кофейни, молодёжная атмосфера. 10–15 мин на метро от Ben Thanh. Хорошее соотношение цены и качества.",
+          "en": "Saigon River waterfront, coffee shops, youthful vibe. 10–15 min by metro from Ben Thanh. Great value for money."
+        },
+        "price": {
+          "ru": "Бюджет-Midrange: $20–50/ночь",
+          "en": "Budget-Midrange: $20–50/night"
+        }
+      }
+    ]
+  },
+  "sights": {
+    "title": {
+      "ru": "Достопримечательности",
+      "en": "Sights & Attractions"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Музей военных реликвий (War Remnants Museum)",
+          "en": "War Remnants Museum"
+        },
+        "description": {
+          "ru": "Самый посещаемый музей страны — документирует Вьетнамскую войну через фотографии и артефакты. Пронзительно и незабываемо. Обязателен к посещению.",
+          "en": "The country's most visited museum — documents the Vietnam War through photographs and artefacts. Gripping and unforgettable. A must-visit."
+        },
+        "price": {
+          "ru": "40,000 VND (~$1.60)",
+          "en": "40,000 VND (~$1.60)"
+        },
+        "tips": {
+          "ru": [
+            "Адрес: 28 Vo Van Tan, Quận 3",
+            "Часы: 7:30–18:00 ежедневно",
+            "Берите аудиогид (15,000 VND) — объяснения на русском есть",
+            "Фото Agent Orange gallery — очень тяжёлые. Дети до 12 лет — с осторожностью"
+          ],
+          "en": [
+            "Address: 28 Vo Van Tan, District 3",
+            "Hours: 7:30–18:00 daily",
+            "Get audio guide (15,000 VND) — Russian commentary available",
+            "Agent Orange gallery photos are very heavy. Children under 12 — with caution"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/War_Remnants_Museum.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Дворец Воссоединения (Reunification Palace)",
+          "en": "Reunification Palace"
+        },
+        "description": {
+          "ru": "Бывшая резиденция президента Южного Вьетнама. Именно через ворота этого дворца 30 апреля 1975 года въехал первый северовьетнамский танк. Подземные бункеры, переговорные залы и мебель эпохи — всё сохранено как было.",
+          "en": "Former residence of the President of South Vietnam. North Vietnamese Tank #843 crashed through these gates on April 30, 1975. Underground bunkers, conference rooms and period furniture — all preserved as they were."
+        },
+        "price": {
+          "ru": "40,000 VND (~$1.60)",
+          "en": "40,000 VND (~$1.60)"
+        },
+        "tips": {
+          "ru": [
+            "Адрес: 135 Nam Ky Khoi Nghia, Quận 1",
+            "Часы: 7:30–12:00 и 13:00–17:00",
+            "Закрыт во время государственных церемоний — проверяйте заранее"
+          ],
+          "en": [
+            "Address: 135 Nam Ky Khoi Nghia, District 1",
+            "Hours: 7:30–12:00 and 13:00–17:00",
+            "Closed during state ceremonies — check in advance"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Reunification_Palace.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Тоннели Кучи (Cu Chi Tunnels)",
+          "en": "Cu Chi Tunnels"
+        },
+        "description": {
+          "ru": "250 км подземных тоннелей, по которым вьетконговские партизаны воевали с американскими войсками. Можно залезть внутрь (сужены для туристов), пострелять из AK-47 или M16 за доплату. 70 км от центра города.",
+          "en": "250 km of underground tunnels used by Viet Cong guerrillas against US forces. You can crawl inside (widened for tourists), shoot AK-47 or M16 for extra cost. 70 km from city center."
+        },
+        "price": {
+          "ru": "Ben Duoc: 120,000 VND; Ben Dinh: 140,000 VND. Тур с гидом: от 180,000 VND",
+          "en": "Ben Duoc: 120,000 VND; Ben Dinh: 140,000 VND. Guided tour: from 180,000 VND"
+        },
+        "tips": {
+          "ru": [
+            "Утром (8–10 ч) меньше групп — тише и свежее",
+            "Надевайте удобную одежду/обувь — тоннели пыльные и узкие",
+            "Shared tour ($8–12) из района 1 — без хлопот с транспортом",
+            "Ben Duoc (военный парк) — более аутентичный, чем Ben Dinh"
+          ],
+          "en": [
+            "Morning (8–10 AM) fewer groups — quieter and cooler",
+            "Wear comfortable clothes/shoes — tunnels are dusty and narrow",
+            "Shared tour ($8–12) from District 1 — no transport hassle",
+            "Ben Duoc (military park) is more authentic than Ben Dinh"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cu_Chi_Tunnels.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Башня Bitexco и SkyDeck",
+          "en": "Bitexco Financial Tower & SkyDeck"
+        },
+        "description": {
+          "ru": "68-этажный небоскрёб — символ современного Хошимина. Смотровая площадка SkyDeck на 49-м этаже открывает панораму на весь город, реку Сайгон и дельту вдали.",
+          "en": "68-floor skyscraper — symbol of modern HCMC. SkyDeck observation deck on the 49th floor offers panoramic views of the city, Saigon River and distant delta."
+        },
+        "price": {
+          "ru": "200,000 VND (~$8) — вход на смотровую",
+          "en": "200,000 VND (~$8) — SkyDeck admission"
+        },
+        "tips": {
+          "ru": [
+            "Заходите после 17:00 — дневной и ночной город",
+            "Кафе на этаже 50 — виды бесплатно с напитком"
+          ],
+          "en": [
+            "Go after 5 PM — see both day and night city",
+            "Café on floor 50 — views free with a drink"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bitexco_Financial_Tower.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Пагода Нефритового Императора (Jade Emperor Pagoda)",
+          "en": "Jade Emperor Pagoda"
+        },
+        "description": {
+          "ru": "Одна из самых красивых пагод Вьетнама. Построена в 1909 г. таошистами — невероятные деревянные резные скульптуры, черепахи в прудах (удача), запах благовоний. Любимое место Джека Кеннеди в Сайгоне.",
+          "en": "One of Vietnam's most beautiful pagodas. Built in 1909 by Taoists — incredible wooden carved sculptures, turtles in the ponds (good luck), incense smell. Jack Kennedy's favourite spot in Saigon."
+        },
+        "price": {
+          "ru": "Бесплатно (пожертвование приветствуется)",
+          "en": "Free (donation welcome)"
+        },
+        "tips": {
+          "ru": [
+            "Адрес: 73 Mai Thi Luu, Quận 1",
+            "Рано утром (до 9 ч) — немного туристов",
+            "Снимайте обувь перед входом в главный зал"
+          ],
+          "en": [
+            "Address: 73 Mai Thi Luu, District 1",
+            "Early morning (before 9 AM) — fewer tourists",
+            "Remove shoes before entering the main hall"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jade_Emperor_Pagoda.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Собор Нотр-Дам и Центральное почтовое отделение",
+          "en": "Notre-Dame Cathedral & Central Post Office"
+        },
+        "description": {
+          "ru": "Французская готика в тропиках: собор 1880 года напротив Центрального почтамта (арх. Gustave Eiffel). Почтамт работает и сегодня — можно отправить открытку домой.",
+          "en": "French Gothic in the tropics: 1880s cathedral opposite the Central Post Office (arch. Gustave Eiffel). Post office still functions — send a postcard home."
+        },
+        "price": {
+          "ru": "Бесплатно (снаружи), почтамт — бесплатно",
+          "en": "Free (exterior), post office — free entry"
+        },
+        "tips": {
+          "ru": [
+            "Собор на реставрации 2023–2027 — фасад закрыт лесами",
+            "Почтамт: пн–пт 7:00–18:00, сб–вс 8:00–17:00"
+          ],
+          "en": [
+            "Cathedral under renovation 2023–2027 — facade covered in scaffolding",
+            "Post office: Mon–Fri 7:00–18:00, Sat–Sun 8:00–17:00"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Notre_Dame_Cathedral_Ho_Chi_Minh_City.jpg?width=800"
+      }
+    ]
+  },
+  "beaches": {
+    "title": {
+      "ru": "Пляжи и природа рядом",
+      "en": "Beaches & Nature Nearby"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Вунг Тау (Vũng Tàu)",
+          "en": "Vung Tau"
+        },
+        "description": {
+          "ru": "Ближайший пляжный курорт в 2 часах от Хошимина. Два пляжа — Front Beach (шумный) и Back Beach (спокойнее). Статуя Иисуса на холме выше рио-де-жанейрской.",
+          "en": "Nearest beach resort 2 hours from HCMC. Two beaches — Front Beach (busy) and Back Beach (calmer). Jesus statue on the hill is taller than Rio de Janeiro's."
+        },
+        "price": {
+          "ru": "Скоростной паром Petro Express: 270,000–370,000 VND в одну сторону",
+          "en": "Petro Express hydrofoil: 270,000–370,000 VND one way"
+        },
+        "tips": {
+          "ru": [
+            "Пассажирский терминал Nha Rong — паром от причала",
+            "Выходные дни — очень людно, лучше ехать в будни",
+            "Back Beach: более тихий, хорошая рыба в ресторанах"
+          ],
+          "en": [
+            "Nha Rong Passenger Terminal — ferry from the pier",
+            "Weekends are very crowded — better to go on weekdays",
+            "Back Beach: quieter, good fish restaurants"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vung_Tau_Beach.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Дельта Меконга (Mekong Delta)",
+          "en": "Mekong Delta"
+        },
+        "description": {
+          "ru": "«Рисовый котёл» Вьетнама: плавучие рынки, рисовые поля, сады тропических фруктов. Тур на день из Хошимина — одно из лучших впечатлений в регионе.",
+          "en": "'Rice bowl' of Vietnam: floating markets, rice paddies, tropical fruit orchards. Day tour from HCMC is one of the best experiences in the region."
+        },
+        "price": {
+          "ru": "Однодневный тур: от $15–25 с гидом и транспортом",
+          "en": "Day tour: from $15–25 with guide and transport"
+        },
+        "tips": {
+          "ru": [
+            "Cai Be или Can Tho — самые красивые плавучие рынки",
+            "Двухдневный тур с ночёвкой лучше однодневного",
+            "Апрель–август — засушливее, реки ниже, лодки идут легче"
+          ],
+          "en": [
+            "Cai Be or Can Tho — most photogenic floating markets",
+            "Two-day tour with overnight stay is better than day trip",
+            "April–August — drier, rivers lower, boats pass more easily"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mekong_Delta.jpg?width=800"
+      }
+    ]
+  },
+  "food": {
+    "title": {
+      "ru": "Еда и рестораны",
+      "en": "Food & Restaurants"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Bún bò Nam Bộ и Phở",
+          "en": "Bún bò Nam Bộ & Phở"
+        },
+        "description": {
+          "ru": "Рисовая лапша — основа кухни Юга. Bun bo Nam Bo — холодная лапша с говядиной, арахисом и свежей зеленью. Phở по-хошиминовски слаще, чем в Ханое, со свежими травами и соусом хойсин.",
+          "en": "Rice noodles are the South's cuisine base. Bun bo Nam Bo — cold noodles with beef, peanuts and fresh herbs. HCMC pho is sweeter than Hanoi's, served with fresh herbs and hoisin sauce."
+        },
+        "price": {
+          "ru": "40,000–80,000 VND ($1.60–3.20) в уличных заведениях",
+          "en": "40,000–80,000 VND ($1.60–3.20) at street restaurants"
+        },
+        "tips": {
+          "ru": [
+            "Pho Hoa Pasteur (260 Pasteur, Q.3) — лучший фо в городе с 1960-х",
+            "Завтрак: Bun bo на улице Ky Con или Nguyen Thai Binh"
+          ],
+          "en": [
+            "Pho Hoa Pasteur (260 Pasteur, D.3) — best pho in the city since the 1960s",
+            "Breakfast: Bun bo on Ky Con or Nguyen Thai Binh streets"
+          ]
+        }
+      },
+      {
+        "title": {
+          "ru": "Bánh mì Хошимина",
+          "en": "HCMC-style Bánh mì"
+        },
+        "description": {
+          "ru": "Вьетнамский сэндвич на французском хрустящем багете: паштет, вьетнамская ветчина, огурец, кинза, маринованная редька и перец. Хошимин — родина лучших bánh mì в мире.",
+          "en": "Vietnamese sandwich on a crusty French baguette: pâté, Vietnamese ham, cucumber, coriander, pickled radish and chilli. HCMC is home to the world's best bánh mì."
+        },
+        "price": {
+          "ru": "25,000–50,000 VND ($1–2)",
+          "en": "25,000–50,000 VND ($1–2)"
+        },
+        "tips": {
+          "ru": [
+            "Bánh Mì Huỳnh Hoa (26 Le Thi Rieng, Q.1) — очереди с 4 PM, самый сочный в городе",
+            "Bánh Mì Phương — филиалы в центре, без ожидания"
+          ],
+          "en": [
+            "Bánh Mì Huỳnh Hoa (26 Le Thi Rieng, D.1) — queues from 4 PM, juiciest in the city",
+            "Bánh Mì Phương — branches in the center, no waiting"
+          ]
+        }
+      },
+      {
+        "title": {
+          "ru": "Хрустящие блинчики Bánh xèo",
+          "en": "Crispy Sizzling Pancakes Bánh xèo"
+        },
+        "description": {
+          "ru": "Жёлтый хрустящий рисовый блин с тигровыми креветками, свининой и ростками фасоли. Едят без ложки: заворачивают в листья салата с мятой и макают в рыбный соус.",
+          "en": "Yellow crispy rice crepe with tiger shrimp, pork and bean sprouts. Eaten without cutlery: wrapped in lettuce leaves with mint and dipped in fish sauce."
+        },
+        "price": {
+          "ru": "60,000–120,000 VND ($2.40–4.80)",
+          "en": "60,000–120,000 VND ($2.40–4.80)"
+        },
+        "tips": {
+          "ru": [
+            "46A Dinh Cong Trang, Quận 1 — лучший баньсео в центре",
+            "Подают в обед и ужин — приходите до 19:00, разбирают быстро"
+          ],
+          "en": [
+            "46A Dinh Cong Trang, District 1 — best bánh xèo in the center",
+            "Served lunch and dinner — come before 7 PM, fills up fast"
+          ]
+        }
+      },
+      {
+        "title": {
+          "ru": "Морепродукты района 4 (Quận 4)",
+          "en": "Seafood in District 4 (Quận 4)"
+        },
+        "description": {
+          "ru": "Дешёвые и свежие морепродукты на пластиковых стульях: устрицы, лобстеры, мидии, краб. Район 4 — через реку от района 1, идти пешком 10–15 мин.",
+          "en": "Cheap and fresh seafood on plastic chairs: oysters, lobster, mussels, crab. District 4 is across the river from District 1, a 10–15 min walk."
+        },
+        "price": {
+          "ru": "Устрицы: 5,000–8,000 VND/шт.; лобстер: 250,000–400,000 VND/кг",
+          "en": "Oysters: 5,000–8,000 VND each; lobster: 250,000–400,000 VND/kg"
+        },
+        "tips": {
+          "ru": [
+            "Улица Vinh Khanh — «морская улица» района 4",
+            "Приходите после 17:00 — всё открывается к вечеру",
+            "Договаривайтесь о цене до начала готовки"
+          ],
+          "en": [
+            "Vinh Khanh street — 'seafood street' of District 4",
+            "Come after 5 PM — everything opens in the evening",
+            "Agree on price before cooking begins"
+          ]
+        }
+      },
+      {
+        "title": {
+          "ru": "Boba и вьетнамский кофе",
+          "en": "Boba & Vietnamese Coffee"
+        },
+        "description": {
+          "ru": "Вьетнамский ca phe (кофе) — мощный робуста с конденсированным молоком (ca phe sua da). В Хошимине сотни классных кофеен: Cong Caphe, The Workshop, Highlands Coffee.",
+          "en": "Vietnamese ca phe (coffee) — strong robusta with condensed milk (ca phe sua da). HCMC has hundreds of great cafes: Cong Caphe, The Workshop, Highlands Coffee."
+        },
+        "price": {
+          "ru": "Ca phe sua da: 25,000–40,000 VND; specialty coffee: 55,000–90,000 VND",
+          "en": "Ca phe sua da: 25,000–40,000 VND; specialty coffee: 55,000–90,000 VND"
+        },
+        "tips": {
+          "ru": [
+            "The Workshop Coffee (27 Ngo Duc Ke, Q.1) — лучший specialty в центре",
+            "Cong Caphe — сеть с советским дизайном, вьетнамская ностальгия"
+          ],
+          "en": [
+            "The Workshop Coffee (27 Ngo Duc Ke, D.1) — best specialty in the center",
+            "Cong Caphe — chain with Soviet-era design, Vietnamese nostalgia vibes"
+          ]
+        }
+      }
+    ]
+  },
+  "markets": {
+    "title": {
+      "ru": "Рынки и шопинг",
+      "en": "Markets & Shopping"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Рынок Бен Тхань (Ben Thanh Market)",
+          "en": "Ben Thanh Market"
+        },
+        "description": {
+          "ru": "Символ Хошимина. Снаружи — туристическая достопримечательность, внутри — ткани, специи, сувениры, еда. Торгуйтесь обязательно — стартовая цена завышена в 3–5 раз.",
+          "en": "Symbol of HCMC. Outside — a tourist landmark, inside — fabrics, spices, souvenirs, food. Always haggle — starting price is 3–5x inflated."
+        },
+        "tips": {
+          "ru": [
+            "Часы: 6:00–19:00 пн–сб, 6:00–18:00 вс",
+            "Ночной рынок Ben Thanh: 18:00–24:00 на улице снаружи",
+            "Еда на рынке дороже уличных кафе — только для атмосферы"
+          ],
+          "en": [
+            "Hours: 6:00–19:00 Mon–Sat, 6:00–18:00 Sun",
+            "Ben Thanh Night Market: 18:00–24:00 on the street outside",
+            "Food inside the market is pricier than street cafes — go for the experience"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ben_Thanh_market.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Рынок Бинь Тай (Binh Tay Market) — Чолон",
+          "en": "Binh Tay Market — Chinatown (Cholon)"
+        },
+        "description": {
+          "ru": "Оптовый рынок в Чолоне (китайский квартал). Специи, сухофрукты, посуда, ткани — оптом и в розницу. Более аутентичный, чем Ben Thanh, меньше туристов.",
+          "en": "Wholesale market in Cholon (Chinatown). Spices, dried goods, cookware, fabrics — wholesale and retail. More authentic than Ben Thanh, fewer tourists."
+        },
+        "tips": {
+          "ru": [
+            "Адрес: 57A Thap Muoi, Quận 6",
+            "Grab из центра: 30,000–50,000 VND",
+            "Совмещайте с осмотром пагод Чолона (Thien Hau Temple)"
+          ],
+          "en": [
+            "Address: 57A Thap Muoi, District 6",
+            "Grab from center: 30,000–50,000 VND",
+            "Combine with Cholon pagoda visit (Thien Hau Temple)"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Binh_Tay_Market.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Saigon Square и торговые центры",
+          "en": "Saigon Square & Shopping Malls"
+        },
+        "description": {
+          "ru": "Saigon Square (77 Nam Ky Khoi Nghia) — реплики брендов по низким ценам. Vincom Center и Takashimaya — официальные бренды, кондиционер, фуд-корт.",
+          "en": "Saigon Square (77 Nam Ky Khoi Nghia) — brand replicas at low prices. Vincom Center and Takashimaya — official brands, air conditioning, food court."
+        },
+        "tips": {
+          "ru": [
+            "Saigon Square: торгуйтесь на 40–60% от стартовой цены",
+            "Vincom Center B1 food court — хорошее место для обеда"
+          ],
+          "en": [
+            "Saigon Square: haggle for 40–60% off starting price",
+            "Vincom Center B1 food court — good spot for lunch"
+          ]
+        }
+      }
+    ]
+  },
+  "tours": {
+    "title": {
+      "ru": "Экскурсии и туры",
+      "en": "Tours & Day Trips"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Тоннели Кучи + Дельта Меконга (комбо-тур)",
+          "en": "Cu Chi Tunnels + Mekong Delta (combo tour)"
+        },
+        "description": {
+          "ru": "Популярный двухдневный тур: день 1 — тоннели Кучи, день 2 — дельта Меконга с плавучими рынками. Включает транспорт, гида, обед.",
+          "en": "Popular two-day tour: Day 1 — Cu Chi Tunnels, Day 2 — Mekong Delta with floating markets. Includes transport, guide, lunch."
+        },
+        "price": {
+          "ru": "от $25–40 на человека (групповой тур)",
+          "en": "from $25–40 per person (group tour)"
+        },
+        "tips": {
+          "ru": [
+            "Букируйте через Viator или GetYourGuide — с отзывами надёжнее",
+            "Туры из De Tham street (backpacker area) дешевле, но хуже гиды"
+          ],
+          "en": [
+            "Book through Viator or GetYourGuide — more reliable with reviews",
+            "Tours from De Tham street (backpacker area) are cheaper but guides are worse"
+          ]
+        }
+      },
+      {
+        "title": {
+          "ru": "Велосипедный тур по Хошимину",
+          "en": "HCMC Bicycle Tour"
+        },
+        "description": {
+          "ru": "Ранний утренний велотур (6–9 ч) по спящему городу: рынки, пагоды, аллеи в районе 3. Лучший способ увидеть подлинный Сайгон до того, как проснутся все туристы.",
+          "en": "Early morning bicycle tour (6–9 AM) through the sleeping city: markets, pagodas, alleys in District 3. Best way to see authentic Saigon before the tourists wake up."
+        },
+        "price": {
+          "ru": "от $18–25 (аренда велосипеда + гид)",
+          "en": "from $18–25 (bicycle rental + guide)"
+        }
+      },
+      {
+        "title": {
+          "ru": "Кулинарный тур на мопеде (Saigon Street Food Tour)",
+          "en": "Motorbike Street Food Tour"
+        },
+        "description": {
+          "ru": "Трёхчасовой вечерний тур на мопеде — 5–7 остановок у лучших уличных заведений. Гид везёт вас через весь город, попробуете bánh mì, bánh xèo, chè, frog legs.",
+          "en": "Three-hour evening motorbike tour — 5–7 stops at the best street food spots. Guide drives you across the city, you'll try bánh mì, bánh xèo, chè, frog legs."
+        },
+        "price": {
+          "ru": "от $35–50 включая еду",
+          "en": "from $35–50 including food"
+        },
+        "tips": {
+          "ru": [
+            "XO Tours или Saigon Street Eats — лучшие операторы",
+            "Начинаются в 17:30–18:00 — берите репеллент"
+          ],
+          "en": [
+            "XO Tours or Saigon Street Eats — best operators",
+            "Start at 5:30–6 PM — bring insect repellent"
+          ]
+        }
+      },
+      {
+        "title": {
+          "ru": "Вунг Тау на пароме (однодневный)",
+          "en": "Vung Tau Ferry Day Trip"
+        },
+        "description": {
+          "ru": "Паром Petro Express из Nha Rong Terminal: 2 ч хода по реке Сайгон и выход в море. Сам Вунг Тау — пляж, морепродукты, большой Иисус на холме.",
+          "en": "Petro Express hydrofoil from Nha Rong Terminal: 2h ride down Saigon River to the sea. Vung Tau itself: beach, seafood, giant Jesus on the hill."
+        },
+        "price": {
+          "ru": "Паром: 270,000–370,000 VND (туда), отходит в 7:00/8:15/13:00/15:00",
+          "en": "Ferry: 270,000–370,000 VND (one way), departures at 7:00/8:15/13:00/15:00"
+        }
+      }
+    ]
+  },
+  "transport": {
+    "title": {
+      "ru": "Транспорт по городу",
+      "en": "Getting Around"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Метро Линия 1 (открылась 2024)",
+          "en": "Metro Line 1 (opened 2024)"
+        },
+        "description": {
+          "ru": "Первая линия метро от Ben Thanh до Suoi Tien (Ben Hoa). 14 станций, 19 км, 30 мин конец в конец. Чистые кондиционируемые вагоны, работает с 6:00 до 22:00.",
+          "en": "First metro line from Ben Thanh to Suoi Tien (Bien Hoa). 14 stations, 19 km, 30 min end to end. Clean air-conditioned carriages, runs 6:00–22:00."
+        },
+        "price": {
+          "ru": "6,000–20,000 VND в зависимости от числа зон",
+          "en": "6,000–20,000 VND depending on number of zones"
+        },
+        "tips": {
+          "ru": [
+            "Карта Oyster (tàu điện ngầm) — удобнее разовых билетов",
+            "Bi-hoa Phu station — для переезда в Bien Hoa Province"
+          ],
+          "en": [
+            "Transit card (tàu điện ngầm) — more convenient than single tickets",
+            "Binh Thai station — for trips to the east side of the city"
+          ]
+        }
+      },
+      {
+        "title": {
+          "ru": "Grab (такси и мото-такси)",
+          "en": "Grab (car & motorbike taxi)"
+        },
+        "description": {
+          "ru": "Основной транспорт в Хошимине. GrabCar удобнее в пробках (кондиционер), GrabBike быстрее на мотоцикле между узкими переулками.",
+          "en": "Main transport in HCMC. GrabCar is more comfortable in traffic (air-con), GrabBike is faster on a motorbike through narrow alleys."
+        },
+        "tips": {
+          "ru": [
+            "GrabBike 20,000–50,000 VND по центру; GrabCar 50,000–130,000 VND",
+            "Surge pricing в дождь и утром/вечером — умножайте на 1.5–2",
+            "Альтернатива: Be app (вьетнамский аналог Grab) — часто дешевле"
+          ],
+          "en": [
+            "GrabBike 20,000–50,000 VND around center; GrabCar 50,000–130,000 VND",
+            "Surge pricing in rain and rush hour — multiply by 1.5–2",
+            "Alternative: Be app (Vietnamese Grab equivalent) — often cheaper"
+          ]
+        }
+      },
+      {
+        "title": {
+          "ru": "Городские автобусы",
+          "en": "City Buses"
+        },
+        "description": {
+          "ru": "50+ маршрутов. Автобусы с кондиционером (BRT) и без. Хорошо для поездок на большие расстояния внутри города.",
+          "en": "50+ routes. Air-conditioned buses (BRT) and regular. Good for longer distance trips within the city."
+        },
+        "price": {
+          "ru": "5,000–7,000 VND (~$0.20–0.28)",
+          "en": "5,000–7,000 VND (~$0.20–0.28)"
+        },
+        "tips": {
+          "ru": [
+            "Приложение BusMap HCM — маршруты и расписания на английском",
+            "Автобус №152 аэропорт — De Tham (backpacker): 5,000 VND"
+          ],
+          "en": [
+            "BusMap HCM app — routes and schedules in English",
+            "Bus #152 airport — De Tham (backpacker area): 5,000 VND"
+          ]
+        }
+      }
+    ]
+  },
+  "simAndInternet": {
+    "title": {
+      "ru": "SIM и интернет",
+      "en": "SIM & Internet"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "SIM-карта в аэропорту SGN",
+          "en": "SIM Card at SGN Airport"
+        },
+        "description": {
+          "ru": "Стойки Viettel, Mobifone и Vinaphone прямо в зоне прилёта T2. Туристические SIM с данными доступны сразу.",
+          "en": "Viettel, Mobifone and Vinaphone booths right in the T2 arrival hall. Tourist SIMs with data available immediately."
+        },
+        "price": {
+          "ru": "Viettel 15 GB/30 дн: 150,000–200,000 VND (~$6–8)",
+          "en": "Viettel 15 GB/30 days: 150,000–200,000 VND (~$6–8)"
+        },
+        "tips": {
+          "ru": [
+            "Нужен паспорт для регистрации SIM",
+            "Viettel — лучшее покрытие в сельской местности",
+            "Mobifone — лучший сигнал в зданиях и метро"
+          ],
+          "en": [
+            "Passport required for SIM registration",
+            "Viettel — best coverage in rural areas",
+            "Mobifone — best indoor signal and metro coverage"
+          ]
+        }
+      }
+    ]
+  },
+  "money": {
+    "title": {
+      "ru": "Деньги и банки",
+      "en": "Money & Banking"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Обмен валюты и банкоматы",
+          "en": "Currency Exchange & ATMs"
+        },
+        "description": {
+          "ru": "Официальный курс — в банках и ATM Vietcombank/BIDV. Обменники на улице иногда дают чуть лучший курс, но риск фальшивок.",
+          "en": "Official rate — at banks and Vietcombank/BIDV ATMs. Street exchange booths sometimes give slightly better rates, but risk of counterfeit notes."
+        },
+        "tips": {
+          "ru": [
+            "ATM Vietcombank: без комиссии за иностранные карты",
+            "Лимит снятия: 5,000,000 VND (~$200) за транзакцию",
+            "USD обменять: Dong Khoi Street в Q.1 — лучший уличный курс",
+            "Карты VISA/Mastercard принимают в отелях, ресторанах, ТЦ"
+          ],
+          "en": [
+            "Vietcombank ATMs: no fee for foreign cards",
+            "Withdrawal limit: 5,000,000 VND (~$200) per transaction",
+            "USD exchange: Dong Khoi Street in D.1 — best street rates",
+            "VISA/Mastercard accepted at hotels, restaurants, shopping centres"
+          ]
+        }
+      }
+    ]
+  },
+  "safety": {
+    "title": {
+      "ru": "Безопасность",
+      "en": "Safety"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Общая безопасность",
+          "en": "General Safety"
+        },
+        "description": {
+          "ru": "Хошимин безопасен для туристов. Насилие крайне редко. Главные риски — карманники на рынках и уличные воры на мотоциклах (bag snatching).",
+          "en": "HCMC is safe for tourists. Violent crime is extremely rare. Main risks are pickpockets at markets and motorbike bag snatchers."
+        },
+        "tips": {
+          "ru": [
+            "Не носите телефон в задних карманах на Ben Thanh и Bui Vien",
+            "Сумки держите на стороне, противоположной дороге",
+            "Ночью на Bui Vien Street (party street) — держитесь подальше от мотоциклов",
+            "Медицинская помощь: FV Hospital, HCMC Family Medical Practice"
+          ],
+          "en": [
+            "Don't keep phone in back pockets at Ben Thanh and Bui Vien",
+            "Keep bags on the side away from the road",
+            "At night on Bui Vien Street (party street) — stay away from motorbikes",
+            "Medical help: FV Hospital, HCMC Family Medical Practice"
+          ]
+        }
+      }
+    ]
+  },
+  "phrases": {
+    "title": {
+      "ru": "Полезные фразы",
+      "en": "Useful Phrases"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Базовые фразы на вьетнамском",
+          "en": "Basic Vietnamese Phrases"
+        },
+        "description": {
+          "ru": "Несколько слов на вьетнамском открывают сердца местных и снижают цены.",
+          "en": "A few words in Vietnamese open local hearts and lower prices."
+        },
+        "tips": {
+          "ru": [
+            "Xin chào [сИн джАо] — Здравствуйте",
+            "Cảm ơn [кАм ОН] — Спасибо",
+            "Bao nhiêu tiền? [бао НЬЕу тьЕН] — Сколько стоит?",
+            "Không cay [кхОНГ кАй] — Без острого",
+            "Ngon lắm! [нгОН лАМ] — Очень вкусно!",
+            "Một bia [мОТ бИА] — Одно пиво"
+          ],
+          "en": [
+            "Xin chào [sin-CHOW] — Hello",
+            "Cảm ơn [kahm-ON] — Thank you",
+            "Bao nhiêu tiền? [bow-NYEW-tyen] — How much?",
+            "Không cay [khong-KAY] — Not spicy",
+            "Ngon lắm! [ngon-LAHM] — Very delicious!",
+            "Một bia [mot-BEE-ah] — One beer"
+          ]
+        }
+      }
+    ]
+  },
+  "lifehacks": {
+    "title": {
+      "ru": "Лайфхаки",
+      "en": "Lifehacks"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Как сэкономить в Хошимине",
+          "en": "How to Save Money in HCMC"
+        },
+        "description": {
+          "ru": "Несколько приёмов, которые помогут потратить меньше без потери качества.",
+          "en": "A few tricks to spend less without losing quality."
+        },
+        "tips": {
+          "ru": [
+            "Метро Line 1 вместо Grab сэкономит 30–70k VND на поездку",
+            "Обедайте на рынке Bến Thành Ночь — те же блюда, что в ресторанах, вдвое дешевле",
+            "Бесплатный Wi-Fi: Starbucks, McDonald's, большинство кафе",
+            "Комплексный обед (com binh dan): рис + 3 блюда = 35,000–55,000 VND",
+            "Chodot.vn / SIM оптом дешевле, чем в аэропорту",
+            "Viator Early Bird скидки до 15% при бронировании за 48+ ч"
+          ],
+          "en": [
+            "Metro Line 1 instead of Grab saves 30–70k VND per trip",
+            "Lunch at Ben Thanh Night Market — same dishes as restaurants, half the price",
+            "Free Wi-Fi: Starbucks, McDonald's, most cafes",
+            "Set lunch (com binh dan): rice + 3 dishes = 35,000–55,000 VND",
+            "Buy SIM wholesale on Chodot.vn — cheaper than airport booths",
+            "Viator Early Bird discounts up to 15% when booked 48h+ in advance"
+          ]
+        }
+      },
+      {
+        "title": {
+          "ru": "Лучшее время для достопримечательностей",
+          "en": "Best Times to Visit Attractions"
+        },
+        "description": {
+          "ru": "Оптимальные часы для минимума очередей и максимума впечатлений.",
+          "en": "Optimal hours for minimum queues and maximum experience."
+        },
+        "tips": {
+          "ru": [
+            "War Remnants Museum: откройте в 7:30 — до жары и групп",
+            "Ben Thanh Market: 8–10 утра — свежее и без толпы",
+            "Cu Chi Tunnels: на первый автобус в 8:00 — до 11:00 приятно",
+            "SkyDeck Bitexco: 17:30–18:30 — закат + ночной вид",
+            "Jade Emperor Pagoda: 7–9 утра в будни — почти пусто"
+          ],
+          "en": [
+            "War Remnants Museum: open at 7:30 — before heat and tour groups",
+            "Ben Thanh Market: 8–10 AM — freshest and least crowded",
+            "Cu Chi Tunnels: first bus at 8:00 — pleasant before 11:00",
+            "SkyDeck Bitexco: 5:30–6:30 PM — sunset + night view",
+            "Jade Emperor Pagoda: 7–9 AM on weekdays — nearly empty"
+          ]
+        }
+      }
+    ]
+  },
+  "scams": {
+    "title": {
+      "ru": "Схемы развода туристов",
+      "en": "Common Tourist Scams"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Такси без счётчика и «меняла»",
+          "en": "No-Meter Taxis & Fake Moneychangers"
+        },
+        "description": {
+          "ru": "Водители фиктивных «такси» у аэропорта фиксируют завышенную цену или включают неисправный счётчик. Фальшивые менялы на рынке отвлекают и подсовывают обрезанные купюры.",
+          "en": "Fake 'taxi' drivers outside the airport quote inflated prices or use a rigged meter. Fake moneychangers at the market distract you and slip in cut notes."
+        },
+        "tips": {
+          "ru": [
+            "Только Grab, Vinasun (зелёные), Mai Linh (зелёные) — никогда случайным предложениям",
+            "Меняйте только в банках или ATM — ни у кого на улице",
+            "Сразу проверяйте сдачу: купюры 500,000 VND похожи на 20,000 VND"
+          ],
+          "en": [
+            "Only Grab, Vinasun (green), Mai Linh (green) — never random street offers",
+            "Exchange only at banks or ATMs — never with street touts",
+            "Always check change immediately: 500,000 VND notes look like 20,000 VND"
+          ]
+        }
+      },
+      {
+        "title": {
+          "ru": "«Счастливчик» и навязчивая помощь",
+          "en": "'Lucky Guy' Scam & Unwanted Helpers"
+        },
+        "description": {
+          "ru": "Незнакомец «случайно» находит деньги рядом с вами и предлагает разделить — это мошенничество. «Помощники» у Ben Thanh берут деньги за информацию или провожают за комиссию.",
+          "en": "A stranger 'accidentally' finds money near you and offers to split it — this is a scam. 'Helpers' near Ben Thanh charge for directions or guide you for a commission."
+        },
+        "tips": {
+          "ru": [
+            "Вежливо игнорируйте любую «удачу», найденную рядом с вами",
+            "Информацию о транспорте берите только в официальных стойках/Google Maps"
+          ],
+          "en": [
+            "Politely ignore any 'luck' found near you",
+            "Get transport info only from official booths or Google Maps"
+          ]
+        }
+      }
+    ]
+  },
+  "aiKnowledgeBase": "Ho Chi Minh City (Saigon) is Vietnam's largest and most dynamic city. Key facts for 2026: population ~9.3 million, SGN airport 7km from D1 center. Metro Line 1 opened December 2024 (Ben Thanh to Suoi Tien, 14 stations, 19km, 6000-20000 VND). Main districts: D1 (tourist center, Nguyen Hue Walking Street, Notre Dame Cathedral, Ben Thanh Market, Bitexco Tower), D3 (French villas, expat cafes), D4 (seafood restaurants on Vinh Khanh), D7 Phu My Hung (Korean expats, malls), Binh Thanh (hipster, Saigon River). Top sights: War Remnants Museum (40k VND, 7:30-18:00, 28 Vo Van Tan D3), Reunification Palace (40k VND, 135 Nam Ky Khoi Nghia), Cu Chi Tunnels (70km, 120-140k VND entry, day tours from $8), Jade Emperor Pagoda (free, 73 Mai Thi Luu). Food musts: Banh mi Huynh Hoa (26 Le Thi Rieng D1, from 4PM, queues), Pho Hoa Pasteur (260 Pasteur D3, since 1960s), Banh xeo at 46A Dinh Cong Trang D1, seafood on Vinh Khanh D4. Climate: dry season Dec-Apr (28-35C), rainy May-Nov (short afternoon showers). Currency: 1 USD = ~25,000 VND. Best transport: Grab app (GrabCar 50-130k VND D1 trips), Metro Line 1, buses 5-7k VND. Day trips: Vung Tau beach by hydrofoil 2h (270-370k VND), Mekong Delta tours from $15. Safety: safe city, watch for motorbike bag snatching and taxi scams (only use Grab/Vinasun/Mai Linh). Best time: early morning for museums (7:30), sunset for Bitexco SkyDeck (5:30-6:30PM)."
+}
