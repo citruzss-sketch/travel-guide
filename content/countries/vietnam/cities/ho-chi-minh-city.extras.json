@@ -1,0 +1,199 @@
+{
+  "coordinates": { "lat": 10.8231, "lng": 106.6297 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Сон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7 км от центра района 1, Grab ~80–130k VND",
+        "en": "7 km from District 1 center, Grab ~80–130k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6520,
+      "category": "airport"
+    },
+    {
+      "id": "ben-thanh-market",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Символ Хошимина, торгуйтесь",
+        "en": "Symbol of HCMC, always haggle"
+      },
+      "lat": 10.7725,
+      "lng": 106.6980,
+      "category": "food"
+    },
+    {
+      "id": "war-remnants-museum",
+      "title": { "ru": "Музей военных реликвий", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "40k VND, 7:30–18:00 ежедневно",
+        "en": "40k VND, open 7:30–18:00 daily"
+      },
+      "lat": 10.7794,
+      "lng": 106.6921,
+      "category": "sight"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец Воссоединения", "en": "Reunification Palace" },
+      "description": {
+        "ru": "40k VND, 7:30–17:00",
+        "en": "40k VND, 7:30–17:00"
+      },
+      "lat": 10.7769,
+      "lng": 106.6958,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco-tower",
+      "title": { "ru": "Башня Bitexco / SkyDeck", "en": "Bitexco Tower / SkyDeck" },
+      "description": {
+        "ru": "200k VND, лучший вид на закате",
+        "en": "200k VND, best view at sunset"
+      },
+      "lat": 10.7717,
+      "lng": 106.7041,
+      "category": "sight"
+    },
+    {
+      "id": "jade-emperor-pagoda",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Бесплатно, 7–9 утра — почти пусто",
+        "en": "Free, 7–9 AM — nearly empty"
+      },
+      "lat": 10.7894,
+      "lng": 106.6966,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame-cathedral",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "lat": 10.7797,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien-street",
+      "title": { "ru": "Улица Буй Вьен (ночная жизнь)", "en": "Bui Vien Walking Street (nightlife)" },
+      "description": {
+        "ru": "Backpacker area, бары, музыка до 2 AM",
+        "en": "Backpacker area, bars, music until 2 AM"
+      },
+      "lat": 10.7668,
+      "lng": 106.6931,
+      "category": "district"
+    },
+    {
+      "id": "district-4-seafood",
+      "title": { "ru": "Район 4 — морепродукты (Vinh Khanh)", "en": "District 4 Seafood (Vinh Khanh st)" },
+      "description": {
+        "ru": "Устрицы 5–8k/шт, лобстер с 17:00",
+        "en": "Oysters 5–8k each, lobster from 5 PM"
+      },
+      "lat": 10.7601,
+      "lng": 106.7043,
+      "category": "food"
+    },
+    {
+      "id": "ben-thanh-metro",
+      "title": { "ru": "Ст. метро Бен Тхань (Линия 1)", "en": "Ben Thanh Metro Station (Line 1)" },
+      "description": {
+        "ru": "Метро от 6k VND, открылась 2024",
+        "en": "Metro from 6k VND, opened 2024"
+      },
+      "lat": 10.7724,
+      "lng": 106.6975,
+      "category": "transport"
+    },
+    {
+      "id": "binh-tay-market",
+      "title": { "ru": "Рынок Бинь Тай (Чолон)", "en": "Binh Tay Market (Chinatown)" },
+      "description": {
+        "ru": "Оптовый рынок, меньше туристов",
+        "en": "Wholesale market, fewer tourists"
+      },
+      "lat": 10.7485,
+      "lng": 106.6537,
+      "category": "food"
+    },
+    {
+      "id": "phu-my-hung",
+      "title": { "ru": "Phú Mỹ Hưng — современный квартал", "en": "Phú Mỹ Hưng — Modern Quarter" },
+      "description": {
+        "ru": "Торговые центры, парки, корейские рестораны",
+        "en": "Malls, parks, Korean restaurants"
+      },
+      "lat": 10.7269,
+      "lng": 106.7003,
+      "category": "district"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "sim-sgn",
+      "label": {
+        "ru": "Купить SIM в аэропорту SGN (T2)",
+        "en": "Buy SIM at SGN airport (T2)"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab и Be",
+        "en": "Install Grab and Be apps"
+      }
+    },
+    {
+      "id": "metro",
+      "label": {
+        "ru": "Пополнить карту метро (Линия 1)",
+        "en": "Top up metro card (Line 1)"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур в тоннели Кучи",
+        "en": "Book Cu Chi Tunnels tour"
+      }
+    },
+    {
+      "id": "mekong",
+      "label": {
+        "ru": "Запланировать тур в дельту Меконга",
+        "en": "Plan Mekong Delta day trip"
+      }
+    },
+    {
+      "id": "banh-mi",
+      "label": {
+        "ru": "Попробовать bánh mì Huỳnh Hoa после 16:00",
+        "en": "Try bánh mì Huỳnh Hoa after 4 PM"
+      }
+    },
+    {
+      "id": "war-museum",
+      "label": {
+        "ru": "Посетить War Remnants Museum утром",
+        "en": "Visit War Remnants Museum in the morning"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять наличные VND (ATM Vietcombank)",
+        "en": "Withdraw VND cash (Vietcombank ATM)"
+      }
+    }
+  ]
+}
