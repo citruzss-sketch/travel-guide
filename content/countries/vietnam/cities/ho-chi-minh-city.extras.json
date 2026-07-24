@@ -1,0 +1,203 @@
+{
+  "coordinates": { "lat": 10.8231, "lng": 106.6297 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Шон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7 км от центра D1. Grab ~80–130k VND",
+        "en": "7 km from D1 center. Grab ~80–130k VND"
+      },
+      "lat": 10.8184,
+      "lng": 106.6519,
+      "category": "airport"
+    },
+    {
+      "id": "ben-thanh",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Символ Хошимина — сувениры, еда, торг",
+        "en": "Symbol of HCMC — souvenirs, food, bargaining"
+      },
+      "lat": 10.7723,
+      "lng": 106.6984,
+      "category": "food"
+    },
+    {
+      "id": "war-museum",
+      "title": { "ru": "Музей военных остатков", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "40k VND — самый посещаемый музей Вьетнама",
+        "en": "40k VND — Vietnam's most visited museum"
+      },
+      "lat": 10.7794,
+      "lng": 106.6924,
+      "category": "sight"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец Объединения", "en": "Reunification Palace" },
+      "description": {
+        "ru": "Исторический дворец — 30 апр. 1975",
+        "en": "Historic palace — April 30, 1975"
+      },
+      "lat": 10.7769,
+      "lng": 106.6955,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Нотр-Дам Сайгона", "en": "Notre-Dame Cathedral Saigon" },
+      "description": {
+        "ru": "Колониальный собор 1880 года, вход свободный",
+        "en": "Colonial cathedral from 1880, free entry"
+      },
+      "lat": 10.7797,
+      "lng": 106.6993,
+      "category": "sight"
+    },
+    {
+      "id": "jade-pagoda",
+      "title": { "ru": "Пагода Нефритового императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Таосистский храм 1909 года — самый атмосферный в городе",
+        "en": "Taoist temple 1909 — the city's most atmospheric"
+      },
+      "lat": 10.7887,
+      "lng": 106.6892,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco",
+      "title": { "ru": "Башня Bitexco — SkyDeck", "en": "Bitexco Tower SkyDeck" },
+      "description": {
+        "ru": "Смотровая на 49-м этаже — 200k VND",
+        "en": "Observation deck on 49th floor — 200k VND"
+      },
+      "lat": 10.7716,
+      "lng": 106.7043,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Улица Буй Вьен (бэкпэкеры)", "en": "Bui Vien Walking Street" },
+      "description": {
+        "ru": "Ночная жизнь, бары, рестораны, хостелы",
+        "en": "Nightlife, bars, restaurants, hostels"
+      },
+      "lat": 10.7673,
+      "lng": 106.6924,
+      "category": "district"
+    },
+    {
+      "id": "binh-tay-market",
+      "title": { "ru": "Рынок Бинь Тэй (Чайна-таун)", "en": "Binh Tay Market (Chinatown)" },
+      "description": {
+        "ru": "Оптовый рынок District 5 — аутентичнее Ben Thanh",
+        "en": "Wholesale market District 5 — more authentic than Ben Thanh"
+      },
+      "lat": 10.7516,
+      "lng": 106.6515,
+      "category": "food"
+    },
+    {
+      "id": "cu-chi",
+      "title": { "ru": "Тоннели Ку Чи", "en": "Cu Chi Tunnels" },
+      "description": {
+        "ru": "40 км от центра — 120-140k VND с гидом",
+        "en": "40 km from center — 120-140k VND with guide"
+      },
+      "lat": 11.0673,
+      "lng": 106.4641,
+      "category": "sight"
+    },
+    {
+      "id": "vinh-khanh",
+      "title": { "ru": "Улица морепродуктов Винь Кхань (D4)", "en": "Vinh Khanh Seafood Street (D4)" },
+      "description": {
+        "ru": "С 17:00 — устрицы, крабы, морские улитки от 5k",
+        "en": "From 5 PM — oysters, crabs, sea snails from 5k"
+      },
+      "lat": 10.7582,
+      "lng": 106.7054,
+      "category": "food"
+    },
+    {
+      "id": "bach-dang-pier",
+      "title": { "ru": "Причал Bach Dang (водный автобус)", "en": "Bach Dang Pier (water bus)" },
+      "description": {
+        "ru": "Паром до Vung Tau 2 ч и водный автобус по реке",
+        "en": "Ferry to Vung Tau 2h and water bus along the river"
+      },
+      "lat": 10.7796,
+      "lng": 106.7046,
+      "category": "transport"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам (90 дней)",
+        "en": "Check Vietnam visa / e-visa (90 days)"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel/Mobifone в аэропорту SGN",
+        "en": "Buy Viettel/Mobifone SIM at SGN airport"
+      }
+    },
+    {
+      "id": "grab-be",
+      "label": {
+        "ru": "Установить Grab и Be (альтернатива Grab)",
+        "en": "Install Grab and Be apps"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур Cu Chi Tunnels (Ben Duoc)",
+        "en": "Book Cu Chi Tunnels tour (Ben Duoc)"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Обменять/снять VND — ювелирные лавки Dong Khoi",
+        "en": "Exchange/withdraw VND — jewelry shops on Dong Khoi"
+      }
+    },
+    {
+      "id": "bag-safety",
+      "label": {
+        "ru": "Носить сумку с внутренней стороны (от мотоциклистов)",
+        "en": "Wear bag on the building side (away from traffic)"
+      }
+    },
+    {
+      "id": "metro",
+      "label": {
+        "ru": "Попробовать метро Линия 1 (Ben Thanh → Thu Duc)",
+        "en": "Try Metro Line 1 (Ben Thanh → Thu Duc)"
+      }
+    },
+    {
+      "id": "banh-mi",
+      "label": {
+        "ru": "Banh Mi Huynh Hoa — прийти ровно в 16:00",
+        "en": "Banh Mi Huynh Hoa — arrive exactly at 4 PM"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Оформить тревел-страховку перед поездкой",
+        "en": "Get travel insurance before the trip"
+      }
+    }
+  ]
+}
