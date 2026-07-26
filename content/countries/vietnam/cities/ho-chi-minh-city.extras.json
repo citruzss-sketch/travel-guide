@@ -1,0 +1,203 @@
+{
+  "coordinates": { "lat": 10.8231, "lng": 106.6297 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Шон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7 км от центра D1. Grab ~80–130k VND",
+        "en": "7 km from D1 center. Grab ~80–130k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6520,
+      "category": "airport"
+    },
+    {
+      "id": "war-museum",
+      "title": { "ru": "Музей военных реликвий", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "28 Vo Van Tan, D3 — 40,000 VND",
+        "en": "28 Vo Van Tan, D3 — 40,000 VND"
+      },
+      "lat": 10.7793,
+      "lng": 106.6920,
+      "category": "sight"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец Независимости", "en": "Reunification Palace" },
+      "description": {
+        "ru": "135 Nam Ky Khoi Nghia, D1 — 40,000 VND",
+        "en": "135 Nam Ky Khoi Nghia, D1 — 40,000 VND"
+      },
+      "lat": 10.7769,
+      "lng": 106.6956,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco",
+      "title": { "ru": "Битексо — SkyDeck", "en": "Bitexco Financial Tower SkyDeck" },
+      "description": {
+        "ru": "2 Hai Trieu, D1 — 200,000 VND. Лучший закатный вид",
+        "en": "2 Hai Trieu, D1 — 200,000 VND. Best sunset view"
+      },
+      "lat": 10.7716,
+      "lng": 106.7048,
+      "category": "sight"
+    },
+    {
+      "id": "jade-pagoda",
+      "title": { "ru": "Пагода Нефритового императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "73 Mai Thi Luu, Binh Thanh — бесплатно",
+        "en": "73 Mai Thi Luu, Binh Thanh — free"
+      },
+      "lat": 10.7886,
+      "lng": 106.6973,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам", "en": "Notre-Dame Cathedral" },
+      "description": {
+        "ru": "Площадь Парижской Коммуны, D1 — бесплатно",
+        "en": "Paris Commune Square, D1 — free"
+      },
+      "lat": 10.7796,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "ben-thanh",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Главный рынок D1 — сувениры, еда, торг",
+        "en": "Main D1 market — souvenirs, food, bargain"
+      },
+      "lat": 10.7726,
+      "lng": 106.6980,
+      "category": "food"
+    },
+    {
+      "id": "vinh-khanh",
+      "title": { "ru": "Улица Виnh Khanh — Морепродукты", "en": "Vinh Khanh — Seafood Street" },
+      "description": {
+        "ru": "D4, открывается с 17:00. Устрицы 5–8k VND/шт",
+        "en": "D4, opens from 5 PM. Oysters 5–8k VND each"
+      },
+      "lat": 10.7576,
+      "lng": 106.6990,
+      "category": "food"
+    },
+    {
+      "id": "banh-mi-huynh-hoa",
+      "title": { "ru": "Bánh mì Huỳnh Hoa", "en": "Bánh mì Huỳnh Hoa" },
+      "description": {
+        "ru": "26 Le Thi Rieng, D1 — открывается в 16:00",
+        "en": "26 Le Thi Rieng, D1 — opens at 4 PM"
+      },
+      "lat": 10.7888,
+      "lng": 106.6999,
+      "category": "food"
+    },
+    {
+      "id": "metro-ben-thanh",
+      "title": { "ru": "Метро Ben Thanh (Line 1)", "en": "Metro Ben Thanh Station (Line 1)" },
+      "description": {
+        "ru": "Начало Metro Line 1 (открылось дек 2024). 6–20k VND",
+        "en": "Start of Metro Line 1 (opened Dec 2024). 6–20k VND"
+      },
+      "lat": 10.7724,
+      "lng": 106.6980,
+      "category": "transport"
+    },
+    {
+      "id": "bach-dang-pier",
+      "title": { "ru": "Причал Бах Данг (паром в Вунг Тау)", "en": "Bach Dang Pier (Vung Tau Ferry)" },
+      "description": {
+        "ru": "D1. Паром Greenlines в Вунг Тау 240k/чел, 2ч",
+        "en": "D1. Greenlines ferry to Vung Tau 240k/person, 2h"
+      },
+      "lat": 10.7779,
+      "lng": 106.7048,
+      "category": "transport"
+    },
+    {
+      "id": "pho-hoa-pasteur",
+      "title": { "ru": "Phở Hòa Pasteur", "en": "Phở Hòa Pasteur" },
+      "description": {
+        "ru": "260C Pasteur, D3 — с 1960-х годов. 60–80k VND",
+        "en": "260C Pasteur, D3 — since the 1960s. 60–80k VND"
+      },
+      "lat": 10.7789,
+      "lng": 106.6926,
+      "category": "food"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "grab-app",
+      "label": {
+        "ru": "Установить Grab и привязать карту",
+        "en": "Install Grab and link card"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel в аэропорту",
+        "en": "Buy Viettel SIM at airport"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять VND наличными (Sacombank/Vietcombank)",
+        "en": "Withdraw VND cash (Sacombank/Vietcombank)"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур на тоннели Ку Чи заранее",
+        "en": "Book Cu Chi Tunnels tour in advance"
+      }
+    },
+    {
+      "id": "banh-mi",
+      "label": {
+        "ru": "Прийти к Huynh Hoa к 15:45 (открытие в 16:00)",
+        "en": "Arrive at Huynh Hoa by 3:45 PM (opens 4 PM)"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Тревел-страховка с покрытием мотоцикла",
+        "en": "Travel insurance with motorbike cover"
+      }
+    },
+    {
+      "id": "bag-safety",
+      "label": {
+        "ru": "Носить сумку на стороне здания (защита от краж)",
+        "en": "Carry bag on building side (snatch-theft protection)"
+      }
+    },
+    {
+      "id": "vung-tau",
+      "label": {
+        "ru": "Проверить расписание парома в Вунг Тау (последний в 17:00)",
+        "en": "Check Vung Tau ferry schedule (last return at 5 PM)"
+      }
+    }
+  ]
+}
