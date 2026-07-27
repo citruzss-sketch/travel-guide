@@ -1,0 +1,207 @@
+{
+  "coordinates": { "lat": 11.9404, "lng": 108.4383 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "dli-airport",
+      "title": { "ru": "Аэропорт Лиен Кхыонг (DLI)", "en": "Lien Khuong Airport (DLI)" },
+      "description": {
+        "ru": "30 км от центра. Grab ~200–280k VND",
+        "en": "30 km from center. Grab ~200–280k VND"
+      },
+      "lat": 11.7498,
+      "lng": 108.3673,
+      "category": "airport"
+    },
+    {
+      "id": "xuan-huong-lake",
+      "title": { "ru": "Озеро Суан Хыонг", "en": "Xuan Huong Lake" },
+      "description": {
+        "ru": "Центральное озеро, прогулки и велопрокат",
+        "en": "Central lake, walks and bike rentals"
+      },
+      "lat": 11.9416,
+      "lng": 108.4420,
+      "category": "sight"
+    },
+    {
+      "id": "crazy-house",
+      "title": { "ru": "Crazy House (Hang Nga)", "en": "Crazy House (Hang Nga)" },
+      "description": {
+        "ru": "Сюрреалистическая архитектура, 60k вход",
+        "en": "Surrealist architecture, 60k entry"
+      },
+      "lat": 11.9341,
+      "lng": 108.4367,
+      "category": "sight"
+    },
+    {
+      "id": "night-market",
+      "title": { "ru": "Ночной рынок Далата", "en": "Da Lat Night Market" },
+      "description": {
+        "ru": "Еда, сувениры, клубника, артишоковый чай. 17:00–24:00",
+        "en": "Food, souvenirs, strawberries, artichoke tea. 5 PM–midnight"
+      },
+      "lat": 11.9391,
+      "lng": 108.4381,
+      "category": "food"
+    },
+    {
+      "id": "datanla-falls",
+      "title": { "ru": "Водопад Датанла", "en": "Datanla Waterfall" },
+      "description": {
+        "ru": "Каскады, альпийские горки, 5 км от центра",
+        "en": "Cascades, alpine coasters, 5 km from center"
+      },
+      "lat": 11.9076,
+      "lng": 108.4443,
+      "category": "sight"
+    },
+    {
+      "id": "linh-phuoc-pagoda",
+      "title": { "ru": "Пагода Линь Фыок", "en": "Linh Phuoc Pagoda" },
+      "description": {
+        "ru": "Мозаика из черепков, пос. Трай Мат, 8 км",
+        "en": "Mosaic pagoda in Trai Mat village, 8 km"
+      },
+      "lat": 11.9006,
+      "lng": 108.4891,
+      "category": "sight"
+    },
+    {
+      "id": "langbiang",
+      "title": { "ru": "Гора Лангбьянг", "en": "Langbiang Mountain" },
+      "description": {
+        "ru": "2169 м, панорамные виды, джип или пешком",
+        "en": "2169 m, panoramic views, jeep or hiking"
+      },
+      "lat": 12.0530,
+      "lng": 108.4397,
+      "category": "sight"
+    },
+    {
+      "id": "dalat-station",
+      "title": { "ru": "Ж/д вокзал Далата (ретро)", "en": "Da Lat Railway Station (heritage)" },
+      "description": {
+        "ru": "Колониальная станция, поезд до Трай Мат 56k",
+        "en": "Colonial station, train to Trai Mat 56k"
+      },
+      "lat": 11.9434,
+      "lng": 108.4419,
+      "category": "transport"
+    },
+    {
+      "id": "valley-of-love",
+      "title": { "ru": "Долина Любви", "en": "Valley of Love" },
+      "description": {
+        "ru": "Озёра, лошади, лодки; 50k вход",
+        "en": "Lakes, horses, boats; 50k entry"
+      },
+      "lat": 11.9656,
+      "lng": 108.4418,
+      "category": "sight"
+    },
+    {
+      "id": "dalat-palace",
+      "title": { "ru": "Далатский дворец (отель 5*)", "en": "Da Lat Palace (5* hotel)" },
+      "description": {
+        "ru": "Французская вилла 1922 г., вид на озеро",
+        "en": "French palace 1922, lake views"
+      },
+      "lat": 11.9462,
+      "lng": 108.4414,
+      "category": "district"
+    },
+    {
+      "id": "flower-market",
+      "title": { "ru": "Цветочный рынок (Cho Hoa)", "en": "Flower Market (Cho Hoa)" },
+      "description": {
+        "ru": "Оптовый рынок цветов, оживает в 4–6 утра",
+        "en": "Wholesale flower market, peaks at 4–6 AM"
+      },
+      "lat": 11.9408,
+      "lng": 108.4379,
+      "category": "food"
+    },
+    {
+      "id": "prenn-falls",
+      "title": { "ru": "Водопад Прен", "en": "Prenn Waterfall" },
+      "description": {
+        "ru": "10 м высота, можно пройти за занавесью воды, 30k",
+        "en": "10 m tall, walk behind water curtain, 30k"
+      },
+      "lat": 11.8946,
+      "lng": 108.4434,
+      "category": "sight"
+    },
+    {
+      "id": "banh-mi-hoa",
+      "title": { "ru": "Bánh Mì Hoa", "en": "Bánh Mì Hoa" },
+      "description": {
+        "ru": "Лучший bánh mì Далата, 25–40k, с 6 до 10 утра",
+        "en": "Da Lat's best banh mi, 25–40k, 6 AM–10 AM"
+      },
+      "lat": 11.9395,
+      "lng": 108.4385,
+      "category": "food"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "jacket",
+      "label": {
+        "ru": "Взять тёплую куртку или свитер (ночью до +10°C)",
+        "en": "Pack a warm jacket or sweater (nights down to 10°C)"
+      }
+    },
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить e-visa Вьетнам",
+        "en": "Check Vietnam e-visa"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab (водителей меньше — планируйте заранее)",
+        "en": "Install Grab (fewer drivers — plan ahead)"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять наличные VND (рынок и фермы)",
+        "en": "Withdraw VND cash (market and farms)"
+      }
+    },
+    {
+      "id": "canyoning",
+      "label": {
+        "ru": "Забронировать каньонинг у сертифицированного оператора",
+        "en": "Book canyoning with a certified operator"
+      }
+    },
+    {
+      "id": "motorbike",
+      "label": {
+        "ru": "Арендовать байк (или Easy Rider тур) для окрестностей",
+        "en": "Rent a motorbike (or Easy Rider tour) to explore surroundings"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel в аэропорту",
+        "en": "Buy Viettel SIM at the airport"
+      }
+    },
+    {
+      "id": "accommodation",
+      "label": {
+        "ru": "Подтвердить бронь отеля/виллы (минимум 3 ночи)",
+        "en": "Confirm hotel/villa booking (minimum 3 nights)"
+      }
+    }
+  ]
+}
