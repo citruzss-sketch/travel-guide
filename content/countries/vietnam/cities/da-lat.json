@@ -1,0 +1,867 @@
+{
+  "id": "da-lat",
+  "slug": "da-lat",
+  "countryId": "vietnam",
+  "name": {
+    "ru": "Далат",
+    "en": "Da Lat"
+  },
+  "tagline": {
+    "ru": "Горный город цветов с прохладным климатом и французской архитектурой",
+    "en": "Highland city of flowers with cool climate and French colonial architecture"
+  },
+  "heroImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_city.jpg?width=1920",
+  "overview": {
+    "ru": "Далат — уникальный горный курорт Вьетнама на высоте 1500 м над уровнем моря в провинции Лам Донг. Основанный французами в 1907 году как место отдыха от тропической жары, он сохранил колониальные виллы, сосновые леса и прохладный климат +15–24°C круглый год. Город знаменит клубникой, артишоковым чаем, кофейными плантациями, водопадами, экстремальными турами и сюрреалистичной архитектурой Crazy House. Далат — полная противоположность пляжным курортам Вьетнама: здесь вы надеваете свитер, пьёте горячий кофе и катаетесь на лошадях в тумане.",
+    "en": "Da Lat is Vietnam's unique highland resort at 1,500 m above sea level in Lam Dong province. Founded by the French in 1907 as a retreat from tropical heat, it retains colonial villas, pine forests, and a cool climate of 15–24°C year-round. The city is famous for strawberries, artichoke tea, coffee plantations, waterfalls, adventure tours, and the surreal Crazy House architecture. Da Lat is the complete opposite of Vietnam's beach resorts: here you wear a sweater, drink hot coffee, and ride horses through the mist."
+  },
+  "bestTime": {
+    "ru": "Ноябрь–март (прохладный сухой сезон, +15–20°C). Апрель–май — чуть теплее. Сезон дождей (июнь–октябрь) не исключает посещения — ливни короткие, после них туман и зелень особенно красивы.",
+    "en": "November–March (cool dry season, 15–20°C). April–May slightly warmer. Rainy season (June–October) still workable — showers are short, mist and greenery are especially beautiful after rain."
+  },
+  "currency": {
+    "ru": "Вьетнамский донг (VND). 1 USD ≈ 25,000 VND. Банкоматы есть в центре, наличные нужны на ночном рынке и у уличных торговцев.",
+    "en": "Vietnamese Dong (VND). 1 USD ≈ 25,000 VND. ATMs available in the center; cash needed at night market and street vendors."
+  },
+  "language": {
+    "ru": "Вьетнамский. В туристических кафе и гестхаусах понимают базовый английский. Русский почти не распространён.",
+    "en": "Vietnamese. Basic English understood in tourist cafes and guesthouses. Russian rarely spoken."
+  },
+  "timezone": {
+    "ru": "UTC+7 (на 4 часа впереди Москвы)",
+    "en": "UTC+7 (4 hours ahead of Moscow)"
+  },
+  "airport": {
+    "title": {
+      "ru": "Как добраться",
+      "en": "Getting there"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Lien Khuong Airport (DLI)",
+          "en": "Lien Khuong Airport (DLI)"
+        },
+        "description": {
+          "ru": "Аэропорт Лиен Кхыонг находится в 30 км южнее центра Далата. Рейсы из Ханоя (~2ч), Хошимина (~1ч), Дананга (~1ч 15мин) — Vietnam Airlines, VietJet, Bamboo.",
+          "en": "Lien Khuong Airport is 30 km south of Da Lat city center. Flights from Hanoi (~2h), Ho Chi Minh City (~1h), Da Nang (~1h 15min) — Vietnam Airlines, VietJet, Bamboo."
+        },
+        "tips": {
+          "ru": [
+            "Grab до центра: 200,000–280,000 VND (~$8–11), около 40 мин",
+            "Такси Mai Linh: ~300,000 VND, договаривайтесь до посадки",
+            "Автобус-шаттл Phuong Trang: 50,000 VND, идёт ~60 мин",
+            "Многие отели организуют трансфер от 150,000–200,000 VND"
+          ],
+          "en": [
+            "Grab to center: 200,000–280,000 VND (~$8–11), about 40 min",
+            "Mai Linh taxi: ~300,000 VND, agree price before getting in",
+            "Phuong Trang shuttle bus: 50,000 VND, takes ~60 min",
+            "Many hotels arrange transfers from 150,000–200,000 VND"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lien_Khuong_Airport.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Автобус из Нячанга / Хошимина",
+          "en": "Bus from Nha Trang / Ho Chi Minh City"
+        },
+        "description": {
+          "ru": "Phuong Trang (Futa) и Thanh Buoi — лучшие компании. Из Нячанга: ~3–3,5 ч, из Хошимина: ~6–7 ч. Маршрут пролегает через горный серпантин с видами.",
+          "en": "Phuong Trang (Futa) and Thanh Buoi are the best operators. From Nha Trang: ~3–3.5h, from Ho Chi Minh City: ~6–7h. Route winds through mountain passes with scenic views."
+        },
+        "price": {
+          "ru": "Из Нячанга: 120,000–160,000 VND; из HCMC: 180,000–230,000 VND",
+          "en": "From Nha Trang: 120,000–160,000 VND; from HCMC: 180,000–230,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_city.jpg?width=800"
+      }
+    ]
+  },
+  "districts": {
+    "title": {
+      "ru": "Где жить",
+      "en": "Where to stay"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Trung Tam (Центр города)",
+          "en": "Trung Tam (City Center)"
+        },
+        "description": {
+          "ru": "Вокруг ночного рынка и озера Суан Хыонг — самое удобное расположение. Пешая доступность к ресторанам, кафе и основным достопримечательностям. Рекомендуется для первого визита.",
+          "en": "Around the night market and Xuan Huong Lake — most convenient location. Walking distance to restaurants, cafes, and main attractions. Recommended for first-time visitors."
+        },
+        "price": {
+          "ru": "Хостел: от 120,000 VND/ночь | Гестхаус 2*: $15–25/ночь | Отель 3*: $30–55/ночь",
+          "en": "Hostel: from 120,000 VND/night | 2* guesthouse: $15–25/night | 3* hotel: $30–55/night"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_Central_Market.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Khu Hoa Binh / Nguyen Chi Thanh",
+          "en": "Khu Hoa Binh / Nguyen Chi Thanh"
+        },
+        "description": {
+          "ru": "Немного выше центра, тише. Много маленьких кафе, цветочных магазинов, boutique-вилл в колониальном стиле. Идеально для пар и фотографов.",
+          "en": "Slightly above center, quieter. Many small cafes, flower shops, boutique colonial-style villas. Ideal for couples and photographers."
+        },
+        "price": {
+          "ru": "Boutique villa: $40–90/ночь",
+          "en": "Boutique villa: $40–90/night"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_city.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Ngoai O (Загородные виллы)",
+          "en": "Ngoai O (Countryside villas)"
+        },
+        "description": {
+          "ru": "Частные виллы среди сосен, клубничных ферм и цветочных садов в 5–10 км от центра. Тихо, красиво, нужен байк или Grab. Подходит для романтических поездок и семей.",
+          "en": "Private villas among pine forests, strawberry farms, and flower gardens, 5–10 km from center. Quiet, beautiful, need a bike or Grab. Best for romantic trips and families."
+        },
+        "price": {
+          "ru": "Вилла: $30–80/ночь",
+          "en": "Villa: $30–80/night"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dalat_pine_forest.jpg?width=800"
+      }
+    ]
+  },
+  "sights": {
+    "title": {
+      "ru": "Что посмотреть",
+      "en": "Must-see sights"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Crazy House (Hang Nga Guesthouse)",
+          "en": "Crazy House (Hang Nga Guesthouse)"
+        },
+        "description": {
+          "ru": "Сюрреалистическая «гостиница-дерево» архитектора Данг Вьет Нга — ученицы Гауди. Переплетённые лестницы, пещеры, скульптуры зверей, наросты на стенах. До сих пор функционирующий гестхаус. Одна из самых оригинальных построек Вьетнама.",
+          "en": "Surrealist 'tree house hotel' by architect Dang Viet Nga — a Gaudí student. Intertwined staircases, caves, animal sculptures, organic walls. Still a functioning guesthouse. One of the most original buildings in Vietnam."
+        },
+        "price": {
+          "ru": "Вход: 60,000 VND | Номер: $50–80/ночь",
+          "en": "Entry: 60,000 VND | Room: $50–80/night"
+        },
+        "coordinates": { "lat": 11.9341, "lng": 108.4367 },
+        "grabQuery": "Crazy House Da Lat",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hang_Nga_guesthouse_Da_Lat.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Озеро Суан Хыонг (Xuan Huong Lake)",
+          "en": "Xuan Huong Lake"
+        },
+        "description": {
+          "ru": "Искусственное озеро в центре города, созданное в 1919 году. Окружено клумбами, сосновыми аллеями и велодорожками. Утром — туман над водой, вечером — огни набережной. Прогулка по кругу: 6 км.",
+          "en": "Artificial lake in the city center, created in 1919. Surrounded by flowerbeds, pine promenades, and cycling paths. Morning mist over the water, evening lights on the embankment. Loop walk: 6 km."
+        },
+        "price": {
+          "ru": "Бесплатно | Прокат велосипеда у озера: 30,000–50,000 VND/ч",
+          "en": "Free | Bike rental at lake: 30,000–50,000 VND/hour"
+        },
+        "coordinates": { "lat": 11.9416, "lng": 108.4420 },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Xuan_Huong_lake_Da_Lat.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Пагода Линь Фыок (Linh Phuoc Pagoda)",
+          "en": "Linh Phuoc Pagoda"
+        },
+        "description": {
+          "ru": "Пагода «из черепков» в посёлке Trại Mát, 8 км от центра. Гигантский дракон из фарфора, башня 49 м, мозаики из миллионов фрагментов бутылок и тарелок. Одна из красивейших пагод Вьетнама.",
+          "en": "The 'mosaic pagoda' in Trai Mat village, 8 km from center. Giant porcelain dragon, 49 m tower, mosaics from millions of bottle and plate fragments. One of Vietnam's most beautiful pagodas."
+        },
+        "price": {
+          "ru": "Бесплатно | Поезд Далат–Трай Мат: 56,000 VND в один конец",
+          "en": "Free | Da Lat–Trai Mat train: 56,000 VND one way"
+        },
+        "coordinates": { "lat": 11.9006, "lng": 108.4891 },
+        "grabQuery": "Linh Phuoc Pagoda Da Lat",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Linh_Phuoc_Pagoda_Da_Lat.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Водопад Датанла (Datanla Falls)",
+          "en": "Datanla Waterfall"
+        },
+        "description": {
+          "ru": "Три каскада в джунглях в 5 км от центра. На первый уровень — 15 мин пешком, на второй и третий — по альпийским горкам (американские горки) вниз и обратно. Мокро, весело, обязательно.",
+          "en": "Three cascades in the jungle, 5 km from center. First level: 15-min walk; second and third via alpine coasters down and back up. Wet, fun, a must-do."
+        },
+        "price": {
+          "ru": "Вход: 40,000 VND | Горки: 65,000 VND (туда) + 65,000 VND (обратно)",
+          "en": "Entry: 40,000 VND | Alpine coaster: 65,000 VND (down) + 65,000 VND (back up)"
+        },
+        "coordinates": { "lat": 11.9076, "lng": 108.4443 },
+        "grabQuery": "Datanla Waterfall Da Lat",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Datanla_Waterfall_Da_Lat.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Гора Лангбьянг (Langbiang Mountain)",
+          "en": "Langbiang Mountain"
+        },
+        "description": {
+          "ru": "Две горных вершины высотой 2169 м в 12 км от Далата. Легенда о любви двух молодых людей из враждующих племён. Панорамный вид на плато с туманами и сосновыми лесами. Подняться можно пешком (3–4 ч) или на джипе.",
+          "en": "Twin peaks at 2,169 m, 12 km from Da Lat. Legend of two young lovers from rival tribes. Panoramic views over the misty plateau and pine forests. Can hike up (3–4h) or take a jeep ride."
+        },
+        "price": {
+          "ru": "Джип туда-обратно: 300,000–500,000 VND с человека | Пеший подъём: 50,000 VND",
+          "en": "Jeep return: 300,000–500,000 VND per person | Hiking entry: 50,000 VND"
+        },
+        "coordinates": { "lat": 12.0530, "lng": 108.4397 },
+        "grabQuery": "Langbiang Mountain Da Lat",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lang_Bian_Mountain.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Далатский дворец (Dalat Palace)",
+          "en": "Da Lat Palace"
+        },
+        "description": {
+          "ru": "Французский дворец 1922 года на холме над озером Суан Хыонг. Историческая гостиница 5* с видами на город. Даже если не ночуете — зайдите в лобби-бар на послеполуденный чай.",
+          "en": "French palace from 1922 on a hill above Xuan Huong Lake. Historic 5-star hotel with city views. Even if not staying, visit the lobby bar for afternoon tea."
+        },
+        "price": {
+          "ru": "Осмотр снаружи — бесплатно | Послеполуденный чай в лобби: от 200,000 VND",
+          "en": "Exterior viewing free | Afternoon tea in lobby: from 200,000 VND"
+        },
+        "coordinates": { "lat": 11.9462, "lng": 108.4414 },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dalat_Palace_Hotel.jpg?width=800"
+      }
+    ]
+  },
+  "beaches": {
+    "title": {
+      "ru": "Природные места (озёра и водопады)",
+      "en": "Nature spots (lakes & waterfalls)"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Водопад Понгур (Pongour Falls)",
+          "en": "Pongour Waterfall"
+        },
+        "description": {
+          "ru": "Самый широкий водопад Далата — 50 м в ширину и 30 м в высоту, в 50 км от города. Особенно красив в сезон дождей. Называют «Ниагарой Вьетнама». Хорошо ехать на байке через кофейные плантации.",
+          "en": "Da Lat's widest waterfall — 50 m wide and 30 m tall, 50 km from the city. Especially beautiful in rainy season. Called Vietnam's Niagara. Great to reach by motorbike through coffee plantations."
+        },
+        "price": {
+          "ru": "Вход: 20,000 VND | Байк-тур из Далата: от 300,000 VND",
+          "en": "Entry: 20,000 VND | Bike tour from Da Lat: from 300,000 VND"
+        },
+        "coordinates": { "lat": 11.7133, "lng": 108.2811 },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pongour_Falls.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Долина Любви (Valley of Love)",
+          "en": "Valley of Love"
+        },
+        "description": {
+          "ru": "Живописная долина с двумя озёрами, лугами, лошадьми и лодочными катаниями. Популярна среди вьетнамских пар. Катание на лошадях, педальные лодки. Лучше утром — меньше туристов.",
+          "en": "Scenic valley with two lakes, meadows, horses, and boat rides. Popular among Vietnamese couples. Horse rides, paddleboats. Best in the morning — fewer tourists."
+        },
+        "price": {
+          "ru": "Вход: 50,000 VND | Лошадь: 50,000–100,000 VND | Лодка: 60,000 VND/15 мин",
+          "en": "Entry: 50,000 VND | Horse: 50,000–100,000 VND | Boat: 60,000 VND/15 min"
+        },
+        "coordinates": { "lat": 11.9656, "lng": 108.4418 },
+        "grabQuery": "Valley of Love Da Lat",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Valley_of_Love_Da_Lat.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Водопад Прен (Prenn Falls)",
+          "en": "Prenn Waterfall"
+        },
+        "description": {
+          "ru": "10-метровый водопад в 10 км от центра у подножия Прохода Прен. Можно пройти за занавесью воды. Рядом — небольшой зоопарк и кафе. Удобно совмещать с дорогой из аэропорта.",
+          "en": "10-meter waterfall 10 km from center at the foot of Prenn Pass. You can walk behind the water curtain. Nearby small zoo and cafe. Convenient to combine with airport route."
+        },
+        "price": {
+          "ru": "Вход: 30,000 VND",
+          "en": "Entry: 30,000 VND"
+        },
+        "coordinates": { "lat": 11.8946, "lng": 108.4434 },
+        "grabQuery": "Prenn Waterfall Da Lat",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Prenn_Falls_Da_Lat.jpg?width=800"
+      }
+    ]
+  },
+  "food": {
+    "title": {
+      "ru": "Где поесть",
+      "en": "Where to eat"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Bánh Mì Hoa — лучший bánh mì Далата",
+          "en": "Bánh Mì Hoa — Da Lat's best banh mi"
+        },
+        "description": {
+          "ru": "Культовое место у входа на ночной рынок. Хрустящий багет с карри-говядиной, яйцом, паштетом и свежими травами. Очередь с 6 утра, порция готовится у вас на глазах. Расходятся к 10:00.",
+          "en": "Cult spot at the entrance to the night market. Crispy baguette with curry beef, egg, pâté, and fresh herbs. Queue starts at 6 AM, portion made fresh in front of you. Sells out by 10:00 AM."
+        },
+        "price": {
+          "ru": "25,000–40,000 VND",
+          "en": "25,000–40,000 VND"
+        },
+        "address": {
+          "ru": "Рядом с Далатским ночным рынком, 4 Nguyen Thi Minh Khai",
+          "en": "Near Da Lat Night Market, 4 Nguyen Thi Minh Khai"
+        },
+        "coordinates": { "lat": 11.9395, "lng": 108.4385 },
+        "grabQuery": "Banh Mi Hoa Da Lat",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh_m%C3%AC.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Bánh Căn Dalat — местная закуска",
+          "en": "Bánh Căn Dalat — local snack"
+        },
+        "description": {
+          "ru": "Далатская версия мини-блинчиков из рисовой муки, запечённых в чугунной форме. С яйцом, морепродуктами или мясом, соусом ныок чам. Лучшее уличное блюдо города. Ищите на Truong Cong Dinh ближе к вечеру.",
+          "en": "Da Lat version of mini rice-flour pancakes baked in a cast-iron mold. With egg, seafood, or meat, nuoc cham dipping sauce. The city's best street food. Find on Truong Cong Dinh in the late afternoon."
+        },
+        "price": {
+          "ru": "20,000–40,000 VND (6–10 штук)",
+          "en": "20,000–40,000 VND (6–10 pieces)"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%AC%20Qu%E1%BA%A3ng.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Клубника: фермы и рынок",
+          "en": "Strawberries: farms and market"
+        },
+        "description": {
+          "ru": "Далат — клубничная столица Вьетнама. Ягоды вкуснее и крупнее всего в январе–марте. Клубнику с бальзамическим уксусом и сгущёнкой продают прямо на улице. На фермах у Thung Lung Tinh Yeu можно собирать самому.",
+          "en": "Da Lat is Vietnam's strawberry capital. Berries are biggest and tastiest January–March. Strawberries with balsamic and condensed milk sold right on the street. Pick-your-own at farms near Thung Lung Tinh Yeu."
+        },
+        "price": {
+          "ru": "Клубника 1 кг: 50,000–120,000 VND | Клубника со сливками в стакане: 20,000–30,000 VND",
+          "en": "Strawberries 1 kg: 50,000–120,000 VND | Strawberries with cream in cup: 20,000–30,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Strawberries_in_basket.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Lẩu Bò (говяжий хотпот) у озера",
+          "en": "Lẩu Bò (beef hotpot) by the lake"
+        },
+        "description": {
+          "ru": "Согревающее блюдо для прохладных далатских вечеров — бульон с лемонграссом, кинзой, базиликом, тонкими ломтиками говядины и овощами. Готовится прямо на столе. Улица Hoa Binh и рестораны вокруг озера — лучший выбор.",
+          "en": "Warming dish for cool Da Lat evenings — broth with lemongrass, coriander, basil, thin beef slices, and vegetables. Cooked right at the table. Hoa Binh street and restaurants around the lake are best."
+        },
+        "price": {
+          "ru": "от 120,000 VND на человека",
+          "en": "from 120,000 VND per person"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vietnamese_hotpot.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Чай из артишока (Trà Atiso)",
+          "en": "Artichoke tea (Trà Atiso)"
+        },
+        "description": {
+          "ru": "Фирменный напиток Далата — тёплый чай из цветков артишока с мёдом. Считается полезным для печени. Продаётся на ночном рынке и в специализированных магазинах. Хорошо как сувенир — высушенные артишоки есть везде.",
+          "en": "Da Lat's signature drink — warm artichoke flower tea with honey. Believed to be good for the liver. Sold at the night market and specialty shops. Makes a great souvenir — dried artichokes available everywhere."
+        },
+        "price": {
+          "ru": "Стакан на рынке: 15,000–25,000 VND | Пакет домой: 50,000–150,000 VND",
+          "en": "Cup at market: 15,000–25,000 VND | Take-home pack: 50,000–150,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Artichoke_tea.jpg?width=800"
+      }
+    ]
+  },
+  "markets": {
+    "title": {
+      "ru": "Рынки",
+      "en": "Markets"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Далатский ночной рынок (Da Lat Night Market)",
+          "en": "Da Lat Night Market"
+        },
+        "description": {
+          "ru": "Главный рынок города на улице Nguyen Thi Minh Khai, работает с 17:00 до полуночи. Сухофрукты, специи, варежки, свитеры, клубника, яблочное вино (вьетнамское), артишоковый чай, сувениры. Торгуйтесь — цены для туристов завышены в 2–3 раза.",
+          "en": "The city's main market on Nguyen Thi Minh Khai street, open 5 PM to midnight. Dried fruits, spices, gloves, sweaters, strawberries, apple wine (Vietnamese style), artichoke tea, souvenirs. Bargain — tourist prices are 2–3x inflated."
+        },
+        "coordinates": { "lat": 11.9391, "lng": 108.4381 },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_Central_Market.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Цветочный рынок (Cho Hoa)",
+          "en": "Flower Market (Cho Hoa)"
+        },
+        "description": {
+          "ru": "Оптовый цветочный рынок рядом с главным рынком — оживает в 4–6 утра, когда привозят свежие срезанные цветы. Хризантемы, орхидеи, гладиолусы — ещё в росе. Войти может любой, фотографировать — можно.",
+          "en": "Wholesale flower market near the main market — comes alive at 4–6 AM when fresh cut flowers arrive. Chrysanthemums, orchids, gladioli — still dewy. Anyone can enter; photography welcome."
+        },
+        "coordinates": { "lat": 11.9408, "lng": 108.4379 },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_flower_market.jpg?width=800"
+      }
+    ]
+  },
+  "tours": {
+    "title": {
+      "ru": "Экскурсии и активности",
+      "en": "Tours & activities"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Каньонинг (Canyoning) — Datanla Canyon",
+          "en": "Canyoning — Datanla Canyon"
+        },
+        "description": {
+          "ru": "Один из лучших каньонингов Вьетнама — спуски по верёвке по водопадам, прыжки в воду, скольжение по каменным горкам. Dalat Adventure Tours и Groovy Gecko — лучшие операторы. Уровень: начинающий до продвинутого. Всё снаряжение включено.",
+          "en": "One of Vietnam's best canyoning experiences — abseiling down waterfalls, cliff jumps, sliding down natural rock chutes. Dalat Adventure Tours and Groovy Gecko are the best operators. Level: beginner to advanced. All gear included."
+        },
+        "price": {
+          "ru": "700,000–1,200,000 VND, полный день",
+          "en": "700,000–1,200,000 VND, full day"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Datanla_Waterfall_Da_Lat.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Easy Rider (мототур с местным гидом)",
+          "en": "Easy Rider (motorbike tour with local guide)"
+        },
+        "description": {
+          "ru": "Классика Далата: опытный гид везёт вас на мотоцикле через кофейные плантации, шелковичные фермы, деревни горных народностей и смотровые площадки. Гид рассказывает историю по дороге. На 1–5 дней, можно закончить в Хойане или Нячанге.",
+          "en": "Da Lat classic: experienced local guide takes you pillion through coffee plantations, silkworm farms, highland minority villages, and viewpoints. Guide narrates local stories en route. 1–5 days; can finish in Hoi An or Nha Trang."
+        },
+        "price": {
+          "ru": "Полдня: 400,000–600,000 VND | Полный день: 700,000–1,000,000 VND",
+          "en": "Half day: 400,000–600,000 VND | Full day: 700,000–1,000,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hai%20Van%20Pass%2C%20Vietnam%2C%20Vietnamese%20motorbike%20rider%20near%20US%20military%20bunker.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Посещение кофейной плантации",
+          "en": "Coffee plantation visit"
+        },
+        "description": {
+          "ru": "Провинция Лам Донг — крупнейший производитель арабики во Вьетнаме. Многие фермы предлагают туры: как растёт кофе, ферментация, обжарка, дегустация. Лучший кофе здесь — Robusta-Arabica blend с кардамоном. Finca Coffee и Arabica Da Lat — хорошие варианты.",
+          "en": "Lam Dong province is Vietnam's largest arabica producer. Many farms offer tours: how coffee grows, fermentation, roasting, tasting. Best coffee here is Robusta-Arabica blend with cardamom. Finca Coffee and Arabica Da Lat are good options."
+        },
+        "price": {
+          "ru": "Тур + дегустация: 150,000–300,000 VND",
+          "en": "Tour + tasting: 150,000–300,000 VND"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Coffee_plantation_Vietnam.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Поезд Далат — Трай Мат (ретро)",
+          "en": "Da Lat — Trai Mat heritage train"
+        },
+        "description": {
+          "ru": "Единственная сохранившаяся секция колониальной железной дороги Французского Индокитая. 7 км через сосновые леса до деревни Трай Мат и пагоды Линь Фыок. Раритетный вагон 1930-х гг. Отправление по расписанию когда набирается 10+ пассажиров.",
+          "en": "The only surviving section of French Indochina's colonial railway. 7 km through pine forests to Trai Mat village and Linh Phuoc Pagoda. Vintage 1930s carriage. Departs by schedule when 10+ passengers fill up."
+        },
+        "price": {
+          "ru": "56,000 VND в один конец (туда-обратно: 112,000 VND)",
+          "en": "56,000 VND one way (return: 112,000 VND)"
+        },
+        "coordinates": { "lat": 11.9434, "lng": 108.4419 },
+        "grabQuery": "Da Lat Railway Station",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_railway_station.jpg?width=800"
+      }
+    ]
+  },
+  "transport": {
+    "title": {
+      "ru": "Транспорт",
+      "en": "Getting around"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Grab и xe om (мототакси)",
+          "en": "Grab & xe om (moto taxi)"
+        },
+        "description": {
+          "ru": "Grab работает в Далате, но водителей меньше, чем в прибрежных городах — особенно вечером и в дождь. Xe om (частные мотоциклисты) можно поймать у ночного рынка. Для коротких поездок по центру — удобно.",
+          "en": "Grab operates in Da Lat but fewer drivers than coastal cities — especially evenings and rainy weather. Xe om (private moto riders) available at the night market. Convenient for short center trips."
+        },
+        "price": {
+          "ru": "GrabBike по центру: 20,000–40,000 VND | Xe om: договариваться",
+          "en": "GrabBike center trip: 20,000–40,000 VND | Xe om: negotiate"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cycle%20rickshaw%20in%20Hanoi.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Аренда мотоцикла — главный транспорт",
+          "en": "Motorbike rental — main transport"
+        },
+        "description": {
+          "ru": "Далат создан для байков: горные дороги, сосновые леса, фермерские деревни — всё в пределах 20 км. Ехать на мотоцикле через туман и цветущие поля — самое запоминающееся ощущение города. Прокаты вдоль Bui Thi Xuan и Truong Cong Dinh.",
+          "en": "Da Lat is made for bikes: mountain roads, pine forests, farm villages — all within 20 km. Riding through mist and blooming fields is the city's most memorable experience. Rentals on Bui Thi Xuan and Truong Cong Dinh."
+        },
+        "price": {
+          "ru": "Полуавтомат Honda Wave: 100,000–150,000 VND/день | Скутер 125cc: 120,000–180,000 VND/день",
+          "en": "Semi-auto Honda Wave: 100,000–150,000 VND/day | 125cc scooter: 120,000–180,000 VND/day"
+        },
+        "tips": {
+          "ru": [
+            "Дороги в горах крутые и мокрые — будьте осторожны в дождь",
+            "Бензин около 25–40k VND на день по окрестностям",
+            "Залог: паспорт (лучше копия) или депозит 300k–1M VND",
+            "Обязательно снимите на фото все царапины до отъезда",
+            "Вечером в туман включайте дальний свет — видимость резко падает"
+          ],
+          "en": [
+            "Mountain roads are steep and wet — be careful in rain",
+            "Fuel about 25–40k VND/day around the area",
+            "Deposit: passport (copy preferred) or 300k–1M VND cash",
+            "Photo all scratches before you leave",
+            "Use high beam in evening fog — visibility drops sharply"
+          ]
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hai%20Van%20Pass%2C%20Vietnam%2C%20Vietnamese%20motorbike%20rider%20near%20US%20military%20bunker.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Велосипед",
+          "en": "Bicycle"
+        },
+        "description": {
+          "ru": "Прокат велосипедов есть у многих отелей и хостелов. Центр города удобен для велосипеда, но горные окраины — крутые подъёмы. Электровелосипеды (e-bike) появляются — удобнее для холмистого рельефа.",
+          "en": "Bike rentals available at many hotels and hostels. City center is bikeable, but hillside suburbs have steep climbs. E-bikes appearing — much more manageable on the hilly terrain."
+        },
+        "price": {
+          "ru": "Обычный велосипед: 50,000–80,000 VND/день | E-bike: 80,000–120,000 VND/день",
+          "en": "Regular bicycle: 50,000–80,000 VND/day | E-bike: 80,000–120,000 VND/day"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cycle%20rickshaw%20in%20Hanoi.jpg?width=800"
+      }
+    ]
+  },
+  "simAndInternet": {
+    "title": {
+      "ru": "Сим-карты и интернет",
+      "en": "SIM cards & internet"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Viettel / Mobifone",
+          "en": "Viettel / Mobifone"
+        },
+        "description": {
+          "ru": "Обе сети хорошо работают в центре Далата и вдоль главных дорог. В горах и на перевалах возможны мёртвые зоны. Покупайте SIM в аэропорту Лиен Кхыонг или в магазинах на Nguyen Chi Thanh.",
+          "en": "Both networks work well in Da Lat center and along main roads. Mountain areas and passes may have dead zones. Buy SIM at Lien Khuong airport or shops on Nguyen Chi Thanh."
+        },
+        "price": {
+          "ru": "30 GB / 30 дней: ~150,000 VND",
+          "en": "30 GB / 30 days: ~150,000 VND"
+        },
+        "image": "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": {
+          "ru": "Wi-Fi в кафе",
+          "en": "Cafe Wi-Fi"
+        },
+        "description": {
+          "ru": "Далат — город кафе: скорость интернета в большинстве заведений 20–50 Mbps. Отличные точки для работы: 1990 Cafe, The Escape, Shelter Coffee. Ноутбук берите — никто не выгонит.",
+          "en": "Da Lat is a city of cafes: most have 20–50 Mbps Wi-Fi. Great work spots: 1990 Cafe, The Escape, Shelter Coffee. Laptop welcome — no one will rush you."
+        },
+        "image": "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800"
+      }
+    ]
+  },
+  "money": {
+    "title": {
+      "ru": "Деньги и цены",
+      "en": "Money & prices"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Банкоматы и обмен",
+          "en": "ATMs & exchange"
+        },
+        "description": {
+          "ru": "Vietcombank и BIDV в центре города (Hoa Binh sq., Nguyen Chi Thanh). Комиссия за снятие: 20,000–55,000 VND. Обменных пунктов меньше, чем в прибрежных городах — меняйте в надёжных ювелирных магазинах.",
+          "en": "Vietcombank and BIDV in city center (Hoa Binh sq., Nguyen Chi Thanh). ATM fee: 20,000–55,000 VND. Fewer exchange offices than coastal cities — change at reputable jewelry shops."
+        },
+        "image": "https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": {
+          "ru": "Примерные цены",
+          "en": "Sample prices"
+        },
+        "description": {
+          "ru": "Bánh mì: 25–40k | Bánh căn (порция): 20–40k | Горячий кофе: 25–45k | Клубника 500г: 40–70k | Обед в ресторане: 80–150k | Аренда байка: 100–180k/день | Каньонинг: 700k–1,200k | Вход Crazy House: 60k",
+          "en": "Bánh mì: 25–40k | Bánh căn (portion): 20–40k | Hot coffee: 25–45k | Strawberries 500g: 40–70k | Restaurant lunch: 80–150k | Bike rental: 100–180k/day | Canyoning: 700k–1,200k | Crazy House entry: 60k"
+        },
+        "image": "https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=800"
+      }
+    ]
+  },
+  "safety": {
+    "title": {
+      "ru": "Безопасность",
+      "en": "Safety"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Общая безопасность",
+          "en": "General safety"
+        },
+        "description": {
+          "ru": "Далат — один из самых безопасных городов Вьетнама. Туристов много, преступность низкая. Основные риски: ДТП на горных дорогах в дождь и туман, переохлаждение ночью (берите куртку!), недобросовестные туроператоры каньонинга.",
+          "en": "Da Lat is one of Vietnam's safest cities. Many tourists, low crime. Main risks: road accidents on mountain roads in rain/fog, hypothermia at night (bring a jacket!), unqualified canyoning operators."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_city.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Горная дорога и туман",
+          "en": "Mountain roads & fog"
+        },
+        "description": {
+          "ru": "Туман в Далате может опуститься внезапно, особенно вечером и в сезон дождей. На байке: снижайте скорость до 20–30 км/ч, включайте фары, жмитесь к обочине. На серпантинах в горах — смотрите за встречными автобусами.",
+          "en": "Da Lat fog can descend suddenly, especially evenings and rainy season. On a bike: slow to 20–30 km/h, use headlights, keep to the shoulder. On mountain switchbacks — watch for oncoming buses."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dalat_pine_forest.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Холод ночью",
+          "en": "Cold at night"
+        },
+        "description": {
+          "ru": "Ночью в Далате может быть +10–14°C, особенно в декабре–феврале. Берите свитер или лёгкую куртку. На ночном рынке продают хорошие вьетнамские шерстяные кардиганы за 100,000–200,000 VND.",
+          "en": "Night temperatures in Da Lat can drop to 10–14°C, especially December–February. Bring a sweater or light jacket. The night market sells good Vietnamese wool cardigans for 100,000–200,000 VND."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_city.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Экстренные номера",
+          "en": "Emergency numbers"
+        },
+        "description": {
+          "ru": "Полиция: 113 | Скорая: 115 | Пожарная: 114 | Центральная больница Далата: +84 263 3822 154",
+          "en": "Police: 113 | Ambulance: 115 | Fire: 114 | Da Lat General Hospital: +84 263 3822 154"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_city.jpg?width=800"
+      }
+    ]
+  },
+  "phrases": {
+    "title": {
+      "ru": "Полезные фразы",
+      "en": "Useful phrases"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Xin chào — Здравствуйте",
+          "en": "Xin chào — Hello"
+        },
+        "description": {
+          "ru": "Sin chao",
+          "en": "Sin chao"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Cảm ơn — Спасибо",
+          "en": "Cảm ơn — Thank you"
+        },
+        "description": {
+          "ru": "Gam un",
+          "en": "Gam un"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Bao nhiêu? — Сколько стоит?",
+          "en": "Bao nhiêu? — How much?"
+        },
+        "description": {
+          "ru": "Baow nyew",
+          "en": "Baow nyew"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Lạnh quá! — Очень холодно!",
+          "en": "Lạnh quá! — Very cold!"
+        },
+        "description": {
+          "ru": "Lang kwa",
+          "en": "Lang kwa"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Cho tôi xem menu — Покажите меню",
+          "en": "Cho tôi xem menu — Show me the menu"
+        },
+        "description": {
+          "ru": "Cho toy sem menu",
+          "en": "Cho toy sem menu"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Đắt quá! — Слишком дорого!",
+          "en": "Đắt quá! — Too expensive!"
+        },
+        "description": {
+          "ru": "Dat kwa",
+          "en": "Dat kwa"
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoi_An_lanterns.jpg?width=800"
+      }
+    ]
+  },
+  "lifehacks": {
+    "title": {
+      "ru": "Лайфхаки",
+      "en": "Lifehacks"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Возьмите куртку — без исключений",
+          "en": "Always pack a jacket — no exceptions"
+        },
+        "description": {
+          "ru": "Туристы регулярно недооценивают холод Далата. Ночью может быть +10°C. Если приехали без тёплых вещей — купите свитер или кардиган на ночном рынке за 100,000–200,000 VND. Намного приятнее, чем дрожать на водопаде.",
+          "en": "Tourists regularly underestimate Da Lat's cold. Nights can reach 10°C. If you arrived without warm clothes — buy a sweater or cardigan at the night market for 100,000–200,000 VND. Much more enjoyable than shivering at waterfalls."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dalat_pine_forest.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Выезжайте до восхода — туман особенный",
+          "en": "Ride out before sunrise — the mist is special"
+        },
+        "description": {
+          "ru": "Лучшие фотографии Далата делают в 5:30–7:30 утра, когда над долинами и соснами стелется туман. Возьмите байк, запакуйтесь в куртку, езжайте к Langbiang или вдоль Ho Than Tho — будете одни среди тумана и сосен.",
+          "en": "The best Da Lat photos are taken 5:30–7:30 AM when fog rolls over valleys and pine trees. Take a bike, bundle up in a jacket, ride toward Langbiang or along Ho Than Tho — you'll be alone in the mist and pines."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_city.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Кофе с яйцом (cà phê trứng) — попробуйте",
+          "en": "Egg coffee (cà phê trứng) — try it"
+        },
+        "description": {
+          "ru": "Далат производит отличный кофе и придумал свою версию яичного кофе: взбитый желток с сахаром и сгущёнкой поверх эспрессо. Подаётся горячим в маленькой чашке. Ищите в кафе типа Cafe Tung или The Pink House.",
+          "en": "Da Lat produces great coffee and has its own egg coffee: whipped egg yolk with sugar and condensed milk over espresso. Served hot in a small cup. Find it at cafes like Cafe Tung or The Pink House."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Coffee_plantation_Vietnam.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Клубнику покупайте на фермах, а не на рынке",
+          "en": "Buy strawberries at farms, not the market"
+        },
+        "description": {
+          "ru": "На ночном рынке клубника красиво выложена, но часто перезревшая и завышенная. Фермы у Truong Cong Dinh и вдоль дороги к Долине Любви продают свежую ягоду прямо с куста дешевле на 30–50%.",
+          "en": "Night market strawberries look nice but are often overripe and overpriced. Farms on Truong Cong Dinh and along the road to Valley of Love sell fresh berries straight from the plant, 30–50% cheaper."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Strawberries_in_basket.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Двух дней недостаточно",
+          "en": "Two days is not enough"
+        },
+        "description": {
+          "ru": "Большинство туристов приезжают на 2 ночи и не успевают ничего. Для полноценного Далата нужно минимум 3–4 ночи: каньонинг или Easy Rider займёт день, достопримечательности — день, прогулки по туману и кафе — ещё день.",
+          "en": "Most tourists arrive for 2 nights and see almost nothing. A proper Da Lat experience needs at least 3–4 nights: canyoning or Easy Rider takes a day, sightseeing a day, misty morning rides and cafe-hopping another day."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_city.jpg?width=800"
+      }
+    ]
+  },
+  "scams": {
+    "title": {
+      "ru": "Разводы и предупреждения",
+      "en": "Scams & warnings"
+    },
+    "items": [
+      {
+        "title": {
+          "ru": "Нелицензированный каньонинг",
+          "en": "Unlicensed canyoning"
+        },
+        "description": {
+          "ru": "Каньонинг в Далате — популярная активность, но несколько агентств работают без должного снаряжения и подготовки. Бронируйте только у проверенных операторов: Dalat Adventure Tours, Groovy Gecko, Phat Tire Ventures. Проверьте наличие страховки и инструкторского сертификата.",
+          "en": "Canyoning in Da Lat is popular, but some agencies operate without proper gear or training. Book only with verified operators: Dalat Adventure Tours, Groovy Gecko, Phat Tire Ventures. Verify insurance and instructor certification."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Datanla_Waterfall_Da_Lat.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Завышенные цены на «частных» гидов Easy Rider",
+          "en": "Overpriced 'private' Easy Rider guides"
+        },
+        "description": {
+          "ru": "Easy Rider — известный бренд, которым пользуются все кому не лень. Настоящие опытные гиды объединены в ассоциации и имеют удостоверения. Молодые парни у ночного рынка могут называть себя Easy Rider, но не иметь маршрутов и знаний. Просите рекомендации у хостела.",
+          "en": "Easy Rider is a well-known brand used by many opportunists. Genuine experienced guides are members of associations and carry ID. Young men at the night market may call themselves Easy Rider without proper routes or knowledge. Ask your hostel for recommendations."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hai%20Van%20Pass%2C%20Vietnam%2C%20Vietnamese%20motorbike%20rider%20near%20US%20military%20bunker.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "Рынок: начальные цены завышены",
+          "en": "Market: starting prices are inflated"
+        },
+        "description": {
+          "ru": "На ночном рынке Далата цены на сухофрукты, кардиганы и сувениры для туристов завышены в 2–3 раза. Называйте 40–50% от начальной цены и уходите — часто зовут обратно. Торговаться — обязательно.",
+          "en": "Da Lat night market prices on dried fruits, cardigans, and souvenirs are 2–3x inflated for tourists. Offer 40–50% of asking and walk away — they often call you back. Bargaining is expected."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Da_Lat_Central_Market.jpg?width=800"
+      },
+      {
+        "title": {
+          "ru": "«Туристические» прокаты байков",
+          "en": "'Tourist' motorbike rentals"
+        },
+        "description": {
+          "ru": "Некоторые прокатчики требуют паспорт в залог — откажитесь, если возможно. Дайте копию + депозит наличными (300,000–500,000 VND). Перед выездом сфотографируйте байк со всех сторон, иначе при возврате могут «найти» царапину.",
+          "en": "Some rental shops demand your passport as deposit — refuse if possible. Give a copy + cash deposit (300,000–500,000 VND). Before leaving, photograph the bike from all sides, otherwise 'damage' may be discovered on return."
+        },
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hai%20Van%20Pass%2C%20Vietnam%2C%20Vietnamese%20motorbike%20rider%20near%20US%20military%20bunker.jpg?width=800"
+      }
+    ]
+  },
+  "aiKnowledgeBase": "Da Lat — Lam Dong province, Vietnam. Altitude 1500m, climate 15-24°C year-round (can drop to 10°C nights Dec-Feb). Airport DLI (Lien Khuong) 30km south: Grab 200-280k to center ~40min; Phuong Trang shuttle 50k; hotel transfer 150-200k. Bus from Nha Trang: Phuong Trang/Thanh Buoi 120-160k ~3-3.5h; from HCMC 180-230k ~6-7h. No beach — highland city. Transport: Grab works but fewer drivers (esp. evening/rain); xe om at night market. MOTORBIKE RENTAL: 100-180k/day — main way to explore; Honda Wave semi-auto or 125cc scooter; steep wet roads in rain/fog — slow down; photo bike before renting; deposit: copy passport + 300-500k cash. Bicycle: 50-80k/day, e-bike 80-120k. Sights: Crazy House (Hang Nga, 60k entry, 11.9341/108.4367); Xuan Huong Lake (free, 6km loop); Linh Phuoc Pagoda (Trai Mat, free); Datanla Falls (40k+65k coaster, 11.9076/108.4443); Langbiang Mountain (2169m, 50k entry or 300-500k jeep, 11.0530/108.4397); Dalat Palace hotel (afternoon tea 200k+). Heritage train Da Lat–Trai Mat: 56k one-way, vintage colonial carriage. Nature: Pongour Falls (50km, 20k, widest in area); Valley of Love (50k entry, horse/boats, 11.9656/108.4418); Prenn Falls (30k, 11.8946/108.4434). Food: Banh Mi Hoa (25-40k, iconic, 4 Nguyen Thi Minh Khai, 6AM-10AM); Banh Can (20-40k, Truong Cong Dinh pm); strawberries (50-120k/kg, buy at farms not market); artichoke tea (15-25k/cup); Lau Bo hotpot (120k+/person, Hoa Binh area). Markets: Night Market 17:00-24:00 Nguyen Thi Minh Khai (bargain 40-50% of asking); Cho Hoa flower market 4-6AM. Tours: Canyoning Datanla 700-1200k/day (Dalat Adventure Tours, Groovy Gecko, Phat Tire — book only verified operators); Easy Rider motorbike tour 400-600k half-day; coffee plantation 150-300k; heritage train 56k. SIM: Viettel/Mobifone, dead zones in mountains. Best time: Nov-Mar dry/cool; rainy season Jun-Oct (short showers, misty). Lifehacks: always bring jacket; ride before sunrise for fog photos; buy strawberries at farms not market; 3-4 nights minimum. Scams: unlicensed canyoning (verify operators); fake Easy Riders at market; inflated market prices (bargain 50%); motorbike passport deposit (use copy+cash). Emergency: Police 113, Ambulance 115, Da Lat Hospital +84 263 3822 154."
+}
