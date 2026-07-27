@@ -1,0 +1,203 @@
+{
+  "coordinates": { "lat": 10.8231, "lng": 106.6297 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "sgn-airport",
+      "title": { "ru": "Аэропорт Тан Сон Нят (SGN)", "en": "Tan Son Nhat Airport (SGN)" },
+      "description": {
+        "ru": "7 км от центра Д1. Grab 80–130k VND",
+        "en": "7 km from D1 center. Grab 80–130k VND"
+      },
+      "lat": 10.8188,
+      "lng": 106.6519,
+      "category": "airport"
+    },
+    {
+      "id": "ben-thanh",
+      "title": { "ru": "Рынок Бен Тхань", "en": "Ben Thanh Market" },
+      "description": {
+        "ru": "Главная достопримечательность Д1",
+        "en": "D1's main landmark"
+      },
+      "lat": 10.7726,
+      "lng": 106.6980,
+      "category": "food"
+    },
+    {
+      "id": "reunification-palace",
+      "title": { "ru": "Дворец Воссоединения", "en": "Reunification Palace" },
+      "description": {
+        "ru": "Конец войны 30 апр 1975. Вход 40k",
+        "en": "War ended here Apr 30 1975. Entry 40k"
+      },
+      "lat": 10.7769,
+      "lng": 106.6950,
+      "category": "sight"
+    },
+    {
+      "id": "war-museum",
+      "title": { "ru": "Музей военных преступлений", "en": "War Remnants Museum" },
+      "description": {
+        "ru": "Архивные фото войны. Вход 40k",
+        "en": "War archive photography. Entry 40k"
+      },
+      "lat": 10.7797,
+      "lng": 106.6928,
+      "category": "sight"
+    },
+    {
+      "id": "notre-dame",
+      "title": { "ru": "Собор Нотр-Дам + Почтамт", "en": "Notre-Dame + Central Post Office" },
+      "description": {
+        "ru": "Французская колониальная архитектура",
+        "en": "French colonial architecture"
+      },
+      "lat": 10.7797,
+      "lng": 106.6990,
+      "category": "sight"
+    },
+    {
+      "id": "jade-pagoda",
+      "title": { "ru": "Пагода Нефритового Императора", "en": "Jade Emperor Pagoda" },
+      "description": {
+        "ru": "Таоистский храм 1909 г., черепахи в пруду",
+        "en": "1909 Taoist temple, pond turtles"
+      },
+      "lat": 10.7879,
+      "lng": 106.6921,
+      "category": "sight"
+    },
+    {
+      "id": "bitexco",
+      "title": { "ru": "Bitexco SkyDeck", "en": "Bitexco SkyDeck" },
+      "description": {
+        "ru": "Обзорная площадка 49 этаж, вход 200k",
+        "en": "49th floor observation deck, 200k"
+      },
+      "lat": 10.7717,
+      "lng": 106.7042,
+      "category": "sight"
+    },
+    {
+      "id": "bui-vien",
+      "title": { "ru": "Bui Vien — улица баров", "en": "Bui Vien — bar street" },
+      "description": {
+        "ru": "Ночная жизнь, пиво 20k, DJ-улица",
+        "en": "Nightlife, 20k beers, DJ street"
+      },
+      "lat": 10.7678,
+      "lng": 106.6929,
+      "category": "district"
+    },
+    {
+      "id": "vinh-khanh",
+      "title": { "ru": "Улица Vinh Khanh — морепродукты", "en": "Vinh Khanh Seafood Street" },
+      "description": {
+        "ru": "Устрицы 5–8k, краб 180–350k/кг, с 17:00",
+        "en": "Oysters 5–8k, crab 180–350k/kg, from 5 PM"
+      },
+      "lat": 10.7590,
+      "lng": 106.7063,
+      "category": "food"
+    },
+    {
+      "id": "huynh-hoa",
+      "title": { "ru": "Bánh mì Huỳnh Hoa", "en": "Bánh mì Huỳnh Hoa" },
+      "description": {
+        "ru": "Лучший баньми Сайгона, с 14:00",
+        "en": "Saigon's best banh mi, open from 2 PM"
+      },
+      "lat": 10.7730,
+      "lng": 106.7002,
+      "category": "food"
+    },
+    {
+      "id": "metro-ben-thanh",
+      "title": { "ru": "Метро: ст. Ben Thanh", "en": "Metro: Ben Thanh Station" },
+      "description": {
+        "ru": "Линия 1 → Suoi Tien, 6–20k VND",
+        "en": "Line 1 → Suoi Tien, 6–20k VND"
+      },
+      "lat": 10.7726,
+      "lng": 106.6975,
+      "category": "transport"
+    },
+    {
+      "id": "binh-tay-market",
+      "title": { "ru": "Рынок Бинь Тай (Чайнатаун)", "en": "Binh Tay Market (Chinatown)" },
+      "description": {
+        "ru": "Оптовый рынок Д6, специи, травы",
+        "en": "D6 wholesale market, spices, herbs"
+      },
+      "lat": 10.7501,
+      "lng": 106.6524,
+      "category": "food"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Оформить e-visa Вьетнам (до 90 дней онлайн)",
+        "en": "Get Vietnam e-visa (up to 90 days, online)"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "Купить SIM Viettel/Vinaphone в аэропорту SGN",
+        "en": "Buy Viettel/Vinaphone SIM at SGN airport"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab и Be (альтернатива) на телефон",
+        "en": "Install Grab and Be (alternative) on your phone"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять VND в Vietcombank/BIDV (комиссия 20–55k)",
+        "en": "Withdraw VND at Vietcombank/BIDV (fee 20–55k)"
+      }
+    },
+    {
+      "id": "cu-chi",
+      "label": {
+        "ru": "Забронировать тур в туннели Ку Чи",
+        "en": "Book Cu Chi Tunnels tour"
+      }
+    },
+    {
+      "id": "mekong",
+      "label": {
+        "ru": "Выбрать однодневный тур в дельту Меконга",
+        "en": "Pick Mekong Delta day trip"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "ru": "Тревел-страховка с медицинским покрытием",
+        "en": "Travel insurance with medical coverage"
+      }
+    },
+    {
+      "id": "hotel",
+      "label": {
+        "ru": "Подтвердить бронь отеля (Д1 или Д3)",
+        "en": "Confirm hotel booking (D1 or D3)"
+      }
+    },
+    {
+      "id": "bag-safety",
+      "label": {
+        "ru": "Носить сумку со стороны зданий — защита от мотоциклистов",
+        "en": "Carry bag on building side — protection from motorbike snatchers"
+      }
+    }
+  ]
+}
