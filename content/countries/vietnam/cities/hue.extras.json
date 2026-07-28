@@ -1,0 +1,203 @@
+{
+  "coordinates": { "lat": 16.4637, "lng": 107.5909 },
+  "timezoneOffset": 7,
+  "mapMarkers": [
+    {
+      "id": "hui-airport",
+      "title": { "ru": "Аэропорт Фу Бай (HUI)", "en": "Phu Bai Airport (HUI)" },
+      "description": {
+        "ru": "14 км от центра. Grab ~100–140k VND",
+        "en": "14 km from center. Grab ~100–140k VND"
+      },
+      "lat": 16.4015,
+      "lng": 107.7027,
+      "category": "airport"
+    },
+    {
+      "id": "imperial-citadel",
+      "title": { "ru": "Императорская цитадель", "en": "Imperial Citadel (Dai Noi)" },
+      "description": {
+        "ru": "Дворцовый комплекс XIX в. Вход 200k VND",
+        "en": "19th-century palace complex. Entry 200k VND"
+      },
+      "lat": 16.4698,
+      "lng": 107.5779,
+      "category": "sight"
+    },
+    {
+      "id": "thien-mu-pagoda",
+      "title": { "ru": "Пагода Тхиен Му", "en": "Thien Mu Pagoda" },
+      "description": {
+        "ru": "7-ярусная пагода 1601 г. Бесплатно",
+        "en": "7-story pagoda founded 1601. Free"
+      },
+      "lat": 16.4526,
+      "lng": 107.5486,
+      "category": "sight"
+    },
+    {
+      "id": "tu-duc-tomb",
+      "title": { "ru": "Гробница Ты Дык", "en": "Tu Duc Tomb" },
+      "description": {
+        "ru": "7 км от центра. Вход 150k VND",
+        "en": "7 km from center. Entry 150k VND"
+      },
+      "lat": 16.4580,
+      "lng": 107.5519,
+      "category": "sight"
+    },
+    {
+      "id": "khai-dinh-tomb",
+      "title": { "ru": "Гробница Кхай Динь", "en": "Khai Dinh Tomb" },
+      "description": {
+        "ru": "9 км от центра. Мозаика. Вход 150k VND",
+        "en": "9 km from center. Mosaic interior. Entry 150k VND"
+      },
+      "lat": 16.4382,
+      "lng": 107.5601,
+      "category": "sight"
+    },
+    {
+      "id": "minh-mang-tomb",
+      "title": { "ru": "Гробница Минь Манга", "en": "Minh Mang Tomb" },
+      "description": {
+        "ru": "12 км от центра. Самая большая. Вход 150k VND",
+        "en": "12 km from center. Grandest tomb. Entry 150k VND"
+      },
+      "lat": 16.4027,
+      "lng": 107.5559,
+      "category": "sight"
+    },
+    {
+      "id": "dong-ba-market",
+      "title": { "ru": "Рынок Донба", "en": "Dong Ba Market" },
+      "description": {
+        "ru": "Главный рынок. Специи, сувениры, еда",
+        "en": "Main market. Spices, souvenirs, food"
+      },
+      "lat": 16.4700,
+      "lng": 107.5820,
+      "category": "food"
+    },
+    {
+      "id": "bun-bo-hue-street",
+      "title": { "ru": "Бун бо Хюэ (Le Thanh Ton)", "en": "Bun Bo Hue (Le Thanh Ton)" },
+      "description": {
+        "ru": "Лучший суп. Только 6:00–9:00",
+        "en": "Best noodle soup. Open 6–9 AM only"
+      },
+      "lat": 16.4656,
+      "lng": 107.5883,
+      "category": "food"
+    },
+    {
+      "id": "perfume-river",
+      "title": { "ru": "Река Хыонг (Ароматная)", "en": "Perfume River (Song Huong)" },
+      "description": {
+        "ru": "Речные прогулки, закаты, лодки-драконы",
+        "en": "River cruises, sunsets, dragon boats"
+      },
+      "lat": 16.4637,
+      "lng": 107.5600,
+      "category": "sight"
+    },
+    {
+      "id": "thuan-an-beach",
+      "title": { "ru": "Пляж Тхуан Ан", "en": "Thuan An Beach" },
+      "description": {
+        "ru": "13 км от центра. Grab ~90–120k VND",
+        "en": "13 km from center. Grab ~90–120k VND"
+      },
+      "lat": 16.5254,
+      "lng": 107.6278,
+      "category": "beach"
+    },
+    {
+      "id": "train-station-hue",
+      "title": { "ru": "Ж/д вокзал Хюэ", "en": "Hue Railway Station" },
+      "description": {
+        "ru": "Поезда в Дананг (2–2.5 ч), Ханой, Хошимин",
+        "en": "Trains to Da Nang (2–2.5h), Hanoi, HCMC"
+      },
+      "lat": 16.4631,
+      "lng": 107.5961,
+      "category": "transport"
+    },
+    {
+      "id": "thanh-toan-village",
+      "title": { "ru": "Деревня Тхань Тоан", "en": "Thanh Toan Village" },
+      "description": {
+        "ru": "Мост XVIII в. и рисовый музей. Велотур от центра",
+        "en": "18th-century bridge and rice museum. Bike tour from center"
+      },
+      "lat": 16.4390,
+      "lng": 107.6400,
+      "category": "sight"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "visa",
+      "label": {
+        "ru": "Проверить визу / e-visa Вьетнам",
+        "en": "Check Vietnam visa / e-visa"
+      }
+    },
+    {
+      "id": "combo-ticket",
+      "label": {
+        "ru": "Купить комбо-билет (цитадель + 3 гробницы, 520k VND)",
+        "en": "Get combo ticket (citadel + 3 tombs, 520k VND)"
+      }
+    },
+    {
+      "id": "grab",
+      "label": {
+        "ru": "Установить Grab (меньше водителей, чем в Дананге)",
+        "en": "Install Grab (fewer drivers than Da Nang)"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "ru": "Снять наличные VND — банкоматов у достопримечательностей мало",
+        "en": "Withdraw VND cash — few ATMs near the sights"
+      }
+    },
+    {
+      "id": "bun-bo-alarm",
+      "label": {
+        "ru": "Поставить будильник на 6:30 — бун бо только до 9:00",
+        "en": "Set alarm for 6:30 AM — bun bo closes by 9 AM"
+      }
+    },
+    {
+      "id": "modest-clothes",
+      "label": {
+        "ru": "Одежда: плечи и колени закрыты (цитадель, пагоды, гробницы)",
+        "en": "Pack modest clothing: shoulders and knees covered (citadel, pagodas, tombs)"
+      }
+    },
+    {
+      "id": "sim",
+      "label": {
+        "ru": "SIM Viettel в аэропорту Фу Бай",
+        "en": "Buy Viettel SIM at Phu Bai Airport"
+      }
+    },
+    {
+      "id": "rain-gear",
+      "label": {
+        "ru": "Взять зонт или плащ (дожди возможны кроме фев–апр)",
+        "en": "Pack umbrella or rain jacket (rain likely outside Feb–Apr)"
+      }
+    },
+    {
+      "id": "sunscreen",
+      "label": {
+        "ru": "Крем SPF 50+ — гробницы открыты, мало тени",
+        "en": "SPF 50+ sunscreen — royal tombs are exposed with little shade"
+      }
+    }
+  ]
+}
